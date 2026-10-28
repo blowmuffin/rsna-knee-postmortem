@@ -1,0 +1,28 @@
+{
+  "id": "starkhushi/knee-mri-end-to-end-eda-2-5d-models-evaluation",
+  "id_no": 133503783,
+  "title": "Knee MRI End to End: EDA, 2.5D Models, Evaluation",
+  "code_file": "knee-mri-end-to-end-eda-2-5d-models-evaluation.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "medicine",
+    "exploratory data analysis",
+    "deep learning",
+    "intermediate"
+  ],
+  "dataset_sources": [
+    "starkhushi/rsna-knee-58study-member-preds"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machine_shape": "None"
+}

@@ -1,0 +1,8 @@
+      11 Snapshot: 2026-10-13T17:40:19.317868+00:00
+      12 Shared main weights: R384, R7f0, R7f1, R7f2, R7f3
+      12 Added main weights: R224
+      12 New declared checkpoint count: 1
+      12 No reader files supplied. The snapshot fingerprints are in the downloads below.
+      12 Downloads: checkpoint_identities.csv, evidence_manifest.json, recipes.csv, resolved_checkpoint_map.csv
+      15   cells[i][c] = re.sub('\\\\\|', '|', cell)
+      16   text = re.sub(r'_', '\_', text) # Escape underscores in display text

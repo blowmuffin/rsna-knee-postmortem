@@ -1,0 +1,125 @@
+      27 {
+      27   "seed": 42,
+      27   "smoke": false,
+      27   "comp_root": null,
+      27   "output_dir": "/kaggle/working/rsna_knee_v7b_coatnet",
+      27   "pilkwang_label_path": null,
+      27   "steven_label_path": null,
+      27   "steven_blend_alpha": 0.5,
+      27   "require_llm_labels": true,
+      27   "pseudo_temperature": 1.0,
+      27   "unknown_weight": 0.03,
+      27   "tokens_per_slot": [
+      27     12,
+      27     10,
+      27     8,
+      27     6,
+      27     8
+      27   ],
+      27   "train_tokens_per_slot": [
+      27     12,
+      27     10,
+      27     8,
+      27     6,
+      27     8
+      27   ],
+      27   "corpus_size": 336,
+      27   "crop_mm": 140.0,
+      27   "coverage": [
+      27     0.15,
+      27     0.85
+      27   ],
+      27   "arch": "coatnet_rmlp_2_rw_384.sw_in12k_ft_in1k",
+      27   "resolution": 384,
+      27   "train_windows": 6,
+      27   "eval_windows": 12,
+      27   "epochs": 16,
+      27   "batch_per_gpu": 1,
+      27   "valid_batch_size": 1,
+      27   "max_gpus": 2,
+      27   "workers": 2,
+      27   "backbone_lr": 3e-05,
+      27   "head_lr": 0.001,
+      27   "weight_decay": 0.02,
+      27   "dropout": 0.2,
+      27   "top_k": 3,
+      27   "grad_checkpointing": true,
+      27   "intensity_jitter": 0.2
+      27 }
+      27 device: cuda:0 physical GPUs: 2 training GPUs: 2 global batch: 2
+      27 GPU names: ['Tesla T4', 'Tesla T4']
+      27 root: /kaggle/input/competitions/rsna-knee-abnormality-detection
+      27 train studies / series: 4407 24371
+      31 pilkwang labels: /kaggle/input/datasets/pilkwang/rsna-knee-llm-labels/report_labels_v2.csv coverage=4406/4407
+      31 steven_v4 labels: /kaggle/input/datasets/stevenleehans/rsna-knee-llm-report-labels/llm_labels_v4_blend.csv coverage=4407/4407
+      31 blended cells: 52872 pilkwang-only: 0 steven-only: 12
+      31 V7B blended pseudo-label gold macro AUC: 0.8927
+      31           target  gold_auc  pseudo_positive_rate  unk_fraction  gold_positive_when_unk
+      31              ACL    0.9926                0.2299           0.0                     NaN
+      31              MCL    0.9796                0.1616           0.0                     NaN
+      31  Medial Meniscus    0.9573                0.5187           0.0                     NaN
+      31 Lateral Meniscus    0.8789                0.2476           0.0                     NaN
+      31        Medial OA    0.9279                0.3717           0.0                     NaN
+      31       Lateral OA    0.8075                0.2641           0.0                     NaN
+      31            PF OA    0.9028                0.4556           0.0                     NaN
+      31         Effusion    0.8634                0.6025           0.0                     NaN
+      31        Synovitis    0.7879                0.1307           0.0                     NaN
+      31          Baker's    0.9466                0.2503           0.0                     NaN
+      31        Contusion    0.8516                0.2564           0.0                     NaN
+      31         Fracture    0.8167                0.0722           0.0                     NaN
+      32 gold studies: 58 / 4407
+      32 pseudo label file: /kaggle/working/rsna_knee_v7b_coatnet/pseudo_labels.csv
+      32 corpus: (4407, 44, 336, 336) mask: (4407, 44) ids: 4407
+      36 training pseudo studies: 4349 gold validation studies: 58
+      36 train studies/batch: 2 train windows/study: 6 effective backbone images/global step: 12
+      36 validation studies/batch: 1 eval windows/study: 12
+      42 gradient checkpointing: ON
+      42 fully trainable backbone parameters: 72.856264 M
+      42 DataParallel active on: [0, 1]
+    7055 Kernel died while waiting for execute reply.
+    7055 Traceback (most recent call last):
+    7055   File "/usr/local/lib/python3.12/dist-packages/nbclient/client.py", line 949, in async_execute_cell
+    7055     exec_reply = await self.task_poll_for_reply
+    7055                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    7055   File "/usr/local/lib/python3.12/dist-packages/nbclient/client.py", line 730, in _async_poll_for_reply
+    7055     msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))
+    7055           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    7055   File "/usr/local/lib/python3.12/dist-packages/nbclient/util.py", line 96, in ensure_async
+    7055     result = await obj
+    7055              ^^^^^^^^^
+    7055   File "/usr/local/lib/python3.12/dist-packages/jupyter_client/channels.py", line 224, in get_msg
+    7055     ready = await self.socket.poll(timeout)
+    7055             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    7055 asyncio.exceptions.CancelledError
+    7055 During handling of the above exception, another exception occurred:
+    7055 Traceback (most recent call last):
+    7055   File "<string>", line 1, in <module>
+    7055   File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 116, in execute_notebook
+    7055     nb = papermill_engines.execute_notebook_with_engine(
+    7055          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    7055   File "/usr/local/lib/python3.12/dist-packages/papermill/engines.py", line 49, in execute_notebook_with_engine
+    7055     return self.get_engine(engine_name).execute_notebook(nb, kernel_name, **kwargs)
+    7055            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    7055   File "/usr/local/lib/python3.12/dist-packages/papermill/engines.py", line 371, in execute_notebook
+    7055     cls.execute_managed_notebook(nb_man, kernel_name, log_output=log_output, **kwargs)
+    7055   File "/usr/local/lib/python3.12/dist-packages/papermill/engines.py", line 443, in execute_managed_notebook
+    7055     return PapermillNotebookClient(nb_man, **final_kwargs).execute()
+    7055            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    7055   File "/usr/local/lib/python3.12/dist-packages/papermill/clientwrap.py", line 45, in execute
+    7055     self.papermill_execute_cells()
+    7055   File "/usr/local/lib/python3.12/dist-packages/papermill/clientwrap.py", line 72, in papermill_execute_cells
+    7055     self.execute_cell(cell, index)
+    7055   File "/usr/local/lib/python3.12/dist-packages/nbclient/util.py", line 84, in wrapped
+    7055     return just_run(coro(*args, **kwargs))
+    7055            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    7055   File "/usr/local/lib/python3.12/dist-packages/nbclient/util.py", line 62, in just_run
+    7055     return loop.run_until_complete(coro)
+    7055            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    7055   File "/usr/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    7055     return future.result()
+    7055            ^^^^^^^^^^^^^^^
+    7055   File "/usr/local/lib/python3.12/dist-packages/nbclient/client.py", line 953, in async_execute_cell
+    7055     raise DeadKernelError("Kernel died")
+    7055 nbclient.exceptions.DeadKernelError: Kernel died
+    7059   cells[i][c] = re.sub('\\\\\|', '|', cell)
+    7059   text = re.sub(r'_', '\_', text) # Escape underscores in display text

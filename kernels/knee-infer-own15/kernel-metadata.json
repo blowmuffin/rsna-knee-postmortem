@@ -1,0 +1,26 @@
+{
+  "id": "ayushkasare/knee-infer-own15",
+  "title": "knee-infer-own15",
+  "code_file": "knee-infer-own15.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": true,
+  "enable_internet": false,
+  "kernel_sources": [
+    "ayushkasare/knee-train-eff320z",
+    "ayushkasare/knee-train-eff320z-b",
+    "ayushkasare/knee-train-eff320z-c",
+    "ayushkasare/knee-train-cnx288ptl",
+    "ayushkasare/knee-train-cnx288ptl-b",
+    "ayushkasare/knee-train-cnx288ptl-c",
+    "ayushkasare/knee-train-cnxzptl",
+    "ayushkasare/knee-train-cnxzptl-b",
+    "ayushkasare/knee-train-cnxzptl-c"
+  ],
+  "dataset_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

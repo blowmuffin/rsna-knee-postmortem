@@ -1,0 +1,319 @@
+       9 RSNA_FOLDS = 3
+       9 RSNA_TIME_BUDGET = 39600
+       9 RSNA_TRAIN_SEED = 7
+       9 RSNA_FOLDS = 3
+       9 RSNA_TIME_BUDGET = 39600
+       9 RSNA_TRAIN_SEED = 7
+       9 RSNA_SWA_EPOCHS = 3
+       9 RSNA_WINDOW = 0.35,0.65
+       9 RSNA_CROP_MM = 130
+       9 RSNA_N_GROUP_MAX = 3
+       9 RSNA_EPOCHS = 30
+       9 RSNA_CYCLE_EPOCHS = 10
+       9 RSNA_LLM_LABELS = /kaggle/input/rsna-knee-llm-report-labels/llm_labels_full.csv
+       9 RSNA_DECLINED_PRIOR = 0.199
+       9 RSNA_CONF_FLOOR = 0.0
+      17 [    0.5s] input root: /kaggle/input/competitions/rsna-knee-abnormality-detection
+      17 [    0.5s] seeds: data/folds 2026, training 7
+      18 [    2.0s] device: cuda (Tesla T4, sm_75) - kernel launch verified
+      19 [    2.2s] train (4407, 14) test (3, 1)
+      19 [    2.3s] header pass: test
+      19 [    2.4s]   15 test series
+      19 [    2.4s] header pass: train
+      99 [   82.7s]   24371 train series
+     123 [  106.8s] train slots per study: mean 5.24 min 3 max 6
+     123 [  106.8s] cache layout: 3 groups x 3 slices
+     125 [  109.0s] train: laterality tag 2203 (50.0%), text 167 (3.8%), unknown 2037 (46.2%)
+     125 [  109.0s] train: geometric rule agrees with the tag on 2042/2199 studies (92.9%)
+     125 [  109.0s] test: laterality tag 1 (33.3%), unknown 2 (66.7%)
+     125 [  109.0s] test: geometric rule agrees with the tag on 0/1 studies (0.0%)
+     125 [  109.0s] train: cache (4407, 6, 9, 224, 224) = 11.1 GB
+     125 [  109.1s] train: decoding 23089 slot-series
+     126 /tmp/ipykernel_22/1983150473.py:324: RuntimeWarning: 46% of train studies have no laterality, so they are never mirrored to a common convention. Medial and lateral then sit on opposite sides of the image for left and right knees, and four of the twelve targets are side-specific.
+     126   lat_tr, lat_te = lat_of(htr, "train"), lat_of(hte, "test")
+     126 /tmp/ipykernel_22/1983150473.py:324: RuntimeWarning: 67% of test studies have no laterality, so they are never mirrored to a common convention. Medial and lateral then sit on opposite sides of the image for left and right knees, and four of the twelve targets are side-specific.
+     126   lat_tr, lat_te = lat_of(htr, "train"), lat_of(hte, "test")
+     126 /tmp/ipykernel_22/1983150473.py:324: RuntimeWarning: 46% of train studies have no laterality, so they are never mirrored to a common convention. Medial and lateral then sit on opposite sides of the image for left and right knees, and four of the twelve targets are side-specific.
+     126   lat_tr, lat_te = lat_of(htr, "train"), lat_of(hte, "test")
+     126 /tmp/ipykernel_22/1983150473.py:324: RuntimeWarning: 67% of test studies have no laterality, so they are never mirrored to a common convention. Medial and lateral then sit on opposite sides of the image for left and right knees, and four of the twelve targets are side-specific.
+     126   lat_tr, lat_te = lat_of(htr, "train"), lat_of(hte, "test")
+     632 [  616.0s]   train 4096/23089
+    1133 [ 1116.4s]   train 8192/23089
+    1627 [ 1610.3s]   train 12288/23089
+    2140 [ 2123.3s]   train 16384/23089
+    2647 [ 2631.0s]   train 20480/23089
+    2977 [ 2960.7s] train: slice ordering geometry 100.0%
+    2977 [ 2960.7s] train: physical scale applied 22744 (98.5%), skipped_short_fov 345 (1.5%)
+    2977 [ 2960.7s] train: slices read 207801, decode failures 0, MONOCHROME1 inverted 0
+    2977 [ 2961.0s] test: cache (3, 6, 9, 224, 224) = 0.0 GB
+    2977 [ 2961.0s] test: decoding 14 slot-series
+    2980 [ 2963.5s]   test 14/14
+    2980 [ 2963.5s] test: slice ordering geometry 100.0%
+    2980 [ 2963.5s] test: physical scale applied 14 (100.0%)
+    2980 [ 2963.5s] test: slices read 126, decode failures 0, MONOCHROME1 inverted 0
+    2997 [ 2980.4s] rule labels for 4407 studies in 16.7s
+    3082 distilled text model, OOF corr with rules per target:
+    3082   ACL                +0.765
+    3082   MCL                +0.669
+    3082   Medial Meniscus    +0.771
+    3082   Lateral Meniscus   +0.616
+    3082   Medial OA          +0.734
+    3082   Lateral OA         +0.670
+    3082   PF OA              +0.766
+    3082   Effusion           +0.761
+    3082   Synovitis          +0.837
+    3082   Baker's            +0.800
+    3082   Contusion          +0.777
+    3082   Fracture           +0.729
+    3082 [ 3065.3s] text-model weight per target: min 0.22 max 0.29, 0/12 gated out
+    3317 [ 3300.6s] RSNA_LLM_LABELS not at /kaggle/input/rsna-knee-llm-report-labels/llm_labels_full.csv; found it at /kaggle/input/datasets/stevenleehans/rsna-knee-llm-report-labels/llm_labels_full.csv - using that
+    3317 [ 3300.6s] LLM labels: 4407 rows, covering 4407/4407 (100.0%) of derived studies
+    3317 [ 3300.6s]   TARGETS SWAPPED to LLM labels on 4407 studies
+    3317 [ 3300.6s]   declined cells (key == 0.50): 13438 of 52884 (25.4%); RSNA_DECLINED_PRIOR=0.199
+    3317 [ 3300.6s]   DECLINED TARGETS RETARGETED 0.5 -> 0.199 (conf still 0 on these cells; their weight is the floor, RSNA_CONF_FLOOR=0.0)
+    3317 [ 3300.6s] annotated studies: 58
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.05 ... 0.05 0.05 0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.05 ... 0.05 0.05 0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.95 0.68 0.1  ... 0.84 0.1  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.03 ... 0.94 0.1  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.95 0.5  0.88 ... 0.5  0.5  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.05 ... 0.5  0.5  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.84 ... 0.8  0.7  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.92 0.5  0.05 ... 0.82 0.85 0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5 0.5 0.5 ... 0.5 0.5 0.5]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.03 ... 0.5  0.5  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.05 ... 0.5  0.05 0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.05 ... 0.5  0.5  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.  0.  0.9 ... 0.9 0.9 0. ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.  0.  0.9 ... 0.9 0.9 0. ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.9  0.36 0.8  ... 0.68 0.8  0.  ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.   0.   0.94 ... 0.88 0.8  0.  ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.9  0.   0.76 ... 0.   0.   0.  ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.  0.  0.9 ... 0.  0.  0. ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.   0.   0.68 ... 0.6  0.4  0.  ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.84 0.   0.9  ... 0.64 0.7  0.  ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0. 0. 0. ... 0. 0. 0.]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.   0.   0.94 ... 0.   0.   0.  ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.  0.  0.9 ... 0.  0.9 0. ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.  0.  0.9 ... 0.  0.  0. ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.05 ... 0.05 0.05 0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.05 ... 0.05 0.05 0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.95 0.68 0.1  ... 0.84 0.1  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.03 ... 0.94 0.1  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.95 0.5  0.88 ... 0.5  0.5  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.05 ... 0.5  0.5  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.84 ... 0.8  0.7  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.92 0.5  0.05 ... 0.82 0.85 0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5 0.5 0.5 ... 0.5 0.5 0.5]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.03 ... 0.5  0.5  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.05 ... 0.5  0.05 0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:422: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.5  0.5  0.05 ... 0.5  0.5  0.5 ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   derived.loc[hit, TARGETS] = llm.loc[hit, TARGETS].values
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.  0.  0.9 ... 0.9 0.9 0. ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.  0.  0.9 ... 0.9 0.9 0. ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.9  0.36 0.8  ... 0.68 0.8  0.  ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.   0.   0.94 ... 0.88 0.8  0.  ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.9  0.   0.76 ... 0.   0.   0.  ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.  0.  0.9 ... 0.  0.  0. ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.   0.   0.68 ... 0.6  0.4  0.  ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.84 0.   0.9  ... 0.64 0.7  0.  ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0. 0. 0. ... 0. 0. 0.]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.   0.   0.94 ... 0.   0.   0.  ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.  0.  0.9 ... 0.  0.9 0. ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 /tmp/ipykernel_22/1983150473.py:426: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[0.  0.  0.9 ... 0.  0.  0. ]' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    3317   conf.loc[hit, TARGETS] = (
+    3317 [ 3301.0s] supervised 4356 of 4407 studies
+    3317 [ 3301.0s]   conf floor 0.0: mean sample weight per label
+    3317 [ 3301.0s]     ACL                mean W 0.843  at floor   7.1%
+    3317 [ 3301.0s]     MCL                mean W 0.825  at floor   8.9%
+    3317 [ 3301.0s]     Medial Meniscus    mean W 0.839  at floor   4.4%
+    3317 [ 3301.0s]     Lateral Meniscus   mean W 0.816  at floor   8.7%
+    3317 [ 3301.0s]     Medial OA          mean W 0.720  at floor  19.0%
+    3317 [ 3301.0s]     Lateral OA         mean W 0.681  at floor  23.4%
+    3317 [ 3301.0s]     PF OA              mean W 0.742  at floor  16.0%
+    3317 [ 3301.0s]     Effusion           mean W 0.744  at floor   8.7%
+    3317 [ 3301.0s]     Synovitis          mean W 0.171  at floor  82.6%
+    3317 [ 3301.0s]     Baker's            mean W 0.474  at floor  46.9%
+    3317 [ 3301.0s]     Contusion          mean W 0.692  at floor  22.8%
+    3317 [ 3301.0s]     Fracture           mean W 0.548  at floor  41.7%
+    3317 [ 3301.0s] fold audit:
+    3318 [ 3301.5s]   duplicate check: every near-duplicate report group is inside one fold
+    3318 [ 3301.5s]   class balance: all 5 x 12 cells have >= 10 of each class
+    3318 [ 3302.1s] protocol model: 19 features, derived-OOF macro AUC 0.6010 -> fusion weight 0.10
+    3318 [ 3302.1s] fold 0: train 3458 / val 898 (annotated in val: 9)
+    3344 [ 3327.0s] backbone: DINOv2 from /kaggle/input/models/metaresearch/dinov2/pytorch/small/1, dim 768
+    3344 [ 3327.1s]   normalisation from checkpoint: mean [0.485, 0.456, 0.406], std [0.229, 0.224, 0.225]
+    3344 [ 3327.1s]   trainable: last 6 of 12 blocks, 10.7M params
+    3344 [ 3327.5s]   LR: cosine warm restarts, 3 cycle(s) of 10 epochs
+    3440 [ 3423.7s]   fold 0 epoch 1/30  loss 0.3941  derived 0.7159  annot 0.7325  worse-of-two 0.7159
+    3534 [ 3517.4s]   fold 0 epoch 2/30  loss 0.3637  derived 0.7669  annot 0.7849  worse-of-two 0.7669
+    3627 [ 3611.2s]   fold 0 epoch 3/30  loss 0.3472  derived 0.7836  annot 0.8078  worse-of-two 0.7836
+    3721 [ 3704.5s]   fold 0 epoch 4/30  loss 0.3335  derived 0.7944  annot 0.8144  worse-of-two 0.7944
+    3814 [ 3797.9s]   fold 0 epoch 5/30  loss 0.3251  derived 0.8013  annot 0.8006  worse-of-two 0.8006
+    3907 [ 3890.9s]   fold 0 epoch 6/30  loss 0.3177  derived 0.8083  annot 0.8202  worse-of-two 0.8083
+    4001 [ 3984.5s]   fold 0 epoch 7/30  loss 0.3089  derived 0.8102  annot 0.8010  worse-of-two 0.8010
+    4095 [ 4078.3s]   fold 0 epoch 8/30  loss 0.3019  derived 0.8110  annot 0.8156  worse-of-two 0.8110
+    4188 [ 4171.8s]   fold 0 epoch 9/30  loss 0.2988  derived 0.8122  annot 0.8156  worse-of-two 0.8122
+    4281 [ 4264.8s]   fold 0 epoch 10/30  loss 0.2961  derived 0.8121  annot 0.8156  worse-of-two 0.8121
+    4375 [ 4358.3s]   fold 0 epoch 11/30  loss 0.3192  derived 0.8071  annot 0.8073  worse-of-two 0.8071
+    4469 [ 4452.2s]   fold 0 epoch 12/30  loss 0.3131  derived 0.8067  annot 0.8400  worse-of-two 0.8067
+    4562 [ 4546.1s]   fold 0 epoch 13/30  loss 0.3086  derived 0.8125  annot 0.8239  worse-of-two 0.8125
+    4656 [ 4639.5s]   fold 0 epoch 14/30  loss 0.3008  derived 0.8163  annot 0.7904  worse-of-two 0.7904
+    4749 [ 4732.5s]   fold 0 epoch 15/30  loss 0.2923  derived 0.8183  annot 0.8239  worse-of-two 0.8183
+    4842 [ 4826.1s]   fold 0 epoch 16/30  loss 0.2850  derived 0.8192  annot 0.8281  worse-of-two 0.8192
+    4936 [ 4919.8s]   fold 0 epoch 17/30  loss 0.2767  derived 0.8191  annot 0.8175  worse-of-two 0.8175
+    5030 [ 5013.7s]   fold 0 epoch 18/30  loss 0.2718  derived 0.8212  annot 0.8217  worse-of-two 0.8212
+    5124 [ 5107.4s]   fold 0 epoch 19/30  loss 0.2673  derived 0.8210  annot 0.8217  worse-of-two 0.8210
+    5217 [ 5201.0s]   fold 0 epoch 20/30  loss 0.2659  derived 0.8207  annot 0.8217  worse-of-two 0.8207
+    5311 [ 5294.3s]   fold 0 epoch 21/30  loss 0.2899  derived 0.8101  annot 0.8049  worse-of-two 0.8049
+    5404 [ 5387.7s]   fold 0 epoch 22/30  loss 0.2903  derived 0.8132  annot 0.8076  worse-of-two 0.8076
+    5497 [ 5481.1s]   fold 0 epoch 23/30  loss 0.2822  derived 0.8170  annot 0.7969  worse-of-two 0.7969
+    5591 [ 5574.5s]   fold 0 epoch 24/30  loss 0.2758  derived 0.8191  annot 0.8244  worse-of-two 0.8191
+    5685 [ 5668.2s]   fold 0 epoch 25/30  loss 0.2658  derived 0.8211  annot 0.8263  worse-of-two 0.8211
+    5778 [ 5761.7s]   fold 0 epoch 26/30  loss 0.2577  derived 0.8221  annot 0.7870  worse-of-two 0.7870
+    5872 [ 5855.2s]   fold 0 epoch 27/30  loss 0.2506  derived 0.8234  annot 0.8094  worse-of-two 0.8094
+    5965 [ 5948.9s]   fold 0 epoch 28/30  loss 0.2456  derived 0.8222  annot 0.8153  worse-of-two 0.8153
+    6059 [ 6042.5s]   fold 0 epoch 29/30  loss 0.2429  derived 0.8225  annot 0.8195  worse-of-two 0.8195
+    6153 [ 6136.2s]   fold 0 epoch 30/30  loss 0.2407  derived 0.8227  annot 0.8094  worse-of-two 0.8094
+    6178 [ 6162.0s]   fold 0: averaged last 3 epochs, NO selection (derived 0.8226; best single epoch was 18 at 0.8212)
+    6179 [ 6162.5s] fold 1: train 3525 / val 831 (annotated in val: 10)
+    6179 [ 6162.9s] backbone: DINOv2 from /kaggle/input/models/metaresearch/dinov2/pytorch/small/1, dim 768
+    6179 [ 6162.9s]   normalisation from checkpoint: mean [0.485, 0.456, 0.406], std [0.229, 0.224, 0.225]
+    6179 [ 6162.9s]   trainable: last 6 of 12 blocks, 10.7M params
+    6179 [ 6163.0s]   LR: cosine warm restarts, 3 cycle(s) of 10 epochs
+    6272 [ 6255.8s]   fold 1 epoch 1/30  loss 0.3975  derived 0.7357  annot 0.6794  worse-of-two 0.6794
+    6365 [ 6348.9s]   fold 1 epoch 2/30  loss 0.3688  derived 0.7729  annot 0.6850  worse-of-two 0.6850
+    6458 [ 6442.1s]   fold 1 epoch 3/30  loss 0.3542  derived 0.7987  annot 0.7730  worse-of-two 0.7730
+    6551 [ 6535.1s]   fold 1 epoch 4/30  loss 0.3369  derived 0.8119  annot 0.7941  worse-of-two 0.7941
+    6645 [ 6628.3s]   fold 1 epoch 5/30  loss 0.3267  derived 0.8241  annot 0.7653  worse-of-two 0.7653
+    6738 [ 6721.2s]   fold 1 epoch 6/30  loss 0.3183  derived 0.8299  annot 0.7813  worse-of-two 0.7813
+    6831 [ 6814.2s]   fold 1 epoch 7/30  loss 0.3115  derived 0.8312  annot 0.7794  worse-of-two 0.7794
+    6923 [ 6907.0s]   fold 1 epoch 8/30  loss 0.3046  derived 0.8333  annot 0.7668  worse-of-two 0.7668
+    7016 [ 6999.8s]   fold 1 epoch 9/30  loss 0.3006  derived 0.8333  annot 0.7840  worse-of-two 0.7840
+    7109 [ 7092.7s]   fold 1 epoch 10/30  loss 0.2996  derived 0.8333  annot 0.7840  worse-of-two 0.7840
+    7202 [ 7185.5s]   fold 1 epoch 11/30  loss 0.3208  derived 0.8271  annot 0.7694  worse-of-two 0.7694
+    7295 [ 7278.4s]   fold 1 epoch 12/30  loss 0.3156  derived 0.8230  annot 0.7740  worse-of-two 0.7740
+    7388 [ 7371.3s]   fold 1 epoch 13/30  loss 0.3097  derived 0.8321  annot 0.7999  worse-of-two 0.7999
+    7480 [ 7464.2s]   fold 1 epoch 14/30  loss 0.3015  derived 0.8286  annot 0.7576  worse-of-two 0.7576
+    7573 [ 7557.0s]   fold 1 epoch 15/30  loss 0.2947  derived 0.8335  annot 0.7615  worse-of-two 0.7615
+    7666 [ 7650.0s]   fold 1 epoch 16/30  loss 0.2873  derived 0.8330  annot 0.7674  worse-of-two 0.7674
+    7759 [ 7742.5s]   fold 1 epoch 17/30  loss 0.2801  derived 0.8359  annot 0.7728  worse-of-two 0.7728
+    7851 [ 7834.9s]   fold 1 epoch 18/30  loss 0.2743  derived 0.8357  annot 0.7807  worse-of-two 0.7807
+    7944 [ 7927.9s]   fold 1 epoch 19/30  loss 0.2704  derived 0.8357  annot 0.7740  worse-of-two 0.7740
+    8037 [ 8020.8s]   fold 1 epoch 20/30  loss 0.2679  derived 0.8356  annot 0.7688  worse-of-two 0.7688
+    8130 [ 8113.8s]   fold 1 epoch 21/30  loss 0.2925  derived 0.8311  annot 0.8161  worse-of-two 0.8161
+    8223 [ 8206.6s]   fold 1 epoch 22/30  loss 0.2890  derived 0.8280  annot 0.7842  worse-of-two 0.7842
+    8316 [ 8299.5s]   fold 1 epoch 23/30  loss 0.2822  derived 0.8294  annot 0.7681  worse-of-two 0.7681
+    8409 [ 8392.4s]   fold 1 epoch 24/30  loss 0.2738  derived 0.8313  annot 0.7570  worse-of-two 0.7570
+    8501 [ 8484.8s]   fold 1 epoch 25/30  loss 0.2691  derived 0.8324  annot 0.7741  worse-of-two 0.7741
+    8594 [ 8577.4s]   fold 1 epoch 26/30  loss 0.2612  derived 0.8329  annot 0.7845  worse-of-two 0.7845
+    8686 [ 8670.0s]   fold 1 epoch 27/30  loss 0.2527  derived 0.8308  annot 0.7820  worse-of-two 0.7820
+    8779 [ 8762.8s]   fold 1 epoch 28/30  loss 0.2476  derived 0.8323  annot 0.7733  worse-of-two 0.7733
+    8872 [ 8855.3s]   fold 1 epoch 29/30  loss 0.2441  derived 0.8320  annot 0.7718  worse-of-two 0.7718
+    8964 [ 8948.1s]   fold 1 epoch 30/30  loss 0.2418  derived 0.8323  annot 0.7666  worse-of-two 0.7666
+    8988 [ 8971.9s]   fold 1: averaged last 3 epochs, NO selection (derived 0.8322; best single epoch was 21 at 0.8161)
+    8989 [ 8972.5s] fold 2: train 3450 / val 906 (annotated in val: 14)
+    8989 [ 8972.8s] backbone: DINOv2 from /kaggle/input/models/metaresearch/dinov2/pytorch/small/1, dim 768
+    8989 [ 8972.8s]   normalisation from checkpoint: mean [0.485, 0.456, 0.406], std [0.229, 0.224, 0.225]
+    8989 [ 8972.8s]   trainable: last 6 of 12 blocks, 10.7M params
+    8989 [ 8972.9s]   LR: cosine warm restarts, 3 cycle(s) of 10 epochs
+    9083 [ 9066.6s]   fold 2 epoch 1/30  loss 0.3919  derived 0.7370  annot 0.6755  worse-of-two 0.6755
+    9177 [ 9160.6s]   fold 2 epoch 2/30  loss 0.3606  derived 0.7770  annot 0.7937  worse-of-two 0.7770
+    9270 [ 9254.1s]   fold 2 epoch 3/30  loss 0.3436  derived 0.7918  annot 0.7838  worse-of-two 0.7838
+    9364 [ 9347.3s]   fold 2 epoch 4/30  loss 0.3347  derived 0.7998  annot 0.7970  worse-of-two 0.7970
+    9457 [ 9440.7s]   fold 2 epoch 5/30  loss 0.3264  derived 0.8090  annot 0.7899  worse-of-two 0.7899
+    9551 [ 9534.6s]   fold 2 epoch 6/30  loss 0.3180  derived 0.8142  annot 0.7960  worse-of-two 0.7960
+    9645 [ 9628.3s]   fold 2 epoch 7/30  loss 0.3115  derived 0.8156  annot 0.8214  worse-of-two 0.8156
+    9738 [ 9721.3s]   fold 2 epoch 8/30  loss 0.3042  derived 0.8191  annot 0.8344  worse-of-two 0.8191
+    9831 [ 9814.8s]   fold 2 epoch 9/30  loss 0.2990  derived 0.8205  annot 0.8343  worse-of-two 0.8205
+    9925 [ 9908.6s]   fold 2 epoch 10/30  loss 0.2986  derived 0.8207  annot 0.8326  worse-of-two 0.8207
+   10018 [10002.2s]   fold 2 epoch 11/30  loss 0.3194  derived 0.8160  annot 0.8195  worse-of-two 0.8160
+   10112 [10095.4s]   fold 2 epoch 12/30  loss 0.3183  derived 0.8167  annot 0.8238  worse-of-two 0.8167
+   10205 [10188.5s]   fold 2 epoch 13/30  loss 0.3096  derived 0.8109  annot 0.8269  worse-of-two 0.8109
+   10298 [10281.5s]   fold 2 epoch 14/30  loss 0.3029  derived 0.8191  annot 0.8300  worse-of-two 0.8191
+   10391 [10375.0s]   fold 2 epoch 15/30  loss 0.2950  derived 0.8169  annot 0.8426  worse-of-two 0.8169
+   10485 [10468.9s]   fold 2 epoch 16/30  loss 0.2866  derived 0.8164  annot 0.8498  worse-of-two 0.8164
+   10579 [10562.3s]   fold 2 epoch 17/30  loss 0.2812  derived 0.8137  annot 0.8209  worse-of-two 0.8137
+   10672 [10655.3s]   fold 2 epoch 18/30  loss 0.2757  derived 0.8145  annot 0.8581  worse-of-two 0.8145
+   10765 [10748.5s]   fold 2 epoch 19/30  loss 0.2707  derived 0.8140  annot 0.8572  worse-of-two 0.8140
+   10859 [10842.2s]   fold 2 epoch 20/30  loss 0.2679  derived 0.8135  annot 0.8607  worse-of-two 0.8135
+   10952 [10936.0s]   fold 2 epoch 21/30  loss 0.2927  derived 0.8092  annot 0.8180  worse-of-two 0.8092
+   11046 [11029.4s]   fold 2 epoch 22/30  loss 0.2901  derived 0.8077  annot 0.8540  worse-of-two 0.8077
+   11139 [11122.7s]   fold 2 epoch 23/30  loss 0.2822  derived 0.8156  annot 0.8526  worse-of-two 0.8156
+   11233 [11216.4s]   fold 2 epoch 24/30  loss 0.2776  derived 0.8167  annot 0.8675  worse-of-two 0.8167
+   11327 [11310.2s]   fold 2 epoch 25/30  loss 0.2699  derived 0.8107  annot 0.8760  worse-of-two 0.8107
+   11420 [11403.4s]   fold 2 epoch 26/30  loss 0.2615  derived 0.8127  annot 0.8907  worse-of-two 0.8127
+   11513 [11496.6s]   fold 2 epoch 27/30  loss 0.2561  derived 0.8091  annot 0.9086  worse-of-two 0.8091
+   11607 [11590.3s]   fold 2 epoch 28/30  loss 0.2489  derived 0.8078  annot 0.8917  worse-of-two 0.8078
+   11701 [11684.2s]   fold 2 epoch 29/30  loss 0.2448  derived 0.8080  annot 0.9021  worse-of-two 0.8080
+   11794 [11777.6s]   fold 2 epoch 30/30  loss 0.2450  derived 0.8088  annot 0.9098  worse-of-two 0.8088
+   11820 [11803.3s]   fold 2: averaged last 3 epochs, NO selection (derived 0.8083; best single epoch was 10 at 0.8207)
+   11820 [11803.8s] OOF over 2635 studies
+   11820 [11803.9s]   vs derived targets : 0.8205
+   11820 [11803.9s]   vs annotated (33) : 0.8297
+   11820 [11803.9s]   per label (derived targets, n=2635):
+   11820 [11803.9s]       target              n_pos     auc      se   verdict
+   11820 [11803.9s]       ACL                   582   0.829   0.011   measured
+   11820 [11803.9s]       MCL                   413   0.778   0.014   measured
+   11820 [11803.9s]       Medial Meniscus      1417   0.828   0.008   measured
+   11820 [11803.9s]       Lateral Meniscus      666   0.753   0.012   measured
+   11820 [11803.9s]       Medial OA             996   0.848   0.008   measured
+   11820 [11803.9s]       Lateral OA            775   0.799   0.010   measured
+   11820 [11803.9s]       PF OA                1237   0.795   0.009   measured
+   11820 [11803.9s]       Effusion             1559   0.823   0.008   measured
+   11820 [11803.9s]       Synovitis             350   0.848   0.013   measured
+   11820 [11803.9s]       Baker's               636   0.847   0.010   measured
+   11820 [11803.9s]       Contusion             664   0.838   0.010   measured
+   11820 [11803.9s]       Fracture              192   0.860   0.017   measured
+   11820 [11804.0s]   wrote oof_predictions.csv and oof_per_label.csv
+   11820 [11804.0s] submission.csv (3, 13); nulls 0
+   11821 [11804.0s] folds run: 3, mean worse-of-two 0.8211
+   11821 [11805.0s] done
+   11827   cells[i][c] = re.sub('\\\\\|', '|', cell)
+   11828   text = re.sub(r'_', '\_', text) # Escape underscores in display text

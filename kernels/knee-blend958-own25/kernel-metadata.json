@@ -1,0 +1,36 @@
+{
+  "id": "ayushkasare/knee-blend958-own25",
+  "title": "knee-blend958-own25",
+  "code_file": "knee-blend958-own25.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "heliosli/rsna-knee-r6-frozen-fe055406-w1",
+    "nartaa/rsna-knee-publication-swa-weights-20261007",
+    "heliosli/rsna-orthofoundation-fold0-epoch7-20261004"
+  ],
+  "kernel_sources": [
+    "ayushkasare/knee-train-eff320z",
+    "ayushkasare/knee-train-eff320z-b",
+    "ayushkasare/knee-train-eff320z-c",
+    "ayushkasare/knee-train-cnx288ptl",
+    "ayushkasare/knee-train-cnx288ptl-b",
+    "ayushkasare/knee-train-cnx288ptl-c",
+    "ayushkasare/knee-train-cnxzptl",
+    "ayushkasare/knee-train-cnxzptl-b",
+    "ayushkasare/knee-train-cnxzptl-c"
+  ],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
+  "machine_shape": "NvidiaTeslaT4"
+}

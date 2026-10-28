@@ -1,0 +1,178 @@
+       9 RSNA_FOLDS = 5
+       9 RSNA_TIME_BUDGET = 32400
+       9 RSNA_TRAIN_SEED = 7
+       9 RSNA_FOLDS = 5
+       9 RSNA_TIME_BUDGET = 32400
+       9 RSNA_SWA_EPOCHS = 3
+       9 RSNA_WINDOW = 0.35,0.65
+       9 RSNA_TRAIN_SEED = 7
+      16 [    0.4s] input root: /kaggle/input/competitions/rsna-knee-abnormality-detection
+      16 [    0.4s] seeds: data/folds 2026, training 7
+      17 [    1.8s] device: cuda (Tesla T4, sm_75) - kernel launch verified
+      17 [    2.0s] train (4407, 14) test (3, 1)
+      17 [    2.0s] header pass: test
+      17 [    2.2s]   15 test series
+      17 [    2.2s] header pass: train
+      99 [   83.8s]   24371 train series
+     123 [  107.7s] train slots per study: mean 5.24 min 3 max 6
+     123 [  107.7s] cache layout: 3 groups x 3 slices
+     125 [  110.2s] train: laterality tag 2203 (50.0%), text 167 (3.8%), unknown 2037 (46.2%)
+     125 [  110.2s] train: geometric rule agrees with the tag on 2042/2199 studies (92.9%)
+     125 [  110.2s] test: laterality tag 1 (33.3%), unknown 2 (66.7%)
+     125 [  110.2s] test: geometric rule agrees with the tag on 0/1 studies (0.0%)
+     126 [  110.2s] train: cache (4407, 6, 9, 224, 224) = 11.1 GB
+     126 [  110.3s] train: decoding 23089 slot-series
+     126 /tmp/ipykernel_23/2124386133.py:67: RuntimeWarning: 46% of train studies have no laterality, so they are never mirrored to a common convention. Medial and lateral then sit on opposite sides of the image for left and right knees, and four of the twelve targets are side-specific.
+     126   lat_tr, lat_te = lat_of(htr, "train"), lat_of(hte, "test")
+     126 /tmp/ipykernel_23/2124386133.py:67: RuntimeWarning: 67% of test studies have no laterality, so they are never mirrored to a common convention. Medial and lateral then sit on opposite sides of the image for left and right knees, and four of the twelve targets are side-specific.
+     126   lat_tr, lat_te = lat_of(htr, "train"), lat_of(hte, "test")
+     126 /tmp/ipykernel_23/2124386133.py:67: RuntimeWarning: 46% of train studies have no laterality, so they are never mirrored to a common convention. Medial and lateral then sit on opposite sides of the image for left and right knees, and four of the twelve targets are side-specific.
+     126   lat_tr, lat_te = lat_of(htr, "train"), lat_of(hte, "test")
+     126 /tmp/ipykernel_23/2124386133.py:67: RuntimeWarning: 67% of test studies have no laterality, so they are never mirrored to a common convention. Medial and lateral then sit on opposite sides of the image for left and right knees, and four of the twelve targets are side-specific.
+     126   lat_tr, lat_te = lat_of(htr, "train"), lat_of(hte, "test")
+     658 [  642.1s]   train 4096/23089
+    1182 [ 1166.5s]   train 8192/23089
+    1694 [ 1679.0s]   train 12288/23089
+    2227 [ 2211.4s]   train 16384/23089
+    2753 [ 2737.3s]   train 20480/23089
+    3090 [ 3074.3s] train: slice ordering geometry 100.0%
+    3090 [ 3074.3s] train: physical scale applied 8988 (38.9%), skipped_short_fov 14101 (61.1%)
+    3090 [ 3074.3s] train: slices read 207801, decode failures 0, MONOCHROME1 inverted 0
+    3090 [ 3074.6s] test: cache (3, 6, 9, 224, 224) = 0.0 GB
+    3090 [ 3074.6s] test: decoding 14 slot-series
+    3090 /tmp/ipykernel_23/2124386133.py:68: RuntimeWarning: 61% of slots had a field of view at or below crop_mm=160mm, so no physical normalisation was applied to them and their mm/px came from the acquisition. Set RSNA_PAD_SHORT_FOV=1 to pad instead.
+    3090   st_tr, Ctr, Mtr = build_cache(slots_tr, plane_map, lat_tr, "train", n_group)
+    3090 /tmp/ipykernel_23/2124386133.py:68: RuntimeWarning: 61% of slots had a field of view at or below crop_mm=160mm, so no physical normalisation was applied to them and their mm/px came from the acquisition. Set RSNA_PAD_SHORT_FOV=1 to pad instead.
+    3090   st_tr, Ctr, Mtr = build_cache(slots_tr, plane_map, lat_tr, "train", n_group)
+    3092 [ 3077.0s]   test 14/14
+    3092 [ 3077.0s] test: slice ordering geometry 100.0%
+    3092 [ 3077.0s] test: physical scale applied 8 (57.1%), skipped_short_fov 6 (42.9%)
+    3093 [ 3077.0s] test: slices read 126, decode failures 0, MONOCHROME1 inverted 0
+    3093 /tmp/ipykernel_23/2124386133.py:69: RuntimeWarning: 43% of slots had a field of view at or below crop_mm=160mm, so no physical normalisation was applied to them and their mm/px came from the acquisition. Set RSNA_PAD_SHORT_FOV=1 to pad instead.
+    3093   st_te, Cte, Mte = build_cache(slots_te, plane_map, lat_te, "test", n_group)
+    3093 /tmp/ipykernel_23/2124386133.py:69: RuntimeWarning: 43% of slots had a field of view at or below crop_mm=160mm, so no physical normalisation was applied to them and their mm/px came from the acquisition. Set RSNA_PAD_SHORT_FOV=1 to pad instead.
+    3093   st_te, Cte, Mte = build_cache(slots_te, plane_map, lat_te, "test", n_group)
+    3109 [ 3094.1s] rule labels for 4407 studies in 16.8s
+    3190 distilled text model, OOF corr with rules per target:
+    3190   ACL                +0.765
+    3190   MCL                +0.669
+    3190   Medial Meniscus    +0.771
+    3190   Lateral Meniscus   +0.616
+    3190   Medial OA          +0.734
+    3190   Lateral OA         +0.670
+    3190   PF OA              +0.766
+    3190   Effusion           +0.761
+    3190   Synovitis          +0.837
+    3190   Baker's            +0.800
+    3190   Contusion          +0.777
+    3190   Fracture           +0.729
+    3190 [ 3174.7s] text-model weight per target: min 0.22 max 0.29, 0/12 gated out
+    3190 [ 3174.8s] annotated studies: 58
+    3190 [ 3175.0s] supervised 4407 of 4407 studies
+    3190 [ 3175.0s] fold audit:
+    3191 [ 3175.5s]   duplicate check: every near-duplicate report group is inside one fold
+    3191 [ 3175.5s]   class balance: all 5 x 12 cells have >= 10 of each class
+    3191 [ 3176.1s] protocol model: 19 features, derived-OOF macro AUC 0.6006 -> fusion weight 0.10
+    3191 [ 3176.1s] fold 0: train 3505 / val 902 (annotated in val: 9)
+    3215 [ 3199.4s] backbone: DINOv2 from /kaggle/input/models/metaresearch/dinov2/pytorch/small/1, dim 768
+    3215 [ 3199.4s]   trainable: last 6 of 12 blocks, 10.7M params
+    3306 [ 3290.7s]   fold 0 epoch 1/12  loss 0.3707  derived 0.6862  annot 0.6710  worse-of-two 0.6710
+    3395 [ 3379.5s]   fold 0 epoch 2/12  loss 0.3635  derived 0.7067  annot 0.7266  worse-of-two 0.7067
+    3484 [ 3468.3s]   fold 0 epoch 3/12  loss 0.3595  derived 0.7310  annot 0.7218  worse-of-two 0.7218
+    3572 [ 3556.8s]   fold 0 epoch 4/12  loss 0.3525  derived 0.7443  annot 0.7702  worse-of-two 0.7443
+    3661 [ 3645.4s]   fold 0 epoch 5/12  loss 0.3478  derived 0.7498  annot 0.7624  worse-of-two 0.7498
+    3749 [ 3734.1s]   fold 0 epoch 6/12  loss 0.3435  derived 0.7700  annot 0.7898  worse-of-two 0.7700
+    3838 [ 3822.9s]   fold 0 epoch 7/12  loss 0.3384  derived 0.7721  annot 0.7985  worse-of-two 0.7721
+    3927 [ 3911.6s]   fold 0 epoch 8/12  loss 0.3346  derived 0.7803  annot 0.7958  worse-of-two 0.7803
+    4015 [ 4000.2s]   fold 0 epoch 9/12  loss 0.3304  derived 0.7829  annot 0.8059  worse-of-two 0.7829
+    4104 [ 4088.8s]   fold 0 epoch 10/12  loss 0.3283  derived 0.7815  annot 0.7974  worse-of-two 0.7815
+    4193 [ 4177.3s]   fold 0 epoch 11/12  loss 0.3259  derived 0.7828  annot 0.8016  worse-of-two 0.7828
+    4281 [ 4265.9s]   fold 0 epoch 12/12  loss 0.3236  derived 0.7833  annot 0.8016  worse-of-two 0.7833
+    4305 [ 4289.6s]   fold 0: averaged last 3 epochs, NO selection (derived 0.7827; best single epoch was 12 at 0.7833)
+    4305 [ 4290.1s] fold 1: train 3569 / val 838 (annotated in val: 10)
+    4306 [ 4290.4s] backbone: DINOv2 from /kaggle/input/models/metaresearch/dinov2/pytorch/small/1, dim 768
+    4306 [ 4290.4s]   trainable: last 6 of 12 blocks, 10.7M params
+    4394 [ 4378.5s]   fold 1 epoch 1/12  loss 0.3714  derived 0.6994  annot 0.6171  worse-of-two 0.6171
+    4482 [ 4466.7s]   fold 1 epoch 2/12  loss 0.3641  derived 0.7151  annot 0.6213  worse-of-two 0.6213
+    4570 [ 4555.0s]   fold 1 epoch 3/12  loss 0.3568  derived 0.7326  annot 0.6214  worse-of-two 0.6214
+    4658 [ 4643.2s]   fold 1 epoch 4/12  loss 0.3520  derived 0.7474  annot 0.6251  worse-of-two 0.6251
+    4747 [ 4731.4s]   fold 1 epoch 5/12  loss 0.3481  derived 0.7641  annot 0.6305  worse-of-two 0.6305
+    4835 [ 4819.6s]   fold 1 epoch 6/12  loss 0.3439  derived 0.7674  annot 0.6604  worse-of-two 0.6604
+    4923 [ 4907.8s]   fold 1 epoch 7/12  loss 0.3406  derived 0.7781  annot 0.6794  worse-of-two 0.6794
+    5011 [ 4996.2s]   fold 1 epoch 8/12  loss 0.3357  derived 0.7822  annot 0.7047  worse-of-two 0.7047
+    5100 [ 5084.4s]   fold 1 epoch 9/12  loss 0.3315  derived 0.7875  annot 0.7297  worse-of-two 0.7297
+    5188 [ 5172.6s]   fold 1 epoch 10/12  loss 0.3275  derived 0.7901  annot 0.7025  worse-of-two 0.7025
+    5276 [ 5260.8s]   fold 1 epoch 11/12  loss 0.3258  derived 0.7900  annot 0.7059  worse-of-two 0.7059
+    5364 [ 5349.0s]   fold 1 epoch 12/12  loss 0.3240  derived 0.7910  annot 0.6967  worse-of-two 0.6967
+    5386 [ 5370.9s]   fold 1: averaged last 3 epochs, NO selection (derived 0.7907; best single epoch was 9 at 0.7297)
+    5387 [ 5371.5s] fold 2: train 3495 / val 912 (annotated in val: 14)
+    5387 [ 5371.7s] backbone: DINOv2 from /kaggle/input/models/metaresearch/dinov2/pytorch/small/1, dim 768
+    5387 [ 5371.8s]   trainable: last 6 of 12 blocks, 10.7M params
+    5476 [ 5460.5s]   fold 2 epoch 1/12  loss 0.3697  derived 0.7149  annot 0.6127  worse-of-two 0.6127
+    5564 [ 5549.2s]   fold 2 epoch 2/12  loss 0.3616  derived 0.7483  annot 0.7373  worse-of-two 0.7373
+    5653 [ 5638.0s]   fold 2 epoch 3/12  loss 0.3548  derived 0.7613  annot 0.7658  worse-of-two 0.7613
+    5742 [ 5726.6s]   fold 2 epoch 4/12  loss 0.3495  derived 0.7752  annot 0.7896  worse-of-two 0.7752
+    5831 [ 5815.3s]   fold 2 epoch 5/12  loss 0.3463  derived 0.7893  annot 0.7994  worse-of-two 0.7893
+    5919 [ 5903.8s]   fold 2 epoch 6/12  loss 0.3413  derived 0.7948  annot 0.7903  worse-of-two 0.7903
+    6008 [ 5992.4s]   fold 2 epoch 7/12  loss 0.3374  derived 0.7966  annot 0.7805  worse-of-two 0.7805
+    6096 [ 6081.0s]   fold 2 epoch 8/12  loss 0.3343  derived 0.8027  annot 0.7925  worse-of-two 0.7925
+    6185 [ 6169.6s]   fold 2 epoch 9/12  loss 0.3297  derived 0.8059  annot 0.7739  worse-of-two 0.7739
+    6273 [ 6258.1s]   fold 2 epoch 10/12  loss 0.3260  derived 0.8063  annot 0.7793  worse-of-two 0.7793
+    6362 [ 6346.7s]   fold 2 epoch 11/12  loss 0.3242  derived 0.8077  annot 0.7861  worse-of-two 0.7861
+    6451 [ 6435.4s]   fold 2 epoch 12/12  loss 0.3232  derived 0.8078  annot 0.7861  worse-of-two 0.7861
+    6475 [ 6459.4s]   fold 2: averaged last 3 epochs, NO selection (derived 0.8075; best single epoch was 8 at 0.7925)
+    6475 [ 6459.9s] fold 3: train 3507 / val 900 (annotated in val: 16)
+    6476 [ 6460.2s] backbone: DINOv2 from /kaggle/input/models/metaresearch/dinov2/pytorch/small/1, dim 768
+    6476 [ 6460.2s]   trainable: last 6 of 12 blocks, 10.7M params
+    6564 [ 6549.0s]   fold 3 epoch 1/12  loss 0.3705  derived 0.7071  annot 0.7289  worse-of-two 0.7071
+    6653 [ 6637.8s]   fold 3 epoch 2/12  loss 0.3628  derived 0.7269  annot 0.7768  worse-of-two 0.7269
+    6742 [ 6726.6s]   fold 3 epoch 3/12  loss 0.3564  derived 0.7394  annot 0.7891  worse-of-two 0.7394
+    6831 [ 6815.3s]   fold 3 epoch 4/12  loss 0.3505  derived 0.7528  annot 0.7607  worse-of-two 0.7528
+    6919 [ 6903.9s]   fold 3 epoch 5/12  loss 0.3466  derived 0.7585  annot 0.7901  worse-of-two 0.7585
+    7008 [ 6992.6s]   fold 3 epoch 6/12  loss 0.3418  derived 0.7735  annot 0.7851  worse-of-two 0.7735
+    7096 [ 7081.1s]   fold 3 epoch 7/12  loss 0.3385  derived 0.7796  annot 0.8146  worse-of-two 0.7796
+    7185 [ 7169.9s]   fold 3 epoch 8/12  loss 0.3347  derived 0.7832  annot 0.7988  worse-of-two 0.7832
+    7274 [ 7258.7s]   fold 3 epoch 9/12  loss 0.3300  derived 0.7859  annot 0.8069  worse-of-two 0.7859
+    7362 [ 7347.2s]   fold 3 epoch 10/12  loss 0.3280  derived 0.7885  annot 0.8060  worse-of-two 0.7885
+    7451 [ 7435.8s]   fold 3 epoch 11/12  loss 0.3250  derived 0.7896  annot 0.8099  worse-of-two 0.7896
+    7540 [ 7524.6s]   fold 3 epoch 12/12  loss 0.3237  derived 0.7897  annot 0.8076  worse-of-two 0.7897
+    7563 [ 7548.2s]   fold 3: averaged last 3 epochs, NO selection (derived 0.7894; best single epoch was 12 at 0.7897)
+    7564 [ 7548.7s] fold 4: train 3552 / val 855 (annotated in val: 9)
+    7565 [ 7549.0s] backbone: DINOv2 from /kaggle/input/models/metaresearch/dinov2/pytorch/small/1, dim 768
+    7565 [ 7549.1s]   trainable: last 6 of 12 blocks, 10.7M params
+    7653 [ 7637.4s]   fold 4 epoch 1/12  loss 0.3705  derived 0.6851  annot 0.7712  worse-of-two 0.6851
+    7741 [ 7725.6s]   fold 4 epoch 2/12  loss 0.3626  derived 0.7243  annot 0.7682  worse-of-two 0.7243
+    7829 [ 7814.0s]   fold 4 epoch 3/12  loss 0.3575  derived 0.7402  annot 0.7757  worse-of-two 0.7402
+    7917 [ 7902.2s]   fold 4 epoch 4/12  loss 0.3523  derived 0.7581  annot 0.7822  worse-of-two 0.7581
+    8006 [ 7990.4s]   fold 4 epoch 5/12  loss 0.3463  derived 0.7465  annot 0.8222  worse-of-two 0.7465
+    8094 [ 8078.5s]   fold 4 epoch 6/12  loss 0.3429  derived 0.7663  annot 0.8027  worse-of-two 0.7663
+    8182 [ 8166.8s]   fold 4 epoch 7/12  loss 0.3393  derived 0.7755  annot 0.8078  worse-of-two 0.7755
+    8270 [ 8255.0s]   fold 4 epoch 8/12  loss 0.3355  derived 0.7779  annot 0.7875  worse-of-two 0.7779
+    8358 [ 8343.2s]   fold 4 epoch 9/12  loss 0.3316  derived 0.7833  annot 0.8138  worse-of-two 0.7833
+    8447 [ 8431.4s]   fold 4 epoch 10/12  loss 0.3286  derived 0.7864  annot 0.8019  worse-of-two 0.7864
+    8535 [ 8519.6s]   fold 4 epoch 11/12  loss 0.3266  derived 0.7869  annot 0.8019  worse-of-two 0.7869
+    8623 [ 8608.0s]   fold 4 epoch 12/12  loss 0.3254  derived 0.7866  annot 0.7972  worse-of-two 0.7866
+    8646 [ 8630.4s]   fold 4: averaged last 3 epochs, NO selection (derived 0.7869; best single epoch was 11 at 0.7869)
+    8646 [ 8631.0s] OOF over 4407 studies
+    8646 [ 8631.0s]   vs derived targets : 0.7908
+    8646 [ 8631.0s]   vs annotated (58) : 0.7978
+    8646 [ 8631.0s]   per label (derived targets, n=4407):
+    8646 [ 8631.0s]       target              n_pos     auc      se   verdict
+    8646 [ 8631.0s]       ACL                   954   0.798   0.009   measured
+    8646 [ 8631.0s]       MCL                   549   0.771   0.012   measured
+    8646 [ 8631.0s]       Medial Meniscus      1780   0.772   0.007   measured
+    8646 [ 8631.0s]       Lateral Meniscus      799   0.738   0.011   measured
+    8646 [ 8631.0s]       Medial OA             889   0.804   0.009   measured
+    8646 [ 8631.0s]       Lateral OA            673   0.747   0.011   measured
+    8646 [ 8631.0s]       PF OA                1297   0.744   0.009   measured
+    8646 [ 8631.0s]       Effusion             2443   0.807   0.006   measured
+    8646 [ 8631.0s]       Synovitis            1464   0.823   0.007   measured
+    8646 [ 8631.0s]       Baker's              1079   0.854   0.008   measured
+    8646 [ 8631.0s]       Contusion            1046   0.791   0.009   measured
+    8646 [ 8631.0s]       Fracture              305   0.842   0.014   measured
+    8646 [ 8631.1s]   wrote oof_predictions.csv and oof_per_label.csv
+    8646 [ 8631.1s] submission.csv (3, 13); nulls 0
+    8647 [ 8631.1s] folds run: 5, mean worse-of-two 0.7914
+    8647 [ 8632.1s] done
+    8654   cells[i][c] = re.sub('\\\\\|', '|', cell)
+    8654   text = re.sub(r'_', '\_', text) # Escape underscores in display text

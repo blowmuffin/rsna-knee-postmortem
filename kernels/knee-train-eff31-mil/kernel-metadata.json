@@ -1,0 +1,24 @@
+{
+  "id": "ayushkasare/knee-train-eff31-mil",
+  "title": "knee-train-eff31-mil",
+  "code_file": "knee-train-eff31-mil.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": true,
+  "enable_internet": true,
+  "kernel_sources": [
+    "ayushkasare/knee-prep31a",
+    "ayushkasare/knee-prep31b",
+    "ayushkasare/knee-prep31c",
+    "ayushkasare/knee-train-rad"
+  ],
+  "dataset_sources": [
+    "stevenleehans/rsna-knee-llm-report-labels",
+    "marwanmath/resnet-50-radimagenet-marwan"
+  ],
+  "machine_shape": "NvidiaTeslaT4"
+}

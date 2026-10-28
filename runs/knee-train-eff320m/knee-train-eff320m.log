@@ -1,0 +1,29 @@
+[{"stream_name":"stdout","time":10.475493367,"data":"[      8s] pseudo targets: a=0.5 from ['knee-train-rad'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":13.758473488,"data":"[     11s] efficientnet_b0.ra_in1k: 4407 studies, folds [0, 1], 6 epochs, 2 GPUs, pseudo 0.5 ['knee-train-rad']\n"}
+,{"stream_name":"stdout","time":16.011949943,"data":"[      2s] pseudo targets: a=0.5 from ['knee-train-rad'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":16.018602209,"data":"[      2s] pseudo targets: a=0.5 from ['knee-train-rad'], 4407 studies with OOF\n"}
+,{"stream_name":"stderr","time":30.511148752,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":30.513329019,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":1488.293875277,"data":"[   1474s] [gpu1] fold 1 ep 0 loss 0.5363 val macroAUC(vs labels) 0.8268 | data-wait 3s of 1456s\n"}
+,{"stream_name":"stdout","time":1488.299046642,"data":"[   1474s] [gpu0] fold 0 ep 0 loss 0.5360 val macroAUC(vs labels) 0.8330 | data-wait 4s of 1456s\n"}
+,{"stream_name":"stdout","time":2179.889511403,"data":"[   2166s] [gpu1] fold 1 ep 1 loss 0.4696 val macroAUC(vs labels) 0.8632 | data-wait 4s of 692s\n"}
+,{"stream_name":"stdout","time":2199.676758517,"data":"[   2185s] [gpu0] fold 0 ep 1 loss 0.4698 val macroAUC(vs labels) 0.8676 | data-wait 4s of 711s\n"}
+,{"stream_name":"stdout","time":2876.379017076,"data":"[   2862s] [gpu1] fold 1 ep 2 loss 0.4440 val macroAUC(vs labels) 0.8759 | data-wait 4s of 696s\n"}
+,{"stream_name":"stdout","time":2912.606142422,"data":"[   2898s] [gpu0] fold 0 ep 2 loss 0.4451 val macroAUC(vs labels) 0.8800 | data-wait 3s of 713s\n"}
+,{"stream_name":"stdout","time":3568.446139663,"data":"[   3554s] [gpu1] fold 1 ep 3 loss 0.4289 val macroAUC(vs labels) 0.8862 | data-wait 4s of 692s\n"}
+,{"stream_name":"stdout","time":3682.014735636,"data":"[   3668s] [gpu0] fold 0 ep 3 loss 0.4293 val macroAUC(vs labels) 0.8920 | data-wait 3s of 769s\n"}
+,{"stream_name":"stdout","time":4261.333128776,"data":"[   4247s] [gpu1] fold 1 ep 4 loss 0.4187 val macroAUC(vs labels) 0.8889 | data-wait 4s of 693s\n"}
+,{"stream_name":"stdout","time":4394.02466272,"data":"[   4380s] [gpu0] fold 0 ep 4 loss 0.4200 val macroAUC(vs labels) 0.8933 | data-wait 4s of 712s\n"}
+,{"stream_name":"stdout","time":4953.272882993,"data":"[   4939s] [gpu1] fold 1 ep 5 loss 0.4128 val macroAUC(vs labels) 0.8906 | data-wait 4s of 692s\n"}
+,{"stream_name":"stdout","time":4953.838331814,"data":"[   4940s] [gpu1] fold 1 saved in 82 min\n"}
+,{"stream_name":"stdout","time":5104.171119429,"data":"[   5090s] [gpu0] fold 0 ep 5 loss 0.4127 val macroAUC(vs labels) 0.8935 | data-wait 4s of 710s\n"}
+,{"stream_name":"stdout","time":5104.488133003,"data":"[   5090s] [gpu0] fold 0 saved in 85 min\n"}
+,{"stream_name":"stdout","time":5107.989483874,"data":"[   5106s] trained folds [0, 1]; OOF macroAUC vs labels: 0.8919\n"}
+,{"stream_name":"stdout","time":5108.010400239,"data":"[   5106s] OOF macroAUC vs gold (32 studies): 0.9019\n"}
+,{"stream_name":"stderr","time":5111.171632702,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5111.171659067,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5111.512014917,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5111.51204421,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5112.740641819,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5113.978512359,"data":"[NbConvertApp] Writing 494531 bytes to __results__.html\n"}
+]

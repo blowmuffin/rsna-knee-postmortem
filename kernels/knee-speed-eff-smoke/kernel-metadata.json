@@ -1,0 +1,21 @@
+{
+  "id": "ayushkasare/knee-speed-eff-smoke",
+  "title": "knee-speed-eff-smoke",
+  "code_file": "knee-speed-eff-smoke.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": true,
+  "enable_internet": true,
+  "kernel_sources": [
+    "ayushkasare/knee-prep-smoke"
+  ],
+  "dataset_sources": [
+    "stevenleehans/rsna-knee-llm-report-labels",
+    "marwanmath/resnet-50-radimagenet-marwan"
+  ],
+  "machine_shape": "NvidiaTeslaT4"
+}

@@ -1,0 +1,180 @@
+{
+  "a5_eligible": 3,
+  "a5_ineligible": 0,
+  "arm_flip_tta": false,
+  "arm_reduction": "prob_mean",
+  "asset_fallback_used": [],
+  "branch_agreement": {
+    "ACL": {
+      "R_C": 1.0,
+      "T_C": 1.0,
+      "T_R": 1.0,
+      "w_coat_family": 0.3,
+      "w_raptor_public": 0.45,
+      "w_transformer": 0.25
+    },
+    "Baker's": {
+      "R_C": 1.0,
+      "T_C": 1.0,
+      "T_R": 1.0,
+      "w_coat_family": 0.248,
+      "w_raptor_public": 0.372,
+      "w_transformer": 0.38
+    },
+    "Contusion": {
+      "R_C": 1.0,
+      "T_C": 0.5,
+      "T_R": 0.5,
+      "w_coat_family": 0.248,
+      "w_raptor_public": 0.372,
+      "w_transformer": 0.38
+    },
+    "Effusion": {
+      "R_C": 1.0,
+      "T_C": 0.5,
+      "T_R": 0.5,
+      "w_coat_family": 0.248,
+      "w_raptor_public": 0.372,
+      "w_transformer": 0.38
+    },
+    "Fracture": {
+      "R_C": 1.0,
+      "T_C": 0.5,
+      "T_R": 0.5,
+      "w_coat_family": 0.3,
+      "w_raptor_public": 0.45,
+      "w_transformer": 0.25
+    },
+    "Lateral Meniscus": {
+      "R_C": 0.5,
+      "T_C": 0.5,
+      "T_R": 1.0,
+      "w_coat_family": 0.4,
+      "w_raptor_public": 0.6,
+      "w_transformer": 0.0
+    },
+    "Lateral OA": {
+      "R_C": 1.0,
+      "T_C": 0.5,
+      "T_R": 0.5,
+      "w_coat_family": 0.3,
+      "w_raptor_public": 0.45,
+      "w_transformer": 0.25
+    },
+    "MCL": {
+      "R_C": 0.5,
+      "T_C": 0.5,
+      "T_R": 1.0,
+      "w_coat_family": 0.248,
+      "w_raptor_public": 0.372,
+      "w_transformer": 0.38
+    },
+    "Medial Meniscus": {
+      "R_C": 0.5,
+      "T_C": 0.5,
+      "T_R": -0.5,
+      "w_coat_family": 0.32,
+      "w_raptor_public": 0.48,
+      "w_transformer": 0.2
+    },
+    "Medial OA": {
+      "R_C": 0.5,
+      "T_C": -0.5,
+      "T_R": -1.0,
+      "w_coat_family": 0.248,
+      "w_raptor_public": 0.372,
+      "w_transformer": 0.38
+    },
+    "PF OA": {
+      "R_C": 1.0,
+      "T_C": 1.0,
+      "T_R": 1.0,
+      "w_coat_family": 0.248,
+      "w_raptor_public": 0.372,
+      "w_transformer": 0.38
+    },
+    "Synovitis": {
+      "R_C": 0.5,
+      "T_C": 0.5,
+      "T_R": 1.0,
+      "w_coat_family": 0.248,
+      "w_raptor_public": 0.372,
+      "w_transformer": 0.38
+    }
+  },
+  "coat_family_members_present": [
+    "d4_swa3",
+    "global96_top3",
+    "repairv1_top3",
+    "resgated_top3"
+  ],
+  "coat_family_members_used": [
+    "resgated_top3",
+    "global96_top3",
+    "d4_swa3",
+    "repairv1_top3"
+  ],
+  "coat_family_pairwise_spearman": {
+    "d4_swa3~global96_top3": 0.833333,
+    "d4_swa3~repairv1_top3": 0.791667,
+    "d4_swa3~resgated_top3": 0.833333,
+    "global96_top3~repairv1_top3": 0.791667,
+    "global96_top3~resgated_top3": 0.708333,
+    "repairv1_top3~resgated_top3": 0.791667
+  },
+  "coat_family_weights": {
+    "d4_swa3": 0.25,
+    "global96_top3": 0.25,
+    "repairv1_top3": 0.25,
+    "resgated_top3": 0.25
+  },
+  "config": {
+    "a5_blend": "reassign",
+    "arm_flip_tta": false,
+    "arm_reduction": "prob_mean",
+    "arm_weights": null,
+    "base_coat_w": 0.62,
+    "blend_space": "probit",
+    "coat_route": {
+      "ACL": 0.75,
+      "Fracture": 0.75,
+      "Lateral Meniscus": 1.0,
+      "Lateral OA": 0.75,
+      "Medial Meniscus": 0.8
+    },
+    "family_mode": "prob_logit_half",
+    "family_weights": "equal",
+    "flip_tta_budget_frac": 0.55,
+    "flip_tta_reverse_w": 0.14285714285714285,
+    "global_asset_fallback": true,
+    "outer_mode": "flat3",
+    "private_alpha": 0.4,
+    "private_alpha_by_label": {},
+    "require_coat_members": 0,
+    "route_shrink": 1.0
+  },
+  "family_reduction": "half_probit_rank_mean_half_logit_mean_v6",
+  "outer_mode": "probit_flat3",
+  "preset": "v6a",
+  "raptor_arm_weights": {
+    "maxspan-v5": 0.6,
+    "maxspan-v5-reverse": 0.1,
+    "native384-v8": 0.2,
+    "native384dense-v10": 0.1
+  },
+  "spearman_vs_parent_formula": {
+    "ACL": 1.0,
+    "Baker's": 1.0,
+    "Contusion": 1.0,
+    "Effusion": 1.0,
+    "Fracture": 1.0,
+    "Lateral Meniscus": 1.0,
+    "Lateral OA": 1.0,
+    "MCL": 1.0,
+    "Medial Meniscus": 0.5,
+    "Medial OA": 0.5,
+    "PF OA": 1.0,
+    "Synovitis": 1.0
+  },
+  "spearman_vs_parent_formula_mean": 0.916667
+}

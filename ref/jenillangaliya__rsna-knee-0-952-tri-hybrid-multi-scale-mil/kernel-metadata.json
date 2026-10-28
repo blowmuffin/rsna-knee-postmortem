@@ -1,0 +1,27 @@
+{
+  "id": "jenillangaliya/rsna-knee-0-952-tri-hybrid-multi-scale-mil",
+  "id_no": 138038784,
+  "title": "RSNA Knee 0.952: Tri-Hybrid Multi-Scale MIL",
+  "code_file": "rsna-knee-0-952-tri-hybrid-multi-scale-mil.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "",
+    "",
+    "nartaa/rsna-knee-publication-swa-weights-20261007"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:81b1e7c4b4f0f2a7e0a33943c95754b1b7af6b30d65221633a284b6b601cd84a",
+  "machine_shape": "NvidiaTeslaT4"
+}

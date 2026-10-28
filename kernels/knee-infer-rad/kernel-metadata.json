@@ -1,0 +1,17 @@
+{
+  "id": "ayushkasare/knee-infer-rad",
+  "title": "knee-infer-rad",
+  "code_file": "knee-infer-rad.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": false,
+  "enable_internet": false,
+  "kernel_sources": [
+    "ayushkasare/knee-train-rad"
+  ],
+  "dataset_sources": []
+}

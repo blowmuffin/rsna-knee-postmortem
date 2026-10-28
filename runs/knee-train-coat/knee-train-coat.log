@@ -1,0 +1,57 @@
+[{"stream_name":"stdout","time":10.897537349,"data":"[      9s] coatnet_0_rw_224.sw_in1k: 4407 studies, folds [0, 1, 2, 3, 4], 6 epochs, 2 GPUs, pseudo 0.0 []\n"}
+,{"stream_name":"stderr","time":27.130768952,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":27.151934618,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":66.05054631,"data":"/kaggle/src/script.py:421: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":66.050596971,"data":"  sched.step()\n"}
+,{"stream_name":"stderr","time":66.150501169,"data":"/kaggle/src/script.py:421: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":66.150539987,"data":"  sched.step()\n"}
+,{"stream_name":"stdout","time":1055.7083046,"data":"[   1044s] [gpu0] fold 0 ep 0 loss 0.5535 val macroAUC(vs labels) 0.7384 | data-wait 8s of 1019s\n"}
+,{"stream_name":"stdout","time":1068.528914651,"data":"[   1057s] [gpu1] fold 1 ep 0 loss 0.5497 val macroAUC(vs labels) 0.7368 | data-wait 8s of 1032s\n"}
+,{"stream_name":"stdout","time":2047.828392941,"data":"[   2036s] [gpu0] fold 0 ep 1 loss 0.5166 val macroAUC(vs labels) 0.7621 | data-wait 8s of 992s\n"}
+,{"stream_name":"stdout","time":2067.708498765,"data":"[   2056s] [gpu1] fold 1 ep 1 loss 0.5108 val macroAUC(vs labels) 0.7808 | data-wait 8s of 999s\n"}
+,{"stream_name":"stdout","time":3041.408198533,"data":"[   3030s] [gpu0] fold 0 ep 2 loss 0.4869 val macroAUC(vs labels) 0.8219 | data-wait 8s of 994s\n"}
+,{"stream_name":"stdout","time":3068.33588528,"data":"[   3057s] [gpu1] fold 1 ep 2 loss 0.4820 val macroAUC(vs labels) 0.8213 | data-wait 8s of 1001s\n"}
+,{"stream_name":"stdout","time":4037.504760333,"data":"[   4026s] [gpu0] fold 0 ep 3 loss 0.4543 val macroAUC(vs labels) 0.8449 | data-wait 9s of 996s\n"}
+,{"stream_name":"stdout","time":4071.179622593,"data":"[   4060s] [gpu1] fold 1 ep 3 loss 0.4510 val macroAUC(vs labels) 0.8424 | data-wait 9s of 1003s\n"}
+,{"stream_name":"stdout","time":5032.134809607,"data":"[   5021s] [gpu0] fold 0 ep 4 loss 0.4262 val macroAUC(vs labels) 0.8575 | data-wait 9s of 995s\n"}
+,{"stream_name":"stdout","time":5073.824014969,"data":"[   5062s] [gpu1] fold 1 ep 4 loss 0.4250 val macroAUC(vs labels) 0.8551 | data-wait 9s of 1003s\n"}
+,{"stream_name":"stdout","time":6027.224626859,"data":"[   6016s] [gpu0] fold 0 ep 5 loss 0.4064 val macroAUC(vs labels) 0.8606 | data-wait 8s of 995s\n"}
+,{"stream_name":"stdout","time":6027.333993963,"data":"[   6016s] [gpu0] fold 0 saved in 100 min\n"}
+,{"stream_name":"stderr","time":6028.928510352,"data":"/kaggle/src/script.py:421: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":6028.92856645,"data":"  sched.step()\n"}
+,{"stream_name":"stdout","time":6077.094953005,"data":"[   6066s] [gpu1] fold 1 ep 5 loss 0.4062 val macroAUC(vs labels) 0.8563 | data-wait 8s of 1003s\n"}
+,{"stream_name":"stdout","time":6077.204352242,"data":"[   6066s] [gpu1] fold 1 saved in 101 min\n"}
+,{"stream_name":"stderr","time":6078.736246172,"data":"/kaggle/src/script.py:421: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":6078.736281912,"data":"  sched.step()\n"}
+,{"stream_name":"stdout","time":7008.698788577,"data":"[   6997s] [gpu0] fold 2 ep 0 loss 0.5606 val macroAUC(vs labels) 0.7477 | data-wait 8s of 980s\n"}
+,{"stream_name":"stdout","time":7079.357448205,"data":"[   7068s] [gpu1] fold 3 ep 0 loss 0.5548 val macroAUC(vs labels) 0.7171 | data-wait 8s of 1001s\n"}
+,{"stream_name":"stdout","time":7988.81436519,"data":"[   7977s] [gpu0] fold 2 ep 1 loss 0.5248 val macroAUC(vs labels) 0.7834 | data-wait 8s of 980s\n"}
+,{"stream_name":"stdout","time":8081.68644508,"data":"[   8070s] [gpu1] fold 3 ep 1 loss 0.5217 val macroAUC(vs labels) 0.7655 | data-wait 8s of 1002s\n"}
+,{"stream_name":"stdout","time":8969.579341192,"data":"[   8958s] [gpu0] fold 2 ep 2 loss 0.4977 val macroAUC(vs labels) 0.8333 | data-wait 8s of 981s\n"}
+,{"stream_name":"stdout","time":9085.149583832,"data":"[   9074s] [gpu1] fold 3 ep 2 loss 0.4952 val macroAUC(vs labels) 0.7917 | data-wait 9s of 1003s\n"}
+,{"stream_name":"stdout","time":9948.295015748,"data":"[   9937s] [gpu0] fold 2 ep 3 loss 0.4657 val macroAUC(vs labels) 0.8496 | data-wait 8s of 979s\n"}
+,{"stream_name":"stdout","time":10086.441154933,"data":"[  10075s] [gpu1] fold 3 ep 3 loss 0.4676 val macroAUC(vs labels) 0.8252 | data-wait 8s of 1001s\n"}
+,{"stream_name":"stdout","time":10926.469180673,"data":"[  10915s] [gpu0] fold 2 ep 4 loss 0.4376 val macroAUC(vs labels) 0.8645 | data-wait 8s of 978s\n"}
+,{"stream_name":"stdout","time":11088.986390986,"data":"[  11078s] [gpu1] fold 3 ep 4 loss 0.4384 val macroAUC(vs labels) 0.8485 | data-wait 8s of 1003s\n"}
+,{"stream_name":"stdout","time":11905.626627877,"data":"[  11894s] [gpu0] fold 2 ep 5 loss 0.4161 val macroAUC(vs labels) 0.8670 | data-wait 8s of 979s\n"}
+,{"stream_name":"stdout","time":11905.725432524,"data":"[  11894s] [gpu0] fold 2 saved in 98 min\n"}
+,{"stream_name":"stderr","time":11907.281165977,"data":"/kaggle/src/script.py:421: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":11907.281202846,"data":"  sched.step()\n"}
+,{"stream_name":"stdout","time":12093.398854619,"data":"[  12082s] [gpu1] fold 3 ep 5 loss 0.4168 val macroAUC(vs labels) 0.8519 | data-wait 9s of 1004s\n"}
+,{"stream_name":"stdout","time":12093.501482225,"data":"[  12082s] [gpu1] fold 3 saved in 100 min\n"}
+,{"stream_name":"stdout","time":12920.558451438,"data":"[  12909s] [gpu0] fold 4 ep 0 loss 0.5537 val macroAUC(vs labels) 0.7243 | data-wait 9s of 1014s\n"}
+,{"stream_name":"stdout","time":13941.506675633,"data":"[  13930s] [gpu0] fold 4 ep 1 loss 0.5162 val macroAUC(vs labels) 0.7742 | data-wait 8s of 1021s\n"}
+,{"stream_name":"stdout","time":14961.984677914,"data":"[  14951s] [gpu0] fold 4 ep 2 loss 0.4848 val macroAUC(vs labels) 0.8208 | data-wait 8s of 1020s\n"}
+,{"stream_name":"stdout","time":15978.984605738,"data":"[  15968s] [gpu0] fold 4 ep 3 loss 0.4549 val macroAUC(vs labels) 0.8444 | data-wait 8s of 1017s\n"}
+,{"stream_name":"stdout","time":16997.653281592,"data":"[  16986s] [gpu0] fold 4 ep 4 loss 0.4275 val macroAUC(vs labels) 0.8589 | data-wait 8s of 1019s\n"}
+,{"stream_name":"stdout","time":18019.814082825,"data":"[  18008s] [gpu0] fold 4 ep 5 loss 0.4093 val macroAUC(vs labels) 0.8596 | data-wait 8s of 1022s\n"}
+,{"stream_name":"stdout","time":18019.910790993,"data":"[  18008s] [gpu0] fold 4 saved in 102 min\n"}
+,{"stream_name":"stdout","time":18022.528741717,"data":"[  18021s] trained folds [0, 1, 2, 3, 4]; OOF macroAUC vs labels: 0.8586\n"}
+,{"stream_name":"stdout","time":18022.547657511,"data":"[  18021s] OOF macroAUC vs gold (58 studies): 0.8890\n"}
+,{"stream_name":"stderr","time":18025.213012988,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":18025.213048596,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":18025.438365293,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":18025.438393733,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":18026.094695004,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":18027.43453954,"data":"[NbConvertApp] Writing 432472 bytes to __results__.html\n"}
+]

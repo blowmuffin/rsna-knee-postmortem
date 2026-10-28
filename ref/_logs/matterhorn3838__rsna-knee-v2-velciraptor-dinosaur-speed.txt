@@ -1,0 +1,99 @@
+      10 Writing /tmp/raptor_run.py
+      33 device cuda | gpus 2 | torch 2.10.0+cu128
+      33 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+      33 test studies 3 | test series 15
+      33 XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda
+      34 device cuda | gpus 2 | torch 2.10.0+cu128
+      34 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+      34 test studies 3 | test series 15
+      34 XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda
+      35 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      35 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      37 [gpu cuda:0] loaded 1 arm(s) | 3s
+      37 [gpu cuda:0] loaded 1 arm(s) | 3s
+      38 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      38 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      39 [gpu cuda:1] loaded 1 arm(s) | 6s
+      39 [gpu cuda:1] loaded 1 arm(s) | 6s
+      42   [pre] 3/3 | 9s
+      42 [pre] done: 3 studies in 3s (procs 4 x fastread study_lut 32/16 threads)
+      42   [pre] 3/3 | 9s
+      42 [pre] done: 3 studies in 3s (procs 4 x fastread study_lut 32/16 threads)
+      55   [gpu] 3/3 | 22s
+      55 [gpu] done: 3/3 studies on 2 device(s) | 22s
+      55   [gpu] 3/3 | 22s
+      55 [gpu] done: 3/3 studies on 2 device(s) | 22s
+      55 [blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt': np.float64(1.0)}
+      55 wrote /kaggle/working/raptor_sub.csv | 3 rows x 13 cols
+      55                                                 StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture
+      55 1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.5              1.0               0.0        1.0         0.0    0.0       0.5        0.5      1.0        0.5       0.0
+      55 1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  1.0  1.0              0.5               0.5        0.0         0.5    1.0       1.0        1.0      0.5        1.0       1.0
+      55 1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  0.5  0.0              0.0               1.0        0.5         1.0    0.5       0.0        0.0      0.0        0.0       0.5
+      55 DONE 22s
+      56 [blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt': np.float64(1.0)}
+      56 wrote /kaggle/working/raptor_sub.csv | 3 rows x 13 cols
+      56                                                 StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture
+      56 1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.5              1.0               0.0        1.0         0.0    0.0       0.5        0.5      1.0        0.5       0.0
+      56 1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  1.0  1.0              0.5               0.5        0.0         0.5    1.0       1.0        1.0      0.5        1.0       1.0
+      56 1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  0.5  0.0              0.0               1.0        0.5         1.0    0.5       0.0        0.0      0.0        0.0       0.5
+      56 DONE 22s
+      60 RAPTOR_STAGE_DONE seconds 50
+      60 0, 0 MiB
+      60 1, 0 MiB
+      60 0, 0 MiB
+      60 1, 0 MiB
+      60 0, Tesla T4, 15360 MiB
+      60 1, Tesla T4, 15360 MiB
+      60 Filesystem      Size  Used Avail Use% Mounted on
+      60 shm              14G     0   14G   0% /dev/shm
+      60 /dev/loop2       20G  864K   20G   1% /kaggle/working
+      60 overlay         8.0T  7.0T  1.1T  87% /
+      60 0, Tesla T4, 15360 MiB
+      60 1, Tesla T4, 15360 MiB
+      60 Filesystem      Size  Used Avail Use% Mounted on
+      60 shm              14G     0   14G   0% /dev/shm
+      60 /dev/loop2       20G  864K   20G   1% /kaggle/working
+      60 overlay         8.0T  7.0T  1.1T  87% /
+      68 Processing /tmp/probe/wheels/pydicom-3.0.1-py3-none-any.whl
+      68 Processing /tmp/probe/wheels/timm-1.0.25-py3-none-any.whl
+      68 Installing collected packages: timm, pydicom
+      68   Attempting uninstall: timm
+      69 Processing /tmp/probe/wheels/pydicom-3.0.1-py3-none-any.whl
+      69 Processing /tmp/probe/wheels/timm-1.0.25-py3-none-any.whl
+      69 Installing collected packages: timm, pydicom
+      69   Attempting uninstall: timm
+      69     Found existing installation: timm 1.0.26
+      69     Uninstalling timm-1.0.26:
+      69       Successfully uninstalled timm-1.0.26
+      69     Found existing installation: timm 1.0.26
+      69     Uninstalling timm-1.0.26:
+      69       Successfully uninstalled timm-1.0.26
+      70   Attempting uninstall: pydicom
+      70     Found existing installation: pydicom 3.0.2
+      70     Uninstalling pydicom-3.0.2:
+      70   Attempting uninstall: pydicom
+      70     Found existing installation: pydicom 3.0.2
+      70     Uninstalling pydicom-3.0.2:
+      70       Successfully uninstalled pydicom-3.0.2
+      70       Successfully uninstalled pydicom-3.0.2
+      71 Successfully installed pydicom-3.0.1 timm-1.0.25
+      71 Successfully installed pydicom-3.0.1 timm-1.0.25
+      84 ASSETS_READY /kaggle/input/datasets/heliosli/rsna-orthofoundation-fold0-epoch7-20261004 /kaggle/input/datasets/heliosli/rsna-knee-compact-v1 /kaggle/input/competitions/rsna-knee-abnormality-detection seconds 73.3
+      84 WORKER_START 0 studies 2 dicom files 419
+      84 WORKER_START 1 studies 1 dicom files 138
+      84 WORKER_START 0 studies 2 dicom files 419
+      84 WORKER_START 1 studies 1 dicom files 138
+      89 PROGRESS worker 0 of 2 (starting)
+      89 PROGRESS worker 1 of 1 (starting)
+      89 PROGRESS worker 0 of 2 (starting)
+      89 PROGRESS worker 1 of 1 (starting)
+     149 PROGRESS worker 0 of 2 (starting)
+     149 PROGRESS worker 1 of 1 (starting)
+     149 PROGRESS worker 0 of 2 (starting)
+     149 PROGRESS worker 1 of 1 (starting)
+     189 CONTROLLER_DONE {"status": "PASS", "rows": 3, "scored": 3, "fallback_studies": 0, "seconds": 105.1, "per_study_mean": {"decode_s": 39.7, "render_s": 1.867, "gpu_s": 19.7, "windows": 528.7}, "worker_exit_codes": {"0": 0, "1": 0}}
+     189 CONTROLLER_DONE {"status": "PASS", "rows": 3, "scored": 3, "fallback_studies": 0, "seconds": 105.1, "per_study_mean": {"decode_s": 39.7, "render_s": 1.867, "gpu_s": 19.7, "windows": 528.7}, "worker_exit_codes": {"0": 0, "1": 0}}
+     189 OURS_STAGE_COMPLETE {"status": "PASS", "arm": "E_lrprior", "rows": 3, "scored": 3, "fallback_studies": 0, "seconds": 105.1, "per_study_mean": {"decode_s": 39.7, "render_s": 1.867, "gpu_s": 19.7, "windows": 528.7}, "gpus": ["Tesla T4", "Tesla T4"]}
+     190 NOTEBOOK_COMPLETE {"weights": {"raptor": 0.7, "ours": 0.3}, "rows": 3, "raptor_failed": 0, "ours_failed": 0, "raptor_seconds": 49.9, "total_seconds": 179.4, "spearman_raptor_raw_vs_sub": {"ACL": 1.0, "MCL": 1.0, "Medial Meniscus": 1.0, "Lateral Meniscus": 1.0, "Medial OA": 1.0, "Lateral OA": 1.0, "PF OA": 1.0, "Effusion": 1.0, "Synovitis": 1.0, "Baker's": 1.0, "Contusion": 1.0, "Fracture": 1.0}, "
+     192   cells[i][c] = re.sub('\\\\\|', '|', cell)
+     192   text = re.sub(r'_', '\_', text) # Escape underscores in display text

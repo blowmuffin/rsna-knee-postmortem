@@ -1,0 +1,27 @@
+{
+  "id": "nururrr/rsna-knee-detailed-baseline",
+  "id_no": 130118872,
+  "title": "rsna-knee-detailed-baseline",
+  "code_file": "rsna-knee-detailed-baseline.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "nururrr/rsna-backbone",
+    "nururrr/rsna-torch-wheels",
+    "nururrr/rsna-torch-wheels-cu126"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machine_shape": "None"
+}

@@ -1,0 +1,143 @@
+      18 cuda:0 probe PASS (compute 7.5)
+      18 cuda:1 probe PASS (compute 7.5)
+      18 devices: ['cuda:0', 'cuda:1']
+      18 [startup] imports+GPU preflight: 8.62s
+      18 [    0.0s] input root: /kaggle/input/competitions/rsna-knee-abnormality-detection
+      18 [startup] competition-root preflight: 0.04s
+      19 [    0.2s] memory: 29.5 GB available, 13.3 GB to the cache; sizing for 4407 train + 1322 test studies -> 1 group(s) of 3 = 3 slices per slot
+      19 [    0.2s] cache layout: 1 groups x 3 slices = 3 per slot
+      19 [    0.6s] weights package: 20 member(s) from /kaggle/input/datasets/pilkwang/rsna-knee-weights; 2 device(s)
+      19 [    0.7s] test header pass: 15 series
+      19 [    0.7s] decode group 1/1: 336px x 12 slices, crop 130.0 mm -> 20 member(s)
+      19 [    0.7s] test laterality: 1 from the tag, 2 from geometry, 0 unresolved; tag and geometry disagree on 0 (0.0% of the tagged)
+      19 [    0.7s] test g1: cache (3, 6, 12, 336, 336) = 0.0 GB
+      19 [    0.7s] test g1: ordering 12 slot-series (469 slice headers)
+      21 [    2.6s] test g1: ordered 12/12 by geometry (0 kept arbitrary) in 2s
+      21 [    2.6s] test g1: decoding 12 slot-series
+      22 [    3.6s]   test g1 12/12
+      22 [    3.6s] test g1: 12/12 slots filled
+      48 [   29.5s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      49 [   30.6s] e5427d6c21: fingerprint matches within 2.8e-06
+      50 [   31.6s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      51 [   32.1s]   banked e5427d6c21 fold 2 (10 window(s); 1 member(s)
+      51 [   32.5s] d47313baef: fingerprint matches within 2.1e-06
+      52 [   33.3s]   banked d47313baef fold 2 (10 window(s); 2 member(s)
+      52 [   33.6s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      52 [   34.0s] ea3fbf6edf: fingerprint matches within 3.8e-06
+      53 [   34.9s]   banked ea3fbf6edf fold 2 (10 window(s); 3 member(s)
+      54 [   35.1s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      54 [   35.5s] 5f8ba4c5ea: fingerprint matches within 3.3e-06
+      55 [   36.4s]   banked 5f8ba4c5ea fold 2 (10 window(s); 4 member(s)
+      55 [   36.7s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      55 [   37.1s] 013dc75703: fingerprint matches within 3.3e-06
+      56 [   37.9s]   banked 013dc75703 fold 4 (10 window(s); 5 member(s)
+      57 [   38.2s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      57 [   38.6s] 2f7e785e82: fingerprint matches within 1.1e-06
+      58 [   39.4s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      58 [   39.7s]   banked 2f7e785e82 fold 4 (10 window(s); 6 member(s)
+      59 [   40.1s] 8baecb9d1b: fingerprint matches within 2.4e-06
+      59 [   40.9s]   banked 8baecb9d1b fold 4 (10 window(s); 7 member(s)
+      60 [   41.2s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      60 [   41.6s] 44bc3c6f14: fingerprint matches within 3.8e-06
+      61 [   42.5s]   banked 44bc3c6f14 fold 0 (10 window(s); 8 member(s)
+      62 [   43.2s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      62 [   43.7s] 44128e3ff3: fingerprint matches within 4.3e-06
+      63 [   44.5s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      63 [   44.8s]   banked 44128e3ff3 fold 0 (10 window(s); 9 member(s)
+      64 [   45.2s] 84079fe8cb: fingerprint matches within 1.2e-06
+      64 [   46.1s]   banked 84079fe8cb fold 3 (10 window(s); 10 member(s)
+      65 [   46.4s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      65 [   46.9s] ed427aa10a: fingerprint matches within 4.6e-06
+      66 [   47.7s]   banked ed427aa10a fold 0 (10 window(s); 11 member(s)
+      67 [   48.0s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      67 [   48.4s] 2dce50ebd9: fingerprint matches within 3.8e-06
+      68 [   49.3s]   banked 2dce50ebd9 fold 0 (10 window(s); 12 member(s)
+      68 [   49.6s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      68 [   50.1s] 3d1f4c48fc: fingerprint matches within 1.3e-06
+      69 [   50.9s]   banked 3d1f4c48fc fold 4 (10 window(s); 13 member(s)
+      70 [   51.4s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      70 [   51.8s] 91f171fe6f: fingerprint matches within 2.6e-06
+      71 [   52.7s]   banked 91f171fe6f fold 1 (10 window(s); 14 member(s)
+      72 [   53.0s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      72 [   53.4s] 8476b29285: fingerprint matches within 4.4e-06
+      73 [   54.2s]   banked 8476b29285 fold 1 (10 window(s); 15 member(s)
+      73 [   54.5s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      73 [   54.9s] 72081758ce: fingerprint matches within 2.9e-06
+      75 [   55.7s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      75 [   56.0s]   banked 72081758ce fold 3 (10 window(s); 16 member(s)
+      75 [   56.4s] 7f8321affc: fingerprint matches within 2.9e-06
+      76 [   57.2s]   banked 7f8321affc fold 3 (10 window(s); 17 member(s)
+      76 [   57.4s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      76 [   57.8s] 1e553ba481: fingerprint matches within 1.7e-06
+      77 [   58.7s]   banked 1e553ba481 fold 1 (10 window(s); 18 member(s)
+      78 [   59.3s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      78 [   59.7s] b7c37cc80e: fingerprint matches within 1.1e-06
+      79 [   60.6s]   banked b7c37cc80e fold 3 (10 window(s); 19 member(s)
+      80 [   60.9s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      80 [   61.3s] f335c812fe: fingerprint matches within 2.9e-06
+      81 [   62.1s]   banked f335c812fe fold 1 (10 window(s); 20 member(s)
+      81 [   62.4s] DINOv2 fail-closed gate PASS: 20/20 fingerprints and members
+      81 [   62.4s] submission.csv = exact no-jitter public-frontier rank mean of 20 member(s); (3, 13)
+      81 [   62.4s] done
+      85 series root: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+      85 3 test studies, 3 with series metadata
+      87 loaded m_f0.pt  fold 0  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+      88 loaded m_f1.pt  fold 1  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+      89 loaded m_f2.pt  fold 2  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+      90 loaded m_f3.pt  fold 3  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+      91 loaded m_f4.pt  fold 4  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+      91 5 fold models ready | input norm: none
+      91 device cuda | amp bfloat16 (on=True) | workers 4 | chunk 48 | micro 8
+      95   3/3  0.1m  eta 0.0m
+      95 inference done in 0.1 min
+      99 [   81.0s] test-e10 laterality: 1 from the tag, 2 from geometry, 0 unresolved; tag and geometry disagree on 0 (0.0% of the tagged)
+      99 [   81.0s] test-e10: cache (3, 3, 8, 224, 224) = 0.0 GB
+      99 [   81.0s] test-e10: ordering 8 slot-series (366 slice headers)
+     100 [   81.9s] test-e10: ordered 8/8 by geometry (0 kept arbitrary) in 1s
+     100 [   81.9s] test-e10: decoding 8 slot-series
+     101 [   82.3s]   test-e10 8/8
+     101 [   82.3s] test-e10: 8/8 slots filled
+     103 [Rad-dual5] twin public-v15 families complete (/kaggle/input/datasets/prvsiyan/rsna-knee-v52-radimagenet-heads-20260812/v52_radimagenet_heads.pt; /kaggle/input/datasets/antoinegg1/rsna-knee-e9-radimagenet-heads-v15/v52_radimagenet_heads.pt)
+     105 [   86.8s] test-e13 laterality: 1 from the tag, 2 from geometry, 0 unresolved; tag and geometry disagree on 0 (0.0% of the tagged)
+     105 [   86.8s] test-e13: cache (3, 4, 8, 224, 224) = 0.0 GB
+     105 [   86.8s] test-e13: ordering 11 slot-series (444 slice headers)
+     106 [   87.8s] test-e13: ordered 11/11 by geometry (0 kept arbitrary) in 1s
+     106 [   87.8s] test-e13: decoding 11 slot-series
+     107 [   88.3s]   test-e13 11/11
+     107 [   88.3s] test-e13: 11/11 slots filled
+     108 [Rad-dual5] E13 FS-crop member complete at Rad-block weight 0.50 (/kaggle/input/notebooks/sofiaanjenje/rsna-knee-e13-train/rsna_rad_e11/v52_e11_heads.pt)
+     108 [Rad-dual5] twin E10 branches complete at alpha=0.50; preserved raw=["Baker's", 'Fracture']
+     108 [   89.4s] test-v48-pass2 laterality: 1 from the tag, 2 from geometry, 0 unresolved; tag and geometry disagree on 0 (0.0% of the tagged)
+     108 [   89.4s] test-v48-pass2: cache (3, 4, 8, 224, 224) = 0.0 GB
+     108 [   89.4s] test-v48-pass2: ordering 7 slot-series (185 slice headers)
+     108 [   89.9s] test-v48-pass2: ordered 7/7 by geometry (0 kept arbitrary) in 0s
+     108 [   89.9s] test-v48-pass2: decoding 7 slot-series
+     109 [   90.2s]   test-v48-pass2 7/7
+     109 [   90.2s] test-v48-pass2: 7/7 slots filled
+     109 [Rad-dual5] V48 second E13 pass complete at alpha 0.15 on the E11 slot layout
+     110 [Rad-dual5] V48 reference branch complete; reference-v15=/kaggle/input/datasets/antoinegg1/rsna-knee-e9-radimagenet-heads-v15/v52_radimagenet_heads.pt; e13-two-pass=/kaggle/input/notebooks/sofiaanjenje/rsna-knee-e13-train/rsna_rad_e11/v52_e11_heads.pt; second_alpha=0.15; encoder=/kaggle/input/datasets/marwanmath/resnet-50-radimagenet-marwan/ResNet50.pt; elapsed=0.2m
+     110 device cuda | gpus 2 | torch 2.10.0+cu128
+     110 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+     110 test studies 3 | test series 15
+     114 [arm 0] maxspan-v5 | img 336 | slices 64 | span 0.02-0.98 | windows 62 | res 384 | 4s
+     135   [arm 0] 3/3 | 26s
+     136 [arm 0] done + freed | 26s
+     141 [arm 1] native384dense-v10 | img 384 | slices 64 | span 0.02-0.98 | windows 62 | res 384 | 31s
+     147   [arm 1] 3/3 | 37s
+     147 [arm 1] done + freed | 37s
+     148 [arm 2] maxspan-v5-reverse | img 336 | slices 64 | span 0.02-0.98 | windows 62 | res 384 | 39s
+     154   [arm 2] 3/3 | 45s
+     155 [arm 2] done + freed | 45s
+     159 [arm 3] native384-v8 | img 384 | slices 44 | span 0.06-0.94 | windows 42 | res 384 | 49s
+     173   [arm 3] 3/3 | 64s
+     174 [arm 3] done + freed | 64s
+     174 [blend] global probability mean w={'maxspan-v5': np.float64(0.6), 'native384dense-v10': np.float64(0.1), 'maxspan-v5-reverse': np.float64(0.1), 'native384-v8': np.float64(0.2)}
+     174 wrote /kaggle/working/_raptor.csv | 3 rows x 13 cols
+     174                                                 StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture
+     174 1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.0              1.0               0.0        1.0         0.0    0.0       0.5        0.0      1.0        0.0       0.0
+     174 1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  0.5  1.0              0.5               1.0        0.5         0.5    0.5       1.0        1.0      0.5        1.0       1.0
+     174 1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  1.0  0.5              0.0               0.5        0.0         1.0    1.0       0.0        0.5      0.0        0.5       0.5
+     174 DONE 64s
+     221 [coat-arm] blended OUR resgated e4/e6/e8 into the public Raptor arm (private alpha 0.400; 3 studies)
+     227   cells[i][c] = re.sub('\\\\\|', '|', cell)
+     227   text = re.sub(r'_', '\_', text) # Escape underscores in display text

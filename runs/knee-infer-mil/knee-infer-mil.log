@@ -1,0 +1,14 @@
+[{"stream_name":"stdout","time":24.150344973,"data":"[     22s] /kaggle/input/notebooks/ayushkasare/knee-train-eff31-mil: efficientnet_b0.ra_in1k, 31 slices, prep v1\n"}
+,{"stream_name":"stdout","time":32.723244826,"data":"[     30s] /kaggle/input/notebooks/ayushkasare/knee-train-rad31-mil: radimagenet_resnet50, 31 slices, prep v1\n"}
+,{"stream_name":"stdout","time":32.723314712,"data":"[     30s] 10 fold models\n"}
+,{"stream_name":"stdout","time":39.334679452,"data":"[     37s] test 0/3 studies, failed slots so far 0, sides {'L': 1, 'R': 0}\n"}
+,{"stream_name":"stdout","time":54.426578316,"data":"[     52s] test done: 3 studies, failed slots 0, sides {'L': 1, 'R': 2}, missing 0\n"}
+,{"stream_name":"stdout","time":54.433828542,"data":"[     52s] prep v1: 10 models done at 22s on cuda\n"}
+,{"stream_name":"stdout","time":54.453255026,"data":"[     52s] submission written (3, 12)\n"}
+,{"stream_name":"stderr","time":61.548709038,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":61.548744285,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":61.827589419,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":61.827622461,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":62.676128539,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":63.850003417,"data":"[NbConvertApp] Writing 466969 bytes to __results__.html\n"}
+]

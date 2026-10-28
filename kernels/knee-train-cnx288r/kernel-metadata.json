@@ -1,0 +1,26 @@
+{
+  "id": "ayushkasare/knee-train-cnx288r",
+  "title": "knee-train-cnx288r",
+  "code_file": "knee-train-cnx288r.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": true,
+  "enable_internet": true,
+  "kernel_sources": [
+    "ayushkasare/knee-prep320a",
+    "ayushkasare/knee-prep320b",
+    "ayushkasare/knee-prep320c",
+    "ayushkasare/knee-prep320d",
+    "ayushkasare/knee-train-rad"
+  ],
+  "dataset_sources": [
+    "stevenleehans/rsna-knee-llm-report-labels",
+    "marwanmath/resnet-50-radimagenet-marwan",
+    "ayushkasare/knee-rubric-labels"
+  ],
+  "machine_shape": "NvidiaTeslaT4"
+}

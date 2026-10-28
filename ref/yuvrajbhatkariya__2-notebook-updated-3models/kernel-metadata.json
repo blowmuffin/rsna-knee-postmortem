@@ -1,0 +1,23 @@
+{
+  "id": "yuvrajbhatkariya/2-notebook-updated-3models",
+  "id_no": 131296069,
+  "title": "2_notebook_updated(3models)",
+  "code_file": "2-notebook-updated-3models.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [
+    "yuvrajbhatkariya/data-2"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machine_shape": "None"
+}

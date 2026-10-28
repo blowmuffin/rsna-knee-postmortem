@@ -1,0 +1,35 @@
+{
+  "id": "nguyenkhaho/train-data-4-claude",
+  "id_no": 132677152,
+  "title": "train data 4 claude ",
+  "code_file": "train-data-4-claude.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "nguyenkhaho/head-384",
+    "dreaddevelopment/raptor-knee-maxspan",
+    "dreaddevelopment/raptor-knee-widedense",
+    "tonylica/rsna-knee-bend-dinov3-0917-repro-assets"
+  ],
+  "kernel_sources": [
+    "nguyenkhaho/train-data-2",
+    "nguyenkhaho/train-data-4-claude",
+    "romantamrazov/rsna-knee-dinosaur-the-last"
+  ],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [
+    "metaresearch/dinov2/PyTorch/small/1",
+    "ziyu2002/resnet34/PyTorch/default/1"
+  ],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machine_shape": "NvidiaTeslaT4"
+}

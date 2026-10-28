@@ -1,0 +1,21 @@
+{
+  "id": "ayushkasare/knee-train-rad",
+  "title": "knee-train-rad",
+  "code_file": "knee-train-rad.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": true,
+  "enable_internet": true,
+  "kernel_sources": [
+    "ayushkasare/knee-prep"
+  ],
+  "dataset_sources": [
+    "stevenleehans/rsna-knee-llm-report-labels",
+    "marwanmath/resnet-50-radimagenet-marwan"
+  ],
+  "machine_shape": "NvidiaTeslaT4"
+}

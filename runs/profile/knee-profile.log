@@ -1,0 +1,17 @@
+[{"stream_name":"stdout","time":19.549485127,"data":"read 0.053s/study (65.4 MB/s), decompress 0.034s/study\n"}
+,{"stream_name":"stdout","time":19.560099742,"data":"Filesystem                                                              Size  Used Avail Use% Mounted on\n"}
+,{"stream_name":"stdout","time":19.560120838,"data":"/dev/loop2                                                               20G  116K   20G   1% /kaggle/working\n"}
+,{"stream_name":"stdout","time":19.560126382,"data":"overlay                                                                 8.0T  6.9T  1.1T  87% /\n"}
+,{"stream_name":"stdout","time":19.560131146,"data":"192.168.5.2:/data/kaggle-script-versions/354584916/output/dlu77imc4izt  100T   85T   16T  85% /kaggle/input/notebooks/ayushkasare/knee-prep\n"}
+,{"stream_name":"stdout","time":19.560135952,"data":"\n"}
+,{"stream_name":"stdout","time":19.560335727000002,"data":"cpus 4 ram GB 33.658314752\n"}
+,{"stream_name":"stdout","time":34.291028939,"data":"efficientnet_b0.ra_in1k: 0.365s per 160-image step on 1 T4 = 438 img/s, mem 7.3 GB\n"}
+,{"stream_name":"stdout","time":48.695084955,"data":"coatnet_0_rw_224.sw_in1k: 0.982s per 160-image step on 1 T4 = 163 img/s, mem 14.5 GB\n"}
+,{"stream_name":"stdout","time":53.685339135,"data":"resnet50: 0.575s per 160-image step on 1 T4 = 278 img/s, mem 7.6 GB\n"}
+,{"stream_name":"stderr","time":58.774641593,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":58.774669097,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":58.982337791,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":58.982363336,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":59.585382649,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":60.717914111,"data":"[NbConvertApp] Writing 285337 bytes to __results__.html\n"}
+]

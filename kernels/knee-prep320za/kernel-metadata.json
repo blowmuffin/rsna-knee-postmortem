@@ -1,0 +1,15 @@
+{
+  "id": "ayushkasare/knee-prep320za",
+  "title": "knee-prep320za",
+  "code_file": "knee-prep320za.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": false,
+  "enable_internet": false,
+  "kernel_sources": [],
+  "dataset_sources": []
+}

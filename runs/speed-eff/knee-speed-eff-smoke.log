@@ -1,0 +1,13 @@
+[{"stream_name":"stdout","time":10.533738785,"data":"[      8s] efficientnet_b0.ra_in1k: 400 studies, folds [0], 2 epochs, 2 GPUs\n"}
+,{"stream_name":"stderr","time":21.114675571,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":509.618136665,"data":"[    507s] fold 0 ep 0 loss 0.4432 val macroAUC(vs labels) 0.4583 | data-wait 1s of 485s\n"}
+,{"stream_name":"stdout","time":961.149038176,"data":"[    959s] fold 0 ep 1 loss 0.2523 val macroAUC(vs labels) 0.5417 | data-wait 1s of 452s\n"}
+,{"stream_name":"stdout","time":961.236187716,"data":"[    959s] fold 0 saved in 16 min\n"}
+,{"stream_name":"stdout","time":961.253472485,"data":"[    959s] OOF macroAUC vs labels: 0.5417\n"}
+,{"stream_name":"stderr","time":968.078952147,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":968.078982929,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":968.307754663,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":968.307781544,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":969.24608195,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":970.556228734,"data":"[NbConvertApp] Writing 417963 bytes to __results__.html\n"}
+]

@@ -1,0 +1,307 @@
+source,type,name,n_nb,best,best_nb
+/competitions/rsna-knee-abnormality-detection,?,RSNA Knee Abnormality Detection,1338,0.958,heliosli/blend-mine-in-private-lb-luck-to-all-upvoters
+/models/metaresearch/dinov2/PyTorch/small/1,MODEL_INSTANCE,DINO v2,508,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/pilkwang/rsna-knee-llm-labels,DATASET_VERSIO,RSNA Knee LLM-read report labels,415,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/pilkwang/rsna-knee-weights,DATASET_VERSIO,RSNA Knee weights,381,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/marwanmath/resnet-50-radimagenet-marwan,DATASET_VERSIO,resnet-50-RadImageNet-Marwan,332,0.956,rjings/rsna-versia-8-multiscale-r224mask
+[Private Datasource],DATASET_VERSIO,[Private Datasource],319,0.957,picond/rsna-knee-9576-r6-v1-fixed-readable
+/datasets/mattiaangeli/knee-mri-fold-weights,DATASET_VERSIO,knee mri fold weights,316,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/antoinegg1/rsna-knee-e9-radimagenet-heads-v15,DATASET_VERSIO,RSNA Knee E9 RadImageNet Heads V15,313,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/dreaddevelopment/raptor-knee-maxspan,DATASET_VERSIO,Knee MRI - Max-Span Dense Corpus,279,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/prvsiyan/rsna-knee-v52-radimagenet-heads-20260812,DATASET_VERSIO,RSNA Knee V52 RadImageNet Heads 20260812,249,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/code/sofiaanjenje/rsna-knee-e11-train,KERNEL_VERSION,RSNA Knee E11 train,248,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/antoinegg1/rsna-knee-e11-diverse-heads-v20,DATASET_VERSIO,RSNA Knee E11 Diverse RadImageNet Heads V20,246,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/code/sofiaanjenje/rsna-knee-e13-train,KERNEL_VERSION,RSNA Knee E13 train,240,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/nartaa/rsna-knee-publication-swa-weights-20261007,DATASET_VERSIO,RSNA Knee selected SWA weights 0949 and 0945,210,0.958,heliosli/blend-mine-in-private-lb-luck-to-all-upvoters
+/datasets/dreaddevelopment/raptor-knee-native384dense,DATASET_VERSIO,Knee MRI - Native 384 Dense Corpus,200,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/dreaddevelopment/raptor-knee-native384,DATASET_VERSIO,Knee MRI - Native 384 Corpus,198,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/stevenleehans/rsna-knee-llm-report-labels,DATASET_VERSIO,RSNA Knee LLM Report Labels,190,0.947,tahmidtawsif/rsna-knee-abnormality-detection-v12
+/datasets/mattiaangeli/rsna-knee-coat-resgated-ep10-top3,DATASET_VERSIO,RSNA Knee CoAt Residual Gated Epoch10 Top3,190,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/mattiaangeli/opencv-python-headless-4120088-x86,DATASET_VERSIO,OpenCV Python Headless 4.12.0.88 x86_64 wheel,183,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/tonylica/rsna2026-models,DATASET_VERSIO,RSNA2026 Models,139,0.936,shashwat1729/rsna-knee-infer-gpu-anhad
+/datasets/heliosli/rsna-orthofoundation-fold0-epoch7-20261004,DATASET_VERSIO,RSNA OrthoFoundation Fold0 Epoch7 Private Wei,134,0.958,heliosli/blend-mine-in-private-lb-luck-to-all-upvoters
+/models/metaresearch/dinov2/PyTorch/base/1,MODEL_INSTANCE,DINO v2,126,0.956,lavinwins/top-1-gold
+/datasets/mattiaangeli/rsna-knee-radimagenet-foldsv1-heads,DATASET_VERSIO,RSNA Knee RadImageNet folds_v1 heads,118,0.936,shashwat1729/rsna-knee-infer-gpu-anhad
+/datasets/pilkwang/pilkwang-public-dataset-for-notebooks-figures,DATASET_VERSIO,Pilkwang_Public_Dataset_for_Notebooks_Figures,116,0.943,shouxier/notebook67c0b2f6ba
+/datasets/lixin73/rsna-knee-llm-report-labels-sol56,DATASET_VERSIO,RSNA Knee LLM Report Labels (GPT-5.6-Sol),102,0.936,shashwat1729/rsna-knee-infer-gpu-anhad
+/datasets/tonylica/rsna-knee-bend-dinov3-0917-repro-assets,DATASET_VERSIO,RSNA Knee DINO RadImageNet Raptor Assets,91,0.943,sushanthtiruvaipati/rsna-knee-dinosaur-v5-meniscus10-specialist
+/datasets/mattiaangeli/rsna-knee-coatnet-d4-depthzone-swa3-b2,DATASET_VERSIO,RSNA Knee CoAtNet D4 Depth-Zone SWA3 B2,89,0.956,rjings/rsna-versia-8-multiscale-r224mask
+/datasets/dreaddevelopment/raptor-knee-widedense,DATASET_VERSIO,Knee MRI model weights: twelve findings,87,0.955,varianceofx/rsna-knee-quad-b1
+/datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader,DATASET_VERSIO,RSNA Knee 2.5D ConvNeXt reader,86,0.957,goodpjw2008/rsna-knee-coatnet-r6-2-5d-mil-lb-0-957
+/datasets/mattiaangeli/rsna-knee-coatnet-global96-top3,DATASET_VERSIO,RSNA Knee CoAtNet Global96 Gold Top3,72,0.956,lavinwins/top-1-gold
+/datasets/heliosli/rsna-knee-compact-r7cnxfsss,DATASET_VERSIO,RSNA Knee Compact R7 CNX FS SS,54,0.957,laimerbotrolenk/rsna-four-model-ensemble
+/datasets/heliosli/rsna-knee-compact-v1,DATASET_VERSIO,RSNA Knee Compact v1,53,0.956,rudrpratapsingh/rsna-knee-four-public-models-one-rank-blend
+/datasets/mattiaangeli/rsna-knee-rad-calibration,DATASET_VERSIO,RSNA Knee Rad Calibration,34,0.935,hdhsjdjd/rsna-knee-raptor-v45-w065
+/datasets/royceplayz/rsna-medicalnet-resnet50-weights,DATASET_VERSIO,rsna-medicalnet-resnet50-weights,29,0.936,shashwat1729/rsna-knee-infer-gpu-anhad
+/datasets/dreaddevelopment/raptor-knee-arms,DATASET_VERSIO,raptor-knee-arms,26,0.954,isotriage/rsna-knee-quad-b2
+/datasets/sohaibanwaar1203/kneemridataset,DATASET_VERSIO,kneeMRIdataset,23,0.927,shashwat1729/rsna-knee-infer-gpu-nishantk-fixc
+/datasets/dreaddevelopment/raptor-knee-arms-x,DATASET_VERSIO,raptor-knee-arms-x,22,0.954,isotriage/rsna-knee-quad-b2
+/code/romantamrazov/rsna-knee-dinosaur-the-last,KERNEL_VERSION,RSNA Knee | DINOsaur the last? 🦖,22,0.937,romantamrazov/rsna-knee-dinosaur-v4
+/datasets/dreaddevelopment/knee-raptor-corpus-ext,DATASET_VERSIO,"Knee MRI preprocessed slice stacks, part 2 of",20,0.0,yugeshkctheaiman/kneedetect
+/datasets/dreaddevelopment/knee-raptor-corpus,DATASET_VERSIO,"Knee MRI preprocessed slice stacks, part 1 of",20,0.0,yugeshkctheaiman/kneedetect
+/datasets/dreaddevelopment/raptor-knee-finespacing,DATASET_VERSIO,Knee MRI - Fine Spacing Corpus,17,0.943,rogersjohnson/rsna-blend-d4-repro
+/datasets/matteonaccarato/resnet34-imagenet-pth,DATASET_VERSIO,resnet34-imagenet.pth,16,0.699,ziyiming/rsna-exp-005-labels-axial-fold0
+/code/nvap2011/rsna-knee-w01-stage-00-disagreement-aware-repor,KERNEL_VERSION,RSNA Knee W01 — Stage 00: disagreement-aware ,15,0.902,nguyenminhquanhcmus/rsna-knee-w01-stage-04-six-slot-dinov2-s-five-s
+/models/timm/tf-efficientnet/PyTorch/tf-efficientnet-b3/1,MODEL_INSTANCE,EfficientNet,15,0.927,shashwat1729/rsna-knee-infer-gpu-nishantk-fixc
+/models/mrquadian/biomedclip/PyTorch/default/1,MODEL_INSTANCE,biomedclip,15,0.927,shashwat1729/rsna-knee-infer-gpu-nishantk-fixc
+/code/blacklions/report-teacher-anatomy-aware-hierarchical-multimod,KERNEL_VERSION,Report-Teacher Anatomy-aware Hierarchical Mul,15,0.927,shashwat1729/rsna-knee-infer-gpu-nishantk-fixc
+/code/gourabroy553/rsna-knee-hybrid-dino-radiomics,KERNEL_VERSION,rsna-knee-hybrid-dino-radiomics,15,0.927,shashwat1729/rsna-knee-infer-gpu-nishantk-fixc
+/datasets/renta0426/rsna-knee-public0033-meniscus-bag-v1,DATASET_VERSIO,RSNA Knee public0033 Meniscus10 fullfit infer,15,0.945,sujanmajhisuzan/rsna-knee-tri-specialist-superstack
+/code/nvap2011/rsna-knee-w01-stage-0-5-part-1,KERNEL_VERSION,RSNA Knee W01 — Stage 0.5: Part 1 ,14,0.902,nguyenminhquanhcmus/rsna-knee-w01-stage-04-six-slot-dinov2-s-five-s
+/datasets/anhadmahajan06/images-for-competition-notebook,DATASET_VERSIO,Images for Competition Notebook,13,0.936,shashwat1729/rsna-knee-infer-gpu-anhad
+/code/nvap2011/sna-knee-w01-stage-0-5-part-2,KERNEL_VERSION,SNA Knee W01 — Stage 0.5: Part 2 ,13,0.902,nguyenminhquanhcmus/rsna-knee-w01-stage-04-six-slot-dinov2-s-five-s
+/code/nvap2011/rsna-knee-w01-stage-0-5-part-3,KERNEL_VERSION,RSNA Knee W01 — Stage 0.5: Part 3,12,0.902,nguyenminhquanhcmus/rsna-knee-w01-stage-04-six-slot-dinov2-s-five-s
+/code/nguyenminhquanhcmus/rsna-knee-w01-stage-0-5-part-4,KERNEL_VERSION,RSNA Knee W01 — Stage 0.5: Part 4,11,0.902,nguyenminhquanhcmus/rsna-knee-w01-stage-04-six-slot-dinov2-s-five-s
+/datasets/heliosli/rsna-knee-r6-frozen-fe055406,DATASET_VERSIO,RSNA Knee R6 Frozen fe055406,10,0.957,yuvrajlamba01/rsna-knee-research-optimized
+/code/kritikabenjwal/rsna-knee-labelrefine-mil,KERNEL_VERSION,rsna-knee-labelrefine-mil,9,0.0,kritikabenjwal/rsna-knee-spatialcache
+/models/metaresearch/dinov2/PyTorch/large/1,MODEL_INSTANCE,DINO v2,7,0.932,pranjalverma08/rsna-knee-climbing-up-the-hill-the-ensemble-way
+/datasets/ricecakar/rsna-knee-band32-fast3,DATASET_VERSIO,RSNA Knee band32 fast three,7,0.941,valentinonguyen/knee-sub-band32w15
+/datasets/heliosli/rsna-knee-compact-r6cnxfsss,DATASET_VERSIO,RSNA Knee Compact r6cnxfsss,7,0.956,heliosli/rsna-knee-blend-gold-old-dataset
+/datasets/prvsiyan/orthodiffusion-official-knee-mri-foundation,DATASET_VERSIO,OrthoDiffusion Knee MRI Foundation Weights,6,0.936,shashwat1729/rsna-knee-infer-gpu-hsv44fixc-calw
+/datasets/lixin73/rsna-knee-train-checkpoints,DATASET_VERSIO,rsna-knee-train-checkpoints,6,0.933,macmo1/rsna-knee-new-branch-lixin-w10
+/models/rainduck32/swin-tiny-patch4-window7-224/Transformers/default/1,MODEL_INSTANCE,swin-tiny-patch4-window7-224,5,0.613,antoniorotundo2/rsna-knee-swin-tiny
+/code/nguyenminhquanhcmus/rsna-knee-w01-stage-01-resume-epoch-28,KERNEL_VERSION,RSNA Knee W01 — Stage 01: resume epoch 28,5,0.902,nguyenminhquanhcmus/rsna-knee-w01-stage-04-six-slot-dinov2-s-five-s
+/datasets/beraterolelk/istanbul-real-estate-2024-anonymized,DATASET_VERSIO,Istanbul Real Estate 2024 Anonymized,5,0.956,kiza123123/rsna-knee-sub3-multi-scale-quad-arm-foundation
+/datasets/barun2104/rsna-knee-mri-processed-3d-volumes,DATASET_VERSIO,RSNA Knee MRI - Processed 3D Volumes,5,0.943,innshrestha/rsna-knee-public-pipeline-slice-measured-0-943-n
+/datasets/dreaddevelopment/rsna-knee-labels,DATASET_VERSIO,Knee MRI — LLM Report-Distilled Soft Labels,4,0.0,toodumb/cache-gen-augmentations-resnet34-linearslotmix
+/datasets/tim9510019/rsna-knee-v34-master-models,DATASET_VERSIO,RSNA Knee V34 True Master Models,4,0.915,hdhsjdjd/rsna-knee-raptor-v36-w030
+/datasets/yunusgmsoy/rsna-knee-llm-labels-4-source-merged,DATASET_VERSIO,RSNA Knee LLM Labels — 4-Source Merged,4,0.926,paiky1995/rsna-knee-0-926-lb-coatnet-fine-tune-blend
+/code/nishantkharga/rsna-knee-v16-slothead-train-nk,KERNEL_VERSION,RSNA Knee: V16 SlotHead train NK,4,0.935,sardorrazikov/rsna-fork-fanch-gated
+/datasets/abhinav4516788/rsna-25d-preprocessed-train,DATASET_VERSIO,rsna-25d-preprocessed-train,4,0.0,abhinavreddy6480/rsna-phase1-part4
+/code/abhinav4516788/rsna-phase-1-nlp-pseudo-labels,KERNEL_VERSION,RSNA-Phase-1-NLP-Pseudo-Labels,4,0.0,abhinavreddy6480/rsna-phase-3-multiview-vit
+/code/abhinav4516788/rsna-phase1-part2,KERNEL_VERSION,RSNA_PHASE1-PART2,4,0.0,abhinavreddy6480/rsna-phase-3-multiview-vit
+/code/abhinav4516788/rsna-phase1-part3,KERNEL_VERSION,RSNA_PHASE1-PART3,4,0.0,abhinavreddy6480/rsna-phase-3-multiview-vit
+/code/abhinavreddy6480/rsna-phase1-part4,KERNEL_VERSION,RSNA_PHASE1-PART4__,4,0.0,abhinavreddy6480/rsna-phase-3-multiview-vit
+/datasets/sadamtorres/rsna-wheels,DATASET_VERSIO,rsna-wheels,4,0.892,sadamtorres/dinov2-dual-llm-pseudo-labels-0-892
+/code/abhinav4516788/notebook20a9a75bc3,KERNEL_VERSION,notebook20a9a75bc3,4,0.0,abhinavreddy6480/rsna-phase1-part4
+/models/puffinlynx/paraphrase-multilingual-minilm-l12-v2/PyTorch/default/1,MODEL_INSTANCE,paraphrase-multilingual-MiniLM-L12-v2,4,0.729,kritikabenjwal/rsna-knee-frozen-attention-cv-ensemble
+/code/yahyaismail12/rsna-role2-shard-13,KERNEL_VERSION,RSNA Role2 Shard 13,3,0.0,yahyaismail12/rsna-role2-validate-all
+/code/colachiang/mri-test,KERNEL_VERSION,結合多切面MRI特徵與注意力聚合之膝關節異常辨識實驗 - test,3,0.673,colachiang/knee-mri-rank-ensemble
+/code/dreaddevelopment/knee-mri-twelve-findings-from-a-single-model,KERNEL_VERSION,Knee MRI: twelve findings from a single model,3,0.0,kritikabenjwal/rsna-knee-own-arm-train
+/code/quannguyen0501/130mm-320-stage0-5-preprocessing-part1,KERNEL_VERSION,130mm 320 stage0.5-preprocessing part1,3,0.0,quannguyen0501/130mm-320-stage0-5-preprocessing-part4
+/code/dreaddevelopment/knee-mri-training-the-twelve-finding-model,KERNEL_VERSION,Knee MRI: training the twelve-finding model,3,0.0,kritikabenjwal/rsna-knee-own-arm-train
+/datasets/flight0234/rsna-knee-hybrid-report-labels,DATASET_VERSIO,RSNA Knee hybrid report labels,3,0.911,andreluizpedroso/rsna-knee-hybrid-radimagenet-llm
+/datasets/mattiaangeli/rsna-knee-cnx-m448-f0-public,DATASET_VERSIO,RSNA Knee ConvNeXt M448 Public Fold 0,3,0.943,sushanthtiruvaipati/rsna-knee-d4-public0946-no-correction
+/datasets/dreaddevelopment/raptor-cnn336,DATASET_VERSIO,raptor-cnn336,3,0.941,beraterolelk/0-941-rsna-probe22-v8rev-arm
+/datasets/pytorch/resnet18,DATASET_VERSIO,ResNet-18,3,0.798,paiky1995/rsna-knee-the-data-then-a-simple-baseline
+/datasets/sadamtorres/rsna-ft-a,DATASET_VERSIO,rsna-ft-a,3,0.892,sadamtorres/dinov2-dual-llm-pseudo-labels-0-892
+/datasets/tamerlanomralinov/knee-tools,DATASET_VERSIO,knee-tools,3,0.75,tamerlanomralinov/knee-submit-baseline
+/datasets/barun2104/rsna-knee-stratified-folds-and-llm-soft-labels,DATASET_VERSIO,RSNA Knee - Stratified Folds & LLM Soft Label,3,0.0,josefrancacer/p3-versionm
+/datasets/nartaa/rsna-knee-s6fall-weights,DATASET_VERSIO,RSNA Knee S6 ConvNeXt all-data weights 0950,3,0.957,laimerbotrolenk/rsna-four-model-ensemble
+/models/qwen-lm/qwen2.5/Transformers/7b/1,MODEL_INSTANCE,Qwen2.5,3,0.542,thesharifzade/rsna-knee-aze-team
+/models/manojkumarcs28/qwen3-8b/PyTorch/qwen3-8b/1,MODEL_INSTANCE,Qwen3-8B,3,0.5,naemamohmed/knee-baseline
+/code/pilkwang/rsna-knee-baseline-v1,KERNEL_VERSION,RSNA Knee baseline v1,3,0.86,flight0234/rsna-knee-baseline-dual-grouped-folds
+/code/yahyaismail12/rsna-role2-shard-02,KERNEL_VERSION,RSNA Role2 Shard 02,3,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-03,KERNEL_VERSION,RSNA Role2 Shard 03,3,0.0,yahyaismail12/rsna-role2-validate-all
+/models/elizavetanew/efficientnet_b0/PyTorch/efficientnet_b0_rwightman-7f5810bc/1,MODEL_INSTANCE,EfficientNet_b0,3,0.81,songoku2005/rsnakad
+/datasets/abhinav4516788/rsna-yolo-knee-detector,DATASET_VERSIO,rsna-yolo-knee-detector,3,0.0,abhinavreddy6480/rsna-phase-2-dicom-prep-part3
+/code/yahyaismail12/rsna-role2-shard-00,KERNEL_VERSION,RSNA Role2 Shard 00,3,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-01,KERNEL_VERSION,RSNA Role2 Shard 01,3,0.0,yahyaismail12/rsna-role2-validate-all
+/code/kritikabenjwal/rsna-knee-ft-lab,KERNEL_VERSION,rsna-knee-ft-lab,3,0.875,kritikabenjwal/rsna-knee-submit
+/code/yahyaismail12/rsna-role2-shard-16,KERNEL_VERSION,RSNA Role2 Shard 16,3,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-04,KERNEL_VERSION,RSNA Role2 Shard 04,3,0.0,yahyaismail12/rsna-role2-validate-all
+/datasets/sadamtorres/rsna-ft-b,DATASET_VERSIO,rsna-ft-b,3,0.892,sadamtorres/dinov2-dual-llm-pseudo-labels-0-892
+/code/yahyaismail12/rsna-role2-shard-06,KERNEL_VERSION,RSNA Role2 Shard 06,3,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-05,KERNEL_VERSION,RSNA Role2 Shard 05,3,0.0,yahyaismail12/rsna-role2-validate-all
+/datasets/bliverrigpdoge/rsna-knee-leg-r9all,DATASET_VERSIO,rsna-knee-leg-r9all,3,0.956,kiza123123/rsna-knee-sub3-multi-scale-quad-arm-foundation
+/datasets/shogomiyawaki/rsna-knee-llm-labels,DATASET_VERSIO,RSNA Knee LLM report labels,3,0.0,shogomiyawaki/rsna-knee-b007-cpu-cache
+/datasets/alenic/rsna-knee-abnormality-detection-jpeg-224x224,DATASET_VERSIO,RSNA Knee Abnormality Detection - JPEG 224x22,3,0.0,pratibhakhatke/build-008-pixeldiag2
+/datasets/ricecakar/rsna-knee-band32-ours,DATASET_VERSIO,RSNA Knee band32 adjacency leg,3,0.937,apilkhadka/rsna-knee-a08-cohezion-sota-candidate
+/code/quannguyen0501/130mm-320-stage0-5-preprocessing-part2,KERNEL_VERSION,130mm 320 stage0.5-preprocessing part2,2,0.0,quannguyen0501/130mm-320-stage0-5-preprocessing-part4
+/code/quannguyen0501/130mm-288-stage0-5-preprocessing-part1,KERNEL_VERSION,130mm 288 stage0.5-preprocessing part1 ,2,0.0,quannguyen0501/130mm-288-stage0-5-preprocessing-part3
+/datasets/varianceofx/rsna-knee-compact-r7cnxfsss,DATASET_VERSIO,RSNA Knee Compact r7cnxfsss (mirror),2,0.955,varianceofx/rsna-knee-quad-b1
+/datasets/varianceofx/rsna-knee-compact-r6cnxfsss,DATASET_VERSIO,RSNA Knee Compact r6cnxfsss (mirror),2,0.955,varianceofx/rsna-knee-quad-b1
+/datasets/gperdrizet/rsna-knee-abnormality-pseudolabeled-training-data,DATASET_VERSIO,RSNA Knee Abnormality: pseudolabeled training,2,0.0,parthsarnobat/eda-notebook-knee-abnormality-detection
+/datasets/shigechan/radimagenet-resnet50-official,DATASET_VERSIO,RadImageNet ResNet50 Official Checkpoint,2,0.952,rainycloudss/rsna-knee-apex-grandmaster-stack-v21
+/code/yahyaismail12/rsna-role2-shard-20,KERNEL_VERSION,RSNA Role2 Shard 20,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-19,KERNEL_VERSION,RSNA Role2 Shard 19,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-10,KERNEL_VERSION,RSNA Role2 Shard 10,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-11,KERNEL_VERSION,RSNA Role2 Shard 11,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-12,KERNEL_VERSION,RSNA Role2 Shard 12,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-14,KERNEL_VERSION,RSNA Role2 Shard 14,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-18,KERNEL_VERSION,RSNA Role2 Shard 18,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-17,KERNEL_VERSION,RSNA Role2 Shard 17,2,0.0,yahyaismail12/rsna-role2-validate-all
+/models/pranjalverma08/dinov3/Transformers/default/1,MODEL_INSTANCE,DinoV3,2,0.932,pranjalverma08/rsna-knee-climbing-up-the-hill-the-ensemble-way
+/code/nguyenminhquanhcmus/rsna-knee-w01-stage-02,KERNEL_VERSION,RSNA Knee W01 — Stage 02,2,0.902,nguyenminhquanhcmus/rsna-knee-w01-stage-04-six-slot-dinov2-s-five-s
+/models/unmol03/dinov3-vit-large/PyTorch/default/1,MODEL_INSTANCE,DinoV3-vit-large,2,0.932,pranjalverma08/rsna-knee-climbing-up-the-hill-the-ensemble-way
+/models/dew389/radimagenet50/PyTorch/default/1,MODEL_INSTANCE,RadImageNet50,2,0.932,pranjalverma08/rsna-knee-climbing-up-the-hill-the-ensemble-way
+/code/yahyaismail12/rsna-role2-shard-15,KERNEL_VERSION,RSNA Role2 Shard 15,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-23,KERNEL_VERSION,RSNA Role2 Shard 23,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-22,KERNEL_VERSION,RSNA Role2 Shard 22,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-21,KERNEL_VERSION,RSNA Role2 Shard 21,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-07,KERNEL_VERSION,RSNA Role2 Shard 07,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/sakhawathossen/notebook-01-baseline,KERNEL_VERSION,Notebook 01: Baseline,2,0.899,sakhawathossen/notebook-05-final-oof-selected-ensemble
+/datasets/ziyiming/rsna-exp001-fold0-artifacts,DATASET_VERSIO,RSNA EXP-001 fold0 artifacts,2,0.667,ziyiming/rsna-exp-001-fold4-only-gpu
+/datasets/laymond/rsna-knee-abnormality-qwen3-8b-weak-labels,DATASET_VERSIO,Qwen2.5-32B Weak Labels for RSNA Knee Abnorma,2,0.0,laymond/rsna-knee-mri-weak-labeling-with-qwen2-5-32b
+/models/google/gemma-3/Transformers/gemma-3-4b-it/1,MODEL_INSTANCE,Gemma 3,2,0.0,kritikabenjwal/rsna-knee-labelrefine-mil
+/code/yahyaismail12/rsna-role2-shard-09,KERNEL_VERSION,RSNA Role2 Shard 09,2,0.0,yahyaismail12/rsna-role2-validate-all
+/code/yahyaismail12/rsna-role2-shard-08,KERNEL_VERSION,RSNA Role2 Shard 08,2,0.0,yahyaismail12/rsna-role2-validate-all
+/datasets/kitopl/rsna-knee-eda-baseline-weights,DATASET_VERSIO,RSNA Knee EDA baseline weights (DINOv2 336px),2,0.898,kitopl/mri-eda
+/code/sakhawathossen/notebook-02-conservative-fine-tuning,KERNEL_VERSION,Notebook 02: Conservative Fine-Tuning ,2,0.899,sakhawathossen/notebook-05-final-oof-selected-ensemble
+/code/tamerlanomralinov/knee-cache,KERNEL_VERSION,knee cache,2,0.75,tamerlanomralinov/knee-submit-baseline
+/datasets/nguyen1oc1/4xmulti-slices,DATASET_VERSIO,4xmulti_slices,2,0.0,nguyen1oc/4xmulti-slices-v2-5
+/datasets/hmendonca/efficientnet-pytorch,DATASET_VERSIO,EfficientNet PyTorch,2,0.56,tahmidtawsif/rsna-knee
+/datasets/anettvarghese/efficientnet-b0,DATASET_VERSIO,efficientnet_b0,2,0.56,tahmidtawsif/rsna-knee
+/datasets/pytorch/resnet34,DATASET_VERSIO,ResNet-34,2,0.5,syhrull/rsna-knee-resnet-v2-high-accuracy
+/datasets/girishbose/dinov2-vits14-rsna-knee,DATASET_VERSIO,dinov2-vits14-rsna-knee,2,0.733,sivapnlr80/knee-abnormality-detection
+/datasets/hosseini7798/rsna-knee-label-extraction-jev,DATASET_VERSIO,RSNA_Knee_Label_Extraction_Jev,2,0.0,vaibhavlande84/notebook06c37ceffb
+/datasets/rostigor/rsna-knee-r6-fe055406,DATASET_VERSIO,RSNA Knee R6 fe055406 versioned,2,0.957,prvsiyan/the-bee-s-knees-final-rsna-push
+/datasets/heliosli/rsna-knee-r6-frozen-fe055406-w1,DATASET_VERSIO,RSNA Knee R6 Frozen fe055406 w1,2,0.958,heliosli/blend-mine-in-private-lb-luck-to-all-upvoters
+/code/packagemanager/pm-131760037-at-10-13-2026-08-53-20,KERNEL_VERSION,PM-131760037-at-10-13-2026-08-53-20,1,0.956,degnonguidi/rsna-knee-abnormality-detection
+/code/quannguyen0501/130mm-288-stage0-5-preprocessing-part2,KERNEL_VERSION,130mm 288 stage0.5-preprocessing part2 ,1,0.0,quannguyen0501/130mm-288-stage0-5-preprocessing-part3
+/code/sushanthtiruvaipati/rsna-knee-d4-public0946-no-correction,KERNEL_VERSION,rsna-knee-d4-public0946-no-correction,1,0.0,sushanthtiruvaipati/rsna-knee-medmen-medoa-raptor-flip
+/datasets/nasrinakbari/orthodiffusion-rsna-knee-prenuvo-v1,DATASET_VERSIO,OrthoDiffusion RSNA Knee Prenuvo v1,1,0.0,sushanthtiruvaipati/rsna-knee-orthodiffusion-nasrin-standalone
+/datasets/saisahanas/rsna-knee-radiologist-report-labels,DATASET_VERSIO,RSNA Knee Radiologist Report Labels,1,0.0,prithvirajrp/stage-2-rsna-finetune
+/datasets/prithvirajrp/rsna-train-distribution-subset,DATASET_VERSIO,RSNA TRAIN DISTRIBUTION SUBSET,1,0.0,prithvirajrp/stage-2-rsna-finetune
+/models/saisahanas/resnet-18-imagenet-weights/PyTorch/default/1,MODEL_INSTANCE,resnet 18 imagenet weights,1,0.0,prithvirajrp/stage-2-rsna-finetune
+/models/prithvirajrp/stage-1-rsna-mil-dense-weights/PyTorch/default/2,MODEL_INSTANCE,stage 1 rsna mil dense weights,1,0.0,prithvirajrp/stage-2-rsna-finetune
+/code/anhtunnguynchu/05a-a-rsna-knee-multi-plane-dense-slice-mil-train,KERNEL_VERSION,05A A— RSNA Knee Multi-Plane Dense-Slice MIL-,1,0.0,anhtunnguynchu/05a-a-rsna-knee-multi-plane-dense-slice-mil-train
+/datasets/ziyiming/rsna-exp013-axial-weights,DATASET_VERSIO,RSNA EXP013 Axial weights,1,0.0,ziyiming/rsna-exp013-infer-axial-weights
+/code/quannguyen0501/stage0-5-preprocessing-part1,KERNEL_VERSION,stage0.5-preprocessing part1,1,0.0,quannguyen0501/stage0-5-preprocessing-part2
+/datasets/hansinigunasekara/training-labels,DATASET_VERSIO,training_labels,1,0.0,hansinigunasekara/mri-traninig
+/datasets/hosseini7798/rsna-labeling-pairwise-comparison-typesafe-jev,DATASET_VERSIO,RSNA_Labeling_Pairwise_Comparison_TypeSafe_Je,1,0.0,hosseini7798/rsna-knee-mri-labeling-pairwise-typesafe-jev
+/datasets/openai/browsecomp-a-benchmark-for-browsing-agents,DATASET_VERSIO,BrowseComp: A Benchmark for Browsing Agents,1,0.0,rahul05211/rsna-knee
+/models/rahul05211/rg-knee/PyTorch/small/1,MODEL_INSTANCE,RG KNEE,1,0.0,rahul05211/rsna-knee
+/models/metaresearch/dinov2/PyTorch/giant/1,MODEL_INSTANCE,DINO v2,1,0.656,baoly03/baseline-rsna-knee-abnormality-detection
+/datasets/khoongweihao/pytorch-resnet18-34-50-101-152-pretrained,DATASET_VERSIO,"PyTorch ResNet-(18, 34, 50, 101, 152) Pretrai",1,0.646,vladimirannenkovml/rsna-knee-deployable-model
+/models/jek1wantaufik/buddy/PyTorch/rsna/1,MODEL_INSTANCE,ModelBuddy,1,0.625,jek1wantaufik/rsna-knee-mri-baseline-with-pseudo-labels
+/datasets/sircausticmail/resnet18-imagenet-pretrained,DATASET_VERSIO,resnet18-imagenet-pretrained,1,0.615,sircausticmail/rsna-knee-gold-label-baseline-v1
+/datasets/weihsianglin111/rsna-knee-stage11v-residual-heads,DATASET_VERSIO,RSNA Knee Stage11V Residual Attention Heads,1,0.604,weihsianglin111/stage11v-residual-center-attention-submission
+/code/packagemanager/pm-130845306-at-08-15-2026-15-50-18,KERNEL_VERSION,PM-130845306-at-08-15-2026-15-50-18,1,0.599,ahmedashrafahmed/rsna-knee-abnormality-detection
+/code/packagemanager/pm-129847608-at-08-06-2026-02-28-42,KERNEL_VERSION,PM-129847608-at-08-06-2026-02-28-42,1,0.551,arnavchaturvedi123/notebook4434ba454d
+/datasets/timothykurniawanb/resnet18-weights,DATASET_VERSIO,resnet18-weights,1,0.541,timothykurniawanb/notebook5fb3af502c
+/code/mohmedatya/rsna-knee-v31-efficientnet-b0,KERNEL_VERSION,RSNA Knee V31 Efficientnet B0,1,0.521,mohmedatya/rsna-knee-inference-v32-efficientnet-b0
+/datasets/h17ann/resnet18-imagenet-weights,DATASET_VERSIO,resnet18-imagenet-weights,1,0.515,h17ann/6-rsna-knee-our-first-baseline
+/datasets/beraterolelk/kaggle-grandmaster-winning-solutions-2015-2026,DATASET_VERSIO,Kaggle Grandmaster Winning Solutions (2015-20,1,0.506,beraterolelk/0-505-rsna-knee-volumetric-2-5d
+/code/wguesdon/rsna-knee-dinov2-at-meniscus-resolution,KERNEL_VERSION,RSNA Knee DINOv2 at meniscus resolution,1,0.5,shorooghahmadi/notebook1rsna
+/datasets/asimalamchowdhury/mdeberta-v3-base-xnli-multilingual-nli-2mil7,DATASET_VERSIO,mDeBERTa-v3-base-xnli-multilingual-nli-2mil7,1,0.0,nekkon/weak-labels-for-all-12-knee-mri-findings
+/datasets/nekkon/rsna-knee-nli-entailment-scores,DATASET_VERSIO,RSNA knee NLI entailment scores,1,0.0,nekkon/weak-labels-for-all-12-knee-mri-findings
+/models/qwen-lm/qwen2.5/Transformers/7b-instruct/1,MODEL_INSTANCE,Qwen2.5,1,0.0,ulasdesouza/01-report-labels
+/datasets/abhinav4516788/my-rsna-text-baseline,DATASET_VERSIO,my-rsna-text-baseline,1,0.0,abhinav4516788/notebook20a9a75bc3
+/datasets/yuvrajbhatkariya/rsna-data,DATASET_VERSIO,RSNA_data,1,0.0,yuvrajbhatkariya/1-notebook
+/code/pinhasn/ollama-install,KERNEL_VERSION,ollama_install,1,0.0,udaken10/wow-wow
+/code/viniciuscas/ollama-manager,KERNEL_VERSION,Ollama manager,1,0.0,udaken10/wow-wow
+/models/google/gemma-4/Transformers/gemma-4-12b/2,MODEL_INSTANCE,Gemma 4,1,0.0,udaken10/wo-wo-wooo
+/datasets/nururrr/rsna-backbone,DATASET_VERSIO,rsna-backbone,1,0.0,nururrr/rsna-knee-detailed-baseline
+/datasets/nururrr/rsna-torch-wheels,DATASET_VERSIO,rsna-torch-wheels,1,0.0,nururrr/rsna-knee-detailed-baseline
+/datasets/nururrr/rsna-torch-wheels-cu126,DATASET_VERSIO,rsna-torch-wheels-cu126,1,0.0,nururrr/rsna-knee-detailed-baseline
+/code/tamerlanomralinov/knee-model-baseline,KERNEL_VERSION,knee model baseline,1,0.75,tamerlanomralinov/knee-submit-baseline
+/datasets/atsunorifujita/paraphrasemultilingualminilml12v2,DATASET_VERSIO,paraphrase-multilingual-MiniLM-L12-v2,1,0.733,sivapnlr80/knee-abnormality-detection
+/datasets/ziyiming/rsna-exp008-sca-fold0-weights,DATASET_VERSIO,RSNA EXP008 SCA fold0 weights,1,0.721,ziyiming/rsna-exp008-infer-sca-weights
+/datasets/ziyiming/rsna-exp011-e5-sca-weights,DATASET_VERSIO,RSNA EXP011 E5 SCA weights pack,1,0.71,ziyiming/rsna-exp011-infer-sca-weights
+/datasets/sergiomc12/rsna-knee-unifiis-modelo,DATASET_VERSIO,rsna-knee-unifiis-modelo,1,0.702,sergiomc12/rsna-knee-envio-uni-fiis
+/models/nguynvnquangtrng/efficientnet-b3/Other/default/1,MODEL_INSTANCE,EfficientNet-B3,1,0.701,nguynvnquangtrng/rsna-knee-efficientnet
+/datasets/ziyiming/rsna-exp012-axial-weights,DATASET_VERSIO,RSNA EXP012 Axial weights,1,0.701,ziyiming/rsna-exp012-infer-axial-weights
+/datasets/ziyiming/rsna-exp003-fold0-sc-artifacts,DATASET_VERSIO,RSNA EXP-003 fold0 S+C artifacts,1,0.679,ziyiming/rsna-exp-003-fold1-s-c-gpu
+/datasets/freshtime/rsna-knee-pseudo-labels-betta,DATASET_VERSIO,RSNA-knee-pseudo-labels-betta,1,0.656,freshtime/montgomery
+/code/prvsiyan/rsna-knee-read-the-report-then-the-knee,KERNEL_VERSION,"RSNA Knee: read the report, then the knee",1,0.0,dorrech1/kneexxx
+/datasets/cjlcjlcjl/gold58-audit,DATASET_VERSIO,gold58_audit,1,0.0,cjlcjlcjl/report-weaklabels-path
+/datasets/trnhquangminh140/rsna-knee-abnormality-detection-link-datasets,DATASET_VERSIO,RSNA Knee Abnormality Detection - Link Datase,1,0.0,trnhquangminh140/rsna-knee-abnormality-detection-tqminh
+/code/packagemanager/pm-130397856-at-08-11-2026-05-56-33,KERNEL_VERSION,PM-130397856-at-08-11-2026-05-56-33,1,0.0,hamdimohamed22/rsna-dataset-discovery-eda
+/code/sakhawathossen/notebook-03-hard-example-fine-tuning,KERNEL_VERSION,Notebook 03: Hard-Example Fine-Tuning,1,0.0,sakhawathossen/notebook-04-target-specialist-fine-tuning
+/code/ranaharshiddh/epoch-6-and-7,KERNEL_VERSION,epoch 6 and 7,1,0.0,ranaharshiddh/epoch-6-and-7
+/datasets/nursrijan/rsna-knee-dinov2-base-llm-models,DATASET_VERSIO,rsna_knee_dinov2_base_llm_models,1,0.0,nursrijan/rsna-knee-abnormality
+/datasets/rayanbabur/rsna-knee-2026-calibrated-soft-targets,DATASET_VERSIO,RSNA Knee 2026 Calibrated Soft Targets,1,0.0,rayanbabur/rsna-knee-2026-high-fidelity-preprocessing
+/datasets/yuvrajbhatkariya/data-2,DATASET_VERSIO,Data_2,1,0.0,yuvrajbhatkariya/2-notebook-updated-3models
+/code/mattiaangeli/bend-the-knee-to-dinov3-ensembled,KERNEL_VERSION,Bend the Knee to DinoV3 (ensembled),1,0.0,mraz1006/rsna-knee-public-anchor-blends
+/code/vikram8754/rsna-vikram,KERNEL_VERSION,RSNA_VIKRAM,1,0.0,vikram8754/rsna-vikram
+/code/abhinavreddy6480/rsna-phase-2-dicom-prep,KERNEL_VERSION,RSNA-Phase-2-DICOM-Prep__,1,0.0,abhinavreddy6480/rsna-phase-3-multiview-vit
+/code/abhinavreddy6480/rsna-phase-2-dicom-prep-part2,KERNEL_VERSION,RSNA-Phase-2-DICOM-Prep_part2__,1,0.0,abhinavreddy6480/rsna-phase-3-multiview-vit
+/code/abhinavreddy6480/rsna-phase-2-dicom-prep-part3,KERNEL_VERSION,RSNA-Phase-2-DICOM-Prep_part3__,1,0.0,abhinavreddy6480/rsna-phase-3-multiview-vit
+/datasets/naveedlihazi/rsna-datasets,DATASET_VERSIO,RSNA_datasets,1,0.0,abidaurpi/notebook8ce9e72956
+/datasets/naveedlihazi/dino-v2-extracted-features-cache,DATASET_VERSIO,Dino_v2_extracted_features_cache,1,0.0,abidaurpi/notebook8ce9e72956
+/datasets/dariushafshar/rsna-knee-2026-grouped-cv-folds,DATASET_VERSIO,RSNA Knee 2026: Grouped CV Folds & Study Meta,1,0.0,dariushafshar/rsna-blend-gate-harness-58-golds-12-targets
+/datasets/jezrealmomoh/rsna-knee-pseudo-labels,DATASET_VERSIO,rsna-knee-pseudo-labels,1,0.0,songoku2005/rsna-final
+/datasets/giovannicr/rodilla-pseudo-labels,DATASET_VERSIO,Rodilla RSNA Knee Pseudo Labels,1,0.0,songoku2005/rsna-final
+/code/dariushafshar/rsna-report-pseudo-labels-add-0-022-auc-4-5,KERNEL_VERSION,RSNA: Report Pseudo-Labels Add +0.022 AUC (4/,1,0.0,songoku2005/rsna-final
+/models/hosseini7798/dicom-to-numpy/Other/default/5,MODEL_INSTANCE,Dicom_to_numpy,1,0.0,hosseini7798/dicom-to-numpy
+/code/marchmm/gpu-trainingmodel-piece4,KERNEL_VERSION,gpu-trainingmodel-piece4,1,0.0,marchmm/gpu-phase2-full
+/models/fabotelli/pillar0-knee-finetune/PyTorch/atlas-336-2ep/1,MODEL_INSTANCE,Pillar-0 Knee MRI Fine-tune,1,0.0,fabotelli/pillar-0-knee-fine-tune-loader-demo
+/code/ryanholbrook/rsna-knee-abnormalities-efficiency-lb,KERNEL_VERSION,RSNA Knee Abnormalities - Efficiency LB,1,0.0,pcjimmmy/runtime-efficiency
+/datasets/pearsejim01/rsna-2026-eda,DATASET_VERSIO,rsna-2026-eda,1,0.0,pearsejim01/nb1-cache
+/datasets/nguyenkhaho/head-384,DATASET_VERSIO,head 384,1,0.0,nguyenkhaho/train-data-4-claude
+/code/nguyenkhaho/train-data-2,KERNEL_VERSION,train data 2,1,0.0,nguyenkhaho/train-data-4-claude
+/code/nguyenkhaho/train-data-4-claude,KERNEL_VERSION,train data 4 claude ,1,0.0,nguyenkhaho/train-data-4-claude
+/models/ziyu2002/resnet34/PyTorch/default/1,MODEL_INSTANCE,resnet34,1,0.0,nguyenkhaho/train-data-4-claude
+/datasets/kozistr/pytorch-image-models,DATASET_VERSIO,pytorch_image_models,1,0.0,tahmidtawsif/rsna-knee-abnormality-detection
+/code/packagemanager/pm-132702093-at-10-12-2026-21-35-34,KERNEL_VERSION,PM-132702093-at-10-12-2026-21-35-34,1,0.0,sergiofigal04/knee-detection
+/models/keras/medsiglip/Keras/medsiglip_900m_448/1,MODEL_INSTANCE,MedSigLIP,1,0.0,sergiofigal04/knee-detection
+/models/google/wiki-words/TensorFlow2/250/1,MODEL_INSTANCE,Wiki-words,1,0.0,alia22/notebooka35d630793
+/code/jiachuanbai/explo-attention-is-what-you-kneed,KERNEL_VERSION,[Explo] Attention is what you kneed,1,0.0,jiachuanbai/explo-attention-is-what-you-kneed
+/code/packagemanager/pm-132899325-at-09-05-2026-21-06-25,KERNEL_VERSION,PM-132899325-at-09-05-2026-21-06-25,1,0.0,jiachuanbai/explo-attention-is-what-you-kneed
+/datasets/bulsahkecici/rsna-d3alllr2-submit-20261013-asset,DATASET_VERSIO,rsna-d3alllr2-submit-20261013-asset,1,0.862,bulsahkecici/rsna-d3alllr2-submit-20261013
+/datasets/prvsiyan/rsna-knee-resnet18-student-v1,DATASET_VERSIO,RSNA Knee ResNet18 Distillation Student v1,1,0.861,yaolinxiangyu/rsna-knee-prvsiyan-student-v1-repro
+/datasets/flight0234/rsna-knee-dual-grouped-folds,DATASET_VERSIO,RSNA Knee dual-grouped folds,1,0.86,flight0234/rsna-knee-baseline-dual-grouped-folds
+/datasets/takashimanaoya/rsna-knee-i00g-checkpoints-flat,DATASET_VERSIO,rsna knee i00g checkpoints flat,1,0.855,takashimanaoya/rsna-knee-i00g-ensemble
+/code/shareaccc3a/resume-rsna-knee-d0-simple-resnet34-2-5d-train,KERNEL_VERSION,Resume RSNA Knee D0 — simple ResNet34 2.5D tr,1,0.843,shareaccc3a/rsna-knee-d0-simple-resnet34
+/datasets/songoku2005/convnext-base-weights,DATASET_VERSIO,convnext-base-weights,1,0.81,songoku2005/rsnakad
+/code/alincijov/training-hubmap-lb-0-75-swin-transformer-v1,KERNEL_VERSION,[Training] HuBMAP LB 0.75 Swin Transformer v1,1,0.81,songoku2005/rsnakad
+/code/tonylica/rsna-knee-dino-radimagenet-rank-ensemble,KERNEL_VERSION,RSNA Knee DINO-RadImageNet Rank Ensemble,1,0.81,songoku2005/rsnakad
+/datasets/riachk/rsna-knee-abnormality-detection-tool,DATASET_VERSIO,RSNA Knee Abnormality Detection Tool,1,0.781,blacklions/report-teacher-anatomy-aware-hierarchical-multimod
+/datasets/tomdifiore/rsna-knee-credible-checkpoints,DATASET_VERSIO,RSNA Knee Credible Checkpoints,1,0.777,tomdifiore/rsna-knee-credible-heterogeneous-route
+/datasets/tomdifiore/rsna-knee-unifiedtheory-code,DATASET_VERSIO,RSNA Knee UnifiedTheory Code,1,0.777,tomdifiore/rsna-knee-credible-heterogeneous-route
+/models/hark99/facebookdinov3-vitb16-pretrain-lvd1689m/Transformers/default/1,MODEL_INSTANCE,facebook/dinov3-vitb16-pretrain-lvd1689m,1,0.771,xclove/notebookf9c3020fa7
+/code/qunnguynm/multi-series-residual-3d-mil,KERNEL_VERSION,Multi-Series Residual 3D-MIL,1,0.761,qunnguynm/inference-multi-series-residual-3d-mil
+/code/shareaccc3a/rsna-knee-w01a-stage-03-resume,KERNEL_VERSION,RSNA Knee W01A — Stage 03: resume,1,0.901,nguyenminhquanhcmus/rsna-knee-w01a-stage-04-one-seed
+/code/sakhawathossen/rsna-knee-enhanced-ensemble,KERNEL_VERSION,rsna-knee-enhanced-ensemble,1,0.899,sakhawathossen/notebook-05-final-oof-selected-ensemble
+/code/sakhawathossen/notebook-04-target-specialist-fine-tuning,KERNEL_VERSION,Notebook 04: Target-Specialist Fine-Tuning,1,0.899,sakhawathossen/notebook-05-final-oof-selected-ensemble
+/datasets/sadamtorres/rsna-ft-b-ens,DATASET_VERSIO,rsna-ft-b-ens,1,0.892,sadamtorres/dinov2-dual-llm-pseudo-labels-0-892
+/datasets/haideptry/rsna-knee-coatnet-25d-masked-checkpoint,DATASET_VERSIO,RSNA Knee CoAtNet 2.5D Masked Checkpoint,1,0.881,haideptry/rsna-knee-2-5d-coatnet-masked-benchmark
+/datasets/davidadekanmi/rsna-knee-nifti-part8,DATASET_VERSIO,rsna-knee-nifti-part8,1,0.879,hassanabdulhafid/multimodal-ai-for-knee-mri-abnormality-detection
+/datasets/djordjelazic/rsna-knee-model-v1,DATASET_VERSIO,rsna-knee-model-v1,1,0.879,hassanabdulhafid/multimodal-ai-for-knee-mri-abnormality-detection
+/models/itsraininnnn/facebookdinov2-with-registers-base/Transformers/default/1,MODEL_INSTANCE,facebook/dinov2-with-registers-base,1,0.879,hassanabdulhafid/multimodal-ai-for-knee-mri-abnormality-detection
+/models/metaresearch/sparsh/Transformers/dino-small/1,MODEL_INSTANCE,Sparsh,1,0.875,abisheksrivastav/rsna-knee-multi-plane-dinov2
+/code/nekkon/weak-labels-for-all-12-knee-mri-findings,KERNEL_VERSION,Weak labels for all 12 knee MRI findings,1,0.0,hyakumanben2025/rsna-knee-lateral-oa-effusion-specialist
+/datasets/sealzhao/resnet18-f37072fd-pth,DATASET_VERSIO,resnet18-f37072fd.pth,1,0.0,jaskaran04singh/rsnaknee
+/code/romantamrazov/rsna-knee-dinosaur-v4,KERNEL_VERSION,RSNA Knee | DINOsaur V4 🦖 ,1,0.0,sushanthtiruvaipati/rsna-knee-acl-latoa-swap-v2
+/datasets/starkhushi/rsna-knee-58study-member-preds,DATASET_VERSIO,RSNA Knee 58-Study Member Predictions,1,0.0,starkhushi/knee-mri-end-to-end-eda-2-5d-models-evaluation
+/code/wl1982/dinov2-small-downloader,KERNEL_VERSION,dinov2-small-downloader,1,0.916,wl1982/features-fork-bend-the-knee-to-dinov3-ensembled-nk
+/code/nguyenminhquanhcmus/rsna-knee-w01-stage-03,KERNEL_VERSION,RSNA Knee W01 — Stage 03,1,0.902,nguyenminhquanhcmus/rsna-knee-w01-stage-04-six-slot-dinov2-s-five-s
+/datasets/hengck23/hengck23-rnsa-knee,DATASET_VERSIO,hengck23-rnsa-knee,1,0.935,hengck23/mavit-288-baseline-01-1-5sec-study-1gpu
+/datasets/daoviet/conv-checkpoint,DATASET_VERSIO,conv-checkpoint,1,0.934,daoviet/rsna-ensemble-is-all-you-need
+/datasets/dreaddevelopment/raptor-knee-widefov,DATASET_VERSIO,Knee MRI - Wide FOV Corpus,1,0.932,pranjalverma08/rsna-knee-climbing-up-the-hill-the-ensemble-way
+/datasets/dreaddevelopment/raptor-knee-fullspan,DATASET_VERSIO,Knee MRI - Full-Span Corpus,1,0.932,pranjalverma08/rsna-knee-climbing-up-the-hill-the-ensemble-way
+/models/pranjalverma08/snarcy-radiodino-b16/Transformers/default/1,MODEL_INSTANCE,Snarcy / RadioDino-b16,1,0.932,pranjalverma08/rsna-knee-climbing-up-the-hill-the-ensemble-way
+/code/nguyenminhquanhcmus/rsna-knee-w01-stage-01-cached-dinov2-s-batchx2,KERNEL_VERSION,RSNA Knee W01 — Stage 01: cached DINOv2-S-bat,1,0.0,nguyenminhquanhcmus/rsna-knee-w01-stage-01-resume-epoch-28
+/code/nguyenminhquanhcmus/rsna-knee-w01a-stage-03-one-seed,KERNEL_VERSION,RSNA Knee W01A — Stage 03: one-seed,1,0.0,shareaccc3a/rsna-knee-w01a-stage-03-resume
+/code/yahyaismail12/rsna-competition,KERNEL_VERSION,RSNA_Competition,1,0.0,aabbddooo/finallllll
+/code/yahyaismail12/rsna-role2-shard00-validate,KERNEL_VERSION,rsna-role2-shard00-validate,1,0.0,aabbddooo/finallllll
+/code/yahyaismail12/rsna-role2-validate-all,KERNEL_VERSION,rsna-role2-validate-all,1,0.0,aabbddooo/finallllll
+/datasets/joshuaziel/rsna-knee-mri-radiology-report-classifications,DATASET_VERSIO,RSNA Knee MRI Radiology Report Classification,1,0.0,joshuaziel/rsna-slightly-overexhaustive-labeling-deathmatch
+/code/joshuaziel/rsna-label-report-languages,KERNEL_VERSION,RSNA_label_report_languages,1,0.0,joshuaziel/rsna-slightly-overexhaustive-labeling-deathmatch
+/models/duongthanhtai1308/meddinov3/PyTorch/default/1,MODEL_INSTANCE,MedDINOv3,1,0.943,malirazaraza/rsna-knee-fast-2xt4-inference
+/datasets/khalednagaty/dinov2-small,DATASET_VERSIO,dinov2-small,1,0.943,innshrestha/rsna-knee-public-pipeline-slice-measured-0-943-n
+/models/timm/tf-efficientnet/PyTorch/tf-efficientnet-b4/1,MODEL_INSTANCE,EfficientNet,1,0.943,arun8ovfjfdr6/rsna-knee-weight-blend
+/code/mtitoadhip/knee-sub-tonyrank,KERNEL_VERSION,knee sub tonyrank,1,0.941,mtitoadhip/rsna-knee-941-jwl-fast
+/datasets/prvsiyan/rsna-knee-b3-v47-public-deployment,DATASET_VERSIO,RSNA Knee B3 V47 Public Deployment Weights,1,0.94,qiuqiuh/rsna-knee-silver-v28-base-b3-blend
+/code/shareaccc3a/rsna-knee-d0-simple-resnet34-2-5d-train-full-d,KERNEL_VERSION,RSNA Knee D0 — simple ResNet34 2.5D train + f,1,0.0,shareaccc3a/resume-rsna-knee-d0-simple-resnet34-2-5d-train
+/datasets/ricecakar/rsna-knee-band-mix4,DATASET_VERSIO,RSNA Knee band mix four,1,0.0,ricecakar/rsna-knee-941-dino2pf-mix
+/code/packagemanager/pm-138759748-at-10-16-2026-01-18-25,KERNEL_VERSION,PM-138759748-at-10-16-2026-01-18-25,1,0.0,abdelrahmanekhaldi/rsna-2-5d-cnn
+/datasets/basith007/coatnet-features,DATASET_VERSIO,CoAtNet Features,1,0.0,basith007/model-ensembling
+/models/basith007/coatnet/PyTorch/default/1,MODEL_INSTANCE,CoAtNet,1,0.0,basith007/model-ensembling
+/datasets/philgear/pocketgull-font,DATASET_VERSIO,PocketGull Clinical Typography Superfamily,1,0.0,philgear/3d-knee-anatomy-simulator-and-waiting-game
+/code/isotriage/rsna-knee-h957,KERNEL_VERSION,RSNA Knee H957,1,0.0,varianceofx/rsna-knee-h957-reblend
+/datasets/hukumjailer/rsna-knee-consensus-labels-clean,DATASET_VERSIO,RSNA Knee 5-Source Consensus Labels Clean,1,0.0,hukumjailer/rsna-knee-consensus-raptor-training
+/code/kunaldesale2408/rsna-knee-abnormality,KERNEL_VERSION,RSNA Knee Abnormality,1,0.0,marianobrarda/mostrar-dataset-de-rodilla
+/code/sameerk2004/rsna-knee-sil-d5b-dual0950,KERNEL_VERSION,rsna-knee-sil-d5b-dual0950,1,0.0,sameerk2004/rsna-knee-sil-d5d-goldroute
+/datasets/yunusgmsoy/rsna-knee-llm-report-labels,DATASET_VERSIO,RSNA Knee LLM Report Labels,1,0.0,karttikjangid05/rsna-knee-which-llm-labels-can-you-trust
+/datasets/riadmohamed42/jev-knee-labels,DATASET_VERSIO,JEV-Knee ensembled labels for RSNA knee MRI,1,0.0,karttikjangid05/rsna-knee-which-llm-labels-can-you-trust
+/datasets/glorysing/rsna-knee-offline-codecs-r09,DATASET_VERSIO,RSNA Knee Offline Codecs R09,1,0.954,sujanmajhisuzan/rsna-knee-apex-grandmaster-v10-tri-engine-probit
+/datasets/goodjane/rsna-knee-compact-r6cnxfsss,DATASET_VERSIO,rsna-knee-compact-r6cnxfsss,1,0.954,goodjane/rsna-knee-blend-raptor-r6-cnx-eq-fs-ss
+/datasets/isotriage/rsna-jev-oai-arm,DATASET_VERSIO,RSNA JEV OAI Arm,1,0.954,isotriage/rsna-knee-quad-b2
+/code/pjmathematician/rsna-knee-d4-lite,KERNEL_VERSION,rsna-knee-d4-lite,1,0.943,amanatar/rsna-knee-abnormality-detection
+/code/ryokucha/rsna-knee-d4-blend-0946-ours10,KERNEL_VERSION,rsna-knee-d4-blend-0946-ours10,1,0.943,amanatar/rsna-knee-abnormality-detection
+/code/crystalwong01/rsna-knee-r6-frozen-fe055406,KERNEL_VERSION,RSNA Knee R6 Frozen Fe055406,1,0.956,crystalwong01/rsna-knee-helios-r6-frozen-blend-public-run
+/datasets/karttikjangid05/rsna-knee-public-llm-label-sets-compared,DATASET_VERSIO,RSNA Knee: Public LLM Label Sets Compared,1,0.0,karttikjangid05/rsna-knee-which-llm-labels-can-you-trust
+/code/kritikabenjwal/rsna-knee-featcache,KERNEL_VERSION,rsna-knee-featcache,1,0.0,kritikabenjwal/rsna-knee-head-lab
+/code/kritikabenjwal/rsna-knee-spatialcache,KERNEL_VERSION,rsna-knee-spatialcache,1,0.0,kritikabenjwal/rsna-knee-head-lab
+/datasets/nilsfl/rsna-knee-explainer-film-ep3,DATASET_VERSIO,RSNA Knee explainer film episode 3,1,0.0,nilsfl/the-big-vote-a-one-minute-knee-film-ep-3
+/datasets/shikhageekachad/rsna-knee-mri-384x384-36-slices,DATASET_VERSIO,RSNA Knee MRI 384x384 36 Slice Volumes,1,0.0,shikhageekachad/rsna-mri-dicom-2-npz
+/code/mattiaangeli/bend-the-knee-to-the-dinosaurs,KERNEL_VERSION,Bend the Knee to the Dinosaurs,1,0.0,kritikabenjwal/rsna-knee-labelrefine-mil
+/code/kritikabenjwal/rsna-knee-qwen-labeler-full,KERNEL_VERSION,rsna-knee-qwen-labeler-full,1,0.0,kritikabenjwal/rsna-knee-labelrefine-mil
+/models/manojkumarcs28/qwen-3/Transformers/qwen3-8b/1,MODEL_INSTANCE,Qwen 3,1,0.0,kritikabenjwal/rsna-knee-qwen-labeler-full
+/datasets/nilsfl/rsna-knee-explainer-film-ep2,DATASET_VERSIO,RSNA Knee explainer film episode 2,1,0.0,nilsfl/inside-the-machine-a-60-second-knee-film-ep-2
+/datasets/nilsfl/rsna-knee-explainer-film,DATASET_VERSIO,RSNA Knee explainer film,1,0.0,nilsfl/twelve-little-troubles-a-60-second-knee-film
+/code/quannguyen0501/130mm-320-stage0-5-preprocessing-part3,KERNEL_VERSION,130mm 320 stage0.5-preprocessing part3,1,0.0,quannguyen0501/130mm-320-stage0-5-preprocessing-part4
+/models/rahul05211/knee01/PyTorch/small/1,MODEL_INSTANCE,KNEE01,1,0.0,rahul05211/rsna-knee
+/datasets/joshuaziel/rsna-knee-mri-report-labels-gpt-5-6-luna,DATASET_VERSIO,RSNA_Knee_MRI_Report_Labels_(gpt-5.6-luna),1,0.0,joshuaziel/rsna-labeling-dataset-from-luna

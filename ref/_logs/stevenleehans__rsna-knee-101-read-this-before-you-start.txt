@@ -1,0 +1,477 @@
+       7 /usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+       7   validate(nb)
+      12 data root: /kaggle/input/rsna-knee-abnormality-detection
+      12   sample_submission.csv     0.0 MB
+      12   test.csv                  0.0 MB
+      12   test_series/                3 entries
+      12   test_series.csv           0.0 MB
+      12   train.csv                 5.7 MB
+      12   train_series/           4,407 entries
+      12   train_series.csv          3.5 MB
+      12 train.csv            4,407 rows x 14 cols
+      12                    ['StudyInstanceUID', 'Report', 'ACL', 'MCL', 'Medial Meniscus', 'Lateral Meniscus', 'Medial OA', 'Lateral OA', 'PF OA', 'Effusion', 'Synovitis', "Baker's", 'Contusion', 'Fracture']
+      12 test.csv                 3 rows x  1 cols
+      12                    ['StudyInstanceUID']
+      12 train_series.csv    24,371 rows x  5 cols
+      12                    ['StudyInstanceUID', 'SeriesInstanceUID', 'Fluid_Sensitive', 'Fat_Suppression', 'Anatomical_Plane']
+      12 test_series.csv         15 rows x  5 cols
+      12                    ['StudyInstanceUID', 'SeriesInstanceUID', 'Fluid_Sensitive', 'Fat_Suppression', 'Anatomical_Plane']
+      12 ACL
+      12     The contour of anterior cruciate ligament is in a straight line but increase signal intensity inside, likely due to sprain
+      12     Chronic complete tear of the anterior cruciate ligament, at mid substance.
+      12 MCL
+      12     There is grade I ligamentous sprain of the medial collateral ligament.
+      12     There is some thickening of the medial collateral ligament with some soft tissue edema external to the ligament suggesting a subacute sprain.
+      12 Medial Meniscus
+      12     Linear signal intensity in posterior horn of medial meniscus and anterior horn of lateral meniscus with extending into the surface, R/O tear.
+      12     Degeneration of medial and lateral meniscus and R/O tear of anterior horn of lateral meniscus and posterior horn of medial meniscus.
+      12 Lateral Meniscus
+      12     Linear signal intensity in posterior horn of medial meniscus and anterior horn of lateral meniscus with extending into the surface, R/O tear.
+      12     Degeneration of medial and lateral meniscus and R/O tear of anterior horn of lateral meniscus and posterior horn of medial meniscus.
+      12 Medial OA
+      12     Moderate - severe thinning of the medial compartment articular cartilage is noted with mild underlying bony change.
+      12     Conclusion: Medial compartment degeneration with degenerate tearing of the medial meniscus.
+      12 Lateral OA
+      12     Small full-thickness cartilaginous defect, about 3mm., at posterior lateral tibial plateau with subchondral bone edema is noted.
+      12     There is chronic osteochondral injury at the posterolateral tibial plateau (about 2.3* 1.3 cm).
+      12 PF OA
+      12     The patellofemoral joint, there is focal low grade chondral defect (less than 50% thickness cartilage loss) at the medial patellar facet (about 1.3* 1.8 cm).
+      12     There is moderate subcortical cystic change in the patella likely related to overlying chondromalacia.
+      12 Effusion
+      12     Findings:  There is a mild knee effusion.
+      12     Moderate joint effusion with fluid distended suprapatellar bursa with thickened synovial tissue are observed.
+      12 Synovitis
+      12     hypertrophy of the synovium, indicative of synovitis.
+      12     Synovitis of left knee with suprapatellar and deep infrapatellar bursitis;
+      12 Baker's
+      12     There is a trace Baker's cyst demonstrated.
+      12     Moderate to large knee joint effusion and popliteal cyst.
+      12 Contusion
+      12     Bone marrow edema over mdeial aspect of medial femoral condyle.
+      12     Bone contusion in medial femoral condyle and tibial plateau.
+      12 Fracture
+      12     Fracture of posterior tibial intercondylar eminence with avulsion fracture of PCL.
+      12     Posterior tibial intercondylar eminence fracture with avulsion fracture of PCL and partial tear of PCL.
+      12   crop  input  mm/pixel  mm/token    compute
+      12   160mm   224px     0.714     10.00       1.0x
+      12   160mm   336px     0.476      6.67       2.5x
+      12   160mm   448px     0.357      5.00       5.2x
+      12   107mm   224px     0.478      6.69       1.0x
+      12 How wide is each finding, in TOKENS, at our default 160mm / 224px?
+      12   Fracture line      0.5 mm =  0.05 tokens  #  <- smaller than one token
+      12   Meniscal tear      2.0 mm =  0.20 tokens  #  <- smaller than one token
+      12   Cartilage (OA)     3.0 mm =  0.30 tokens  ##  <- smaller than one token
+      12   MCL thickness      3.0 mm =  0.30 tokens  ##  <- smaller than one token
+      12   ACL thickness      9.0 mm =  0.90 tokens  #######  <- smaller than one token
+      12   Meniscus width    10.0 mm =  1.00 tokens  ########
+      12   Bone contusion    20.0 mm =  2.00 tokens  ################
+      12   Effusion          30.0 mm =  3.00 tokens  ########################
+      12   Baker's cyst      35.0 mm =  3.50 tokens  ############################
+      12 training studies            4,407
+      12   with all 12 labels           58   <- your only ground truth
+      12   with no labels            4,349
+      12   labelled fraction          1.3%
+      12   with a radiology report   4,407   (100.0%)
+      12                   positives  rate
+      12 Effusion                 35 60.3%
+      12 Synovitis                27 46.6%
+      12 Medial Meniscus          26 44.8%
+      12 ACL                      24 41.4%
+      12 Lateral Meniscus         23 39.7%
+      12 PF OA                    21 36.2%
+      12 Contusion                19 32.8%
+      12 Fracture                 18 31.0%
+      12 Medial OA                15 25.9%
+      12 Baker's                  12 20.7%
+      12 Lateral OA               11 19.0%
+      12 MCL                       9 15.5%
+      12 findings per labelled study: mean 4.14, min 1, max 9
+      15 label              n_pos     std  95% interval for a *random* model
+      15 ------------------------------------------------------------------
+      17 ACL                   24   0.077  [0.33, 0.63]
+      20 MCL                    9   0.092  [0.28, 0.64]
+      22 Medial Meniscus       26   0.079  [0.28, 0.59]
+      25 Lateral Meniscus      23   0.076  [0.26, 0.55]
+      27 Medial OA             15   0.098  [0.24, 0.62]
+      29 Lateral OA            11   0.082  [0.20, 0.52]
+      32 PF OA                 21   0.083  [0.40, 0.73]
+      34 Effusion              35   0.081  [0.35, 0.67]
+      37 Synovitis             27   0.077  [0.26, 0.57]
+      39 Baker's               12   0.101  [0.12, 0.51]
+      42 Contusion             19   0.081  [0.35, 0.68]
+      44 Fracture              18   0.078  [0.47, 0.77]
+      44 Read the last column as: a model that knows nothing can land anywhere in there.
+      44 Any improvement smaller than that interval is not measurable on this reference.
+      44 length in characters:
+      44 count    4407.000000
+      44 mean     1097.905605
+      44 std       693.948925
+      44 min        52.000000
+      44 25%       587.500000
+      44 50%       977.000000
+      44 75%      1459.500000
+      44 max      4743.000000
+      44 ==============================================================================
+      44 ONE REPORT, VERBATIM  (study index 48, 977 characters)
+      44 ==============================================================================
+      44 MRI LEFT KNEE
+      44 INDICATION: Pain in the left medial knee ultrasound shows abnormal medial ligament
+      44 Routine MRI of the left knee shows a small radial tear at the inner and of the posterior horn of the medial meniscus. Small vertical tear in the body of the lateral meniscus. ACL and PCL are intact. Extensor mechanism is intact. The MCL is intact. Lateral collateral ligaments are intact.
+      44 No joint effusion. Tiny Baker's cyst. Mild popliteus bursitis. No cartilage defects in the medial and lateral compartments. Focal severe chondrosis at the apex of the patella with underlying bony edema measuring 12 mm transverse by 8 mm in depth with overlying cartilage irregularity. Trochlear cartilage is intact.
+      44 IMPRESSION:
+      44 Vertical tears are seen in the inner edges of the medial and lateral menisci. This involves the body of the lateral meniscus and the posterior horn of the medial meniscus.
+      44 Severe chondromalacia patella at the patellar apex with underlying bone marrow edema.
+      46 Report
+      46 English     1738
+      46 Spanish      578
+      46 Turkish      542
+      46 unclear      533
+      46 Greek        321
+      46 German       262
+      46 Cyrillic     220
+      46 Dutch        132
+      46 French        81
+      46 share not detected as English: 60.6%
+      46 non-empty reports                      4,407
+      46 distinct report texts                  4,257
+      46 texts appearing in more than 1 study      54
+      46 studies sharing text with another        204 (4.6%)
+      46 how many studies share one report text:
+      46 studies sharing it
+      46 2     32
+      46 3      9
+      46 4      3
+      46 5      5
+      46 6      1
+      46 7      1
+      46 12     1
+      46 14     1
+      46 37     1
+      46 Fix: hash the normalised report and pass it as `groups=` to GroupKFold, so every
+      46 study sharing a report lands in the same fold.
+      47 series rows compared             24,386
+      47 rows where the two flags agree   24,386  (100.0000%)
+      47 cross-tabulation of the two columns:
+      47 Fat_Suppression      0      1
+      47 Fluid_Sensitive              
+      47 0                10367      0
+      47 1                    0  14019
+      47 >>> The two columns are IDENTICAL on every row.
+      47 >>> Two column names, ONE bit of information. Not two.
+      47 anatomical planes:
+      47 Anatomical_Plane
+      47 Sagittal    9871
+      47 Coronal     8613
+      47 Axial       5902
+      47 series per training study:
+      47 count    4407.000000
+      47 mean        5.530066
+      47 std         1.393826
+      47 min         3.000000
+      47 25%         5.000000
+      47 50%         5.000000
+      47 75%         6.000000
+      47 max        14.000000
+      47 share of studies that have at least one series in each plane:
+      47   Axial        100.0%
+      47   Coronal      100.0%
+      47   Sagittal     100.0%
+      47 plane availability patterns (columns = ['Axial', 'Coronal', 'Sagittal']):
+      47 111    4407
+      52 study  1.2.826.0.1.3680043.8.498.10004873229099053869093324292195817260
+      52 series 1.2.826.0.1.3680043.8.498.12343110195036213483454091715412333772   (22 slices)
+      52   SeriesDescription          DP SPIR CS_SAG                                 what the radiographer called this sequence
+      52   ScanningSequence           SE                                             SE / GR / IR - the pulse sequence family
+      52   SequenceVariant            SK                                             variants applied to it
+      52   ScanOptions                FS                                             extra options; fat saturation shows up here
+      52   RepetitionTime             4244.640625                                    TR in ms - short TR means T1 weighting
+      52   EchoTime                   22                                             TE in ms - long TE means T2 weighting
+      52   MagneticFieldStrength      1.5                                            1.5T or 3T scanner
+      52   Manufacturer               Philips Healthcare                             which vendor wrote these tags, and how
+      52   Rows                       512                                            image height in pixels
+      52   Columns                    512                                            image width in pixels
+      52   PixelSpacing               [0.330078125, 0.330078125]                     MILLIMETRES PER PIXEL - the key to Chapter 7
+      52   SliceThickness             3.4                                            millimetres per slice
+      52   SpacingBetweenSlices       4.635                                          centre-to-centre slice gap in mm
+      52   Laterality                 -                                              L or R - which knee this is
+      52   ImagePositionPatient       [-159.57565705367, -145.65560311897, 93.9177   xyz of this slice in patient space, in mm
+      52   ImageOrientationPatient    [-0.0334932804107, 0.99921125173568, 0.02133   how the image plane sits in patient space
+      52   RescaleSlope               2.55507                                        stored value -> real value: real = slope*stored + intercept
+      52   RescaleIntercept           0                                              
+      52   PhotometricInterpretation  MONOCHROME2                                    MONOCHROME1 means bright and dark are INVERTED
+      52 raw pixel array   shape (512, 512), dtype float32
+      52 value range       0 to 2338
+      52 pixel spacing     0.3301 mm/pixel
+      52 physical size     169.0 x 169.0 mm of knee
+      54 planes present: {'Axial': 1, 'Coronal': 2, 'Sagittal': 2}
+      54 field of view across these series: 161 to 172 mm (1.07x spread)
+      54   -> even inside one study the physical scale is not constant
+      62 read 2,188 series headers from 400 studies in 6s
+      62 failed: 0
+      62 millimetres per pixel:
+      62 count    2188.000000
+      62 mean        0.339268
+      62 std         0.122389
+      62 min         0.136700
+      62 25%         0.250000
+      62 50%         0.312500
+      62 75%         0.400000
+      62 max         1.171875
+      62 most common acquisition matrices (pixels across):
+      62 cols
+      62 512     514
+      62 384     299
+      62 640     288
+      62 320     144
+      62 1024     84
+      62 256      77
+      62 768      58
+      62 480      54
+      62 field of view in mm  (= mm/pixel x pixels across):
+      62 count    2188.000000
+      62 mean      163.994881
+      62 std        20.564486
+      62 min        70.300000
+      62 25%       160.000000
+      62 50%       160.000000
+      62 75%       170.000000
+      62 max       320.000000
+      62 most common field-of-view values:
+      62 fov_mm
+      62 160.0    809
+      62 170.0    281
+      62 180.0    251
+      62 150.0    239
+      62 140.0     76
+      62 165.0     41
+      62 200.0     40
+      62 130.0     33
+      62 ----------------------------------------------------------------------
+      62 CHECKING A PUBLISHED CLAIM
+      62 Will (wguesdon) reports a CONSTANT 150 mm field of view across this corpus,
+      62 and builds the millimetres-per-token argument on it. Re-measured here:
+      62   series at exactly 150 mm       11.1%
+      62   distinct values                  71
+      62   median                        160.0 mm
+      62   5th - 95th percentile         140.0 - 185.7 mm
+      62   -> The claim does NOT hold on this sample. Field of view VARIES.
+      62      This does not weaken the resolution argument - at the median field of
+      62      view a 126 px input is coarser than the 150 mm figure implies, not
+      62      finer. But it does change what you have to DO about it:
+      62      * you cannot infer physical scale from input size alone;
+      62      * two series resized to the same pixel count are NOT at the same scale;
+      62      * so the millimetre crop below is mandatory, not an optimisation.
+      62      Crop a fixed physical extent per series first. THEN input size fixes
+      62      millimetres per token, because you made it constant yourself.
+      63 recovered weighting:
+      63 weighting
+      63 PD     1238
+      63 T1      477
+      63 T2      457
+      63 GRE      16
+      63 recovered (fluid-sensitive, fat-suppressed) combinations:
+      63 fat_suppressed   False  True 
+      63 fluid_sensitive              
+      63 False              484      9
+      63 True               453   1242
+      63 distinct combinations recovered from the headers: 4
+      63 The CSV gave you 2. Everything above 2 is contrast the CSV threw away.
+      63 share of the 400 sampled studies that have each slot:
+      63    98.0%  #######################################   Axial / fluid / fatsat
+      63    95.0%  ######################################    Sagittal / fluid / fatsat
+      63    93.8%  ######################################    Coronal / fluid / fatsat
+      63    62.7%  #########################                 Coronal / structural / no-fatsat
+      63    62.3%  #########################                 Sagittal / fluid / no-fatsat
+      63    42.2%  #################                         Sagittal / structural / no-fatsat
+      63    23.2%  #########                                 Coronal / fluid / no-fatsat
+      63    12.0%  #####                                     Axial / structural / no-fatsat
+      63    11.0%  ####                                      Axial / fluid / no-fatsat
+      63     1.0%                                            Axial / structural / fatsat
+      63     0.8%                                            Sagittal / structural / fatsat
+      63     0.2%                                            Coronal / structural / fatsat
+      63 slots present in over 80% of studies: 3 of 12
+      63 Define your slots from this list, not from the product of every flag.
+      64 slices in this series          22
+      64 position range along the stack 61.1 to 158.4 mm (97 mm of knee)
+      64 median gap between slices      4.63 mm
+      64 filename order == physical order for 5% of slices
+      64 >>> Sorting by filename does NOT give you anatomical order.
+      64 >>> Filenames are SOP Instance UIDs. They are random.
+      64 >>> If you take 'slices 10 to 13' by filename, you get four unrelated
+      64 >>> positions in the knee, not a contiguous 2.5D neighbourhood.
+      65 which knee, according to the DICOM header:
+      65   missing    1,047  (47.9%)
+      65   L            590  (27.0%)
+      65   R            551  (25.2%)
+      65 studies in the sample                         400
+      65 studies with conflicting laterality tags       10
+      65 >>> 48% of series do not record laterality at all.
+      65 >>> So 'read the tag and mirror' is not a complete plan. You need a fallback:
+      65 >>> take the majority tag across the study's other series, and failing that,
+      65 >>> infer the side from the sign of the ImagePositionPatient x-coordinate,
+      65 >>> which is negative on the patient's right in the DICOM patient frame.
+      65 The fix is to pick a convention - say, make every knee look like a left knee -
+      65 and mirror the ones that are not. Two cautions:
+      65   * coronal and axial images: mirror the PIXELS left-right.
+      65   * sagittal images: the medial/lateral axis runs THROUGH the stack, not across
+      65     the picture, so you reverse the SLICE ORDER instead of flipping pixels.
+      65   * once you have done this, do NOT use a horizontal flip augmentation. You would
+      65     be putting back exactly the nuisance you just removed.
+      92 loaded from   /kaggle/input/models/metaresearch/dinov2/pytorch/small/1
+      92 device        cuda
+      92 parameters    22,056,576
+      92 patch size    14 px
+      92 hidden size   384  <- the length of every token vector
+      92 blocks        12
+      92 configured at 518 px, a 37 x 37 patch grid
+      92 physical crop this pipeline imposes: 160 mm (median measured field of view was 160.0 mm)
+      92 DINOv2 patch 14 px, width 384, 12 blocks
+      92  input_px  tokens  mm_per_pixel  mm_per_token  3mm_tear_in_px  gflops  cost_vs_126px
+      92       126      81         1.270         17.78            2.36     3.6            1.0
+      92       168     144         0.952         13.33            3.15     6.5            1.8
+      92       224     256         0.714         10.00            4.20    12.1            3.4
+      92       280     400         0.571          8.00            5.25    20.0            5.5
+      92       336     576         0.476          6.67            6.30    30.6            8.5
+      92       448    1024         0.357          5.00            8.40    62.9           17.4
+      92 Read the '3mm_tear_in_px' column. Below about 1 pixel, the tear is not merely
+      92 small in the image - it has been erased by the resize before the model sees it.
+      92 'cost_vs_126px' is measured FLOPs, not a guess; the n^2 attention term is why
+      92 it grows faster than the token count does.
+      94 input                 (1, 3, 224, 224)
+      94 output                (1, 257, 384)
+      94                       = 1 image x (1 CLS + 16x16=256 patches) x 384 dims
+      94 CLS token             (1, 384)  <- one vector for the image
+      94 patch tokens          (1, 256, 384)  <- one vector per location
+      94 Three ways to reduce this to a fixed-length feature vector:
+      94   CLS only                        384 dims
+      94   CLS + mean over patches         768 dims  <- a good default
+      94   CLS + mean + max over patches   1152 dims
+      95 slices                        22
+      95 filename order matches physical order for 1/22 positions
+      95 first slice by FILENAME  ...981851620435.dcm
+      95 first slice by GEOMETRY  ...168740398974.dcm
+      95 >>> different files - sorting by name gives you the wrong end of the knee
+      95 this series: 512x512 px at 0.330 mm/px = 169 mm field of view
+      95   -> cropped, then resized to 224 px = 0.714 mm/pixel
+      95   -> one DINOv2 patch (14 px) now covers 10.00 mm, ALWAYS,
+      95      whatever the acquisition was. That is the whole point.
+      96   DP SPIR CS_SAG               side=R   from geometry (ImagePositionPatient x)
+      96   STIR CS_ AX                  side=R   from geometry (ImagePositionPatient x)
+      96   T1_TSE_CS                    side=R   from geometry (ImagePositionPatient x)
+      96   DP SPAIR_CS                  side=R   from geometry (ImagePositionPatient x)
+      96   DP CS_SAG                    side=R   from geometry (ImagePositionPatient x)
+      96 trap check: does 'sag_pd_fs' read as Turkish 'right'? no
+      97 exact-identical report groups    4,276
+      97 after normalising                4,236
+      97 groups a RAW md5 splits across folds: 25  (125 studies)
+      97 groups the NORMALISED hash splits:   0
+      97 fold sizes: [902, 838, 912, 900, 855]
+      97 RSNA_FOLDS = 1
+      97 RSNA_TIME_BUDGET = 14400
+      97 RSNA_TRAIN_SEED = 2026
+      99 [    1.4s] input root: /kaggle/input/rsna-knee-abnormality-detection
+      99 [    1.4s] seeds: data/folds 2026, training 2026
+      99 [    1.7s] device: cuda (Tesla T4, sm_75) - kernel launch verified
+     100 [    1.9s] train (4407, 14) test (3, 1)
+     100 [    1.9s] header pass: test
+     100 [    2.0s]   15 test series
+     100 [    2.0s] header pass: train
+     201 [  102.8s]   24371 train series
+     228 [  129.8s] train slots per study: mean 5.24 min 3 max 6
+     228 [  129.8s] cache layout: 3 groups x 3 slices
+     230 [  132.3s] train: laterality tag 2203 (50.0%), text 167 (3.8%), unknown 2037 (46.2%)
+     230 [  132.3s] train: geometric rule agrees with the tag on 2042/2199 studies (92.9%)
+     230 [  132.3s] test: laterality tag 1 (33.3%), unknown 2 (66.7%)
+     230 [  132.3s] test: geometric rule agrees with the tag on 0/1 studies (0.0%)
+     230 [  132.3s] train: cache (4407, 6, 9, 224, 224) = 11.1 GB
+     230 [  132.3s] train: decoding 23089 slot-series
+     230 /tmp/ipykernel_23/2707053856.py:67: RuntimeWarning: 46% of train studies have no laterality, so they are never mirrored to a common convention. Medial and lateral then sit on opposite sides of the image for left and right knees, and four of the twelve targets are side-specific.
+     230   lat_tr, lat_te = lat_of(htr, "train"), lat_of(hte, "test")
+     230 /tmp/ipykernel_23/2707053856.py:67: RuntimeWarning: 67% of test studies have no laterality, so they are never mirrored to a common convention. Medial and lateral then sit on opposite sides of the image for left and right knees, and four of the twelve targets are side-specific.
+     230   lat_tr, lat_te = lat_of(htr, "train"), lat_of(hte, "test")
+     230 /tmp/ipykernel_23/2707053856.py:67: RuntimeWarning: 46% of train studies have no laterality, so they are never mirrored to a common convention. Medial and lateral then sit on opposite sides of the image for left and right knees, and four of the twelve targets are side-specific.
+     230   lat_tr, lat_te = lat_of(htr, "train"), lat_of(hte, "test")
+     230 /tmp/ipykernel_23/2707053856.py:67: RuntimeWarning: 67% of test studies have no laterality, so they are never mirrored to a common convention. Medial and lateral then sit on opposite sides of the image for left and right knees, and four of the twelve targets are side-specific.
+     230   lat_tr, lat_te = lat_of(htr, "train"), lat_of(hte, "test")
+     811 [  712.9s]   train 4096/23089
+    1376 [ 1277.9s]   train 8192/23089
+    1939 [ 1840.7s]   train 12288/23089
+    2527 [ 2428.5s]   train 16384/23089
+    3102 [ 3004.0s]   train 20480/23089
+    3465 [ 3367.1s] train: slice ordering geometry 100.0%
+    3465 [ 3367.1s] train: physical scale applied 8988 (38.9%), skipped_short_fov 14101 (61.1%)
+    3466 [ 3367.1s] train: slices read 207801, decode failures 0, MONOCHROME1 inverted 0
+    3466 [ 3367.8s] test: cache (3, 6, 9, 224, 224) = 0.0 GB
+    3466 [ 3367.8s] test: decoding 14 slot-series
+    3466 /tmp/ipykernel_23/2707053856.py:68: RuntimeWarning: 61% of slots had a field of view at or below crop_mm=160mm, so no physical normalisation was applied to them and their mm/px came from the acquisition. Set RSNA_PAD_SHORT_FOV=1 to pad instead.
+    3466   st_tr, Ctr, Mtr = build_cache(slots_tr, plane_map, lat_tr, "train", n_group)
+    3466 /tmp/ipykernel_23/2707053856.py:68: RuntimeWarning: 61% of slots had a field of view at or below crop_mm=160mm, so no physical normalisation was applied to them and their mm/px came from the acquisition. Set RSNA_PAD_SHORT_FOV=1 to pad instead.
+    3466   st_tr, Ctr, Mtr = build_cache(slots_tr, plane_map, lat_tr, "train", n_group)
+    3469 [ 3370.8s]   test 14/14
+    3469 [ 3370.8s] test: slice ordering geometry 100.0%
+    3469 [ 3370.8s] test: physical scale applied 8 (57.1%), skipped_short_fov 6 (42.9%)
+    3469 [ 3370.8s] test: slices read 126, decode failures 0, MONOCHROME1 inverted 0
+    3469 /tmp/ipykernel_23/2707053856.py:69: RuntimeWarning: 43% of slots had a field of view at or below crop_mm=160mm, so no physical normalisation was applied to them and their mm/px came from the acquisition. Set RSNA_PAD_SHORT_FOV=1 to pad instead.
+    3469   st_te, Cte, Mte = build_cache(slots_te, plane_map, lat_te, "test", n_group)
+    3469 /tmp/ipykernel_23/2707053856.py:69: RuntimeWarning: 43% of slots had a field of view at or below crop_mm=160mm, so no physical normalisation was applied to them and their mm/px came from the acquisition. Set RSNA_PAD_SHORT_FOV=1 to pad instead.
+    3469   st_te, Cte, Mte = build_cache(slots_te, plane_map, lat_te, "test", n_group)
+    3487 [ 3389.6s] rule labels for 4407 studies in 18.3s
+    3577 distilled text model, OOF corr with rules per target:
+    3577   ACL                +0.765
+    3577   MCL                +0.669
+    3577   Medial Meniscus    +0.771
+    3577   Lateral Meniscus   +0.616
+    3577   Medial OA          +0.734
+    3577   Lateral OA         +0.670
+    3577   PF OA              +0.766
+    3577   Effusion           +0.761
+    3577   Synovitis          +0.837
+    3577   Baker's            +0.800
+    3577   Contusion          +0.777
+    3577   Fracture           +0.729
+    3577 [ 3479.4s] text-model weight per target: min 0.22 max 0.29, 0/12 gated out
+    3577 [ 3479.5s] annotated studies: 58
+    3577 [ 3479.7s] supervised 4407 of 4407 studies
+    3577 [ 3479.7s] fold audit:
+    3578 [ 3480.3s]   duplicate check: every near-duplicate report group is inside one fold
+    3578 [ 3480.3s]   class balance: all 5 x 12 cells have >= 10 of each class
+    3579 [ 3480.8s] protocol model: 19 features, derived-OOF macro AUC 0.6006 -> fusion weight 0.10
+    3579 [ 3480.8s] fold 0: train 3505 / val 902 (annotated in val: 9)
+    3580 [ 3482.2s] backbone: DINOv2 from /kaggle/input/models/metaresearch/dinov2/pytorch/small/1, dim 768
+    3580 [ 3482.2s]   trainable: last 6 of 12 blocks, 10.7M params
+    3679 [ 3580.7s]   fold 0 epoch 1/12  loss 0.3727  derived 0.6550  annot 0.5991  worse-of-two 0.5991
+    3775 [ 3676.9s]   fold 0 epoch 2/12  loss 0.3677  derived 0.6855  annot 0.7267  worse-of-two 0.6855
+    3871 [ 3773.0s]   fold 0 epoch 3/12  loss 0.3616  derived 0.6784  annot 0.7482  worse-of-two 0.6784
+    3967 [ 3868.9s]   fold 0 epoch 4/12  loss 0.3578  derived 0.7072  annot 0.7853  worse-of-two 0.7072
+    4063 [ 3964.8s]   fold 0 epoch 5/12  loss 0.3535  derived 0.7275  annot 0.7740  worse-of-two 0.7275
+    4159 [ 4060.8s]   fold 0 epoch 6/12  loss 0.3495  derived 0.7356  annot 0.7708  worse-of-two 0.7356
+    4255 [ 4156.8s]   fold 0 epoch 7/12  loss 0.3465  derived 0.7420  annot 0.7980  worse-of-two 0.7420
+    4351 [ 4253.3s]   fold 0 epoch 8/12  loss 0.3426  derived 0.7470  annot 0.7669  worse-of-two 0.7470
+    4447 [ 4349.1s]   fold 0 epoch 9/12  loss 0.3390  derived 0.7505  annot 0.7845  worse-of-two 0.7505
+    4543 [ 4445.3s]   fold 0 epoch 10/12  loss 0.3351  derived 0.7542  annot 0.7907  worse-of-two 0.7542
+    4639 [ 4541.5s]   fold 0 epoch 11/12  loss 0.3342  derived 0.7558  annot 0.7848  worse-of-two 0.7558
+    4735 [ 4637.7s]   fold 0 epoch 12/12  loss 0.3323  derived 0.7561  annot 0.7848  worse-of-two 0.7561
+    4736 [ 4637.7s]   fold 0: restored epoch 12 (worse-of-two 0.7561)
+    4762 [ 4664.5s] OOF over 902 studies
+    4762 [ 4664.5s]   vs derived targets : 0.7561
+    4762 [ 4664.6s]   vs annotated (9) : 0.7848
+    4762 [ 4664.6s]   per label (derived targets, n=902):
+    4762 [ 4664.6s]       target              n_pos     auc      se   verdict
+    4762 [ 4664.6s]       ACL                   188   0.741   0.022   measured
+    4762 [ 4664.6s]       MCL                   111   0.753   0.028   measured
+    4762 [ 4664.6s]       Medial Meniscus       372   0.737   0.017   measured
+    4762 [ 4664.6s]       Lateral Meniscus      173   0.726   0.023   measured
+    4762 [ 4664.6s]       Medial OA             179   0.769   0.022   measured
+    4762 [ 4664.6s]       Lateral OA            146   0.757   0.024   measured
+    4762 [ 4664.6s]       PF OA                 285   0.725   0.019   measured
+    4762 [ 4664.6s]       Effusion              506   0.787   0.015   measured
+    4762 [ 4664.6s]       Synovitis             290   0.806   0.017   measured
+    4762 [ 4664.6s]       Baker's               210   0.794   0.020   measured
+    4762 [ 4664.6s]       Contusion             200   0.737   0.022   measured
+    4762 [ 4664.6s]       Fracture               58   0.739   0.038   measured
+    4762 [ 4664.6s]   wrote oof_predictions.csv and oof_per_label.csv
+    4762 [ 4664.6s] submission.csv (3, 13); nulls 0
+    4762 [ 4664.6s] folds run: 1, mean worse-of-two 0.7561
+    4764 [ 4665.7s] done
+    4771   cells[i][c] = re.sub('\\\\\|', '|', cell)
+    4771   text = re.sub(r'_', '\_', text) # Escape underscores in display text

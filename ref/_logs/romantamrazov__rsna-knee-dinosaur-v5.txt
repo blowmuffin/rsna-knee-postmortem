@@ -1,0 +1,115 @@
+      18 DINOsaur V15 PUBLIC ONLY | selected apex950 | 3 full reader folds: ['/kaggle/input/datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader/cnxt_v0_fold0.pt', '/kaggle/input/datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader/cnxt_v0_fold1.pt', '/kaggle/input/datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader/cnxt_v0_fold2.pt'] | GPUs 2
+      21 APEX DINOsaur V6 | GPUs: 2 | Runtime budget: 8.533333333333333 hours
+      24 Verified verified SOTA weights: /kaggle/input/datasets/nartaa/rsna-knee-publication-swa-weights-20261007/raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt (SHA-256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef)
+      35 device cuda | gpus 2 | torch 2.10.0+cu128
+      35 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+      35 test studies 3 | test series 15
+      35 XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda
+      36 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      38 [gpu cuda:0] loaded 1 arm(s) | 3s
+      39 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      41 [gpu cuda:1] loaded 1 arm(s) | 5s
+      44   [pre] 3/3 | 8s
+      44 [pre] done: 3 studies in 3s (procs 2 x fastread study_lut 12/8 threads)
+      57   [gpu] 3/3 | 21s
+      57 [gpu] done: 3/3 studies on 2 device(s) | 21s
+      57 [blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt': np.float64(1.0)}
+      57 Saved SOTA 0.949 backup to /kaggle/working/_sota_0949.csv
+      57 wrote /kaggle/working/submission.csv | 3 rows x 13 cols
+      57                                                 StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture
+      57 1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.5              1.0               0.0        1.0         0.0    0.0       0.5        0.5      1.0        0.5       0.0
+      57 1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  1.0  1.0              0.5               0.5        0.0         0.5    1.0       1.0        1.0      0.5        1.0       1.0
+      57 1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  0.5  0.0              0.0               1.0        0.5         1.0    0.5       0.0        0.0      0.0        0.0       0.5
+      57 DONE 21s
+      57 Installed source: preprocess.py bytes: 6529
+      57 Installed source: knee.py bytes: 8431
+      57 Installed source: infer.py bytes: 4373
+      57 CoAtNet anchor saved: 3 studies | elapsed: 0.6 minutes
+      57 READER_WORKER_PREFLIGHT_OK /kaggle/working/_dinov14_reader_worker.py
+      76 Reader done: 1
+      77 Reader done: 1
+      82 Reader done: 2
+      82 Reader done: 2
+      85 All 3 ConvNeXt folds finished on 2 GPU shard(s) in 1.1 min
+      85 V16 completed: 3 studies | all reader folds complete | other 11 targets EXACT V14
+      85 Lateral OA specialist sensitivity: {'0.18': {'mean_abs_rank_shift': 0.0, 'changed_rank_count': 0}, '0.35': {'mean_abs_rank_shift': 0.0, 'changed_rank_count': 0}, '0.52': {'mean_abs_rank_shift': 0.0, 'changed_rank_count': 0}, '0.7': {'mean_abs_rank_shift': 0.0, 'changed_rank_count': 0}}
+      85 submission.csv ready; experimental score NOT YET verified
+      89 V17 crop224 verified: /kaggle/input/datasets/nartaa/rsna-knee-publication-swa-weights-20261007/raptor_ft_alldata_t16_blendjev_oai_d96_c08_r224_swa.pt
+      94 device cuda | gpus 2 | torch 2.10.0+cu128
+      94 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+      94 test studies 3 | test series 15
+      95 device cuda | gpus 2 | torch 2.10.0+cu128
+      95 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+      95 test studies 3 | test series 15
+      95 [weights] sha256 3394fdd7e668286956e85af2554bef0386df5cd79d1c1af223b095c828b815d6
+      95 [weights] sha256 3394fdd7e668286956e85af2554bef0386df5cd79d1c1af223b095c828b815d6
+      97 [gpu cuda:0] loaded 1 arm(s) | 3s
+      97 [gpu cuda:0] loaded 1 arm(s) | 3s
+      98 [weights] sha256 3394fdd7e668286956e85af2554bef0386df5cd79d1c1af223b095c828b815d6
+      98 [weights] sha256 3394fdd7e668286956e85af2554bef0386df5cd79d1c1af223b095c828b815d6
+      99 [gpu cuda:1] loaded 1 arm(s) | 5s
+      99 Traceback (most recent call last):
+      99   File "/kaggle/working/_dinov17_run_crop.py", line 11, in <module>
+      99     ns['main']()
+      99   File "/kaggle/working/_dinov17_public_crop_model.py", line 492, in main
+      99     for i, (sid, vol, mask) in enumerate(pool.imap_unordered(_pre_one, test_ids, chunksize=2)):
+      99                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      99   File "/usr/lib/python3.12/multiprocessing/pool.py", line 451, in <genexpr>
+      99     return (item for chunk in result for item in chunk)
+      99                               ^^^^^^
+      99   File "/usr/lib/python3.12/multiprocessing/pool.py", line 873, in next
+      99     raise value
+      99   File "/usr/lib/python3.12/multiprocessing/pool.py", line 540, in _handle_tasks
+      99     put(task)
+      99   File "/usr/lib/python3.12/multiprocessing/connection.py", line 206, in send
+      99     self._send_bytes(_ForkingPickler.dumps(obj))
+      99                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      99   File "/usr/lib/python3.12/multiprocessing/reduction.py", line 51, in dumps
+      99     cls(buf, protocol).dump(obj)
+      99 _pickle.PicklingError: Can't pickle <function _pre_one at 0x7cdb0ef92de0>: import of module 'dinov17_crop_public' failed
+     100 [gpu cuda:1] loaded 1 arm(s) | 5s
+     100 Traceback (most recent call last):
+     100   File "/kaggle/working/_dinov17_run_crop.py", line 11, in <module>
+     100     ns['main']()
+     100   File "/kaggle/working/_dinov17_public_crop_model.py", line 492, in main
+     100     for i, (sid, vol, mask) in enumerate(pool.imap_unordered(_pre_one, test_ids, chunksize=2)):
+     100                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     100   File "/usr/lib/python3.12/multiprocessing/pool.py", line 451, in <genexpr>
+     100     return (item for chunk in result for item in chunk)
+     100                               ^^^^^^
+     100   File "/usr/lib/python3.12/multiprocessing/pool.py", line 873, in next
+     100     raise value
+     100   File "/usr/lib/python3.12/multiprocessing/pool.py", line 540, in _handle_tasks
+     100     put(task)
+     100   File "/usr/lib/python3.12/multiprocessing/connection.py", line 206, in send
+     100     self._send_bytes(_ForkingPickler.dumps(obj))
+     100                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+     100   File "/usr/lib/python3.12/multiprocessing/reduction.py", line 51, in dumps
+     100     cls(buf, protocol).dump(obj)
+     100 _pickle.PicklingError: Can't pickle <function _pre_one at 0x7cdb0ef92de0>: import of module 'dinov17_crop_public' failed
+     100 Traceback (most recent call last):
+     100   File "/kaggle/working/_dinov17_run_crop.py", line 11, in <module>
+     100     ns['main']()
+     100   File "/kaggle/working/_dinov17_public_crop_model.py", line 492, in main
+     100     for i, (sid, vol, mask) in enumerate(pool.imap_unordered(_pre_one, test_ids, chunksize=2)):
+     100                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     100   File "/usr/lib/python3.12/multiprocessing/pool.py", line 451, in <genexpr>
+     100     return (item for chunk in result for item in chunk)
+     100                               ^^^^^^
+     100   File "/usr/lib/python3.12/multiprocessing/pool.py", line 873, in next
+     100     raise value
+     100   File "/usr/lib/python3.12/multiprocessing/pool.py", line 540, in _handle_tasks
+     100     put(task)
+     100   File "/usr/lib/python3.12/multiprocessing/connection.py", line 206, in send
+     100     self._send_bytes(_ForkingPickler.dumps(obj))
+     100                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+     100   File "/usr/lib/python3.12/multiprocessing/reduction.py", line 51, in dumps
+     100     cls(buf, protocol).dump(obj)
+     100 _pickle.PicklingError: Can't pickle <function _pre_one at 0x7cdb0ef92de0>: import of module 'dinov17_crop_public' failed
+     101 DINOSAUR_V17_COMPLETE {"v17_branch": "crop_exit_1", "public_crop_used": false, "target_modified": null, "weights_lateral_oa": {"raptor": 0.48, "convnext": 0.52}, "n_studies": 3, "public_only": true, "measured_lb_auc": null, "elapsed_min": 1.34}
+     101 DINOSAUR_V18_COMPLETE {"mode": "public_dual_view", "controls": "_dinov18_exact_v17_control.csv", "candidate_columns": ["Contusion"], "n_studies": 3, "reader_folds": 3, "unchanged_columns": ["ACL", "MCL", "Medial Meniscus", "Lateral Meniscus", "Medial OA", "PF OA", "Effusion", "Synovitis", "Baker's", "Fracture"], "rank_sensitivity": {"Contusion": {"changed": 1, "mean_abs_rank_shift": 0.0, "maximum_
+     101 DINOSAUR_V18_SUBMISSION_VERIFIED: 3 studies, 12 targets; 10/12 unchanged
+     101 DINOSAUR_V19_COMPLETE {"version": "DINOsaur V19", "source_baseline": "DINOsaur V18", "baseline_file": "_dinov19_exact_v18_control.csv", "models": ["public CoAtNet-384", "public ConvNeXt-MIL three folds", "optional public CoAtNet-224 for Lateral OA"], "extra_GPU_forwards": 0, "original_crop224_complete": false, "n_studies": 3, "modified": {"ACL": {"previous_reader_weight": 0.27, "candidate_reader_w
+     101 DINOSAUR_V19_FINAL_VERIFIED: 3 studies; 12 targets; V18 control and ablations saved
+     106   cells[i][c] = re.sub('\\\\\|', '|', cell)
+     106   text = re.sub(r'_', '\_', text) # Escape underscores in display text

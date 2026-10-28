@@ -1,0 +1,29 @@
+[{"stream_name":"stdout","time":11.428188079,"data":"[      9s] pseudo targets: a=0.5 from ['knee-train-rad'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":14.484574541,"data":"[     12s] efficientnet_b0.ra_in1k: 4407 studies, folds [0, 1], 6 epochs, 2 GPUs, pseudo 0.5 ['knee-train-rad']\n"}
+,{"stream_name":"stdout","time":16.739177164,"data":"[      2s] pseudo targets: a=0.5 from ['knee-train-rad'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":16.755268536,"data":"[      2s] pseudo targets: a=0.5 from ['knee-train-rad'], 4407 studies with OOF\n"}
+,{"stream_name":"stderr","time":31.811661712,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":31.853500549,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":1123.962045387,"data":"[   1109s] [gpu1] fold 1 ep 0 loss 0.5025 val macroAUC(vs labels) 0.8257 | data-wait 13s of 1091s\n"}
+,{"stream_name":"stdout","time":1130.706592815,"data":"[   1116s] [gpu0] fold 0 ep 0 loss 0.4996 val macroAUC(vs labels) 0.8279 | data-wait 13s of 1098s\n"}
+,{"stream_name":"stdout","time":1618.07853402,"data":"[   1603s] [gpu0] fold 0 ep 1 loss 0.4365 val macroAUC(vs labels) 0.8627 | data-wait 15s of 487s\n"}
+,{"stream_name":"stdout","time":1624.990103866,"data":"[   1610s] [gpu1] fold 1 ep 1 loss 0.4351 val macroAUC(vs labels) 0.8633 | data-wait 14s of 501s\n"}
+,{"stream_name":"stdout","time":2070.973139008,"data":"[   2056s] [gpu1] fold 1 ep 2 loss 0.4124 val macroAUC(vs labels) 0.8734 | data-wait 15s of 446s\n"}
+,{"stream_name":"stdout","time":2113.377472503,"data":"[   2098s] [gpu0] fold 0 ep 2 loss 0.4149 val macroAUC(vs labels) 0.8723 | data-wait 16s of 495s\n"}
+,{"stream_name":"stdout","time":2522.713983915,"data":"[   2508s] [gpu1] fold 1 ep 3 loss 0.4003 val macroAUC(vs labels) 0.8799 | data-wait 16s of 452s\n"}
+,{"stream_name":"stdout","time":2553.697498387,"data":"[   2539s] [gpu0] fold 0 ep 3 loss 0.4019 val macroAUC(vs labels) 0.8815 | data-wait 15s of 440s\n"}
+,{"stream_name":"stdout","time":2975.458318607,"data":"[   2960s] [gpu1] fold 1 ep 4 loss 0.3922 val macroAUC(vs labels) 0.8842 | data-wait 16s of 453s\n"}
+,{"stream_name":"stdout","time":2993.128034982,"data":"[   2978s] [gpu0] fold 0 ep 4 loss 0.3932 val macroAUC(vs labels) 0.8872 | data-wait 15s of 439s\n"}
+,{"stream_name":"stdout","time":3428.206124632,"data":"[   3413s] [gpu1] fold 1 ep 5 loss 0.3867 val macroAUC(vs labels) 0.8850 | data-wait 15s of 453s\n"}
+,{"stream_name":"stdout","time":3428.798435403,"data":"[   3414s] [gpu1] fold 1 saved in 57 min\n"}
+,{"stream_name":"stdout","time":3433.303089658,"data":"[   3418s] [gpu0] fold 0 ep 5 loss 0.3891 val macroAUC(vs labels) 0.8875 | data-wait 15s of 440s\n"}
+,{"stream_name":"stdout","time":3433.675639575,"data":"[   3419s] [gpu0] fold 0 saved in 57 min\n"}
+,{"stream_name":"stdout","time":3438.748314242,"data":"[   3436s] trained folds [0, 1]; OOF macroAUC vs labels: 0.8862\n"}
+,{"stream_name":"stdout","time":3438.773679204,"data":"[   3436s] OOF macroAUC vs gold (32 studies): 0.9058\n"}
+,{"stream_name":"stderr","time":3442.099031866,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3442.099060132,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3442.492808389,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3442.492834582,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3443.725830411,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3444.987594083,"data":"[NbConvertApp] Writing 481552 bytes to __results__.html\n"}
+]

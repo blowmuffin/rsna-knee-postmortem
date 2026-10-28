@@ -1,0 +1,5 @@
+Aim for gold in the RSNA Knee competition (team ayushkasare, deadline 2026-10-22 23:59 UTC). We are at 0.958 public, rank 553; the gold line is about 0.963. Most of the 0.958 block are exact copies of public notebooks, so a unique, stronger submission is what moves us. Start from the last section of HANDOFF.md (current state, open ideas, what already failed) and EXPERIMENTS.md (every result). Treat that plan as a starting point, not a script: use your own judgment on what gives the best chance, and change course when the evidence says so.
+
+Hard limits: stay rule-safe (no R7/fastMRI, only public or our own data and weights, kernels private); at most 4 submissions per UTC day, the last by 2026-10-22 12:00 UTC; heavy compute only as Kaggle kernels within the GPU quota. Ask me before choosing the final two submissions, deleting anything, publishing, or using data with an unclear licence. Log results in EXPERIMENTS.md and keep HANDOFF.md current so a fresh session can resume.
+
+Done when, after 2026-10-22 16:00 UTC, HANDOFF.md ends with FINAL PICKS (two submission refs with public score, rank and the evidence for each), no pick is pending, and I have approved both.

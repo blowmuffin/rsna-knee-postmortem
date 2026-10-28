@@ -1,0 +1,40 @@
+[{"stream_name":"stdout","time":17.717221868,"data":"[     14s] pseudo targets: a=0.7 from ['knee-train-eff320', 'knee-train-eff320b', 'knee-train-eff31-mil', 'knee-train-rad31-mil'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":20.905964846,"data":"[     17s] convnext_tiny.fb_in22k_ft_in1k: 4407 studies, folds [2, 3], 12 epochs, 2 GPUs, pseudo 0.7 ['knee-train-eff320', 'knee-train-eff320b', 'knee-train-eff31-mil', 'knee-train-rad31-mil']\n"}
+,{"stream_name":"stdout","time":23.341660128,"data":"[      2s] pseudo targets: a=0.7 from ['knee-train-eff320', 'knee-train-eff320b', 'knee-train-eff31-mil', 'knee-train-rad31-mil'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":23.373992232,"data":"[      2s] pseudo targets: a=0.7 from ['knee-train-eff320', 'knee-train-eff320b', 'knee-train-eff31-mil', 'knee-train-rad31-mil'], 4407 studies with OOF\n"}
+,{"stream_name":"stderr","time":40.230533926,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":1650.066011452,"data":"[   1629s] [gpu0] fold 2 ep 0 loss 0.5398 val macroAUC(vs labels) 0.8282 | data-wait 5s of 1608s\n"}
+,{"stream_name":"stdout","time":1805.228909553,"data":"[   1784s] [gpu1] fold 3 ep 0 loss 0.5329 val macroAUC(vs labels) 0.8127 | data-wait 5s of 1763s\n"}
+,{"stream_name":"stdout","time":2871.771708272,"data":"[   2850s] [gpu0] fold 2 ep 1 loss 0.4662 val macroAUC(vs labels) 0.8773 | data-wait 5s of 1222s\n"}
+,{"stream_name":"stdout","time":3166.762298435,"data":"[   3145s] [gpu1] fold 3 ep 1 loss 0.4595 val macroAUC(vs labels) 0.8677 | data-wait 5s of 1362s\n"}
+,{"stream_name":"stdout","time":4091.072346325,"data":"[   4070s] [gpu0] fold 2 ep 2 loss 0.4410 val macroAUC(vs labels) 0.8921 | data-wait 5s of 1219s\n"}
+,{"stream_name":"stdout","time":4525.750260567,"data":"[   4504s] [gpu1] fold 3 ep 2 loss 0.4382 val macroAUC(vs labels) 0.8807 | data-wait 5s of 1359s\n"}
+,{"stream_name":"stdout","time":5308.289706456,"data":"[   5287s] [gpu0] fold 2 ep 3 loss 0.4318 val macroAUC(vs labels) 0.8986 | data-wait 5s of 1217s\n"}
+,{"stream_name":"stdout","time":5885.654745124,"data":"[   5864s] [gpu1] fold 3 ep 3 loss 0.4293 val macroAUC(vs labels) 0.8868 | data-wait 5s of 1360s\n"}
+,{"stream_name":"stdout","time":6528.264215843,"data":"[   6507s] [gpu0] fold 2 ep 4 loss 0.4255 val macroAUC(vs labels) 0.9036 | data-wait 5s of 1220s\n"}
+,{"stream_name":"stdout","time":7243.875205754,"data":"[   7222s] [gpu1] fold 3 ep 4 loss 0.4232 val macroAUC(vs labels) 0.8959 | data-wait 5s of 1358s\n"}
+,{"stream_name":"stdout","time":7748.005346213,"data":"[   7727s] [gpu0] fold 2 ep 5 loss 0.4212 val macroAUC(vs labels) 0.9053 | data-wait 5s of 1220s\n"}
+,{"stream_name":"stdout","time":8603.283982801,"data":"[   8582s] [gpu1] fold 3 ep 5 loss 0.4190 val macroAUC(vs labels) 0.8971 | data-wait 5s of 1359s\n"}
+,{"stream_name":"stdout","time":8968.333918536,"data":"[   8947s] [gpu0] fold 2 ep 6 loss 0.4171 val macroAUC(vs labels) 0.9100 | data-wait 5s of 1220s\n"}
+,{"stream_name":"stdout","time":9963.407376316,"data":"[   9942s] [gpu1] fold 3 ep 6 loss 0.4150 val macroAUC(vs labels) 0.9028 | data-wait 5s of 1360s\n"}
+,{"stream_name":"stdout","time":10188.791824923,"data":"[  10167s] [gpu0] fold 2 ep 7 loss 0.4136 val macroAUC(vs labels) 0.9127 | data-wait 5s of 1220s\n"}
+,{"stream_name":"stdout","time":11320.175275177,"data":"[  11299s] [gpu1] fold 3 ep 7 loss 0.4115 val macroAUC(vs labels) 0.9032 | data-wait 5s of 1357s\n"}
+,{"stream_name":"stdout","time":11409.112645975,"data":"[  11388s] [gpu0] fold 2 ep 8 loss 0.4106 val macroAUC(vs labels) 0.9128 | data-wait 5s of 1220s\n"}
+,{"stream_name":"stdout","time":12628.909125338,"data":"[  12607s] [gpu0] fold 2 ep 9 loss 0.4084 val macroAUC(vs labels) 0.9137 | data-wait 5s of 1220s\n"}
+,{"stream_name":"stdout","time":12676.604393212,"data":"[  12655s] [gpu1] fold 3 ep 8 loss 0.4086 val macroAUC(vs labels) 0.9050 | data-wait 5s of 1356s\n"}
+,{"stream_name":"stdout","time":13848.339776504,"data":"[  13827s] [gpu0] fold 2 ep 10 loss 0.4069 val macroAUC(vs labels) 0.9145 | data-wait 5s of 1219s\n"}
+,{"stream_name":"stdout","time":14036.066298279,"data":"[  14015s] [gpu1] fold 3 ep 9 loss 0.4065 val macroAUC(vs labels) 0.9048 | data-wait 5s of 1359s\n"}
+,{"stream_name":"stdout","time":15070.962769265,"data":"[  15050s] [gpu0] fold 2 ep 11 loss 0.4065 val macroAUC(vs labels) 0.9148 | data-wait 5s of 1223s\n"}
+,{"stream_name":"stdout","time":15071.237043547,"data":"[  15050s] [gpu0] fold 2 saved in 251 min\n"}
+,{"stream_name":"stdout","time":15392.736043714,"data":"[  15371s] [gpu1] fold 3 ep 10 loss 0.4050 val macroAUC(vs labels) 0.9050 | data-wait 5s of 1357s\n"}
+,{"stream_name":"stdout","time":16751.014751447,"data":"[  16730s] [gpu1] fold 3 ep 11 loss 0.4043 val macroAUC(vs labels) 0.9054 | data-wait 4s of 1358s\n"}
+,{"stream_name":"stdout","time":16751.237246065,"data":"[  16730s] [gpu1] fold 3 saved in 279 min\n"}
+,{"stream_name":"stdout","time":16764.388379355,"data":"[  16761s] trained folds [2, 3]; OOF macroAUC vs labels: 0.9101\n"}
+,{"stream_name":"stdout","time":16764.412679977,"data":"[  16761s] OOF macroAUC vs gold (15 studies): 0.9461\n"}
+,{"stream_name":"stderr","time":16768.54012806,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":16768.540157045,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":16769.096639938,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":16769.096675673,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":16770.698743562,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":16772.233013883,"data":"[NbConvertApp] Writing 494755 bytes to __results__.html\n"}
+]

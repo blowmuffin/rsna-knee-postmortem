@@ -1,0 +1,25 @@
+{
+  "id": "alenkv/rsna-knee-abnormality-detection-system",
+  "id_no": 131849451,
+  "title": "RSNA Knee Abnormality Detection System",
+  "code_file": "rsna-knee-abnormality-detection-system.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [
+    ""
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [
+    "google/gemma-3/Transformers/gemma-3-4b-it/1"
+  ],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machine_shape": "None"
+}

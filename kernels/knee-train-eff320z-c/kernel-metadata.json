@@ -1,0 +1,28 @@
+{
+  "id": "ayushkasare/knee-train-eff320z-c",
+  "title": "knee-train-eff320z-c",
+  "code_file": "knee-train-eff320z-c.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": true,
+  "enable_internet": true,
+  "kernel_sources": [
+    "ayushkasare/knee-prep320za",
+    "ayushkasare/knee-prep320zb",
+    "ayushkasare/knee-prep320zc",
+    "ayushkasare/knee-prep320zd",
+    "ayushkasare/knee-train-eff320",
+    "ayushkasare/knee-train-eff320b",
+    "ayushkasare/knee-train-eff31-mil",
+    "ayushkasare/knee-train-rad31-mil"
+  ],
+  "dataset_sources": [
+    "stevenleehans/rsna-knee-llm-report-labels",
+    "marwanmath/resnet-50-radimagenet-marwan"
+  ],
+  "machine_shape": "NvidiaTeslaT4"
+}

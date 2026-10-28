@@ -1,0 +1,18 @@
+[{"stream_name":"stdout","time":13.975784657,"data":"[     12s] convnext_tiny.fb_in22k_ft_in1k: 400 studies, folds [0], 2 epochs, 2 GPUs, pseudo 0.0 []\n"}
+,{"stream_name":"stderr","time":28.735627053,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":500.418633054,"data":"[    498s] [gpu0] fold 0 ep 0 loss 0.5780 val macroAUC(vs labels) 0.6764 | data-wait 10s of 468s\n"}
+,{"stream_name":"stdout","time":605.907297542,"data":"[    604s] [gpu0] fold 0 ep 1 loss 0.5432 val macroAUC(vs labels) 0.6919 | data-wait 2s of 105s\n"}
+,{"stream_name":"stdout","time":606.002320885,"data":"[    604s] [gpu0] fold 0 saved in 10 min\n"}
+,{"stream_name":"stdout","time":606.179002738,"data":"[    604s] trained folds [0]; OOF macroAUC vs labels: 0.6919\n"}
+,{"stream_name":"stderr","time":606.182811785,"data":"/usr/local/lib/python3.13/dist-packages/numpy/_core/fromnumeric.py:3904: RuntimeWarning: Mean of empty slice.\n"}
+,{"stream_name":"stderr","time":606.182833872,"data":"  return _methods._mean(a, axis=axis, dtype=dtype,\n"}
+,{"stream_name":"stderr","time":606.183590333,"data":"/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:147: RuntimeWarning: invalid value encountered in scalar divide\n"}
+,{"stream_name":"stderr","time":606.183608395,"data":"  ret = ret.dtype.type(ret / rcount)\n"}
+,{"stream_name":"stdout","time":606.18377193,"data":"[    604s] OOF macroAUC vs gold (1 studies): nan\n"}
+,{"stream_name":"stderr","time":612.202920959,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":612.20296653,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":612.429136249,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":612.42917038,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":613.27296835,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":614.367610144,"data":"[NbConvertApp] Writing 477938 bytes to __results__.html\n"}
+]

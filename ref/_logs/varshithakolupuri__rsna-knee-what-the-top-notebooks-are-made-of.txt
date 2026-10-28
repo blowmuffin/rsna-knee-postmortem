@@ -1,0 +1,3 @@
+      14 88 public notebooks score 0.95 or more (of 100 fetched)
+      18   cells[i][c] = re.sub('\\\\\|', '|', cell)
+      19   text = re.sub(r'_', '\_', text) # Escape underscores in display text

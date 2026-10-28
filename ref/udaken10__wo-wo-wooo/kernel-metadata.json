@@ -1,0 +1,23 @@
+{
+  "id": "udaken10/wo-wo-wooo",
+  "id_no": 130060073,
+  "title": "wo_wo_wooo_\u5168\u90e8\u65e5\u672c\u8a9e\u306b\u3057\u3066\u307f\u308c",
+  "code_file": "wo-wo-wooo.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [
+    "google/gemma-4/Transformers/gemma-4-12b/2"
+  ],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machine_shape": "NvidiaTeslaT4"
+}

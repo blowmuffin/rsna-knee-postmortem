@@ -1,0 +1,1 @@
+{"BACKBONE": "radimagenet_resnet50", "IMG": 224, "SMOKE": 0, "FOLDS": [0, 1, 2, 3, 4], "EPOCHS": 8, "PSEUDO": [0.5, ["knee-train-eff31-mil"]], "N_SLICE": 31, "HEAD": "mil", "PREP": 2}

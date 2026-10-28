@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+# pip-installed packages bundled for kernels; reinstallable
+runs/*/_*_env/
+
+# competition data and radiology report text: the competition license forbids redistribution
+data/
+labels/psuedo-labeling-knee/data.csv
+labels/psuedo-labeling-knee/train.csv
+labels/psuedo-labeling-knee/LLM_reasoning.csv
+labels/rsna-knee-abnormality-qwen3-8b-weak-labels/qwen_knee_weak_labels.csv
+labels/rsna-knee-abnormality-qwen3-8b-weak-labels/weak_labels_v2_filled.csv
+labels/rsna-knee-abnormality-qwen3-8b-weak-labels/weak_labels_v2_raw.csv

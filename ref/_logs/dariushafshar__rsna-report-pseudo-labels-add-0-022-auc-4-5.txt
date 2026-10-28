@@ -1,0 +1,42 @@
+       7 /usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+       7   validate(nb)
+      18 device      : cuda
+      18   gpu0       : Tesla T4 sm_75, 15 GiB
+      18   gpu1       : Tesla T4 sm_75, 15 GiB
+      18 all paths resolved
+      18 DICOM extraction functions ready (reused from the proven 0.920 pipeline)
+      18 58 gold-labeled studies split into 5 folds (fresh seeded KFold, no external fold dataset)
+      18 {0: 12, 1: 12, 2: 12, 3: 11, 4: 11}
+      18 report-label sources: 4406 studies common to all three
+      18 per-study #labels-unanimous distribution (0-12):
+      18 {0: 70, 1: 80, 2: 75, 3: 110, 4: 174, 5: 338, 6: 456, 7: 533, 8: 645, 9: 772, 10: 778, 11: 323, 12: 52}
+      18 candidate pseudo-label pool (>= 8/12 unanimous, excluding gold): 2536 studies
+      18 sampled 250 pseudo-label studies (seed=2026)
+      18 58/58 gold studies have series metadata
+      18 250/250 pseudo studies have series metadata
+      26 frozen RadImageNet ResNet50 encoder loaded,  23508032 params
+     439 extracted features for 308/308 studies in 413.4s (gold 58/58, pseudo 250/250)
+     439 58 gold + 250 pseudo studies with usable features
+     439 mean unmasked labels per pseudo study: 9.31/12
+     440 fold 0: n_val=12 gold-only macro_auc=0.6449 (12/12 labels defined)  |  +250 pseudo macro_auc=0.6985 (12/12 labels defined)  delta=+0.0536
+     440 fold 1: n_val=12 gold-only macro_auc=0.6486 (12/12 labels defined)  |  +250 pseudo macro_auc=0.6483 (12/12 labels defined)  delta=-0.0003
+     440 fold 2: n_val=12 gold-only macro_auc=0.6896 (12/12 labels defined)  |  +250 pseudo macro_auc=0.7219 (12/12 labels defined)  delta=+0.0323
+     441 fold 3: n_val=11 gold-only macro_auc=0.6474 (12/12 labels defined)  |  +250 pseudo macro_auc=0.6631 (12/12 labels defined)  delta=+0.0157
+     441 fold 4: n_val=11 gold-only macro_auc=0.6827 (12/12 labels defined)  |  +250 pseudo macro_auc=0.6913 (12/12 labels defined)  delta=+0.0086
+     441  fold  n_val  n_gold_tr  n_pseudo_tr  baseline_auc  treatment_auc   delta
+     441     0     12         46          250        0.6449         0.6985  0.0536
+     441     1     12         46          250        0.6486         0.6483 -0.0003
+     441     2     12         46          250        0.6896         0.7219  0.0323
+     441     3     11         47          250        0.6474         0.6631  0.0157
+     441     4     11         47          250        0.6827         0.6913  0.0086
+     441 folds improved by adding pseudo-labels: 4/5
+     441 mean baseline  macro AUC: 0.6626 (std 0.0216)
+     441 mean treatment macro AUC: 0.6846 (std 0.0292)
+     441 mean delta              : +0.0220
+     441 READ THIS HONESTLY: validation is still only ~11-12 gold studies per fold, and this is a
+     441 single N_PSEUDO=250 draw from the 2,570-study candidate pool. A result in either direction
+     441 at this n is directional evidence about whether the technique is worth pursuing at scale,
+     441 not a confident, final claim either way.
+     441 total elapsed: 423.5s
+     446   cells[i][c] = re.sub('\\\\\|', '|', cell)
+     446   text = re.sub(r'_', '\_', text) # Escape underscores in display text

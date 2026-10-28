@@ -1,0 +1,18 @@
+[{"stream_name":"stdout","time":13.256985717,"data":"to_input(train) 0.023\n"}
+,{"stream_name":"stdout","time":38.955807302,"data":"efficientnet_b0.ra_in1k single GPU, 4 studies (160 img): 0.37\n"}
+,{"stream_name":"stdout","time":39.613345986,"data":"efficientnet_b0.ra_in1k single GPU fwd only no_grad 4 studies: 0.093\n"}
+,{"stream_name":"stdout","time":42.144780979,"data":"efficientnet_b0.ra_in1k encoder-only fwd+bwd 160 img: 0.361\n"}
+,{"stream_name":"stdout","time":77.284797944,"data":"efficientnet_b0.ra_in1k DataParallel 8 studies: 4.037\n"}
+,{"stream_name":"stdout","time":77.285168666,"data":"efficientnet_b0.ra_in1k mem GB 7.4\n"}
+,{"stream_name":"stdout","time":82.078358797,"data":"radimagenet_resnet50 single GPU, 4 studies (160 img): 0.588\n"}
+,{"stream_name":"stdout","time":83.422732257,"data":"radimagenet_resnet50 single GPU fwd only no_grad 4 studies: 0.193\n"}
+,{"stream_name":"stdout","time":87.380399871,"data":"radimagenet_resnet50 encoder-only fwd+bwd 160 img: 0.565\n"}
+,{"stream_name":"stdout","time":91.731011458,"data":"radimagenet_resnet50 DataParallel 8 studies: 0.617\n"}
+,{"stream_name":"stdout","time":91.731515556,"data":"radimagenet_resnet50 mem GB 7.9\n"}
+,{"stream_name":"stderr","time":98.743870459,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":98.743899746,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":99.012679633,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":99.012701653,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":99.64472282,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":101.068402799,"data":"[NbConvertApp] Writing 431822 bytes to __results__.html\n"}
+]

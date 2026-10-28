@@ -1,0 +1,21 @@
+      31 device cuda | gpus 2 | torch 2.11.0+cu128
+      31 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+      31 test studies 3 | test series 15
+      31 XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda
+      32 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      34 [gpu cuda:0] loaded 1 arm(s) | 3s
+      35 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      37 [gpu cuda:1] loaded 1 arm(s) | 6s
+      40   [pre] 3/3 | 9s
+      40 [pre] done: 3 studies in 3s (procs 4 x fastread study_lut 32/16 threads)
+      53   [gpu] 3/3 | 22s
+      53 [gpu] done: 3/3 studies on 2 device(s) | 22s
+      53 [blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt': np.float64(1.0)}
+      53 wrote /kaggle/working/submission.csv | 3 rows x 13 cols
+      53                                                 StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture
+      53 1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.5              1.0               0.0        1.0         0.0    0.0       0.5        0.5      1.0        0.5       0.0
+      53 1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  1.0  1.0              0.5               0.5        0.0         0.5    1.0       1.0        1.0      0.5        1.0       1.0
+      53 1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  0.5  0.0              0.0               1.0        0.5         1.0    0.5       0.0        0.0      0.0        0.0       0.5
+      53 DONE 23s
+      60   cells[i][c] = re.sub('\\\\\|', '|', cell)
+      60   text = re.sub(r'_', '\_', text) # Escape underscores in display text

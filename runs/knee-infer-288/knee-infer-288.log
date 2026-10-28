@@ -1,0 +1,19 @@
+[{"stream_name":"stdout","time":38.57346204,"data":"[     34s] /kaggle/input/notebooks/ayushkasare/knee-train-eff31-mil: efficientnet_b0.ra_in1k, 31 slices, prep v1, 256px cache -\u003e 224px\n"}
+,{"stream_name":"stdout","time":39.258887858,"data":"[     35s] /kaggle/input/notebooks/ayushkasare/knee-train-eff320: efficientnet_b0.ra_in1k, 31 slices, prep v1, 320px cache -\u003e 288px\n"}
+,{"stream_name":"stdout","time":40.212640351,"data":"[     36s] /kaggle/input/notebooks/ayushkasare/knee-train-eff320b: efficientnet_b0.ra_in1k, 31 slices, prep v1, 320px cache -\u003e 288px\n"}
+,{"stream_name":"stdout","time":55.478871532,"data":"[     51s] /kaggle/input/notebooks/ayushkasare/knee-train-rad31-mil: radimagenet_resnet50, 31 slices, prep v1, 256px cache -\u003e 224px\n"}
+,{"stream_name":"stdout","time":55.479135156,"data":"[     51s] 15 fold models\n"}
+,{"stream_name":"stdout","time":65.322160591,"data":"[     61s] test 0/3 studies, failed slots so far 0, sides {'L': 1, 'R': 0}\n"}
+,{"stream_name":"stdout","time":81.991825142,"data":"[     78s] test done: 3 studies, failed slots 0, sides {'L': 1, 'R': 2}, missing 0\n"}
+,{"stream_name":"stdout","time":82.00208206,"data":"[     78s] prep v1 256px: 10 models done at 27s on cuda\n"}
+,{"stream_name":"stdout","time":84.005044881,"data":"[     80s] test 0/3 studies, failed slots so far 0, sides {'L': 1, 'R': 0}\n"}
+,{"stream_name":"stdout","time":96.140083999,"data":"[     92s] test done: 3 studies, failed slots 0, sides {'L': 1, 'R': 2}, missing 0\n"}
+,{"stream_name":"stdout","time":96.142493053,"data":"[     92s] prep v1 320px: 5 models done at 41s on cuda\n"}
+,{"stream_name":"stdout","time":96.168947155,"data":"[     92s] submission written (3, 12)\n"}
+,{"stream_name":"stderr","time":107.350724344,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":107.350764051,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":107.754611708,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":107.754636166,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":108.760798302,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":110.279125065,"data":"[NbConvertApp] Writing 474586 bytes to __results__.html\n"}
+]

@@ -1,0 +1,105 @@
+{
+  "total_studies": 4407,
+  "gold_studies": 58,
+  "gold_macro_auc_soft": 0.8991309464454375,
+  "gold_macro_auc_hard": 0.8197696686105691,
+  "soft_advantage": 0.07936127783486835,
+  "per_target": {
+    "ACL": {
+      "gold_auc_soft": 0.9871323529411764,
+      "gold_auc_hard": 0.8909313725490197,
+      "delta_soft_minus_hard": 0.09620098039215674,
+      "corpus_mean_probability": 0.23622872702518719,
+      "corpus_mean_confidence": 0.8733197186294532,
+      "gold_positives_count": 24
+    },
+    "MCL": {
+      "gold_auc_soft": 0.9682539682539683,
+      "gold_auc_hard": 0.9285714285714286,
+      "delta_soft_minus_hard": 0.03968253968253965,
+      "corpus_mean_probability": 0.1808202859087815,
+      "corpus_mean_confidence": 0.874978443385523,
+      "gold_positives_count": 9
+    },
+    "Medial Meniscus": {
+      "gold_auc_soft": 0.9483173076923077,
+      "gold_auc_hard": 0.8641826923076923,
+      "delta_soft_minus_hard": 0.08413461538461542,
+      "corpus_mean_probability": 0.46047878375312,
+      "corpus_mean_confidence": 0.8026707510778307,
+      "gold_positives_count": 26
+    },
+    "Lateral Meniscus": {
+      "gold_auc_soft": 0.8788819875776398,
+      "gold_auc_hard": 0.8341614906832298,
+      "delta_soft_minus_hard": 0.044720496894410044,
+      "corpus_mean_probability": 0.22633537553891536,
+      "corpus_mean_confidence": 0.8163421828908555,
+      "gold_positives_count": 23
+    },
+    "Medial OA": {
+      "gold_auc_soft": 0.9317829457364342,
+      "gold_auc_hard": 0.8852713178294573,
+      "delta_soft_minus_hard": 0.04651162790697683,
+      "corpus_mean_probability": 0.40698434309053777,
+      "corpus_mean_confidence": 0.8165554799183118,
+      "gold_positives_count": 15
+    },
+    "Lateral OA": {
+      "gold_auc_soft": 0.832688588007737,
+      "gold_auc_hard": 0.8239845261121858,
+      "delta_soft_minus_hard": 0.008704061895551285,
+      "corpus_mean_probability": 0.3263172226004084,
+      "corpus_mean_confidence": 0.786215112321307,
+      "gold_positives_count": 11
+    },
+    "PF OA": {
+      "gold_auc_soft": 0.9015444015444015,
+      "gold_auc_hard": 0.7966537966537967,
+      "delta_soft_minus_hard": 0.10489060489060487,
+      "corpus_mean_probability": 0.48308146131154983,
+      "corpus_mean_confidence": 0.8345745405037441,
+      "gold_positives_count": 21
+    },
+    "Effusion": {
+      "gold_auc_soft": 0.8770186335403727,
+      "gold_auc_hard": 0.6521739130434783,
+      "delta_soft_minus_hard": 0.2248447204968944,
+      "corpus_mean_probability": 0.5869639210347175,
+      "corpus_mean_confidence": 0.8434626730201952,
+      "gold_positives_count": 35
+    },
+    "Synovitis": {
+      "gold_auc_soft": 0.7903225806451613,
+      "gold_auc_hard": 0.6762246117084827,
+      "delta_soft_minus_hard": 0.11409796893667856,
+      "corpus_mean_probability": 0.3402422282732017,
+      "corpus_mean_confidence": 0.5491717721806217,
+      "gold_positives_count": 27
+    },
+    "Baker's": {
+      "gold_auc_soft": 0.9438405797101449,
+      "gold_auc_hard": 0.9039855072463767,
+      "delta_soft_minus_hard": 0.03985507246376818,
+      "corpus_mean_probability": 0.3573610165645564,
+      "corpus_mean_confidence": 0.7184910369866122,
+      "gold_positives_count": 12
+    },
+    "Contusion": {
+      "gold_auc_soft": 0.8596491228070174,
+      "gold_auc_hard": 0.7672064777327935,
+      "delta_soft_minus_hard": 0.09244264507422395,
+      "corpus_mean_probability": 0.26362831858407076,
+      "corpus_mean_confidence": 0.7475175856591786,
+      "gold_positives_count": 19
+    },
+    "Fracture": {
+      "gold_auc_soft": 0.8701388888888888,
+      "gold_auc_hard": 0.8138888888888889,
+      "delta_soft_minus_hard": 0.05624999999999991,
+      "corpus_mean_probability": 0.2424143408214205,
+      "corpus_mean_confidence": 0.4121057408668028,
+      "gold_positives_count": 18
+    }
+  }
+}

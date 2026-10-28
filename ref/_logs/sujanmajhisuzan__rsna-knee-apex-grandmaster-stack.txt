@@ -1,0 +1,57 @@
+       5 /usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+       5   _validate(nbdict, ref, version, version_minor, relax_add_props)
+      16 Verified verified SOTA weights: /kaggle/input/datasets/nartaa/rsna-knee-publication-swa-weights-20261007/raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt (SHA-256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef)
+      26 device cuda | gpus 2 | torch 2.11.0+cu128
+      26 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+      26 test studies 3 | test series 15
+      26 XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda
+      27 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      29 [gpu cuda:0] loaded 1 arm(s) | 3s
+      30 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      31 [gpu cuda:1] loaded 1 arm(s) | 5s
+      34   [pre] 3/3 | 8s
+      34 [pre] done: 3 studies in 3s (procs 4 x fastread study_lut 32/16 threads)
+      46   [gpu] 3/3 | 20s
+      46 [gpu] done: 3/3 studies on 2 device(s) | 20s
+      47 [blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt': np.float64(1.0)}
+      47 Saved SOTA 0.949 backup to /kaggle/working/_sota_0949.csv
+      47 wrote /kaggle/working/submission.csv | 3 rows x 13 cols
+      47                                                 StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture
+      47 1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.5              1.0               0.0        1.0         0.0    0.0       0.5        0.5      1.0        0.5       0.0
+      47 1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  1.0  1.0              0.5               0.5        0.0         0.5    1.0       1.0        1.0      0.5        1.0       1.0
+      47 1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  0.5  0.0              0.0               1.0        0.5         1.0    0.5       0.0        0.0      0.0        0.0       0.5
+      47 DONE 21s
+      47 Created /kaggle/working/own_src directory.
+      47 Writing /kaggle/working/own_src/preprocess.py
+      47 Writing /kaggle/working/own_src/knee.py
+      47 Writing /kaggle/working/own_src/infer.py
+      47 [Apex Fusion] SOTA baseline secured at: /kaggle/working/_sota_0949.csv
+      47 [ConvNeXt Reader] Found 3 checkpoints in /kaggle/input/datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader
+      48 ERROR: Could not find a version that satisfies the requirement pylibjpeg-libjpeg (from versions: none)
+      48 ERROR: No matching distribution found for pylibjpeg-libjpeg
+      48 [ConvNeXt Reader] Selected GPU 1 with 15.4 GB free
+      48 [ConvNeXt Reader] Starting inference on test set...
+      48 ERROR: Could not find a version that satisfies the requirement pylibjpeg-libjpeg (from versions: none)
+      48 ERROR: No matching distribution found for pylibjpeg-libjpeg
+      48 ERROR: Could not find a version that satisfies the requirement pylibjpeg-libjpeg (from versions: none)
+      48 ERROR: No matching distribution found for pylibjpeg-libjpeg
+      71 wrote /kaggle/working/_own.csv
+      72 wrote /kaggle/working/_own.csv
+      75 [ConvNeXt Reader] Finished inference in 26.7s
+      75 [Apex Fusion SUCCESS] Successfully fused SOTA 0.949 + ConvNeXt 2.5D Reader into /kaggle/working/submission.csv!
+      75 [Apex Fusion SUCCESS] Applied Target Weights: {"Baker's": 0.35, 'Contusion': 0.3, 'Medial OA': 0.25, 'ACL': 0.25, 'Medial Meniscus': 0.2, 'MCL': 0.2, 'Lateral Meniscus': 0.08, 'Fracture': 0.08, 'Lateral OA': 0.08, 'PF OA': 0.08, 'Effusion': 0.04, 'Synovitis': 0.03}
+      75                                     StudyInstanceUID       ACL       MCL  \
+      75 0  1.2.826.0.1.3680043.8.498.10047035057544427318...  0.333333  0.666667   
+      75 1  1.2.826.0.1.3680043.8.498.10062861783145312629...  1.000000  1.000000   
+      75 2  1.2.826.0.1.3680043.8.498.10067514707072572280...  0.666667  0.333333   
+      75    Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA     PF OA  \
+      75 0         1.000000          0.333333   1.000000    0.333333  0.333333   
+      75 1         0.666667          0.666667   0.333333    0.666667  1.000000   
+      75 2         0.333333          1.000000   0.666667    1.000000  0.666667   
+      75    Effusion  Synovitis   Baker's  Contusion  Fracture  
+      75 0  0.666667   0.666667  1.000000   0.666667  0.333333  
+      75 1  1.000000   1.000000  0.666667   1.000000  1.000000  
+      75 2  0.333333   0.333333  0.333333   0.333333  0.666667  
+      75 Done. Submission file size: 830 bytes
+      80   cells[i][c] = re.sub('\\\\\|', '|', cell)
+      80   text = re.sub(r'_', '\_', text) # Escape underscores in display text

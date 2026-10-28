@@ -1,0 +1,1 @@
+{"BACKBONE": "vit_small_patch14_dinov2.lvd142m", "IMG": 224, "SMOKE": 0, "FOLDS": [0, 1], "EPOCHS": 6, "PSEUDO": [0.5, ["knee-train-rad"]], "N_SLICE": 31, "HEAD": "mil", "PREP": 1, "LABEL_SRC": "v4b", "SLOT_DROP": 0.0, "HEAD_LR": 0.001, "POS_W": 0}

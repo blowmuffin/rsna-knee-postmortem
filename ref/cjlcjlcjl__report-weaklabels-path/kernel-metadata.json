@@ -1,0 +1,24 @@
+{
+  "id": "cjlcjlcjl/report-weaklabels-path",
+  "id_no": 130235629,
+  "title": "report_weaklabels_path",
+  "code_file": "report-weaklabels-path.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [
+    "cjlcjlcjl/gold58-audit",
+    "pilkwang/rsna-knee-llm-labels"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machine_shape": "None"
+}

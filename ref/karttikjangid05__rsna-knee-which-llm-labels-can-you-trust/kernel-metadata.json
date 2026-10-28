@@ -1,0 +1,31 @@
+{
+  "id": "karttikjangid05/rsna-knee-which-llm-labels-can-you-trust",
+  "id_no": 137752156,
+  "title": "RSNA Knee | Which LLM Labels Can You Trust?",
+  "code_file": "rsna-knee-which-llm-labels-can-you-trust.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "",
+    "riadmohamed42/jev-knee-labels",
+    "dreaddevelopment/rsna-knee-labels",
+    "laymond/rsna-knee-abnormality-qwen3-8b-weak-labels",
+    "yunusgmsoy/rsna-knee-llm-report-labels",
+    "stevenleehans/rsna-knee-llm-report-labels",
+    "lixin73/rsna-knee-llm-report-labels-sol56",
+    "pilkwang/rsna-knee-llm-labels",
+    "karttikjangid05/rsna-knee-public-llm-label-sets-compared"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:81b1e7c4b4f0f2a7e0a33943c95754b1b7af6b30d65221633a284b6b601cd84a",
+  "machine_shape": "None"
+}

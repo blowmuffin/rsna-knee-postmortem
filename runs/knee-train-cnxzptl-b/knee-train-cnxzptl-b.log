@@ -1,0 +1,40 @@
+[{"stream_name":"stdout","time":11.968348559,"data":"[      9s] pseudo targets: a=0.7 from ['knee-train-eff320', 'knee-train-eff320b', 'knee-train-eff31-mil', 'knee-train-rad31-mil'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":16.138710213,"data":"[     14s] convnext_tiny.fb_in22k_ft_in1k: 4407 studies, folds [2, 3], 12 epochs, 2 GPUs, pseudo 0.7 ['knee-train-eff320', 'knee-train-eff320b', 'knee-train-eff31-mil', 'knee-train-rad31-mil']\n"}
+,{"stream_name":"stdout","time":18.369288511,"data":"[      2s] pseudo targets: a=0.7 from ['knee-train-eff320', 'knee-train-eff320b', 'knee-train-eff31-mil', 'knee-train-rad31-mil'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":18.371477454,"data":"[      2s] pseudo targets: a=0.7 from ['knee-train-eff320', 'knee-train-eff320b', 'knee-train-eff31-mil', 'knee-train-rad31-mil'], 4407 studies with OOF\n"}
+,{"stream_name":"stderr","time":33.466386571,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":1465.480684902,"data":"[   1449s] [gpu0] fold 2 ep 0 loss 0.5361 val macroAUC(vs labels) 0.8382 | data-wait 6s of 1430s\n"}
+,{"stream_name":"stdout","time":1594.211607293,"data":"[   1578s] [gpu1] fold 3 ep 0 loss 0.5328 val macroAUC(vs labels) 0.8155 | data-wait 6s of 1559s\n"}
+,{"stream_name":"stdout","time":2579.472391339,"data":"[   2563s] [gpu0] fold 2 ep 1 loss 0.4629 val macroAUC(vs labels) 0.8735 | data-wait 5s of 1114s\n"}
+,{"stream_name":"stdout","time":2758.104523307,"data":"[   2741s] [gpu1] fold 3 ep 1 loss 0.4624 val macroAUC(vs labels) 0.8677 | data-wait 5s of 1164s\n"}
+,{"stream_name":"stdout","time":3739.944300956,"data":"[   3723s] [gpu0] fold 2 ep 2 loss 0.4409 val macroAUC(vs labels) 0.8922 | data-wait 5s of 1160s\n"}
+,{"stream_name":"stdout","time":4033.637276897,"data":"[   4017s] [gpu1] fold 3 ep 2 loss 0.4374 val macroAUC(vs labels) 0.8834 | data-wait 23s of 1276s\n"}
+,{"stream_name":"stdout","time":4849.048214092,"data":"[   4832s] [gpu0] fold 2 ep 3 loss 0.4317 val macroAUC(vs labels) 0.9000 | data-wait 28s of 1109s\n"}
+,{"stream_name":"stdout","time":5199.026227764,"data":"[   5182s] [gpu1] fold 3 ep 3 loss 0.4294 val macroAUC(vs labels) 0.8912 | data-wait 6s of 1165s\n"}
+,{"stream_name":"stdout","time":5925.271595771,"data":"[   5909s] [gpu0] fold 2 ep 4 loss 0.4253 val macroAUC(vs labels) 0.9060 | data-wait 6s of 1076s\n"}
+,{"stream_name":"stdout","time":6374.014069573,"data":"[   6357s] [gpu1] fold 3 ep 4 loss 0.4240 val macroAUC(vs labels) 0.8954 | data-wait 6s of 1175s\n"}
+,{"stream_name":"stdout","time":7080.821094856,"data":"[   7064s] [gpu0] fold 2 ep 5 loss 0.4204 val macroAUC(vs labels) 0.9068 | data-wait 22s of 1156s\n"}
+,{"stream_name":"stdout","time":7546.499720367,"data":"[   7530s] [gpu1] fold 3 ep 5 loss 0.4190 val macroAUC(vs labels) 0.8971 | data-wait 13s of 1172s\n"}
+,{"stream_name":"stdout","time":8229.311177823,"data":"[   8213s] [gpu0] fold 2 ep 6 loss 0.4167 val macroAUC(vs labels) 0.9115 | data-wait 6s of 1148s\n"}
+,{"stream_name":"stdout","time":8717.200031924,"data":"[   8701s] [gpu1] fold 3 ep 6 loss 0.4156 val macroAUC(vs labels) 0.9000 | data-wait 14s of 1171s\n"}
+,{"stream_name":"stdout","time":9353.152905146,"data":"[   9336s] [gpu0] fold 2 ep 7 loss 0.4131 val macroAUC(vs labels) 0.9136 | data-wait 8s of 1124s\n"}
+,{"stream_name":"stdout","time":9950.770759319,"data":"[   9934s] [gpu1] fold 3 ep 7 loss 0.4117 val macroAUC(vs labels) 0.9022 | data-wait 26s of 1234s\n"}
+,{"stream_name":"stdout","time":10456.544274937,"data":"[  10440s] [gpu0] fold 2 ep 8 loss 0.4101 val macroAUC(vs labels) 0.9143 | data-wait 33s of 1103s\n"}
+,{"stream_name":"stdout","time":11115.678087309,"data":"[  11099s] [gpu1] fold 3 ep 8 loss 0.4090 val macroAUC(vs labels) 0.9044 | data-wait 6s of 1165s\n"}
+,{"stream_name":"stdout","time":11525.484946345,"data":"[  11509s] [gpu0] fold 2 ep 9 loss 0.4080 val macroAUC(vs labels) 0.9147 | data-wait 5s of 1069s\n"}
+,{"stream_name":"stdout","time":12276.418029195,"data":"[  12260s] [gpu1] fold 3 ep 9 loss 0.4069 val macroAUC(vs labels) 0.9052 | data-wait 5s of 1161s\n"}
+,{"stream_name":"stdout","time":12595.002408034,"data":"[  12578s] [gpu0] fold 2 ep 10 loss 0.4064 val macroAUC(vs labels) 0.9154 | data-wait 5s of 1070s\n"}
+,{"stream_name":"stdout","time":13441.145865027,"data":"[  13425s] [gpu1] fold 3 ep 10 loss 0.4054 val macroAUC(vs labels) 0.9053 | data-wait 5s of 1165s\n"}
+,{"stream_name":"stdout","time":13678.61884074,"data":"[  13662s] [gpu0] fold 2 ep 11 loss 0.4058 val macroAUC(vs labels) 0.9154 | data-wait 5s of 1084s\n"}
+,{"stream_name":"stdout","time":13678.835171043,"data":"[  13662s] [gpu0] fold 2 saved in 228 min\n"}
+,{"stream_name":"stdout","time":14588.383601848,"data":"[  14572s] [gpu1] fold 3 ep 11 loss 0.4048 val macroAUC(vs labels) 0.9055 | data-wait 5s of 1147s\n"}
+,{"stream_name":"stdout","time":14588.566348457,"data":"[  14572s] [gpu1] fold 3 saved in 243 min\n"}
+,{"stream_name":"stdout","time":14597.450000611,"data":"[  14595s] trained folds [2, 3]; OOF macroAUC vs labels: 0.9106\n"}
+,{"stream_name":"stdout","time":14597.47048154,"data":"[  14595s] OOF macroAUC vs gold (15 studies): 0.9491\n"}
+,{"stream_name":"stderr","time":14600.688245634,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":14600.688276348,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":14601.080498295,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":14601.080522215,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":14602.314720035,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":14603.548523668,"data":"[NbConvertApp] Writing 494759 bytes to __results__.html\n"}
+]

@@ -1,0 +1,1 @@
+{"BACKBONE": "efficientnet_b0.ra_in1k", "IMG": 224, "SMOKE": 0, "FOLDS": [0, 1], "EPOCHS": 12, "PSEUDO": [0.7, ["knee-train-eff320", "knee-train-eff320b", "knee-train-eff31-mil", "knee-train-rad31-mil"]], "N_SLICE": 31, "SIZE": 256, "HEAD": "mil", "PREP": 1, "CROP_MM": 150.0, "LABEL_SRC": "v4b", "SLOT_DROP": 0.0, "HEAD_LR": 0.0, "POS_W": 0, "ROT_DEG": 25.0, "AUX_W": 0.0}

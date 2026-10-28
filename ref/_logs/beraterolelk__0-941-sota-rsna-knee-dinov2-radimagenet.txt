@@ -1,0 +1,215 @@
+      10 [config] preset=probe22 private_alpha=0.4
+      10 [config] outer CoAtNet weight per finding: {'ACL': 0.75, 'Medial Meniscus': 0.8, 'Lateral Meniscus': 1.0, 'Lateral OA': 0.75, 'Fracture': 0.75}
+      12 [eda] 4,407 training studies, 24,371 training series, 15 test series
+      12 [eda] 58 studies carry all twelve labels; the rest are supervised only by what a text model read out of the report
+      12 Coverage of the six slots the models expect, over training studies:
+      12                slot  studies with it  share
+      12    Sagittal fat-sat             4150  0.942
+      12 Sagittal no fat-sat             4266  0.968
+      12     Coronal fat-sat             4248  0.964
+      12  Coronal no fat-sat             3406  0.773
+      12       Axial fat-sat             4407  1.000
+      12    Axial no fat-sat              857  0.194
+      12 A slot no study fills is a column of zeros fed to the encoder; a study that fills none of them can only be given a constant, and under ROC-AUC a block of identical constants earns half credit against everything it ties with. That is the cheapest score leak in this whole pipeline.
+      13 Most correlated pairs:
+      13   Medial OA          + Baker's            +0.48
+      13   Medial Meniscus    + Medial OA          +0.42
+      13   Lateral Meniscus   + Lateral OA         +0.42
+      13   Lateral Meniscus   + Medial OA          +0.41
+      13   Lateral OA         + Baker's            +0.40
+      13 The three osteoarthritis compartments move together, which is why the calibrator downstream groups them. Findings that co-occur are also findings an ensemble tends to get right or wrong together — worth remembering before reading any per-finding weight as skill.
+      14 0 studies have no report at all (0.0%) — those can only be supervised by the images.
+      14 The counts overlap because clinical vocabulary is shared across languages; they are a rough shape, not a classifier. The point is that a monolingual extractor silently drops whole slices of the training set, and a dropped study is not a wrong label — it is no label.
+      15 A 140 mm crop spans 398 to 896 pixels across these series — a 2.3x range. Cropping a fixed number of pixels instead would hand the model a different anatomical field of view per scanner, which is the kind of artefact a model will happily learn to read as signal.
+      22 Field strengths present: 1.5T x144, 3.0T x90, 1.2T x2
+      22 The single most common scanner model covers 23% of the sample.
+      22 The training path in this notebook groups folds by md5(report text), which deduplicates identical reports but does nothing about the scanner. Manufacturer + model + matrix size + pixel spacing is a serviceable site key and costs nothing to compute from headers you are already reading. Grouping on it is what makes an offline number mean something.
+      22 Median series length 30 slices; 0.0% are shorter than twelve.
+      22 Where a series is shorter than its slot, the sampler repeats slices, so several of the 62 windows are duplicates and the attention pooling sees the same evidence more than once. Where a series is much longer, the sampler is skipping anatomy — and a meniscus tear visible on two slices can fall between samples entirely. That is the mechanism behind the max and top-2 window pooling used for the focal
+      23 [eda] extractor not defined yet; run the stage 1 cells above
+      26 devices: ['cpu']
+      26 [    0.1s] input root: /kaggle/input/rsna-knee-abnormality-detection
+      26 [    0.2s] memory: 30.1 GB available, 13.5 GB to the cache; sizing for 4407 train + 1322 test studies -> 1 group(s) of 3 = 3 slices per slot
+      26 [    0.2s] cache layout: 1 groups x 3 slices = 3 per slot
+      52 [   25.4s] weights package: 20 member(s) from /kaggle/input/rsna-knee-weights; 1 device(s)
+      52 [   25.5s] test header pass: 15 series
+      52 [   25.5s] decode group 1/1: 336px x 12 slices, crop 130.0 mm -> 20 member(s)
+      52 [   25.5s] test laterality: 1 from the tag, 2 from geometry, 0 unresolved; tag and geometry disagree on 0 (0.0% of the tagged)
+      52 [   25.5s] test g1: cache (3, 6, 12, 336, 336) = 0.0 GB
+      52 [   25.5s] test g1: ordering 12 slot-series (469 slice headers)
+      54 [   27.8s] test g1: ordered 12/12 by geometry (0 kept arbitrary) in 2s
+      54 [   27.8s] test g1: decoding 12 slot-series
+      55 [   28.4s]   test g1 12/12
+      55 [   28.4s] test g1: 12/12 slots filled
+      58 [   31.5s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      61 [   34.9s] e5427d6c21: fingerprint matches within 4.3e-06
+     103 [   76.3s]   banked e5427d6c21 fold 2 (10 window(s)); submission.csv = weighted rank mean of 1 member(s)
+     104 [   77.7s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     107 [   80.5s] d47313baef: fingerprint matches within 1.9e-06
+     190 [  164.0s]   banked d47313baef fold 2 (10 window(s), jitter); submission.csv = weighted rank mean of 2 member(s)
+     192 [  165.3s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     194 [  168.2s] ea3fbf6edf: fingerprint matches within 4.9e-06
+     278 [  251.4s]   banked ea3fbf6edf fold 2 (10 window(s), jitter); submission.csv = weighted rank mean of 3 member(s)
+     279 [  252.9s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     282 [  255.8s] 5f8ba4c5ea: fingerprint matches within 4.5e-06
+     366 [  339.7s]   banked 5f8ba4c5ea fold 2 (10 window(s), jitter); submission.csv = weighted rank mean of 4 member(s)
+     367 [  341.0s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     370 [  343.8s] 013dc75703: fingerprint matches within 2.5e-06
+     453 [  427.1s]   banked 013dc75703 fold 4 (10 window(s), jitter); submission.csv = weighted rank mean of 5 member(s)
+     455 [  428.6s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     458 [  431.6s] 2f7e785e82: fingerprint matches within 2.4e-06
+     542 [  515.5s]   banked 2f7e785e82 fold 4 (10 window(s), jitter); submission.csv = weighted rank mean of 6 member(s)
+     543 [  516.7s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     546 [  519.6s] 8baecb9d1b: fingerprint matches within 4.1e-06
+     628 [  602.1s]   banked 8baecb9d1b fold 4 (10 window(s), jitter); submission.csv = weighted rank mean of 7 member(s)
+     630 [  603.8s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     633 [  606.7s] 44bc3c6f14: fingerprint matches within 8.6e-06
+     716 [  689.5s]   banked 44bc3c6f14 fold 0 (10 window(s), jitter); submission.csv = weighted rank mean of 8 member(s)
+     718 [  691.1s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     720 [  694.0s] 44128e3ff3: fingerprint matches within 6.4e-06
+     802 [  776.0s]   banked 44128e3ff3 fold 0 (10 window(s), jitter); submission.csv = weighted rank mean of 9 member(s)
+     804 [  777.3s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     806 [  780.1s] 84079fe8cb: fingerprint matches within 1.8e-06
+     888 [  862.2s]   banked 84079fe8cb fold 3 (10 window(s), jitter); submission.csv = weighted rank mean of 10 member(s)
+     890 [  863.5s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     893 [  866.4s] ed427aa10a: fingerprint matches within 5.6e-06
+     975 [  948.8s]   banked ed427aa10a fold 0 (10 window(s), jitter); submission.csv = weighted rank mean of 11 member(s)
+     976 [  949.9s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     979 [  952.7s] 2dce50ebd9: fingerprint matches within 3.9e-06
+    1061 [ 1034.8s]   banked 2dce50ebd9 fold 0 (10 window(s), jitter); submission.csv = weighted rank mean of 12 member(s)
+    1062 [ 1035.9s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+    1065 [ 1038.6s] 3d1f4c48fc: fingerprint matches within 3.5e-06
+    1147 [ 1120.3s]   banked 3d1f4c48fc fold 4 (10 window(s), jitter); submission.csv = weighted rank mean of 13 member(s)
+    1148 [ 1121.6s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+    1151 [ 1124.4s] 91f171fe6f: fingerprint matches within 5.3e-06
+    1233 [ 1206.8s]   banked 91f171fe6f fold 1 (10 window(s), jitter); submission.csv = weighted rank mean of 14 member(s)
+    1234 [ 1207.9s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+    1237 [ 1210.7s] 8476b29285: fingerprint matches within 8.1e-06
+    1319 [ 1292.9s]   banked 8476b29285 fold 1 (10 window(s), jitter); submission.csv = weighted rank mean of 15 member(s)
+    1320 [ 1293.9s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+    1323 [ 1296.9s] 72081758ce: fingerprint matches within 5.7e-06
+    1406 [ 1379.9s]   banked 72081758ce fold 3 (10 window(s), jitter); submission.csv = weighted rank mean of 16 member(s)
+    1408 [ 1381.3s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+    1410 [ 1384.2s] 7f8321affc: fingerprint matches within 2.4e-06
+    1493 [ 1466.7s]   banked 7f8321affc fold 3 (10 window(s), jitter); submission.csv = weighted rank mean of 17 member(s)
+    1494 [ 1467.6s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+    1497 [ 1470.5s] 1e553ba481: fingerprint matches within 3.3e-06
+    1579 [ 1552.8s]   banked 1e553ba481 fold 1 (10 window(s), jitter); submission.csv = weighted rank mean of 18 member(s)
+    1581 [ 1554.0s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+    1583 [ 1557.0s] b7c37cc80e: fingerprint matches within 2e-06
+    1666 [ 1639.4s]   banked b7c37cc80e fold 3 (10 window(s), jitter); submission.csv = weighted rank mean of 19 member(s)
+    1667 [ 1640.4s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+    1670 [ 1643.3s] f335c812fe: fingerprint matches within 3.8e-06
+    1753 [ 1726.2s]   banked f335c812fe fold 1 (10 window(s), jitter); submission.csv = weighted rank mean of 20 member(s)
+    1753 [ 1726.5s] final submission.csv = weighted rank mean of 20 member(s); (3, 13); nulls 0
+    1753 [ 1726.5s] submission_public_0899.csv = exact no-jitter public-frontier rank mean of 20 member(s); (3, 13); nulls 0
+    1753 [ 1726.5s] legacy DINO aggregation written from five folds; (3, 13)
+    1753 [ 1726.5s] V40 primary = exact no-jitter public-frontier target pooling; native 24-member output retained
+    1753 [ 1726.5s] done
+    1753 [ 1726.5s] done
+    1756 competition : /kaggle/input/rsna-knee-abnormality-detection
+    1756 checkpoints : /kaggle/input/knee-mri-fold-weights
+    1756 device      : cpu
+    1756 series root: /kaggle/input/rsna-knee-abnormality-detection/test_series
+    1756 3 test studies, 3 with series metadata
+    1758 loaded m_f0.pt  fold 0  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+    1759 loaded m_f1.pt  fold 1  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+    1760 loaded m_f2.pt  fold 2  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+    1760 loaded m_f3.pt  fold 3  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+    1761 loaded m_f4.pt  fold 4  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+    1761 5 fold models ready | input norm: none
+    1761 device cpu | amp float32 (on=False) | workers 4 | chunk 48 | micro 8
+    1776   3/3  0.2m  eta 0.0m
+    1776 inference done in 0.2 min
+    1776 [RadImageNet] Selected device: cpu
+    1779 [ 1752.7s] test-e10 laterality: 1 from the tag, 2 from geometry, 0 unresolved; tag and geometry disagree on 0 (0.0% of the tagged)
+    1779 [ 1752.7s] test-e10: cache (3, 3, 8, 224, 224) = 0.0 GB
+    1779 [ 1752.7s] test-e10: ordering 8 slot-series (366 slice headers)
+    1780 [ 1753.3s] test-e10: ordered 8/8 by geometry (0 kept arbitrary) in 1s
+    1780 [ 1753.3s] test-e10: decoding 8 slot-series
+    1780 [ 1753.6s]   test-e10 8/8
+    1780 [ 1753.6s] test-e10: 8/8 slots filled
+    1785 [Rad-dual5] twin public-v15 families complete (/kaggle/input/rsna-knee-v52-radimagenet-heads-20260812/v52_radimagenet_heads.pt; /kaggle/input/rsna-knee-e9-radimagenet-heads-v15/v52_radimagenet_heads.pt)
+    1787 [ 1760.4s] test-e13 laterality: 1 from the tag, 2 from geometry, 0 unresolved; tag and geometry disagree on 0 (0.0% of the tagged)
+    1787 [ 1760.4s] test-e13: cache (3, 4, 8, 224, 224) = 0.0 GB
+    1787 [ 1760.4s] test-e13: ordering 11 slot-series (444 slice headers)
+    1788 [ 1761.2s] test-e13: ordered 11/11 by geometry (0 kept arbitrary) in 1s
+    1788 [ 1761.2s] test-e13: decoding 11 slot-series
+    1788 [ 1761.6s]   test-e13 11/11
+    1788 [ 1761.6s] test-e13: 11/11 slots filled
+    1794 [Rad-dual5] E13 FS-crop member complete at Rad-block weight 0.50 (/kaggle/input/rsna-knee-e13-train/rsna_rad_e11/v52_e11_heads.pt)
+    1794 [Rad-dual5] twin E10 branches complete at alpha=0.50; preserved raw=["Baker's", 'Fracture']
+    1794 [ 1767.8s] test-v48-pass2 laterality: 1 from the tag, 2 from geometry, 0 unresolved; tag and geometry disagree on 0 (0.0% of the tagged)
+    1794 [ 1767.8s] test-v48-pass2: cache (3, 4, 8, 224, 224) = 0.0 GB
+    1794 [ 1767.8s] test-v48-pass2: ordering 7 slot-series (185 slice headers)
+    1794 [ 1768.2s] test-v48-pass2: ordered 7/7 by geometry (0 kept arbitrary) in 0s
+    1794 [ 1768.2s] test-v48-pass2: decoding 7 slot-series
+    1795 [ 1768.4s]   test-v48-pass2 7/7
+    1795 [ 1768.4s] test-v48-pass2: 7/7 slots filled
+    1799 [Rad-dual5] V48 second E13 pass complete at alpha 0.15 on the E11 slot layout
+    1799 [Rad-dual5] V48 reference branch complete; reference-v15=/kaggle/input/rsna-knee-e9-radimagenet-heads-v15/v52_radimagenet_heads.pt; e13-two-pass=/kaggle/input/rsna-knee-e13-train/rsna_rad_e11/v52_e11_heads.pt; second_alpha=0.15; encoder=/kaggle/input/resnet-50-radimagenet-marwan/ResNet50.pt; elapsed=0.4m
+    1799 device cpu | gpus 0 | torch 2.10.0+cpu
+    1799 test root: /kaggle/input/rsna-knee-abnormality-detection | series dir: /kaggle/input/rsna-knee-abnormality-detection/test_series
+    1799 test studies 3 | test series 15
+    1799 [plan] 4 arms over 3 volume recipe(s); saves 1 full pass(es) over the test set
+    1803 [recipe 0] arm 0 maxspan-v5 | img 336 | slices 64 | span 0.02-0.98 | windows 62 | res 384 | 3s
+    1804 [recipe 0] arm 2 maxspan-v5-reverse | img 336 | slices 64 | span 0.02-0.98 | windows 62 | res 384 | 4s
+    2257   [recipe 0] 3/3 | 458s
+    2257 [recipe 0] done + freed | 458s
+    2261 [recipe 1] arm 1 native384dense-v10 | img 384 | slices 64 | span 0.02-0.98 | windows 62 | res 384 | 462s
+    2488   [recipe 1] 3/3 | 689s
+    2489 [recipe 1] done + freed | 689s
+    2492 [recipe 2] arm 3 native384-v8 | img 384 | slices 44 | span 0.06-0.94 | windows 42 | res 384 | 693s
+    2645   [recipe 2] 3/3 | 845s
+    2645 [recipe 2] done + freed | 845s
+    2645 [blend] global probability mean w={'maxspan-v5': np.float64(0.55), 'native384dense-v10': np.float64(0.1), 'maxspan-v5-reverse': np.float64(0.15), 'native384-v8': np.float64(0.2)}
+    2645 wrote /kaggle/working/_raptor.csv | 3 rows x 13 cols
+    2645                                                 StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture
+    2645 1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.0              1.0               0.0        1.0         0.0    0.0       0.5        0.0      1.0        0.0       0.0
+    2645 1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  0.5  1.0              0.5               1.0        0.5         0.5    0.5       1.0        1.0      0.5        1.0       1.0
+    2645 1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  1.0  0.5              0.0               0.5        0.0         1.0    1.0       0.0        0.5      0.0        0.5       0.5
+    2645 DONE 845s
+    3072 [coat-arm] unavailable; restored PUBLIC raptor arm (RuntimeError: coat child failed: Traceback (most recent call last):
+    3072   File "<string>", line 5, in <module>
+    3072 AssertionError
+    3072 )
+    3072 [probe #22] 0.939 parent + #15 target-specific outer routing
+    3072 [probe #22] inner Raptor blend remains public=0.60 / residual-CoAt=0.40
+    3072 [probe #22] target-specific outer weights:
+    3072   ACL                T=0.25 R=0.75
+    3072   MCL                T=0.40 R=0.60
+    3072   Medial Meniscus    T=0.20 R=0.80
+    3072   Lateral Meniscus   T=0.00 R=1.00
+    3072   Medial OA          T=0.40 R=0.60
+    3072   Lateral OA         T=0.25 R=0.75
+    3072   PF OA              T=0.40 R=0.60
+    3072   Effusion           T=0.40 R=0.60
+    3072   Synovitis          T=0.40 R=0.60
+    3072   Baker's            T=0.40 R=0.60
+    3072   Contusion          T=0.40 R=0.60
+    3072   Fracture           T=0.25 R=0.75
+    3072 [probe #22] 0033 overlay DISABLED; pure target-routed 0.939 candidate retained
+    3072 [probe #22] PASS
+    3072 [probe #22] parent 0.939 sha256: 1b03ce7f093efaffdf9acb9e8af05946bdd60b4fec1e0b1fc536b8198abb513b
+    3072 [probe #22] candidate sha256: 78cb15b4d54077e3ac200668b05878c5f4bea12691aaa055170e8aa98f9bfc79
+    3072 [probe #22] changed row counts: {'ACL': 0, 'Medial Meniscus': 2, 'Lateral Meniscus': 0, 'Lateral OA': 0, 'Fracture': 0}
+    3072 [probe #22] submission: /kaggle/working/submission.csv
+    3072 [probe #22] receipt: /kaggle/working/probe22_outer_routing_receipt.json
+    3073                   outer CoAtNet w  arm agreement  largest tie block
+    3073 finding                                                            
+    3073 ACL                         0.750          0.500                  1
+    3073 MCL                         0.600          1.000                  1
+    3073 Medial Meniscus             0.800         -0.500                  1
+    3073 Lateral Meniscus            1.000          1.000                  1
+    3073 Medial OA                   0.600         -0.500                  1
+    3073 Lateral OA                  0.750          0.500                  1
+    3073 PF OA                       0.600          1.000                  1
+    3073 Effusion                    0.600          0.500                  1
+    3073 Synovitis                   0.600          1.000                  1
+    3073 Baker's                     0.600          1.000                  1
+    3073 Contusion                   0.600          0.500                  1
+    3073 Fracture                    0.750          1.000                  1
+    3073 These findings have two arms that already agree above 0.99, so their outer weight is close to a no-op no matter what it is set to: MCL, Lateral Meniscus, PF OA, Synovitis, Baker's, Fracture
+    3073 These findings have genuinely different arms, which is where an outer weight actually decides the ordering — and therefore where a weight fitted to the public split can do real damage privately: ACL, Medial Meniscus, Medial OA, Lateral OA, Effusion, Contusion
+    3078   cells[i][c] = re.sub('\\\\\|', '|', cell)
+    3078   text = re.sub(r'_', '\_', text) # Escape underscores in display text

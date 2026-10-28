@@ -1,0 +1,187 @@
+      14 DINOsaur V22 route compact_plus_optional_reader | GPUs 2
+      14 RAPTOR_SOURCE_VERIFIED
+      31 device cuda | gpus 2 | torch 2.10.0+cu128
+      31 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+      31 test studies 3 | test series 15
+      31 XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda
+      31 device cuda | gpus 2 | torch 2.10.0+cu128
+      31 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+      31 test studies 3 | test series 15
+      31 XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda
+      32 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      32 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      34 [gpu cuda:0] loaded 1 arm(s) | 3s
+      34 [gpu cuda:0] loaded 1 arm(s) | 3s
+      35 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      35 [weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef
+      37 [gpu cuda:1] loaded 1 arm(s) | 6s
+      37 [gpu cuda:1] loaded 1 arm(s) | 6s
+      40   [pre] 3/3 | 9s
+      40 [pre] done: 3 studies in 3s (procs 4 x fastread study_lut 32/16 threads)
+      40   [pre] 3/3 | 9s
+      40 [pre] done: 3 studies in 3s (procs 4 x fastread study_lut 32/16 threads)
+      52   [gpu] 3/3 | 21s
+      52 [gpu] done: 3/3 studies on 2 device(s) | 21s
+      52 [blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt': np.float64(1.0)}
+      52 wrote /kaggle/working/raptor_sub.csv | 3 rows x 13 cols
+      52   [gpu] 3/3 | 21s
+      52 [gpu] done: 3/3 studies on 2 device(s) | 21s
+      52                                                 StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture
+      52 1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.5              1.0               0.0        1.0         0.0    0.0       0.5        0.5      1.0        0.5       0.0
+      52 1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  1.0  1.0              0.5               0.5        0.0         0.5    1.0       1.0        1.0      0.5        1.0       1.0
+      52 1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  0.5  0.0              0.0               1.0        0.5         1.0    0.5       0.0        0.0      0.0        0.0       0.5
+      52 DONE 22s
+      52 [blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt': np.float64(1.0)}
+      52 wrote /kaggle/working/raptor_sub.csv | 3 rows x 13 cols
+      52                                                 StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture
+      52 1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  0.5              1.0               0.0        1.0         0.0    0.0       0.5        0.5      1.0        0.5       0.0
+      52 1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  1.0  1.0              0.5               0.5        0.0         0.5    1.0       1.0        1.0      0.5        1.0       1.0
+      52 1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  0.5  0.0              0.0               1.0        0.5         1.0    0.5       0.0        0.0      0.0        0.0       0.5
+      52 DONE 22s
+      56 RAPTOR_STAGE_DONE seconds 42
+      56 0, 3 MiB
+      56 1, 3 MiB
+      56 0, 3 MiB
+      56 1, 3 MiB
+      56 0, Tesla T4, 15360 MiB
+      56 1, Tesla T4, 15360 MiB
+      56 Filesystem      Size  Used Avail Use% Mounted on
+      56 shm              14G     0   14G   0% /dev/shm
+      56 /dev/loop2       20G  2.1M   20G   1% /kaggle/working
+      56 overlay         8.0T  7.0T  1.1T  87% /
+      56 0, Tesla T4, 15360 MiB
+      56 1, Tesla T4, 15360 MiB
+      56 Filesystem      Size  Used Avail Use% Mounted on
+      56 shm              14G     0   14G   0% /dev/shm
+      56 /dev/loop2       20G  2.1M   20G   1% /kaggle/working
+      56 overlay         8.0T  7.0T  1.1T  87% /
+      63 Processing /tmp/probe/wheels/pydicom-3.0.1-py3-none-any.whl
+      63 Processing /tmp/probe/wheels/timm-1.0.25-py3-none-any.whl
+      63 Installing collected packages: timm, pydicom
+      63   Attempting uninstall: timm
+      64 Processing /tmp/probe/wheels/pydicom-3.0.1-py3-none-any.whl
+      64 Processing /tmp/probe/wheels/timm-1.0.25-py3-none-any.whl
+      64 Installing collected packages: timm, pydicom
+      64   Attempting uninstall: timm
+      64     Found existing installation: timm 1.0.26
+      64     Uninstalling timm-1.0.26:
+      64       Successfully uninstalled timm-1.0.26
+      64     Found existing installation: timm 1.0.26
+      64     Uninstalling timm-1.0.26:
+      64       Successfully uninstalled timm-1.0.26
+      65   Attempting uninstall: pydicom
+      65     Found existing installation: pydicom 3.0.2
+      65     Uninstalling pydicom-3.0.2:
+      65   Attempting uninstall: pydicom
+      65     Found existing installation: pydicom 3.0.2
+      65     Uninstalling pydicom-3.0.2:
+      65       Successfully uninstalled pydicom-3.0.2
+      65       Successfully uninstalled pydicom-3.0.2
+      66 Successfully installed pydicom-3.0.1 timm-1.0.25
+      66 Successfully installed pydicom-3.0.1 timm-1.0.25
+      77 ASSETS_READY /kaggle/input/datasets/heliosli/rsna-orthofoundation-fold0-epoch7-20261004 /kaggle/input/datasets/heliosli/rsna-knee-compact-v1 /kaggle/input/competitions/rsna-knee-abnormality-detection seconds 62.3
+      77 WORKER_START 0 studies 2 dicom files 419
+      77 WORKER_START 1 studies 1 dicom files 138
+      77 WORKER_START 0 studies 2 dicom files 419
+      77 WORKER_START 1 studies 1 dicom files 138
+      82 PROGRESS worker 0 of 2 (starting)
+      82 PROGRESS worker 1 of 1 (starting)
+      82 PROGRESS worker 0 of 2 (starting)
+      82 PROGRESS worker 1 of 1 (starting)
+     142 PROGRESS worker 0 of 2 (starting)
+     142 PROGRESS worker 1 of 1 (starting)
+     142 PROGRESS worker 0 of 2 (starting)
+     142 PROGRESS worker 1 of 1 (starting)
+     177 CONTROLLER_DONE {"status": "PASS", "rows": 3, "scored": 3, "fallback_studies": 0, "seconds": 100.1, "per_study_mean": {"decode_s": 36.9, "render_s": 2.033, "gpu_s": 19.9, "windows": 528.7}, "worker_exit_codes": {"0": 0, "1": 0}}
+     177 CONTROLLER_DONE {"status": "PASS", "rows": 3, "scored": 3, "fallback_studies": 0, "seconds": 100.1, "per_study_mean": {"decode_s": 36.9, "render_s": 2.033, "gpu_s": 19.9, "windows": 528.7}, "worker_exit_codes": {"0": 0, "1": 0}}
+     177 OURS_STAGE_COMPLETE {"status": "PASS", "arm": "E_lrprior", "rows": 3, "scored": 3, "fallback_studies": 0, "seconds": 100.1, "per_study_mean": {"decode_s": 36.9, "render_s": 2.033, "gpu_s": 19.9, "windows": 528.7}, "gpus": ["Tesla T4", "Tesla T4"]}
+     178 NOTEBOOK_COMPLETE {"weights": {"raptor": 0.7, "ours": 0.3}, "rows": 3, "raptor_failed": 0, "ours_failed": 0, "raptor_seconds": 41.7, "total_seconds": 163.6, "spearman_raptor_raw_vs_sub": {"ACL": 1.0, "MCL": 1.0, "Medial Meniscus": 1.0, "Lateral Meniscus": 1.0, "Medial OA": 1.0, "Lateral OA": 1.0, "PF OA": 1.0, "Effusion": 1.0, "Synovitis": 1.0, "Baker's": 1.0, "Contusion": 1.0, "Fracture": 1.0}, "
+     178 ORTHO_RAPTOR_ORIGINAL_READY 3 studies
+     178 V22 optional reader preflight: run | complete_checkpoint_bundles 1 | remaining_seconds 31156 | conservative_budget 2700
+     178 Installed source: preprocess.py bytes: 6529
+     178 Installed source: knee.py bytes: 8431
+     178 Installed source: infer.py bytes: 4373
+     178 CoAtNet anchor saved: 3 studies | elapsed: 2.7 minutes
+     178 READER_WORKER_PREFLIGHT_OK /kaggle/working/_dinov14_reader_worker.py
+     200 Reader done: 1
+     200 Reader done: 1
+     202 Reader done: 2
+     203 Reader done: 2
+     206 All 3 ConvNeXt folds finished on 2 GPU shard(s) in 3.2 min
+     207 DINOSAUR_V22_COMPLETE {"branch": "compact_plus_optional_reader", "third_reader_finished": true, "studies": 3, "base": "supplied_raptor_70pct_compact_30pct", "additional_reader_weight_by_target": {"ACL": 0.14, "MCL": 0.11, "Medial Meniscus": 0.06, "Lateral Meniscus": 0.025, "Medial OA": 0.095, "Lateral OA": 0.2, "PF OA": 0.025, "Effusion": 0.025, "Synovitis": 0.015, "Baker's": 0.18, "Contusion": 0.
+     208 DINOSAUR_V22_SUBMISSION_VERIFIED compact_plus_optional_reader studies 3
+     217 device cuda | gpus 2 | torch 2.10.0+cu128
+     217 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+     217 test studies 3 | test series 15
+     217 device cuda | gpus 2 | torch 2.10.0+cu128
+     217 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+     217 test studies 3 | test series 15
+     218 [weights] sha256 3394fdd7e668286956e85af2554bef0386df5cd79d1c1af223b095c828b815d6
+     218 [weights] sha256 3394fdd7e668286956e85af2554bef0386df5cd79d1c1af223b095c828b815d6
+     220 [gpu cuda:0] loaded 1 arm(s) | 3s
+     220 [gpu cuda:0] loaded 1 arm(s) | 3s
+     220 [weights] sha256 3394fdd7e668286956e85af2554bef0386df5cd79d1c1af223b095c828b815d6
+     220 [weights] sha256 3394fdd7e668286956e85af2554bef0386df5cd79d1c1af223b095c828b815d6
+     222 [gpu cuda:1] loaded 1 arm(s) | 5s
+     222 Traceback (most recent call last):
+     222   File "/kaggle/working/_dinov23_crop_launch.py", line 12, in <module>
+     222     ns['main']()
+     222   File "/kaggle/working/_dinov23_public224_source.py", line 492, in main
+     222     for i, (sid, vol, mask) in enumerate(pool.imap_unordered(_pre_one, test_ids, chunksize=2)):
+     222                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     222   File "/usr/lib/python3.12/multiprocessing/pool.py", line 451, in <genexpr>
+     222     return (item for chunk in result for item in chunk)
+     222                               ^^^^^^
+     222   File "/usr/lib/python3.12/multiprocessing/pool.py", line 873, in next
+     222     raise value
+     222   File "/usr/lib/python3.12/multiprocessing/pool.py", line 540, in _handle_tasks
+     222     put(task)
+     222   File "/usr/lib/python3.12/multiprocessing/connection.py", line 206, in send
+     222     self._send_bytes(_ForkingPickler.dumps(obj))
+     222                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+     222   File "/usr/lib/python3.12/multiprocessing/reduction.py", line 51, in dumps
+     222     cls(buf, protocol).dump(obj)
+     222 _pickle.PicklingError: Can't pickle <function _pre_one at 0x7b2aaa8deb60>: import of module 'dinov23_public_crop' failed
+     222 [gpu cuda:1] loaded 1 arm(s) | 5s
+     222 Traceback (most recent call last):
+     222   File "/kaggle/working/_dinov23_crop_launch.py", line 12, in <module>
+     222     ns['main']()
+     222   File "/kaggle/working/_dinov23_public224_source.py", line 492, in main
+     222     for i, (sid, vol, mask) in enumerate(pool.imap_unordered(_pre_one, test_ids, chunksize=2)):
+     222                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     222   File "/usr/lib/python3.12/multiprocessing/pool.py", line 451, in <genexpr>
+     222     return (item for chunk in result for item in chunk)
+     222                               ^^^^^^
+     222   File "/usr/lib/python3.12/multiprocessing/pool.py", line 873, in next
+     222     raise value
+     222   File "/usr/lib/python3.12/multiprocessing/pool.py", line 540, in _handle_tasks
+     222     put(task)
+     222   File "/usr/lib/python3.12/multiprocessing/connection.py", line 206, in send
+     222     self._send_bytes(_ForkingPickler.dumps(obj))
+     222                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+     222   File "/usr/lib/python3.12/multiprocessing/reduction.py", line 51, in dumps
+     222     cls(buf, protocol).dump(obj)
+     222 _pickle.PicklingError: Can't pickle <function _pre_one at 0x7b2aaa8deb60>: import of module 'dinov23_public_crop' failed
+     222 Traceback (most recent call last):
+     222   File "/kaggle/working/_dinov23_crop_launch.py", line 12, in <module>
+     222     ns['main']()
+     222   File "/kaggle/working/_dinov23_public224_source.py", line 492, in main
+     222     for i, (sid, vol, mask) in enumerate(pool.imap_unordered(_pre_one, test_ids, chunksize=2)):
+     222                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     222   File "/usr/lib/python3.12/multiprocessing/pool.py", line 451, in <genexpr>
+     222     return (item for chunk in result for item in chunk)
+     222                               ^^^^^^
+     222   File "/usr/lib/python3.12/multiprocessing/pool.py", line 873, in next
+     222     raise value
+     222   File "/usr/lib/python3.12/multiprocessing/pool.py", line 540, in _handle_tasks
+     222     put(task)
+     222   File "/usr/lib/python3.12/multiprocessing/connection.py", line 206, in send
+     222     self._send_bytes(_ForkingPickler.dumps(obj))
+     222                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+     222   File "/usr/lib/python3.12/multiprocessing/reduction.py", line 51, in dumps
+     222     cls(buf, protocol).dump(obj)
+     222 _pickle.PicklingError: Can't pickle <function _pre_one at 0x7b2aaa8deb60>: import of module 'dinov23_public_crop' failed
+     223 DINOSAUR_V23_FINISHED {"route": "compact_plus_optional_reader", "base": "unaltered_V22_scored_recipe", "private_KCD25_used": false, "score_claim": null, "synovitis_stage": "complete", "public_crop224": "process exit 1", "studies": 3, "V22_base_bytes_sha256": "d9669f0ab778c163992a3a33fff7c141367f421e4ce1af2f7d16a0d496d044b8", "submission": "exact V22 bytes", "changed_lateral_oa": false, "changed_sy
+     223 DINOSAUR_V25_DONE {"route": "compact_plus_optional_reader", "scored_V23_lb": "user_reported_0.954", "synovitis": "unavailable", "lesion_views": "unavailable", "lateral_oa": "unavailable", "private_reader_weights_requested": false, "studies": 3, "quality_available": true, "final": "exact V23 bytes", "changed_by_target": {"ACL": 0, "MCL": 0, "Medial Meniscus": 0, "Lateral Meniscus": 0, "Medial OA": 
+     226   cells[i][c] = re.sub('\\\\\|', '|', cell)
+     226   text = re.sub(r'_', '\_', text) # Escape underscores in display text

@@ -1,0 +1,19 @@
+{
+  "id": "ayushkasare/knee-infer-mil",
+  "title": "knee-infer-mil",
+  "code_file": "knee-infer-mil.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": true,
+  "enable_internet": false,
+  "kernel_sources": [
+    "ayushkasare/knee-train-eff31-mil",
+    "ayushkasare/knee-train-rad31-mil"
+  ],
+  "dataset_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

@@ -1,0 +1,40 @@
+[{"stream_name":"stdout","time":9.003300225,"data":"[      7s] pseudo targets: a=0.7 from ['knee-train-eff320', 'knee-train-eff320b', 'knee-train-eff31-mil', 'knee-train-rad31-mil'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":12.388985374,"data":"[     10s] efficientnet_b0.ra_in1k: 4407 studies, folds [0, 1], 12 epochs, 2 GPUs, pseudo 0.7 ['knee-train-eff320', 'knee-train-eff320b', 'knee-train-eff31-mil', 'knee-train-rad31-mil']\n"}
+,{"stream_name":"stdout","time":14.811663534000001,"data":"[      2s] pseudo targets: a=0.7 from ['knee-train-eff320', 'knee-train-eff320b', 'knee-train-eff31-mil', 'knee-train-rad31-mil'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":14.91210454,"data":"[      2s] pseudo targets: a=0.7 from ['knee-train-eff320', 'knee-train-eff320b', 'knee-train-eff31-mil', 'knee-train-rad31-mil'], 4407 studies with OOF\n"}
+,{"stream_name":"stderr","time":29.557333834,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":1489.463525644,"data":"[   1476s] [gpu0] fold 0 ep 0 loss 0.5332 val macroAUC(vs labels) 0.8255 | data-wait 4s of 1459s\n"}
+,{"stream_name":"stdout","time":1501.38067883,"data":"[   1488s] [gpu1] fold 1 ep 0 loss 0.5335 val macroAUC(vs labels) 0.8193 | data-wait 4s of 1471s\n"}
+,{"stream_name":"stdout","time":2160.501399781,"data":"[   2147s] [gpu0] fold 0 ep 1 loss 0.4657 val macroAUC(vs labels) 0.8741 | data-wait 4s of 671s\n"}
+,{"stream_name":"stdout","time":2301.492129989,"data":"[   2289s] [gpu1] fold 1 ep 1 loss 0.4626 val macroAUC(vs labels) 0.8676 | data-wait 4s of 800s\n"}
+,{"stream_name":"stdout","time":2838.525234072,"data":"[   2826s] [gpu0] fold 0 ep 2 loss 0.4421 val macroAUC(vs labels) 0.8796 | data-wait 4s of 678s\n"}
+,{"stream_name":"stdout","time":3044.586438038,"data":"[   3032s] [gpu1] fold 1 ep 2 loss 0.4397 val macroAUC(vs labels) 0.8725 | data-wait 4s of 743s\n"}
+,{"stream_name":"stdout","time":3514.917653241,"data":"[   3502s] [gpu0] fold 0 ep 3 loss 0.4321 val macroAUC(vs labels) 0.8867 | data-wait 4s of 676s\n"}
+,{"stream_name":"stdout","time":3792.481151158,"data":"[   3780s] [gpu1] fold 1 ep 3 loss 0.4315 val macroAUC(vs labels) 0.8842 | data-wait 4s of 748s\n"}
+,{"stream_name":"stdout","time":4193.507190737,"data":"[   4180s] [gpu0] fold 0 ep 4 loss 0.4268 val macroAUC(vs labels) 0.8905 | data-wait 4s of 679s\n"}
+,{"stream_name":"stdout","time":4546.198385165,"data":"[   4533s] [gpu1] fold 1 ep 4 loss 0.4257 val macroAUC(vs labels) 0.8894 | data-wait 4s of 754s\n"}
+,{"stream_name":"stdout","time":4874.345621769,"data":"[   4861s] [gpu0] fold 0 ep 5 loss 0.4216 val macroAUC(vs labels) 0.8916 | data-wait 4s of 681s\n"}
+,{"stream_name":"stdout","time":5304.987953941,"data":"[   5292s] [gpu1] fold 1 ep 5 loss 0.4212 val macroAUC(vs labels) 0.8920 | data-wait 7s of 759s\n"}
+,{"stream_name":"stdout","time":5557.054501629,"data":"[   5544s] [gpu0] fold 0 ep 6 loss 0.4183 val macroAUC(vs labels) 0.8951 | data-wait 8s of 683s\n"}
+,{"stream_name":"stdout","time":6056.831345115,"data":"[   6044s] [gpu1] fold 1 ep 6 loss 0.4176 val macroAUC(vs labels) 0.8941 | data-wait 4s of 752s\n"}
+,{"stream_name":"stdout","time":6239.836044188,"data":"[   6227s] [gpu0] fold 0 ep 7 loss 0.4149 val macroAUC(vs labels) 0.8967 | data-wait 4s of 683s\n"}
+,{"stream_name":"stdout","time":6876.38725329,"data":"[   6863s] [gpu1] fold 1 ep 7 loss 0.4141 val macroAUC(vs labels) 0.8967 | data-wait 4s of 820s\n"}
+,{"stream_name":"stdout","time":6919.140392581,"data":"[   6906s] [gpu0] fold 0 ep 8 loss 0.4119 val macroAUC(vs labels) 0.8988 | data-wait 4s of 679s\n"}
+,{"stream_name":"stdout","time":7602.124051678,"data":"[   7589s] [gpu0] fold 0 ep 9 loss 0.4092 val macroAUC(vs labels) 0.9001 | data-wait 4s of 683s\n"}
+,{"stream_name":"stdout","time":7626.392277252,"data":"[   7613s] [gpu1] fold 1 ep 8 loss 0.4106 val macroAUC(vs labels) 0.8978 | data-wait 4s of 750s\n"}
+,{"stream_name":"stdout","time":8285.900715679,"data":"[   8273s] [gpu0] fold 0 ep 10 loss 0.4082 val macroAUC(vs labels) 0.9002 | data-wait 4s of 684s\n"}
+,{"stream_name":"stdout","time":8378.669688811,"data":"[   8366s] [gpu1] fold 1 ep 9 loss 0.4088 val macroAUC(vs labels) 0.8990 | data-wait 4s of 752s\n"}
+,{"stream_name":"stdout","time":8968.823539497,"data":"[   8956s] [gpu0] fold 0 ep 11 loss 0.4075 val macroAUC(vs labels) 0.9003 | data-wait 4s of 683s\n"}
+,{"stream_name":"stdout","time":8969.286104703,"data":"[   8956s] [gpu0] fold 0 saved in 149 min\n"}
+,{"stream_name":"stdout","time":9098.323394446,"data":"[   9085s] [gpu1] fold 1 ep 10 loss 0.4073 val macroAUC(vs labels) 0.8985 | data-wait 4s of 720s\n"}
+,{"stream_name":"stdout","time":9822.108732849,"data":"[   9809s] [gpu1] fold 1 ep 11 loss 0.4065 val macroAUC(vs labels) 0.8985 | data-wait 3s of 724s\n"}
+,{"stream_name":"stdout","time":9822.238135024,"data":"[   9809s] [gpu1] fold 1 saved in 163 min\n"}
+,{"stream_name":"stdout","time":9829.323275749,"data":"[   9827s] trained folds [0, 1]; OOF macroAUC vs labels: 0.8992\n"}
+,{"stream_name":"stdout","time":9829.344835647,"data":"[   9827s] OOF macroAUC vs gold (32 studies): 0.9197\n"}
+,{"stream_name":"stderr","time":9832.568444866,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":9832.568473766,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":9832.894955875,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":9832.89498283,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":9834.037011948,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":9835.340511934,"data":"[NbConvertApp] Writing 494748 bytes to __results__.html\n"}
+]

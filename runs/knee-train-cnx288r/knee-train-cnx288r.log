@@ -1,0 +1,29 @@
+[{"stream_name":"stdout","time":18.185109913,"data":"[     14s] pseudo targets: a=0.5 from ['knee-train-rad'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":21.659961981,"data":"[     18s] convnext_tiny.fb_in22k_ft_in1k: 4407 studies, folds [0, 1], 6 epochs, 2 GPUs, pseudo 0.5 ['knee-train-rad']\n"}
+,{"stream_name":"stdout","time":24.022225558,"data":"[      2s] pseudo targets: a=0.5 from ['knee-train-rad'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":24.04574595,"data":"[      2s] pseudo targets: a=0.5 from ['knee-train-rad'], 4407 studies with OOF\n"}
+,{"stream_name":"stderr","time":41.441632732,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":41.447943818,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":1525.973381283,"data":"[   1504s] [gpu0] fold 0 ep 0 loss 0.4789 val macroAUC(vs labels) 0.8341 | data-wait 19s of 1482s\n"}
+,{"stream_name":"stdout","time":1637.761036582,"data":"[   1616s] [gpu1] fold 1 ep 0 loss 0.4804 val macroAUC(vs labels) 0.8114 | data-wait 19s of 1594s\n"}
+,{"stream_name":"stdout","time":2660.030179325,"data":"[   2638s] [gpu0] fold 0 ep 1 loss 0.4208 val macroAUC(vs labels) 0.8664 | data-wait 20s of 1134s\n"}
+,{"stream_name":"stdout","time":2803.695455975,"data":"[   2781s] [gpu1] fold 1 ep 1 loss 0.4230 val macroAUC(vs labels) 0.8605 | data-wait 20s of 1166s\n"}
+,{"stream_name":"stdout","time":3764.381316369,"data":"[   3742s] [gpu0] fold 0 ep 2 loss 0.4042 val macroAUC(vs labels) 0.8819 | data-wait 20s of 1104s\n"}
+,{"stream_name":"stdout","time":3967.415538244,"data":"[   3945s] [gpu1] fold 1 ep 2 loss 0.4044 val macroAUC(vs labels) 0.8755 | data-wait 20s of 1164s\n"}
+,{"stream_name":"stdout","time":4865.245572634,"data":"[   4843s] [gpu0] fold 0 ep 3 loss 0.3947 val macroAUC(vs labels) 0.8890 | data-wait 20s of 1101s\n"}
+,{"stream_name":"stdout","time":5133.932555627,"data":"[   5112s] [gpu1] fold 1 ep 3 loss 0.3957 val macroAUC(vs labels) 0.8869 | data-wait 20s of 1167s\n"}
+,{"stream_name":"stdout","time":5969.506785702,"data":"[   5947s] [gpu0] fold 0 ep 4 loss 0.3885 val macroAUC(vs labels) 0.8919 | data-wait 21s of 1104s\n"}
+,{"stream_name":"stdout","time":6303.44619404,"data":"[   6281s] [gpu1] fold 1 ep 4 loss 0.3889 val macroAUC(vs labels) 0.8903 | data-wait 20s of 1170s\n"}
+,{"stream_name":"stdout","time":7073.051019069,"data":"[   7051s] [gpu0] fold 0 ep 5 loss 0.3852 val macroAUC(vs labels) 0.8926 | data-wait 21s of 1104s\n"}
+,{"stream_name":"stdout","time":7073.311334957,"data":"[   7051s] [gpu0] fold 0 saved in 117 min\n"}
+,{"stream_name":"stdout","time":7469.103599741,"data":"[   7447s] [gpu1] fold 1 ep 5 loss 0.3854 val macroAUC(vs labels) 0.8922 | data-wait 20s of 1166s\n"}
+,{"stream_name":"stdout","time":7469.284981083,"data":"[   7447s] [gpu1] fold 1 saved in 124 min\n"}
+,{"stream_name":"stdout","time":7482.521384023,"data":"[   7479s] trained folds [0, 1]; OOF macroAUC vs labels: 0.8926\n"}
+,{"stream_name":"stdout","time":7482.546035227,"data":"[   7479s] OOF macroAUC vs gold (32 studies): 0.9214\n"}
+,{"stream_name":"stderr","time":7486.643566619,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":7486.643596661,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":7487.215483292,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":7487.21551153,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":7488.799863999,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":7490.354333436,"data":"[NbConvertApp] Writing 481573 bytes to __results__.html\n"}
+]

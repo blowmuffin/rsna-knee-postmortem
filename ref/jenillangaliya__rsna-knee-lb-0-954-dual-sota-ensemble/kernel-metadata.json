@@ -1,0 +1,27 @@
+{
+  "id": "jenillangaliya/rsna-knee-lb-0-954-dual-sota-ensemble",
+  "id_no": 138049049,
+  "title": "RSNA Knee [LB 0.954]: Dual SOTA Ensemble",
+  "code_file": "rsna-knee-lb-0-954-dual-sota-ensemble.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "heliosli/rsna-knee-compact-v1",
+    "nartaa/rsna-knee-publication-swa-weights-20261007",
+    "heliosli/rsna-orthofoundation-fold0-epoch7-20261004"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:81b1e7c4b4f0f2a7e0a33943c95754b1b7af6b30d65221633a284b6b601cd84a",
+  "machine_shape": "NvidiaTeslaT4"
+}

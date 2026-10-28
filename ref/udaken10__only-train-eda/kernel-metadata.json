@@ -1,0 +1,21 @@
+{
+  "id": "udaken10/only-train-eda",
+  "id_no": 130028148,
+  "title": "only_train_EDA\u65e5\u672c\u8a9e\u3067\u3044\u3044\u3058\u3083\u3093",
+  "code_file": "only-train-eda.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machine_shape": "None"
+}

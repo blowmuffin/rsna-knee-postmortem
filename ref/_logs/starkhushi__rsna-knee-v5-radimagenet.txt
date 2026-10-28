@@ -1,0 +1,220 @@
+       5 /usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+       5   validate(nb)
+     367 [    348s] Tesla T4 | RadImageNet: /kaggle/input/datasets/shigechan/radimagenet-resnet50-official/ResNet50.pt
+     610 [    590s] 4406 studies | 58 annotated | 250 holdout
+     642 [    622s] laterality: {'L': 3308, 'R': 1098}
+    1017 [    997s] cached 1000/4406
+    1380 [   1360s] cached 2000/4406
+    1731 [   1711s] cached 3000/4406
+    2081 [   2061s] cached 4000/4406
+    2228 [   2209s] cache 12.2 GB
+    2229 [   2209s] train 4098 | val 58 | holdout 250
+    2230 RadImageNet load -> missing 0, unexpected 0
+    2230 [   2210s] model ready
+    2230 /tmp/ipykernel_23/1146680619.py:45: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+    2230   scaler = torch.cuda.amp.GradScaler()
+    2230 /tmp/ipykernel_23/1146680619.py:45: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+    2230   scaler = torch.cuda.amp.GradScaler()
+    2231 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    2231   with torch.cuda.amp.autocast():
+    2231 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    2231   with torch.cuda.amp.autocast():
+    3083 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    3083   with torch.cuda.amp.autocast():
+    3083 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    3083   with torch.cuda.amp.autocast():
+    3103 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    3103   with torch.cuda.amp.autocast():
+    3103 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    3103   with torch.cuda.amp.autocast():
+    3107 [   3087s] epoch 1: loss 0.6155 | holdout 0.6952 | annotated-val 0.6748 (14.6 min)  <-- best saved (holdout)
+    3107    Contusion: 0.609
+    3107    Synovitis: 0.619
+    3107    Baker's: 0.630
+    3107    ACL: 0.631
+    3107    PF OA: 0.634
+    3107    Fracture: 0.635
+    3107    MCL: 0.639
+    3107    Medial OA: 0.659
+    3107    Lateral Meniscus: 0.688
+    3107    Medial Meniscus: 0.748
+    3107    Effusion: 0.761
+    3107    Lateral OA: 0.843
+    3108 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    3108   with torch.cuda.amp.autocast():
+    3108 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    3108   with torch.cuda.amp.autocast():
+    3982 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    3982   with torch.cuda.amp.autocast():
+    3982 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    3982   with torch.cuda.amp.autocast():
+    4002 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    4002   with torch.cuda.amp.autocast():
+    4002 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    4002   with torch.cuda.amp.autocast():
+    4006 [   3987s] epoch 2: loss 0.5759 | holdout 0.7776 | annotated-val 0.7925 (15.0 min)  <-- best saved (holdout)
+    4006    Medial Meniscus: 0.746
+    4006    MCL: 0.748
+    4006    ACL: 0.756
+    4006    Lateral Meniscus: 0.759
+    4006    PF OA: 0.763
+    4006    Baker's: 0.768
+    4006    Synovitis: 0.784
+    4006    Lateral OA: 0.789
+    4006    Fracture: 0.796
+    4006    Contusion: 0.811
+    4006    Effusion: 0.842
+    4006    Medial OA: 0.947
+    4007 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    4007   with torch.cuda.amp.autocast():
+    4007 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    4007   with torch.cuda.amp.autocast():
+    4882 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    4882   with torch.cuda.amp.autocast():
+    4882 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    4882   with torch.cuda.amp.autocast():
+    4901 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    4901   with torch.cuda.amp.autocast():
+    4901 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    4901   with torch.cuda.amp.autocast():
+    4906 [   4886s] epoch 3: loss 0.5574 | holdout 0.8009 | annotated-val 0.8196 (15.0 min)  <-- best saved (holdout)
+    4906    Medial Meniscus: 0.746
+    4906    Lateral OA: 0.754
+    4906    ACL: 0.781
+    4906    Synovitis: 0.795
+    4906    Baker's: 0.795
+    4906    MCL: 0.796
+    4906    Lateral Meniscus: 0.798
+    4906    PF OA: 0.804
+    4906    Fracture: 0.864
+    4906    Contusion: 0.873
+    4906    Effusion: 0.875
+    4906    Medial OA: 0.955
+    4907 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    4907   with torch.cuda.amp.autocast():
+    4907 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    4907   with torch.cuda.amp.autocast():
+    5781 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    5781   with torch.cuda.amp.autocast():
+    5781 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    5781   with torch.cuda.amp.autocast():
+    5801 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    5801   with torch.cuda.amp.autocast():
+    5801 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    5801   with torch.cuda.amp.autocast():
+    5805 [   5786s] epoch 4: loss 0.5469 | holdout 0.8116 | annotated-val 0.8354 (15.0 min)  <-- best saved (holdout)
+    5805    Medial Meniscus: 0.762
+    5805    Lateral OA: 0.768
+    5805    Synovitis: 0.789
+    5805    ACL: 0.793
+    5805    Lateral Meniscus: 0.801
+    5805    MCL: 0.812
+    5805    Baker's: 0.813
+    5805    PF OA: 0.843
+    5805    Effusion: 0.883
+    5805    Fracture: 0.897
+    5805    Contusion: 0.903
+    5805    Medial OA: 0.961
+    5806 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    5806   with torch.cuda.amp.autocast():
+    5806 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    5806   with torch.cuda.amp.autocast():
+    6683 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    6683   with torch.cuda.amp.autocast():
+    6683 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    6683   with torch.cuda.amp.autocast():
+    6702 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    6702   with torch.cuda.amp.autocast():
+    6702 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    6702   with torch.cuda.amp.autocast():
+    6707 [   6687s] epoch 5: loss 0.5408 | holdout 0.8207 | annotated-val 0.8415 (15.0 min)  <-- best saved (holdout)
+    6707    Lateral OA: 0.756
+    6707    Medial Meniscus: 0.784
+    6707    Synovitis: 0.787
+    6707    ACL: 0.798
+    6707    Lateral Meniscus: 0.801
+    6707    Baker's: 0.812
+    6707    MCL: 0.825
+    6707    PF OA: 0.858
+    6707    Effusion: 0.888
+    6707    Fracture: 0.910
+    6707    Contusion: 0.912
+    6707    Medial OA: 0.966
+    6708 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    6708   with torch.cuda.amp.autocast():
+    6708 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    6708   with torch.cuda.amp.autocast():
+    7585 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    7585   with torch.cuda.amp.autocast():
+    7585 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    7585   with torch.cuda.amp.autocast():
+    7605 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    7605   with torch.cuda.amp.autocast():
+    7605 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    7605   with torch.cuda.amp.autocast():
+    7609 [   7589s] epoch 6: loss 0.5357 | holdout 0.8245 | annotated-val 0.8468 (15.0 min)  <-- best saved (holdout)
+    7609    Lateral OA: 0.764
+    7609    Synovitis: 0.789
+    7609    ACL: 0.795
+    7609    Medial Meniscus: 0.802
+    7609    MCL: 0.812
+    7609    Baker's: 0.815
+    7609    Lateral Meniscus: 0.819
+    7609    PF OA: 0.867
+    7609    Effusion: 0.897
+    7609    Contusion: 0.912
+    7609    Fracture: 0.925
+    7609    Medial OA: 0.964
+    7610 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    7610   with torch.cuda.amp.autocast():
+    7610 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    7610   with torch.cuda.amp.autocast():
+    8488 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    8488   with torch.cuda.amp.autocast():
+    8488 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    8488   with torch.cuda.amp.autocast():
+    8507 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    8507   with torch.cuda.amp.autocast():
+    8507 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    8507   with torch.cuda.amp.autocast():
+    8512 [   8492s] epoch 7: loss 0.5328 | holdout 0.8267 | annotated-val 0.8454 (15.0 min)  <-- best saved (holdout)
+    8512    Lateral OA: 0.752
+    8512    Synovitis: 0.774
+    8512    Baker's: 0.810
+    8512    Medial Meniscus: 0.810
+    8512    Lateral Meniscus: 0.812
+    8512    ACL: 0.814
+    8512    MCL: 0.816
+    8512    PF OA: 0.871
+    8512    Effusion: 0.894
+    8512    Fracture: 0.914
+    8512    Contusion: 0.915
+    8512    Medial OA: 0.961
+    8513 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    8513   with torch.cuda.amp.autocast():
+    8513 /tmp/ipykernel_23/3862976507.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    8513   with torch.cuda.amp.autocast():
+    9392 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    9392   with torch.cuda.amp.autocast():
+    9392 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    9392   with torch.cuda.amp.autocast():
+    9412 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    9412   with torch.cuda.amp.autocast():
+    9412 /tmp/ipykernel_23/3862976507.py:5: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+    9412   with torch.cuda.amp.autocast():
+    9416 [   9396s] epoch 8: loss 0.5322 | holdout 0.8258 | annotated-val 0.8456 (15.1 min)
+    9416    Lateral OA: 0.743
+    9416    Synovitis: 0.777
+    9416    ACL: 0.810
+    9416    MCL: 0.814
+    9416    Lateral Meniscus: 0.817
+    9416    Baker's: 0.819
+    9416    Medial Meniscus: 0.826
+    9416    PF OA: 0.874
+    9416    Effusion: 0.894
+    9416    Fracture: 0.899
+    9416    Contusion: 0.912
+    9416    Medial OA: 0.963
+    9416 [   9396s] BEST holdout 0.8267
+    9422   cells[i][c] = re.sub('\\\\\|', '|', cell)
+    9422   text = re.sub(r'_', '\_', text) # Escape underscores in display text

@@ -1,0 +1,273 @@
+      11 torch/GPU checked in the next cell; configuration first
+      11 input size        : 336 px  ->  0.446 mm/px, 6.25 mm per 14px token, 576 tokens
+      11 slots             : Sagittal_Fluid(12), Sagittal_Structural(12), Coronal_Fluid(8), Coronal_Structural(6), Axial_Fluid(8)
+      11 slices per study  : 46 when every slot fills
+      11 per-slice embedding: 1152 dims (CLS + patch mean + patch max)
+      11 io workers        : 4
+      11 design system ready | text contrast on the chart surface (WCAG AA floor 4.5): INK 19.2, INK_2 7.7, MUTED 5.4, ACCENT_TEXT 4.8
+      18 input root        : /kaggle/input/competitions/rsna-knee-abnormality-detection
+      18 running on        : Kaggle
+      18 train dicom dir   : /kaggle/input/competitions/rsna-knee-abnormality-detection/train_series
+      18 test dicom dir    : /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+      18 writing to        : /kaggle/working
+      18 torch             : yes | gpus: 2 | device: cuda
+      18 pydicom           : yes
+      18 resize backend    : cv2
+      18 dinov2 checkpoint : /kaggle/input/models/metaresearch/dinov2/pytorch/small/1
+      18 encoding possible : True
+      18 train studies     : 4407 | train series : 24371
+      18 test studies      : 3 | test series  : 15
+      18 gold-labelled     : 58 of 4407 (1.32%)
+      43 DINOv2 loaded from /kaggle/input/models/metaresearch/dinov2/pytorch/small/1
+      43    22,056,576 params, hidden 384, patch 14, configured at 518 px
+      43    forward kwargs: none needed
+      43    positional grid: native 37x37 -> 24x24 here, 9x9 at the frontier's 126 px
+      43 DINOv2 ViT-S/14 over a 150 mm field of view
+      43  input_px  grid  patch_tokens  mm_per_px  mm_per_token  gflops resolves_1mm resolves_3mm
+      43       126   9x9            81      1.190        16.667   3.606           no          yes
+      43       168 12x12           144      0.893        12.500   6.545           no          yes
+      43       224 16x16           256      0.670         9.375  12.132           no          yes
+      43       280 20x20           400      0.536         7.500  19.993           no          yes
+      43       336 24x24           576      0.446         6.250  30.640          yes          yes
+      43       392 28x28           784      0.383         5.357  44.695          yes          yes
+      43       448 32x32          1024      0.335         4.688  62.894          yes          yes
+      43       518 37x37          1369      0.290         4.054  92.775          yes          yes
+      43 Nyquist: a feature d mm wide needs a pitch of at most d/2 mm per pixel.
+      43   meniscal tear         1.0-3.0  mm  needs <= 0.50 mm/px  ->  input >= 300 px
+      43   meniscus width        9.0-12.0 mm  needs <= 4.50 mm/px  ->  input >= 34 px
+      43   cartilage thickness   2.0-4.0  mm  needs <= 1.00 mm/px  ->  input >= 150 px
+      43 frontier at 126 px : 1.190 mm/px, 16.67 mm per token, 81 tokens, 3.6 GFLOPs
+      43 here at     336 px : 0.446 mm/px, 6.25 mm per token, 576 tokens, 30.6 GFLOPs
+      43 ratio            : 7.1x the tokens, 8.5x the FLOPs, 0.38x the millimetres per token
+      43 a 1 mm tear is 0.84 px wide at 126 px and 2.24 px wide at 336 px
+      48 lesion-response probe: 4 widths x 4 sizes x 5 seeds in 4.1s
+      48 relative shift of the pooled embedding when a lesion of that physical width
+      48 is painted on the field, per input size ('gain' is 336 px over 126 px)
+      48  lesion_mm  px126  px224  px336  px448  native_px   gain
+      48     1.0000 0.0541 0.1610 0.1858 0.1640         29 3.4355
+      48     2.0000 0.0908 0.2190 0.2394 0.2003         81 2.6358
+      48     3.0000 0.1426 0.2301 0.2716 0.2194        197 1.9038
+      48    10.0000 0.3568 0.4227 0.3133 0.2812       2289 0.8780
+      48 a 10 mm feature gains 0.88x from the higher input size; a 1 mm feature gains 3.44x
+      48 Resolution buys nothing for large structures and a great deal for small ones,
+      48 which is the signature the sampling argument predicts.
+      49 extractor ready: 4 paired labels, 5 direct labels, 59 negation cues
+      54 rule labels extracted inline: 4407 reports in 5.5s
+      54 LLM labels from file  : labels_llm_opus_2026_08_05.parquet | 4407 of 4407 studies overwritten
+      54 label source      : auto -> resolved to llm
+      54 gold overrides    : 58 studies, weighted x8 in the loss
+      54                   mean_soft_target  positives_at_0.5  prevalence_%
+      54 ACL                         0.1964               773          17.5
+      54 MCL                         0.1367               576          13.1
+      54 Medial Meniscus             0.4312              1830          41.5
+      54 Lateral Meniscus            0.1947               719          16.3
+      54 Medial OA                   0.3505              1639          37.2
+      54 Lateral OA                  0.2576              1155          26.2
+      54 PF OA                       0.4300              2012          45.7
+      54 Effusion                    0.4116              2262          51.3
+      54 Synovitis                   0.2404               945          21.4
+      54 Baker's                     0.2697              1076          24.4
+      54 Contusion                   0.1659               510          11.6
+      54 Fracture                    0.1071               305           6.9
+      54 Rule extractor vs gold labels, n = 58 studies
+      54            label  gold_pos  extractor_pos  agreement  precision  recall
+      54              ACL        24             26      0.897      0.846   0.917
+      54              MCL         9             16      0.879      0.562   1.000
+      54  Medial Meniscus        26             24      0.828      0.833   0.769
+      54 Lateral Meniscus        23             19      0.828      0.842   0.696
+      54        Medial OA        15             19      0.793      0.579   0.733
+      54       Lateral OA        11             22      0.707      0.364   0.727
+      54            PF OA        21             20      0.741      0.650   0.619
+      54         Effusion        35             49      0.690      0.673   0.943
+      54        Synovitis        27             17      0.690      0.765   0.481
+      54          Baker's        12             16      0.862      0.625   0.833
+      54        Contusion        19             20      0.810      0.700   0.737
+      54         Fracture        18             18      0.828      0.722   0.722
+      54 mean agreement 0.7960 | mean precision 0.6802 | mean recall 0.7648
+      54 Reference, measured off-notebook on the same 58 studies:
+      54   rule extractor      agreement 0.7960  precision 0.6802  recall 0.7648
+      54   Claude Opus 5 (low) agreement 0.8233  precision 0.6910  recall 0.8602
+      54   paired delta +0.0273 agreement, 95% CI [+0.0029, +0.0532], McNemar p=0.0204
+      55 Fluid_Sensitive vs Fat_Suppression over 24,371 series: 0 rows disagree
+      55   -> 2 contrast classes, not four
+      55   fluid-sensitive series 14,010 | non-fluid 10,361
+      55 Six candidate slots, measured over 4,407 training studies
+      55                slot  series  studies   fill  kept
+      55         Axial_Fluid    4719     4407 1.0000  True
+      55 Sagittal_Structural    5197     4266 0.9680  True
+      55       Coronal_Fluid    4624     4248 0.9639  True
+      55      Sagittal_Fluid    4667     4150 0.9417  True
+      55  Coronal_Structural    3985     3406 0.7729  True
+      55    Axial_Structural    1179      857 0.1945 False
+      55 frontier's six-slot rule, second slot per plane fills when the plane has >=2 series:
+      55   Sagittal   97.3% of studies
+      55   Coronal    74.5% of studies
+      55   Axial      24.8% of studies
+      55   mean slots filled 4.966 / 6 = 82.8% per slot
+      55   of the 1094 studies whose Axial second slot fills, 237 have no genuine non-fluid axial series, so the slot holds a duplicate contrast
+      55 this notebook's 5 slots, contrast enforced:
+      55   Sagittal_Fluid         fill  94.2%  slice budget 12
+      55   Sagittal_Structural    fill  96.8%  slice budget 12
+      55   Coronal_Fluid          fill  96.4%  slice budget  8
+      55   Coronal_Structural     fill  77.3%  slice budget  6
+      55   Axial_Fluid            fill 100.0%  slice budget  8
+      55   mean slots filled 4.646 / 5 = 92.9% per slot
+      55   expected slices encoded per study: 43.3
+      64 slot assignment    : train 4407 studies, mean 4.646 slots filled
+      64                      test  3 studies
+      65 preprocessing ready
+      65 laterality                   : right knees mapped onto the left convention, coronal/axial mirrored, sagittal stack reversed, untagged left alone
+      65 per-series window percentiles: 1.0 / 99.5, pooled over the slices encoded
+      65 sampling window by plane      : Sagittal 0.12-0.88, Coronal 0.20-0.80, Axial 0.12-0.88
+      68 probe: 3 studies at 336 px
+      68   decode + preprocess 0.91 s/study
+      68   GPU forward         0.24 s/study  (159 images/s)
+      68   images encoded      38.0 per study
+      68 projected encode cost at 336 px, 38.0 images per study
+      68   visible test  (    3 studies):        3 s
+      68   rerun test    (~1300 studies):     1498 s   budget 9000 s
+      68   train         ( 4407 studies):     5078 s   budget 14000 s
+      68   head + submission             :     2400 s   budget
+      68   total against the 9 h kernel  :     8976 s of 30000 s
+      68 no downshift needed
+      68 studies to encode: 4407 train (gold first), 3 test
+      69 pixel cache projected: 7.5 GB for 4407 train + 3 test studies
+      69 pixel cache for test: 0.0 GB at emb_test_dinos336_slots12-12-8-6-8_1152_lat2_pix.npy
+      69   test     1/    3  2.04 studies/s  eta 1s
+      70   test     2/    3  1.84 studies/s  eta 1s
+      71   test     3/    3  1.63 studies/s  eta 0s
+      71   pixel cache: 3 of 3 studies carry at least one slot
+      71 encode test: 3 of 3 studies in 2s -> emb_test_dinos336_slots12-12-8-6-8_1152_lat2.npy (0 MB)
+      71 pixel cache for train: 7.5 GB at emb_train_dinos336_slots12-12-8-6-8_1152_lat2_pix.npy
+     262   train   220/ 4407  1.15 studies/s  eta 3646s
+     453   train   440/ 4407  1.15 studies/s  eta 3446s
+     654   train   660/ 4407  1.13 studies/s  eta 3310s
+     844   train   880/ 4407  1.14 studies/s  eta 3099s
+    1041   train  1100/ 4407  1.13 studies/s  eta 2917s
+    1248   train  1320/ 4407  1.12 studies/s  eta 2753s
+    1451   train  1540/ 4407  1.12 studies/s  eta 2569s
+    1661   train  1760/ 4407  1.11 studies/s  eta 2392s
+    1857   train  1980/ 4407  1.11 studies/s  eta 2190s
+    2053   train  2200/ 4407  1.11 studies/s  eta 1989s
+    2263   train  2420/ 4407  1.10 studies/s  eta 1800s
+    2467   train  2640/ 4407  1.10 studies/s  eta 1604s
+    2664   train  2860/ 4407  1.10 studies/s  eta 1403s
+    2871   train  3080/ 4407  1.10 studies/s  eta 1207s
+    3073   train  3300/ 4407  1.10 studies/s  eta 1007s
+    3283   train  3520/ 4407  1.10 studies/s  eta 809s
+    3486   train  3740/ 4407  1.10 studies/s  eta 609s
+    3688   train  3960/ 4407  1.09 studies/s  eta 408s
+    3897   train  4180/ 4407  1.09 studies/s  eta 208s
+    4102   train  4400/ 4407  1.09 studies/s  eta 6s
+    4109   pixel cache: 4407 of 4407 studies carry at least one slot
+    4109 encode train: 4407 of 4407 studies in 4039s -> emb_train_dinos336_slots12-12-8-6-8_1152_lat2.npy (609 MB)
+    4110 train: 4407 of 4407 studies carry at least one encoded slice
+    4110   slices encoded per study      : mean 43.3, median 46, max 46
+    4110   share of the SELECTED series  : 28.1%
+    4110   share of the whole study      : 23.1% (estimated from 5.5 series per study x 34 slices per series)
+    4110   physical extent per series    : 102 mm scanned, sampled across the plane window
+    4110   slots carrying data           : Sagittal_Fluid 94%, Sagittal_Structural 97%, Coronal_Fluid 96%, Coronal_Structural 77%, Axial_Fluid 100%
+    4110 test : 3 of 3 studies carry at least one encoded slice
+    4110   slices encoded per study      : mean 38.0, median 40, max 46
+    4110   share of the SELECTED series  : 24.3%
+    4110   share of the whole study      : 17.7% (estimated from 5.0 series per study x 43 slices per series)
+    4110   physical extent per series    : 108 mm scanned, sampled across the plane window
+    4110   slots carrying data           : Sagittal_Fluid 67%, Sagittal_Structural 100%, Coronal_Fluid 100%, Coronal_Structural 33%, Axial_Fluid 100%
+    4110 median body crop keeps 99% of the frame, so the effective pitch is 0.444 mm/px and one patch token covers 6.21 mm
+    4110 failure counters: series_missing 0, header_fail 0, pixel_fail 0, series_truncated 561, slots_empty 1564, slices_decoded 190849, exact_order 19940, fallback_order 561, lat_left 4958, lat_right_mirrored 2986, lat_right_reversed 2029, lat_absent 10528, lat_conflict 0
+    4110   series ordered exactly (every file on disk): 19940 | subsampled: 561
+    4110   laterality: 4958 already left, 2986 right mirrored (coronal/axial), 2029 right reversed (sagittal), 10528 unlabelled and left alone, 0 self-contradictory
+    4110   24.5% of slots were normalised onto the left-knee convention; 51.4% carried no side and keep an unresolved axis
+    4110 fold grouping: 4407 studies -> 4273 groups
+    4110   49 duplicate-report blocks covering 183 studies, largest block 37
+    4110   5 folds, no group appears on both sides of any split
+    4110 studies with embeddings: train 100.0% | test 100.0%
+    4117 pooled features: train (4407, 11520) | test (3, 11520) | 5.0s
+    4117 target matrix  : (4407, 12) | positives at 0.5: 13802
+    4148 ridge probe: 5 folds in 31.2s, 11535 features
+    4222   attention head: fold 1 of 5 done
+    4294   attention head: fold 2 of 5 done
+    4366   attention head: fold 3 of 5 done
+    4438   attention head: fold 4 of 5 done
+    4509   attention head: fold 5 of 5 done
+    4509 attention head: 5 folds x 3 seeds in 360.9s
+    4510 fine-tune: 4 of 12 blocks open, 7,101,696 trainable backbone params
+    4510   train rows 3525 | held-out rows 882 | fold 0 of 5
+    4655   epoch 1/8  loss 0.5683  145s elapsed
+    4792   epoch 2/8  loss 0.5330  282s elapsed
+    4914   epoch 3/8  loss 0.5180  404s elapsed
+    5036   epoch 4/8  loss 0.5094  527s elapsed
+    5159   epoch 5/8  loss 0.4970  649s elapsed
+    5281   epoch 6/8  loss 0.4869  771s elapsed
+    5403   epoch 7/8  loss 0.4777  894s elapsed
+    5525   epoch 8/8  loss 0.4651  1016s elapsed
+    5547 fine-tune: 8 epochs, 1037s
+    5547 held-out fold 0, 882 studies
+    5547   frozen ridge      0.7882
+    5547   frozen attention  0.7654
+    5547   fine-tuned        0.7884
+    5547 Every number here is measured against extracted labels, so all of them carry the same ceiling. This ranks the heads against each other on one fold. It is not an estimate of the leaderboard.
+    5547 test blend: frozen 0.55 / fine-tuned 0.45, ranks not probabilities
+    5547 blend_oof below describes the FROZEN heads only; the fine-tuned model is in the submission but not in that out-of-fold number.
+    5547 Out-of-fold macro AUC against the EXTRACTED labels
+    5547 (both sides come from the same extractor: a smoke test, not a leaderboard estimate)
+    5547            label  positives  ridge  attention  blend
+    5547              ACL        773 0.8017     0.7506 0.8012
+    5547              MCL        576 0.7239     0.7180 0.7498
+    5547  Medial Meniscus       1830 0.7753     0.7499 0.7844
+    5547 Lateral Meniscus        719 0.7018     0.7069 0.7264
+    5547        Medial OA       1639 0.8455     0.8219 0.8501
+    5547       Lateral OA       1155 0.7977     0.7780 0.8075
+    5547            PF OA       2012 0.7849     0.7725 0.7962
+    5547         Effusion       2262 0.8391     0.8169 0.8427
+    5547        Synovitis        945 0.7343     0.6788 0.7272
+    5547          Baker's       1076 0.7689     0.7227 0.7721
+    5547        Contusion        510 0.7960     0.7646 0.8016
+    5547         Fracture        305 0.7740     0.7580 0.7955
+    5547 macro  ridge 0.7786 | attention 0.7532 | blend 0.7879
+    5547 blend weight curve (ridge share): 0.00->0.7532, 0.25->0.7752, 0.50->0.7879, 0.75->0.7885, 1.00->0.7786
+    5547 shipped weight is fixed at 0.50, not selected from this curve
+    5547 Out-of-fold macro AUC on the 58 GOLD studies: ridge 0.7788 | blend 0.7878
+    5547 A per-label AUC on this many studies carries a standard error near 0.07.
+    5547 It is a sanity check on direction. It cannot rank two models.
+    5548 wrote /kaggle/working/submission.csv | 3 rows x 13 columns
+    5548                                                 StudyInstanceUID   ACL    MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture
+    5548 1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191 0.225 0.3625            0.725            0.3625      0.775       0.775  0.500     0.500      0.275    0.725        0.5       0.5
+    5548 1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776 1.000 1.0000            0.000            1.0000      0.000       0.000  0.275     0.725      1.000    0.775        1.0       1.0
+    5548 1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402 0.275 0.1375            0.775            0.1375      0.725       0.725  0.725     0.275      0.225    0.000        0.0       0.0
+    5548 per-label mean predicted probability
+    5548 ACL                 0.5
+    5548 MCL                 0.5
+    5548 Medial Meniscus     0.5
+    5548 Lateral Meniscus    0.5
+    5548 Medial OA           0.5
+    5548 Lateral OA          0.5
+    5548 PF OA               0.5
+    5548 Effusion            0.5
+    5548 Synovitis           0.5
+    5548 Baker's             0.5
+    5548 Contusion           0.5
+    5548 Fracture            0.5
+    5548 removed 7 train cache files from the output; set SAVE_TRAIN_CACHE=True to keep them for promotion to a dataset
+    5548 python       3.12.13
+    5548 numpy        2.0.2
+    5548 pandas       2.3.3
+    5548 sklearn      1.6.1
+    5548 scipy        1.16.3
+    5548 matplotlib   3.10.0
+    5548 pydicom      3.0.2
+    5548 torch        2.10.0+cu128
+    5548 transformers 5.0.0
+    5548 cv2          4.13.0
+    5548 input root         /kaggle/input/competitions/rsna-knee-abnormality-detection
+    5548 seed               20260805
+    5548 input size         336 px -> 0.446 mm/px, 6.25 mm per token
+    5548 slots / budgets    Sagittal_Fluid=12, Sagittal_Structural=12, Coronal_Fluid=8, Coronal_Structural=6, Axial_Fluid=8
+    5548 label source       auto -> llm
+    5548 backbone           22,056,576 params, hidden 384, patch 14, configured at 518 px
+    5548 cache tag          dinos336_slots12-12-8-6-8_1152_lat2
+    5548 studies encoded    train 4407 / test 3
+    5548 slices decoded     190849
+    5548 failures           series_missing 0, header_fail 0, pixel_fail 0, slots_empty 1564
+    5555   cells[i][c] = re.sub('\\\\\|', '|', cell)
+    5555   text = re.sub(r'_', '\_', text) # Escape underscores in display text

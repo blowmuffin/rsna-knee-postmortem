@@ -1,0 +1,183 @@
+       8 arm 3 (light) | 4 windows/study | batch 12 | <=60 epochs | 4.0 h budget
+       8 regularisers  | mixup 0.40 p=0.50 | smooth 0.050 | ema 0.9990 | dp 0.10 | head-drop 0.30 | wd 0.050
+       9 ==============================================================================
+       9 PREFLIGHT
+       9 ==============================================================================
+       9   pixel cache        : OK   /kaggle/input/notebooks/nguyenkhaho/train-data-4
+       9                        4053 studies, 64 slices, 256 px
+      13   GPU                : OK   2 device(s)
+      22   timm               : 1.0.26
+      22   weight files found :
+      22       ResNet50.pt                                       94 MB
+      22       pytorch_model.bin                                 88 MB
+      22       resnet34-pre.pth                                  87 MB
+      22       v52_e11_heads.pt                                  64 MB
+      22       v52_e11_heads.pt                                  64 MB
+      22       v52_e11_heads.pt                                  64 MB
+      22   matching architectures to weights:
+      27       resnet34               resnet34-pre.pth             180/216   83%
+      27   chosen             : resnet34  <- resnet34-pre.pth  (83% of tensors)
+      27   ImageNet weights   : OK   resnet34-pre.pth
+      27   architecture       : resnet34
+      27 ==============================================================================
+      27 preflight OK -- architecture resnet34
+      27 ==============================================================================
+      27 cache on disk: (4053, 64, 256, 256) uint8, labels (4053, 12)
+      27 loading 4053 studies into RAM at 128 px = 4.25 GB (one sequential pass)
+      37    250/4053  0.2 min  eta 2.6 min  |  RAM 2.6/32.9 GB
+      47    500/4053  0.3 min  eta 2.4 min  |  RAM 2.8/32.9 GB
+      57    750/4053  0.5 min  eta 2.2 min  |  RAM 3.1/32.9 GB
+      68   1000/4053  0.7 min  eta 2.1 min  |  RAM 3.3/32.9 GB
+      77   1250/4053  0.8 min  eta 1.9 min  |  RAM 3.6/32.9 GB
+      87   1500/4053  1.0 min  eta 1.7 min  |  RAM 3.9/32.9 GB
+      97   1750/4053  1.2 min  eta 1.5 min  |  RAM 4.1/32.9 GB
+     107   2000/4053  1.3 min  eta 1.4 min  |  RAM 4.4/32.9 GB
+     117   2250/4053  1.5 min  eta 1.2 min  |  RAM 4.6/32.9 GB
+     127   2500/4053  1.7 min  eta 1.0 min  |  RAM 4.9/32.9 GB
+     136   2750/4053  1.8 min  eta 0.9 min  |  RAM 5.1/32.9 GB
+     146   3000/4053  2.0 min  eta 0.7 min  |  RAM 5.4/32.9 GB
+     156   3250/4053  2.2 min  eta 0.5 min  |  RAM 5.7/32.9 GB
+     167   3500/4053  2.3 min  eta 0.4 min  |  RAM 5.9/32.9 GB
+     176   3750/4053  2.5 min  eta 0.2 min  |  RAM 6.2/32.9 GB
+     186   4000/4053  2.7 min  eta 0.0 min  |  RAM 6.4/32.9 GB
+     188 in RAM: (4053, 64, 128, 128) uint8, 4.25 GB, loaded in 2.7 min  |  RAM now 6.5/32.9 GB
+     188 windows available per study: median 62, min 60, max 62
+     188 split: 3445 train, 608 val (seed 2026, fixed across resumes)
+     188 train probe: 300 studies, fixed, scored every epoch
+     188 label prevalence: 0.07-0.72 across the twelve findings
+     192 ImageNet init: 180 of 216 backbone tensors matched (83%)
+     192 backbone resnet34 | feature dim 512 | 21.4M params
+     192 single GPU on purpose (USE_DP=False): replication costs more than it returns at this model size, and mixup/clipping stay exact
+     192 EMA shadow initialised, decay 0.9990 (ramped)
+     192 loaders: 287 train batches, 102 val batches, 50 train-probe batches
+     205 speed probe: 0.63 s/batch -> train 3.0 min + eval 1.6 min = 4.6 min/epoch
+     205              -> about 51 epochs in 4.0 h
+     205   fast enough. Annealing the cosine over 51 epochs (14637 steps), warmup 574.
+     225 epoch  0  loss 0.6626  val raw 0.6306  val EMA 0.6146  <- best  | train 0.6333  gap +0.0187  | mix 50%  0.3 min  RAM 8.1/32.9  GPU 1.1 GB
+     245 epoch  1  loss 0.6244  val raw 0.6630  val EMA 0.6708  <- best  | train 0.6997  gap +0.0289  | mix 46%  0.7 min  RAM 8.0/32.9  GPU 1.1 GB
+     265 epoch  2  loss 0.6175  val raw 0.7155  val EMA 0.7162  <- best  | train 0.7308  gap +0.0146  | mix 52%  1.0 min  RAM 8.1/32.9  GPU 1.1 GB
+     285 epoch  3  loss 0.6109  val raw 0.7105  val EMA 0.7294  <- best  | train 0.7460  gap +0.0166  | mix 50%  1.3 min  RAM 8.2/32.9  GPU 1.1 GB
+     305 epoch  4  loss 0.6073  val raw 0.7326  val EMA 0.7395  <- best  | train 0.7603  gap +0.0208  | mix 43%  1.7 min  RAM 8.3/32.9  GPU 1.1 GB
+     325 epoch  5  loss 0.6042  val raw 0.7310  val EMA 0.7470  <- best  | train 0.7712  gap +0.0242  | mix 50%  2.0 min  RAM 8.1/32.9  GPU 1.1 GB
+     346 epoch  6  loss 0.6033  val raw 0.7475  val EMA 0.7544  <- best  | train 0.7777  gap +0.0233  | mix 49%  2.4 min  RAM 8.0/32.9  GPU 1.1 GB
+     367 epoch  7  loss 0.5995  val raw 0.7398  val EMA 0.7519  | train 0.7813  gap +0.0294  | mix 50%  2.7 min  RAM 8.2/32.9  GPU 1.1 GB
+     387 epoch  8  loss 0.5975  val raw 0.7515  val EMA 0.7548  <- best  | train 0.7844  gap +0.0295  | mix 45%  3.0 min  RAM 8.2/32.9  GPU 1.1 GB
+     408 epoch  9  loss 0.5961  val raw 0.7594  val EMA 0.7593  <- best  | train 0.7863  gap +0.0270  | mix 50%  3.4 min  RAM 8.1/32.9  GPU 1.1 GB
+     429 epoch 10  loss 0.5951  val raw 0.7595  val EMA 0.7628  <- best  | train 0.7897  gap +0.0270  | mix 52%  3.7 min  RAM 8.0/32.9  GPU 1.1 GB
+     450 epoch 11  loss 0.5935  val raw 0.7499  val EMA 0.7650  <- best  | train 0.7940  gap +0.0291  | mix 44%  4.1 min  RAM 8.0/32.9  GPU 1.1 GB
+     470 epoch 12  loss 0.5923  val raw 0.7676  val EMA 0.7656  <- best  | train 0.7968  gap +0.0312  | mix 50%  4.4 min  RAM 8.0/32.9  GPU 1.1 GB
+     491 epoch 13  loss 0.5912  val raw 0.7656  val EMA 0.7679  <- best  | train 0.7988  gap +0.0309  | mix 52%  4.8 min  RAM 8.0/32.9  GPU 1.1 GB
+     512 epoch 14  loss 0.5898  val raw 0.7721  val EMA 0.7696  <- best  | train 0.7996  gap +0.0299  | mix 48%  5.1 min  RAM 8.0/32.9  GPU 1.1 GB
+     533 epoch 15  loss 0.5888  val raw 0.7722  val EMA 0.7743  <- best  | train 0.8023  gap +0.0280  | mix 52%  5.5 min  RAM 8.2/32.9  GPU 1.1 GB
+     554 epoch 16  loss 0.5877  val raw 0.7711  val EMA 0.7787  <- best  | train 0.8076  gap +0.0288  | mix 48%  5.8 min  RAM 8.0/32.9  GPU 1.1 GB
+     575 epoch 17  loss 0.5884  val raw 0.7617  val EMA 0.7785  | train 0.8074  gap +0.0290  | mix 58%  6.2 min  RAM 8.0/32.9  GPU 1.1 GB
+     596 epoch 18  loss 0.5845  val raw 0.7711  val EMA 0.7779  | train 0.8079  gap +0.0300  | mix 45%  6.5 min  RAM 8.0/32.9  GPU 1.1 GB
+     617 epoch 19  loss 0.5833  val raw 0.7788  val EMA 0.7808  <- best  | train 0.8113  gap +0.0305  | mix 51%  6.9 min  RAM 8.0/32.9  GPU 1.1 GB
+     637 epoch 20  loss 0.5808  val raw 0.7803  val EMA 0.7831  <- best  | train 0.8154  gap +0.0323  | mix 46%  7.2 min  RAM 8.0/32.9  GPU 1.1 GB
+     658 epoch 21  loss 0.5810  val raw 0.7875  val EMA 0.7871  <- best  | train 0.8204  gap +0.0333  | mix 48%  7.6 min  RAM 8.0/32.9  GPU 1.1 GB
+     679 epoch 22  loss 0.5803  val raw 0.7799  val EMA 0.7896  <- best  | train 0.8227  gap +0.0331  | mix 50%  7.9 min  RAM 8.0/32.9  GPU 1.1 GB
+     700 epoch 23  loss 0.5771  val raw 0.7835  val EMA 0.7911  <- best  | train 0.8241  gap +0.0330  | mix 49%  8.3 min  RAM 8.0/32.9  GPU 1.1 GB
+     721 epoch 24  loss 0.5786  val raw 0.7815  val EMA 0.7922  <- best  | train 0.8269  gap +0.0347  | mix 52%  8.6 min  RAM 8.0/32.9  GPU 1.1 GB
+     742 epoch 25  loss 0.5774  val raw 0.7801  val EMA 0.7918  | train 0.8277  gap +0.0360  | mix 48%  9.0 min  RAM 8.0/32.9  GPU 1.1 GB
+     763 epoch 26  loss 0.5750  val raw 0.7844  val EMA 0.7914  | train 0.8296  gap +0.0382  | mix 49%  9.3 min  RAM 8.2/32.9  GPU 1.1 GB
+     784 epoch 27  loss 0.5729  val raw 0.7879  val EMA 0.7919  | train 0.8318  gap +0.0400  | mix 48%  9.7 min  RAM 8.0/32.9  GPU 1.1 GB
+     805 epoch 28  loss 0.5721  val raw 0.7905  val EMA 0.7926  <- best  | train 0.8340  gap +0.0414  | mix 46%  10.0 min  RAM 8.0/32.9  GPU 1.1 GB
+     826 epoch 29  loss 0.5739  val raw 0.7899  val EMA 0.7934  <- best  | train 0.8361  gap +0.0427  | mix 52%  10.3 min  RAM 8.0/32.9  GPU 1.1 GB
+     847 epoch 30  loss 0.5709  val raw 0.7922  val EMA 0.7943  <- best  | train 0.8382  gap +0.0439  | mix 52%  10.7 min  RAM 8.0/32.9  GPU 1.1 GB
+     867 epoch 31  loss 0.5698  val raw 0.7937  val EMA 0.7948  <- best  | train 0.8392  gap +0.0443  | mix 51%  11.0 min  RAM 8.0/32.9  GPU 1.1 GB
+     888 epoch 32  loss 0.5674  val raw 0.7923  val EMA 0.7954  <- best  | train 0.8400  gap +0.0446  | mix 51%  11.4 min  RAM 8.2/32.9  GPU 1.1 GB
+     909 epoch 33  loss 0.5682  val raw 0.7928  val EMA 0.7954  | train 0.8411  gap +0.0458  | mix 53%  11.7 min  RAM 8.0/32.9  GPU 1.1 GB
+     930 epoch 34  loss 0.5653  val raw 0.7933  val EMA 0.7959  <- best  | train 0.8424  gap +0.0465  | mix 53%  12.1 min  RAM 8.0/32.9  GPU 1.1 GB
+     951 epoch 35  loss 0.5674  val raw 0.7901  val EMA 0.7965  <- best  | train 0.8437  gap +0.0473  | mix 51%  12.4 min  RAM 8.0/32.9  GPU 1.1 GB
+     972 epoch 36  loss 0.5628  val raw 0.7951  val EMA 0.7963  | train 0.8449  gap +0.0486  | mix 49%  12.8 min  RAM 8.0/32.9  GPU 1.1 GB
+     993 epoch 37  loss 0.5642  val raw 0.7939  val EMA 0.7968  <- best  | train 0.8465  gap +0.0498  | mix 53%  13.1 min  RAM 8.0/32.9  GPU 1.1 GB
+    1014 epoch 38  loss 0.5631  val raw 0.7974  val EMA 0.7970  <- best  | train 0.8476  gap +0.0505  | mix 52%  13.5 min  RAM 8.2/32.9  GPU 1.1 GB
+    1035 epoch 39  loss 0.5605  val raw 0.7988  val EMA 0.7982  <- best  | train 0.8487  gap +0.0505  | mix 47%  13.8 min  RAM 8.0/32.9  GPU 1.1 GB
+    1056 epoch 40  loss 0.5597  val raw 0.8006  val EMA 0.7985  <- best  | train 0.8497  gap +0.0513  | mix 45%  14.2 min  RAM 8.0/32.9  GPU 1.1 GB
+    1077 epoch 41  loss 0.5599  val raw 0.8023  val EMA 0.7995  <- best  | train 0.8509  gap +0.0514  | mix 47%  14.5 min  RAM 8.0/32.9  GPU 1.1 GB
+    1098 epoch 42  loss 0.5595  val raw 0.8009  val EMA 0.8001  <- best  | train 0.8519  gap +0.0518  | mix 47%  14.9 min  RAM 8.0/32.9  GPU 1.1 GB
+    1119 epoch 43  loss 0.5603  val raw 0.8028  val EMA 0.8003  <- best  | train 0.8525  gap +0.0522  | mix 45%  15.2 min  RAM 8.0/32.9  GPU 1.1 GB
+    1140 epoch 44  loss 0.5590  val raw 0.8014  val EMA 0.8007  <- best  | train 0.8532  gap +0.0525  | mix 53%  15.6 min  RAM 8.0/32.9  GPU 1.1 GB
+    1161 epoch 45  loss 0.5599  val raw 0.7999  val EMA 0.8010  <- best  | train 0.8539  gap +0.0530  | mix 49%  15.9 min  RAM 8.0/32.9  GPU 1.1 GB
+    1182 epoch 46  loss 0.5569  val raw 0.8025  val EMA 0.8013  <- best  | train 0.8545  gap +0.0533  | mix 45%  16.3 min  RAM 8.0/32.9  GPU 1.1 GB
+    1202 epoch 47  loss 0.5583  val raw 0.8008  val EMA 0.8014  <- best  | train 0.8551  gap +0.0537  | mix 49%  16.6 min  RAM 8.0/32.9  GPU 1.1 GB
+    1223 epoch 48  loss 0.5584  val raw 0.8012  val EMA 0.8016  <- best  | train 0.8557  gap +0.0541  | mix 52%  17.0 min  RAM 8.0/32.9  GPU 1.1 GB
+    1244 epoch 49  loss 0.5572  val raw 0.8003  val EMA 0.8014  | train 0.8560  gap +0.0546  | mix 50%  17.3 min  RAM 8.0/32.9  GPU 1.1 GB
+    1265 epoch 50  loss 0.5567  val raw 0.8004  val EMA 0.8012  | train 0.8562  gap +0.0550  | mix 45%  17.7 min  RAM 8.0/32.9  GPU 1.1 GB
+    1286 epoch 51  loss 0.5576  val raw 0.8013  val EMA 0.8011  | train 0.8566  gap +0.0554  | mix 49%  18.0 min  RAM 8.0/32.9  GPU 1.1 GB
+    1307 epoch 52  loss 0.5578  val raw 0.8017  val EMA 0.8012  | train 0.8570  gap +0.0558  | mix 48%  18.4 min  RAM 8.0/32.9  GPU 1.1 GB
+    1327 epoch 53  loss 0.5583  val raw 0.8012  val EMA 0.8013  | train 0.8573  gap +0.0560  | mix 49%  18.7 min  RAM 8.0/32.9  GPU 1.1 GB
+    1348 epoch 54  loss 0.5560  val raw 0.8015  val EMA 0.8012  | train 0.8577  gap +0.0565  | mix 54%  19.1 min  RAM 8.0/32.9  GPU 1.1 GB
+    1369 epoch 55  loss 0.5583  val raw 0.8002  val EMA 0.8014  | train 0.8580  gap +0.0566  | mix 48%  19.4 min  RAM 8.2/32.9  GPU 1.1 GB
+    1390 epoch 56  loss 0.5565  val raw 0.8026  val EMA 0.8015  | train 0.8582  gap +0.0567  | mix 45%  19.8 min  RAM 8.0/32.9  GPU 1.1 GB
+    1390 early stop: 8 epochs without a new best EMA macro
+    1409 ==============================================================================
+    1409 ARM 3 (light) -- resnet34
+    1409 ==============================================================================
+    1409   epochs trained    : 57
+    1409   best EMA val macro: 0.8016
+    1409   final EMA         : 0.8015   bootstrap 2.5% lower bound 0.7854
+    1409   final raw         : 0.8026   raw is better -- prefer arm3_val_pred_raw.npy in session 4
+    1409   per-finding (EMA, final epoch):
+    1409     ACL                 0.8152
+    1409     MCL                 0.7382
+    1409     Medial Meniscus     0.8132
+    1409     Lateral Meniscus    0.7669
+    1409     Medial OA           0.8495
+    1409     Lateral OA          0.8031
+    1409     PF OA               0.8030
+    1409     Effusion            0.8475
+    1409     Synovitis           0.8345
+    1409     Baker's             0.7672
+    1409     Contusion           0.8142
+    1409     Fracture            0.7655
+    1409   epoch    loss   val_ema   train   gap
+    1409      49  0.5572   0.8014  0.8560  +0.0546
+    1409      50  0.5567   0.8012  0.8562  +0.0550
+    1409      51  0.5576   0.8011  0.8566  +0.0554
+    1409      52  0.5578   0.8012  0.8570  +0.0558
+    1409      53  0.5583   0.8013  0.8573  +0.0560
+    1409      54  0.5560   0.8012  0.8577  +0.0565
+    1409      55  0.5583   0.8014  0.8580  +0.0566
+    1409      56  0.5565   0.8015  0.8582  +0.0567
+    1409   READING THE GAP
+    1409     train-minus-val: +0.0207 early -> +0.0566 late
+    1409     -> the gap is widening while val is not improving. That is
+    1409        overfitting the report labels, which is exactly what cost
+    1409        V37 its submission. Raise MIXUP_P, LABEL_SMOOTH or
+    1409        HEAD_DROP before spending another session.
+    1409     last four val_ema: 0.8013, 0.8012, 0.8014, 0.8015
+    1409     -> still climbing; re-running this notebook resumes and adds epochs
+    1409 ##############################################################################
+    1409 # CHECKPOINT : /kaggle/working/arm3.pt   (holds BOTH 'model' and 'model_ema')
+    1409 # VAL PRED   : arm3_val_pred.npy (EMA) + arm3_val_pred_raw.npy + arm3_val_idx.npy
+    1409 ##############################################################################
+    1409 WHAT TO DO NEXT
+    1409   Still climbing -> re-run this same notebook. It resumes from the checkpoint,
+    1409   restores the EMA shadow and the LR step count, and continues.
+    1409   Plateaued -> session 4: attach arm3.pt, run it as a third arm, and fit its
+    1409   blend weight from the saved validation predictions rather than guessing one.
+    1409 HOW TO READ THE NUMBERS, AND HOW NOT TO
+    1409   The validation macro is measured against the REPORT teachers, not gold. It is
+    1409   NOT comparable to 0.935, to the leaderboard, or to the CoAtNet arm's 0.9214.
+    1409   Do not read it as a score.
+    1409   What decides whether this arm is worth blending is not its strength but its
+    1409   DECORRELATION from the other two. The transformer arm loses to CoAtNet on all
+    1409   twelve findings and still added +0.007. Session 4 measures that directly, by
+    1409   fitting the weight on the validation predictions saved above.
+    1409   A higher val macro here is therefore NOT automatically good news. If this arm
+    1409   reaches a high val macro by fitting the report labels closely, it has learned
+    1409   the same systematic bias the teachers carry -- borderline findings graded
+    1409   positive that the adjudicator grades negative -- and it will not transfer.
+    1409   The gap line above is the honest readout, not the macro.
+    1409 WHAT HAS AND HAS NOT BEEN MEASURED
+    1409   Measured on this project: the +0.007 from a decorrelated arm; the -0.002 from
+    1409   a head retrained on report labels; 384 px carrying +0.00302 that a frozen head
+    1409   cannot use.
+    1409   NOT measured here: every regulariser in this notebook. Mixup, EMA, label
+    1409   smoothing and the augmentation set are standard practice and two of them come
+    1409   from the RSNA-2024 2nd-place solution, but none has been A/B'd on THIS
+    1409   problem. This run is the baseline that makes such an A/B possible; it is not
+    1409   evidence by itself, and no score should be predicted from it.
+    1415   cells[i][c] = re.sub('\\\\\|', '|', cell)
+    1415   text = re.sub(r'_', '\_', text) # Escape underscores in display text

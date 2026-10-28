@@ -1,0 +1,263 @@
+       8 [    0.0s] input root: /kaggle/input/competitions/rsna-knee-abnormality-detection
+       8 [    0.0s] benchmark submission.csv written (3 rows)
+       8 [    0.2s] train (4407, 14)  test (3, 1)
+      30 [   21.6s] read 4407 reports in 21.4s
+      30 [   21.6s] 58 studies carry the twelve annotations
+      30                   derived positive rate  silence rate  annotated positive rate
+      30 ACL                               0.265         0.197                    0.414
+      30 MCL                               0.157         0.207                    0.155
+      30 Medial Meniscus                   0.526         0.155                    0.448
+      30 Lateral Meniscus                  0.264         0.207                    0.397
+      30 Medial OA                         0.392         0.672                    0.259
+      30 Lateral OA                        0.337         0.764                    0.190
+      30 PF OA                             0.478         0.583                    0.362
+      30 Effusion                          0.588         0.143                    0.603
+      30 Synovitis                         0.423         0.872                    0.466
+      30 Baker's                           0.279         0.542                    0.207
+      30 Contusion                         0.256         0.629                    0.328
+      30 Fracture                          0.077         0.799                    0.310
+      60           target   auc    lo    hi  npos  nneg
+      60              ACL 0.953 0.887 0.999    24    34
+      60              MCL 0.964 0.911 1.000     9    49
+      60  Medial Meniscus 0.894 0.802 0.962    26    32
+      60 Lateral Meniscus 0.846 0.734 0.941    23    35
+      60        Medial OA 0.895 0.792 0.973    15    43
+      60       Lateral OA 0.839 0.680 0.964    11    47
+      60            PF OA 0.833 0.716 0.930    21    37
+      60         Effusion 0.777 0.636 0.890    35    23
+      60        Synovitis 0.709 0.564 0.846    27    31
+      60          Baker's 0.940 0.844 0.996    12    46
+      60        Contusion 0.856 0.740 0.946    19    39
+      60         Fracture 0.833 0.716 0.934    18    40
+      60 macro agreement AUC: 0.8617   mean silence rate: 48.1%
+      62 en       1814
+      62 es        682
+      62 tr        487
+      62 hr        405
+      62 el        321
+      62 de        258
+      62 bg/ru     220
+      62 nl        152
+      62 fr         64
+      62 ?           4
+      64           target  silent  names it anyway
+      64              ACL     870             33.3
+      64              MCL     914             32.3
+      64  Medial Meniscus     682             50.6
+      64 Lateral Meniscus     912             39.5
+      70 cuda:0 probe PASS (compute 7.5)
+      70 cuda:1 probe PASS (compute 7.5)
+      70 devices: ['cuda:0', 'cuda:1']
+      70 [    0.0s] input root: /kaggle/input/competitions/rsna-knee-abnormality-detection
+      70 [    0.1s] memory: 29.4 GB available, 13.3 GB to the cache; sizing for 4407 train + 1322 test studies -> 1 group(s) of 3 = 3 slices per slot
+      70 [    0.1s] cache layout: 1 groups x 3 slices = 3 per slot
+      88 [   17.8s] weights package: 20 member(s) from /kaggle/input/datasets/pilkwang/rsna-knee-weights; 2 device(s)
+      88 [   17.9s] test header pass: 15 series
+      91 [   21.1s] legacy bundle rsna_20260807_v1.pt: 4 fold(s) join with target-specific per-member weights [2.5, 5.0, 15.0]
+      91 [   21.1s] decode group 1/2: 336px x 12 slices, crop 130.0 mm -> 20 member(s)
+      91 [   21.2s] test laterality: 1 from the tag, 2 from geometry, 0 unresolved; tag and geometry disagree on 0 (0.0% of the tagged)
+      91 [   21.2s] test g1: cache (3, 6, 12, 336, 336) = 0.0 GB
+      91 [   21.2s] test g1: ordering 12 slot-series (469 slice headers)
+      93 [   23.0s] test g1: ordered 12/12 by geometry (0 kept arbitrary) in 2s
+      93 [   23.0s] test g1: decoding 12 slot-series
+      94 [   23.9s]   test g1 12/12
+      94 [   23.9s] test g1: 12/12 slots filled
+      96 [   26.3s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      97 [   27.2s] e5427d6c21: fingerprint matches within 2.8e-06
+      98 [   28.1s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+      98 [   28.6s]   banked e5427d6c21 fold 2 (10 window(s)); submission.csv = weighted rank mean of 1 member(s)
+      99 [   28.9s] d47313baef: fingerprint matches within 2.1e-06
+     100 [   30.0s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     100 [   30.0s]   banked d47313baef fold 2 (10 window(s)); submission.csv = weighted rank mean of 2 member(s)
+     100 [   30.4s] ea3fbf6edf: fingerprint matches within 3.8e-06
+     101 [   31.2s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     102 [   31.6s] 5f8ba4c5ea: fingerprint matches within 3.3e-06
+     102 [   32.2s]   banked ea3fbf6edf fold 2 (10 window(s), jitter); submission.csv = weighted rank mean of 3 member(s)
+     103 [   33.2s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     103 [   33.6s]   banked 5f8ba4c5ea fold 2 (10 window(s), jitter); submission.csv = weighted rank mean of 4 member(s)
+     104 [   33.9s] 013dc75703: fingerprint matches within 3.3e-06
+     105 [   34.6s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     105 [   35.1s] 2f7e785e82: fingerprint matches within 1.1e-06
+     105 [   35.5s]   banked 013dc75703 fold 4 (10 window(s), jitter); submission.csv = weighted rank mean of 5 member(s)
+     107 [   36.6s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     107 [   37.0s]   banked 2f7e785e82 fold 4 (10 window(s), jitter); submission.csv = weighted rank mean of 6 member(s)
+     107 [   37.2s] 8baecb9d1b: fingerprint matches within 2.4e-06
+     108 [   38.0s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     108 [   38.4s] 44bc3c6f14: fingerprint matches within 3.8e-06
+     109 [   38.9s]   banked 8baecb9d1b fold 4 (10 window(s), jitter); submission.csv = weighted rank mean of 7 member(s)
+     110 [   39.8s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     110 [   40.2s]   banked 44bc3c6f14 fold 0 (10 window(s), jitter); submission.csv = weighted rank mean of 8 member(s)
+     110 [   40.4s] 44128e3ff3: fingerprint matches within 4.3e-06
+     111 [   41.3s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     112 [   41.7s] 84079fe8cb: fingerprint matches within 1.2e-06
+     112 [   42.1s]   banked 44128e3ff3 fold 0 (10 window(s), jitter); submission.csv = weighted rank mean of 9 member(s)
+     113 [   43.1s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     113 [   43.5s]   banked 84079fe8cb fold 3 (10 window(s), jitter); submission.csv = weighted rank mean of 10 member(s)
+     114 [   43.8s] ed427aa10a: fingerprint matches within 4.6e-06
+     115 [   44.7s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     115 [   45.1s] 2dce50ebd9: fingerprint matches within 3.8e-06
+     115 [   45.5s]   banked ed427aa10a fold 0 (10 window(s), jitter); submission.csv = weighted rank mean of 11 member(s)
+     116 [   46.3s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     117 [   47.0s] 3d1f4c48fc: fingerprint matches within 1.3e-06
+     117 [   47.0s]   banked 2dce50ebd9 fold 0 (10 window(s), jitter); submission.csv = weighted rank mean of 12 member(s)
+     118 [   47.9s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     118 [   48.3s] 91f171fe6f: fingerprint matches within 2.6e-06
+     118 [   48.6s]   banked 3d1f4c48fc fold 4 (10 window(s), jitter); submission.csv = weighted rank mean of 13 member(s)
+     120 [   49.5s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     120 [   49.9s] 8476b29285: fingerprint matches within 4.4e-06
+     120 [   50.2s]   banked 91f171fe6f fold 1 (10 window(s), jitter); submission.csv = weighted rank mean of 14 member(s)
+     121 [   51.2s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     122 [   51.8s] 72081758ce: fingerprint matches within 2.9e-06
+     122 [   51.8s]   banked 8476b29285 fold 1 (10 window(s), jitter); submission.csv = weighted rank mean of 15 member(s)
+     123 [   52.8s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     123 [   53.1s] 7f8321affc: fingerprint matches within 2.9e-06
+     123 [   53.4s]   banked 72081758ce fold 3 (10 window(s), jitter); submission.csv = weighted rank mean of 16 member(s)
+     125 [   54.2s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     125 [   54.6s] 1e553ba481: fingerprint matches within 1.7e-06
+     125 [   55.0s]   banked 7f8321affc fold 3 (10 window(s), jitter); submission.csv = weighted rank mean of 17 member(s)
+     126 [   55.8s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     126 [   56.5s] b7c37cc80e: fingerprint matches within 1.1e-06
+     126 [   56.5s]   banked 1e553ba481 fold 1 (10 window(s), jitter); submission.csv = weighted rank mean of 18 member(s)
+     128 [   57.4s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+     128 [   57.8s] f335c812fe: fingerprint matches within 2.9e-06
+     128 [   58.2s]   banked b7c37cc80e fold 3 (10 window(s), jitter); submission.csv = weighted rank mean of 19 member(s)
+     130 [   59.4s]   banked f335c812fe fold 1 (10 window(s), jitter); submission.csv = weighted rank mean of 20 member(s)
+     130 [   59.7s] decode group 2/2: 224px x 9 slices, crop 160.0 mm -> 4 member(s)
+     130 [   59.7s] test laterality: 1 from the tag, 2 from geometry, 0 unresolved; tag and geometry disagree on 0 (0.0% of the tagged)
+     130 [   59.7s] test g2: cache (3, 6, 9, 224, 224) = 0.0 GB
+     130 [   59.7s] test g2: ordering 14 slot-series (523 slice headers)
+     131 [   60.8s] test g2: ordered 14/14 by geometry (0 kept arbitrary) in 1s
+     131 [   60.8s] test g2: decoding 14 slot-series
+     131 [   61.5s]   test g2 14/14
+     132 [   61.5s] test g2: 14/14 slots filled
+     132 [   62.0s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 1152
+     132 [   62.2s]   legacy-f0: no stored fingerprint (legacy bundle) -- accepted at reduced weight
+     133 [   62.5s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 1152
+     133 [   62.7s]   legacy-f1: no stored fingerprint (legacy bundle) -- accepted at reduced weight
+     133 [   63.2s]   banked legacy-f0 fold 0 (7 window(s), jitter); submission.csv = weighted rank mean of 21 member(s)
+     134 [   63.5s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 1152
+     134 [   63.9s]   legacy-f2: no stored fingerprint (legacy bundle) -- accepted at reduced weight
+     134 [   63.9s]   banked legacy-f1 fold 1 (7 window(s), jitter); submission.csv = weighted rank mean of 22 member(s)
+     134 [   64.2s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 1152
+     134 [   64.4s]   legacy-f3: no stored fingerprint (legacy bundle) -- accepted at reduced weight
+     135 [   64.8s]   banked legacy-f2 fold 2 (7 window(s), jitter); submission.csv = weighted rank mean of 23 member(s)
+     135 [   65.2s]   banked legacy-f3 fold 3 (7 window(s), jitter); submission.csv = weighted rank mean of 24 member(s)
+     135 [   65.5s] final submission.csv = weighted rank mean of 24 member(s); (3, 13); nulls 0
+     135 [   65.5s] submission_public_0899.csv = exact no-jitter public-frontier rank mean of 20 member(s); (3, 13); nulls 0
+     135 [   65.5s] V40 primary = exact no-jitter public-frontier target pooling; native 24-member output retained
+     135 [   65.5s] done
+     135 [   65.5s] done
+     139 competition : /kaggle/input/competitions/rsna-knee-abnormality-detection
+     139 checkpoints : /kaggle/input/datasets/mattiaangeli/knee-mri-fold-weights
+     139 device      : cuda
+     139   gpu0       : Tesla T4 sm_75, 15 GiB, native bf16=False
+     139   gpu1       : Tesla T4 sm_75, 15 GiB, native bf16=False
+     139 series root: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+     139 3 test studies, 3 with series metadata
+     141 loaded m_f0.pt  fold 0  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+     142 loaded m_f1.pt  fold 1  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+     143 loaded m_f2.pt  fold 2  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+     144 loaded m_f3.pt  fold 3  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+     144 loaded m_f4.pt  fold 4  vit_small_patch16_dinov3.lvd1689m pool=xcodex meta=none
+     144 5 fold models ready | input norm: none
+     144 device cuda | amp bfloat16 (on=True) | workers 4 | chunk 48 | micro 8
+     148   3/3  0.0m  eta 0.0m
+     148 inference done in 0.1 min
+     148 a5: rank-averaged 5 folds over 3 studies
+     148 [   78.1s] E11 recipe: ['SAG_NOFS', 'COR_NOFS', 'AX_NOFS', 'SAG_FS'] at 130 mm, 224 px, 8 slices/slot
+     226 [  156.2s] E11 availability Sagittal_FS: 4120/4407 studies, 4635 series
+     226 [  156.2s] E11 availability Sagittal_NOFS: 4254/4407 studies, 5229 series
+     226 [  156.2s] E11 availability Coronal_FS: 4213/4407 studies, 4597 series
+     226 [  156.2s] E11 availability Coronal_NOFS: 3403/4407 studies, 4012 series
+     226 [  156.2s] E11 availability Axial_FS: 4344/4407 studies, 4702 series
+     226 [  156.2s] E11 availability Axial_NOFS: 923/4407 studies, 1196 series
+     245 [  175.4s] train-e11 laterality: 2203 from the tag, 2116 from geometry, 88 unresolved; tag and geometry disagree on 176 (8.0% of the tagged)
+     245 [  175.4s] train-e11: cache (4407, 4, 8, 224, 224) = 6.6 GB
+     245 [  175.4s] train-e11: ordering 12700 slot-series (421490 slice headers)
+    1403 [ 1333.4s] train-e11: ordered 12700/12700 by geometry (0 kept arbitrary) in 1158s
+    1403 [ 1333.4s] train-e11: decoding 12700 slot-series
+    1555 [ 1485.0s]   train-e11 4096/12700
+    1707 [ 1636.7s]   train-e11 8192/12700
+    1858 [ 1788.4s]   train-e11 12288/12700
+    1873 [ 1803.5s]   train-e11 12700/12700
+    1873 [ 1803.5s] train-e11: 12700/12700 slots filled
+    1883 [ 1813.3s] E11 slot fill SAG_NOFS: 96.5%
+    1883 [ 1813.3s] E11 slot fill COR_NOFS: 77.2%
+    1883 [ 1813.3s] E11 slot fill AX_NOFS: 20.9%
+    1883 [ 1813.3s] E11 slot fill SAG_FS: 93.5%
+    1885 [ 1814.7s] RadImageNet strict load: 23,508,032 params; inference GPUs=2
+    1885 [ 1815.5s] RadImageNet encoded 0/101600 acquired slices
+    1902 [ 1832.0s] RadImageNet encoded 19200/101600 acquired slices
+    1918 [ 1848.1s] RadImageNet encoded 38400/101600 acquired slices
+    1933 [ 1863.1s] RadImageNet encoded 57600/101600 acquired slices
+    1948 [ 1878.0s] RadImageNet encoded 76800/101600 acquired slices
+    1963 [ 1893.1s] RadImageNet encoded 96000/101600 acquired slices
+    1970 [ 1900.2s] fold 0 epoch 0: grouped weak-val AUC 0.79105
+    1971 [ 1901.2s] fold 0 epoch 1: grouped weak-val AUC 0.80148
+    1972 [ 1902.2s] fold 0 epoch 2: grouped weak-val AUC 0.81313
+    1973 [ 1903.2s] fold 0 epoch 3: grouped weak-val AUC 0.81561
+    1974 [ 1904.2s] fold 0 epoch 4: grouped weak-val AUC 0.81992
+    1975 [ 1905.1s] fold 0 epoch 5: grouped weak-val AUC 0.81890
+    1976 [ 1906.1s] fold 0 epoch 6: grouped weak-val AUC 0.82250
+    1977 [ 1907.1s] fold 0 epoch 7: grouped weak-val AUC 0.81410
+    1978 [ 1908.1s] fold 0 epoch 8: grouped weak-val AUC 0.82532
+    1979 [ 1909.0s] fold 0 epoch 9: grouped weak-val AUC 0.82032
+    1980 [ 1910.0s] fold 0 epoch 10: grouped weak-val AUC 0.81811
+    1981 [ 1911.0s] fold 0 epoch 11: grouped weak-val AUC 0.81716
+    1982 [ 1912.0s] fold 0 epoch 12: grouped weak-val AUC 0.81808
+    1983 [ 1913.0s] fold 0 epoch 13: grouped weak-val AUC 0.80952
+    1984 [ 1914.4s] fold 1 epoch 0: grouped weak-val AUC 0.78149
+    1985 [ 1915.4s] fold 1 epoch 1: grouped weak-val AUC 0.79594
+    1986 [ 1916.3s] fold 1 epoch 2: grouped weak-val AUC 0.80248
+    1987 [ 1917.3s] fold 1 epoch 3: grouped weak-val AUC 0.81254
+    1988 [ 1918.2s] fold 1 epoch 4: grouped weak-val AUC 0.82434
+    1989 [ 1919.1s] fold 1 epoch 5: grouped weak-val AUC 0.82607
+    1990 [ 1920.1s] fold 1 epoch 6: grouped weak-val AUC 0.82820
+    1991 [ 1921.0s] fold 1 epoch 7: grouped weak-val AUC 0.82726
+    1992 [ 1922.0s] fold 1 epoch 8: grouped weak-val AUC 0.82154
+    1993 [ 1923.0s] fold 1 epoch 9: grouped weak-val AUC 0.82076
+    1994 [ 1924.0s] fold 1 epoch 10: grouped weak-val AUC 0.81720
+    1995 [ 1924.9s] fold 1 epoch 11: grouped weak-val AUC 0.80779
+    1996 [ 1926.3s] fold 2 epoch 0: grouped weak-val AUC 0.79431
+    1997 [ 1927.2s] fold 2 epoch 1: grouped weak-val AUC 0.81371
+    1998 [ 1928.2s] fold 2 epoch 2: grouped weak-val AUC 0.81960
+    1999 [ 1929.2s] fold 2 epoch 3: grouped weak-val AUC 0.82944
+    2000 [ 1930.1s] fold 2 epoch 4: grouped weak-val AUC 0.83372
+    2001 [ 1931.1s] fold 2 epoch 5: grouped weak-val AUC 0.83902
+    2002 [ 1932.1s] fold 2 epoch 6: grouped weak-val AUC 0.83653
+    2003 [ 1933.1s] fold 2 epoch 7: grouped weak-val AUC 0.82639
+    2004 [ 1934.0s] fold 2 epoch 8: grouped weak-val AUC 0.82934
+    2005 [ 1935.0s] fold 2 epoch 9: grouped weak-val AUC 0.82574
+    2006 [ 1935.9s] fold 2 epoch 10: grouped weak-val AUC 0.82300
+    2007 [ 1937.2s] fold 3 epoch 0: grouped weak-val AUC 0.77788
+    2008 [ 1938.2s] fold 3 epoch 1: grouped weak-val AUC 0.79564
+    2009 [ 1939.2s] fold 3 epoch 2: grouped weak-val AUC 0.80622
+    2010 [ 1940.1s] fold 3 epoch 3: grouped weak-val AUC 0.81327
+    2011 [ 1941.1s] fold 3 epoch 4: grouped weak-val AUC 0.81493
+    2012 [ 1942.0s] fold 3 epoch 5: grouped weak-val AUC 0.82158
+    2013 [ 1943.1s] fold 3 epoch 6: grouped weak-val AUC 0.82136
+    2014 [ 1944.0s] fold 3 epoch 7: grouped weak-val AUC 0.81853
+    2015 [ 1944.9s] fold 3 epoch 8: grouped weak-val AUC 0.82006
+    2016 [ 1945.9s] fold 3 epoch 9: grouped weak-val AUC 0.81936
+    2017 [ 1946.8s] fold 3 epoch 10: grouped weak-val AUC 0.81390
+    2018 [ 1948.1s] fold 4 epoch 0: grouped weak-val AUC 0.79529
+    2019 [ 1949.1s] fold 4 epoch 1: grouped weak-val AUC 0.80906
+    2020 [ 1950.1s] fold 4 epoch 2: grouped weak-val AUC 0.81877
+    2021 [ 1951.0s] fold 4 epoch 3: grouped weak-val AUC 0.82687
+    2022 [ 1951.9s] fold 4 epoch 4: grouped weak-val AUC 0.82803
+    2023 [ 1953.0s] fold 4 epoch 5: grouped weak-val AUC 0.82643
+    2024 [ 1953.9s] fold 4 epoch 6: grouped weak-val AUC 0.83558
+    2025 [ 1954.9s] fold 4 epoch 7: grouped weak-val AUC 0.83193
+    2026 [ 1955.8s] fold 4 epoch 8: grouped weak-val AUC 0.82699
+    2027 [ 1956.8s] fold 4 epoch 9: grouped weak-val AUC 0.82859
+    2028 [ 1957.7s] fold 4 epoch 10: grouped weak-val AUC 0.82532
+    2028 [ 1958.6s] fold 4 epoch 11: grouped weak-val AUC 0.82128
+    2029 [ 1958.8s] E11 OOF weak macro AUC 0.82318
+    2029 [ 1958.8s] E11 OOF gold macro AUC 0.83754 on 58 studies
+    2029 [ 1958.9s] E11 blend alpha=0.20 gold macro 0.85063
+    2029 [ 1958.9s] E11 blend alpha=0.35 gold macro 0.85789
+    2029 [ 1958.9s] E11 blend alpha=0.50 gold macro 0.85934
+    2029 [ 1959.0s] E11 mean rank correlation with the parent arm: 0.708
+    2029 e11 training mode: V40 submission receipt skipped; artifacts are rad_e11_audit.json + rsna_rad_e11/*
+    2035   cells[i][c] = re.sub('\\\\\|', '|', cell)
+    2036   text = re.sub(r'_', '\_', text) # Escape underscores in display text

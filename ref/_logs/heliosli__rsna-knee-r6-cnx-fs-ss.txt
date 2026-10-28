@@ -1,0 +1,74 @@
+      10 0, Tesla T4, 15360 MiB
+      10 1, Tesla T4, 15360 MiB
+      10 Filesystem      Size  Used Avail Use% Mounted on
+      10 shm              14G     0   14G   0% /dev/shm
+      10 /dev/loop2       20G  924K   20G   1% /kaggle/working
+      10 overlay         8.0T  7.0T  1.1T  87% /
+      10 0, Tesla T4, 15360 MiB
+      10 1, Tesla T4, 15360 MiB
+      10 Filesystem      Size  Used Avail Use% Mounted on
+      10 shm              14G     0   14G   0% /dev/shm
+      10 /dev/loop2       20G  924K   20G   1% /kaggle/working
+      10 overlay         8.0T  7.0T  1.1T  87% /
+      19 Processing /tmp/probe/wheels/pydicom-3.0.1-py3-none-any.whl
+      19 Processing /tmp/probe/wheels/timm-1.0.25-py3-none-any.whl
+      19 Installing collected packages: timm, pydicom
+      19   Attempting uninstall: timm
+      19 Processing /tmp/probe/wheels/pydicom-3.0.1-py3-none-any.whl
+      19 Processing /tmp/probe/wheels/timm-1.0.25-py3-none-any.whl
+      19 Installing collected packages: timm, pydicom
+      19   Attempting uninstall: timm
+      19     Found existing installation: timm 1.0.29
+      20     Uninstalling timm-1.0.29:
+      20     Found existing installation: timm 1.0.29
+      20     Uninstalling timm-1.0.29:
+      20       Successfully uninstalled timm-1.0.29
+      20       Successfully uninstalled timm-1.0.29
+      21   Attempting uninstall: pydicom
+      21     Found existing installation: pydicom 3.0.2
+      21     Uninstalling pydicom-3.0.2:
+      21   Attempting uninstall: pydicom
+      21     Found existing installation: pydicom 3.0.2
+      21     Uninstalling pydicom-3.0.2:
+      21       Successfully uninstalled pydicom-3.0.2
+      21       Successfully uninstalled pydicom-3.0.2
+      22 Successfully installed pydicom-3.0.1 timm-1.0.25
+      22 Successfully installed pydicom-3.0.1 timm-1.0.25
+      35 ASSETS_READY /kaggle/input/datasets/heliosli/rsna-orthofoundation-fold0-epoch7-20261004 /kaggle/input/datasets/heliosli/rsna-knee-compact-r6cnxfsss /kaggle/input/competitions/rsna-knee-abnormality-detection seconds 25.7
+      36 WORKER_START 0 studies 2 dicom files 419
+      36 WORKER_START 1 studies 1 dicom files 138
+      36 WORKER_START 0 studies 2 dicom files 419
+      36 WORKER_START 1 studies 1 dicom files 138
+      41 PROGRESS worker 0 of 2 (starting)
+      41 PROGRESS worker 1 of 1 (starting)
+      41 PROGRESS worker 0 of 2 (starting)
+      41 PROGRESS worker 1 of 1 (starting)
+     101 PROGRESS worker 0 of 2 (starting)
+     101 PROGRESS worker 1 of 1 (starting)
+     101 PROGRESS worker 0 of 2 (starting)
+     101 PROGRESS worker 1 of 1 (starting)
+     161 PROGRESS worker 0 of 2 (starting)
+     161 PROGRESS worker 1 of 1 (starting)
+     161 PROGRESS worker 0 of 2 (starting)
+     161 PROGRESS worker 1 of 1 (starting)
+     221 PROGRESS worker 0 of 2 (starting)
+     221 PROGRESS worker 1 of 1 (starting)
+     221 PROGRESS worker 0 of 2 (starting)
+     221 PROGRESS worker 1 of 1 (starting)
+     281 PROGRESS worker 0 of 2 (starting)
+     281 PROGRESS worker 1 of 1 (starting)
+     281 PROGRESS worker 0 of 2 (starting)
+     281 PROGRESS worker 1 of 1 (starting)
+     341 PROGRESS worker 0 of 2 (starting)
+     341 PROGRESS worker 1 of 1 (starting)
+     341 PROGRESS worker 0 of 2 (starting)
+     341 PROGRESS worker 1 of 1 (starting)
+     401 PROGRESS worker 0 of 2 {"done": 2, "of": 2, "scored": 2, "fallback": 0, "elapsed_s": 349.6, "s_per_study": 174.81, "decode_s": 101.1, "render_s": 5.9, "gpu_s": 22.1, "anchor_s": 3.4, "anchors": {"slab_prior": 1, "skm_tea_joint_avg2": 1}, "windows": 1084, "fluid_s": 0.12, "fluid_missing": {"Effusion": 1}}
+     401 PROGRESS worker 1 of 1 {"done": 1, "of": 1, "scored": 1, "fallback": 0, "elapsed_s": 337.5, "s_per_study": 337.49, "decode_s": 44.3, "render_s": 1.5, "gpu_s": 11.0, "anchor_s": 1.2, "anchors": {"skm_tea_joint": 1}, "windows": 502, "fluid_s": 0.1, "fluid_missing": {"Effusion": 0}}
+     401 CONTROLLER_DONE {"status": "PASS", "rows": 3, "scored": 3, "fallback_studies": 0, "seconds": 365.2, "per_study_mean": {"decode_s": 48.467, "render_s": 2.467, "gpu_s": 11.033, "windows": 528.7}, "worker_exit_codes": {"0": 0, "1": 0}}
+     401 PROGRESS worker 0 of 2 {"done": 2, "of": 2, "scored": 2, "fallback": 0, "elapsed_s": 349.6, "s_per_study": 174.81, "decode_s": 101.1, "render_s": 5.9, "gpu_s": 22.1, "anchor_s": 3.4, "anchors": {"slab_prior": 1, "skm_tea_joint_avg2": 1}, "windows": 1084, "fluid_s": 0.12, "fluid_missing": {"Effusion": 1}}
+     401 PROGRESS worker 1 of 1 {"done": 1, "of": 1, "scored": 1, "fallback": 0, "elapsed_s": 337.5, "s_per_study": 337.49, "decode_s": 44.3, "render_s": 1.5, "gpu_s": 11.0, "anchor_s": 1.2, "anchors": {"skm_tea_joint": 1}, "windows": 502, "fluid_s": 0.1, "fluid_missing": {"Effusion": 0}}
+     401 CONTROLLER_DONE {"status": "PASS", "rows": 3, "scored": 3, "fallback_studies": 0, "seconds": 365.2, "per_study_mean": {"decode_s": 48.467, "render_s": 2.467, "gpu_s": 11.033, "windows": 528.7}, "worker_exit_codes": {"0": 0, "1": 0}}
+     401 NOTEBOOK_COMPLETE {"status": "PASS", "arm": "E_lrprior", "rows": 3, "scored": 3, "fallback_studies": 0, "seconds": 365.2, "per_study_mean": {"decode_s": 48.467, "render_s": 2.467, "gpu_s": 11.033, "windows": 528.7}, "gpus": ["Tesla T4", "Tesla T4"]}
+     403   cells[i][c] = re.sub('\\\\\|', '|', cell)
+     404   text = re.sub(r'_', '\_', text) # Escape underscores in display text

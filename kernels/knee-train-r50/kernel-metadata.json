@@ -1,0 +1,25 @@
+{
+  "id": "ayushkasare/knee-train-r50",
+  "title": "knee-train-r50",
+  "code_file": "knee-train-r50.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": true,
+  "enable_internet": true,
+  "kernel_sources": [
+    "ayushkasare/knee-prep31a",
+    "ayushkasare/knee-prep31b",
+    "ayushkasare/knee-prep31c",
+    "ayushkasare/knee-train-eff31-mil",
+    "ayushkasare/knee-train-rad31-mil"
+  ],
+  "dataset_sources": [
+    "stevenleehans/rsna-knee-llm-report-labels",
+    "marwanmath/resnet-50-radimagenet-marwan"
+  ],
+  "machine_shape": "NvidiaTeslaT4"
+}

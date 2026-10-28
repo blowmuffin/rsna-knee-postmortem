@@ -1,0 +1,58 @@
+[{"stream_name":"stdout","time":11.434967726,"data":"[      9s] pseudo targets: a=0.5 from ['knee-train-eff31-mil'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":14.602128528,"data":"[     12s] radimagenet_resnet50: 4407 studies, folds [0, 1, 2, 3, 4], 8 epochs, 2 GPUs, pseudo 0.5 ['knee-train-eff31-mil']\n"}
+,{"stream_name":"stdout","time":16.854880101,"data":"[      2s] pseudo targets: a=0.5 from ['knee-train-eff31-mil'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":16.989548605,"data":"[      2s] pseudo targets: a=0.5 from ['knee-train-eff31-mil'], 4407 studies with OOF\n"}
+,{"stream_name":"stdout","time":766.320577206,"data":"[    751s] [gpu1] fold 1 ep 0 loss 0.5335 val macroAUC(vs labels) 0.8405 | data-wait 12s of 733s\n"}
+,{"stream_name":"stdout","time":830.251097017,"data":"[    815s] [gpu0] fold 0 ep 0 loss 0.5477 val macroAUC(vs labels) 0.8323 | data-wait 12s of 797s\n"}
+,{"stream_name":"stdout","time":1348.184088162,"data":"[   1333s] [gpu1] fold 1 ep 1 loss 0.4579 val macroAUC(vs labels) 0.8682 | data-wait 12s of 582s\n"}
+,{"stream_name":"stdout","time":1461.633539222,"data":"[   1447s] [gpu0] fold 0 ep 1 loss 0.4626 val macroAUC(vs labels) 0.8625 | data-wait 12s of 631s\n"}
+,{"stream_name":"stdout","time":1926.51893305,"data":"[   1911s] [gpu1] fold 1 ep 2 loss 0.4425 val macroAUC(vs labels) 0.8759 | data-wait 12s of 578s\n"}
+,{"stream_name":"stdout","time":2096.986612244,"data":"[   2082s] [gpu0] fold 0 ep 2 loss 0.4466 val macroAUC(vs labels) 0.8736 | data-wait 13s of 635s\n"}
+,{"stream_name":"stdout","time":2505.921221407,"data":"[   2491s] [gpu1] fold 1 ep 3 loss 0.4345 val macroAUC(vs labels) 0.8783 | data-wait 12s of 579s\n"}
+,{"stream_name":"stdout","time":2732.879825828,"data":"[   2718s] [gpu0] fold 0 ep 3 loss 0.4389 val macroAUC(vs labels) 0.8792 | data-wait 12s of 636s\n"}
+,{"stream_name":"stdout","time":3084.430506339,"data":"[   3069s] [gpu1] fold 1 ep 4 loss 0.4303 val macroAUC(vs labels) 0.8816 | data-wait 12s of 579s\n"}
+,{"stream_name":"stdout","time":3368.586262315,"data":"[   3353s] [gpu0] fold 0 ep 4 loss 0.4342 val macroAUC(vs labels) 0.8800 | data-wait 12s of 636s\n"}
+,{"stream_name":"stdout","time":3666.21505693,"data":"[   3651s] [gpu1] fold 1 ep 5 loss 0.4263 val macroAUC(vs labels) 0.8843 | data-wait 12s of 582s\n"}
+,{"stream_name":"stdout","time":4003.13981256,"data":"[   3988s] [gpu0] fold 0 ep 5 loss 0.4297 val macroAUC(vs labels) 0.8821 | data-wait 12s of 635s\n"}
+,{"stream_name":"stdout","time":4245.040385693,"data":"[   4230s] [gpu1] fold 1 ep 6 loss 0.4246 val macroAUC(vs labels) 0.8839 | data-wait 12s of 579s\n"}
+,{"stream_name":"stdout","time":4638.401175025,"data":"[   4623s] [gpu0] fold 0 ep 6 loss 0.4273 val macroAUC(vs labels) 0.8832 | data-wait 12s of 635s\n"}
+,{"stream_name":"stdout","time":4824.571844595,"data":"[   4809s] [gpu1] fold 1 ep 7 loss 0.4239 val macroAUC(vs labels) 0.8837 | data-wait 12s of 580s\n"}
+,{"stream_name":"stdout","time":4824.803867645,"data":"[   4810s] [gpu1] fold 1 saved in 80 min\n"}
+,{"stream_name":"stdout","time":5287.738385917,"data":"[   5273s] [gpu0] fold 0 ep 7 loss 0.4272 val macroAUC(vs labels) 0.8828 | data-wait 12s of 649s\n"}
+,{"stream_name":"stdout","time":5287.884123066,"data":"[   5273s] [gpu0] fold 0 saved in 88 min\n"}
+,{"stream_name":"stdout","time":5411.480543856,"data":"[   5396s] [gpu1] fold 3 ep 0 loss 0.5372 val macroAUC(vs labels) 0.8378 | data-wait 12s of 585s\n"}
+,{"stream_name":"stdout","time":5919.060583385,"data":"[   5904s] [gpu0] fold 2 ep 0 loss 0.5427 val macroAUC(vs labels) 0.8489 | data-wait 12s of 630s\n"}
+,{"stream_name":"stdout","time":5993.065515232,"data":"[   5978s] [gpu1] fold 3 ep 1 loss 0.4610 val macroAUC(vs labels) 0.8664 | data-wait 13s of 582s\n"}
+,{"stream_name":"stdout","time":6550.836518394,"data":"[   6536s] [gpu0] fold 2 ep 1 loss 0.4641 val macroAUC(vs labels) 0.8775 | data-wait 13s of 632s\n"}
+,{"stream_name":"stdout","time":6576.508033425,"data":"[   6561s] [gpu1] fold 3 ep 2 loss 0.4455 val macroAUC(vs labels) 0.8732 | data-wait 13s of 583s\n"}
+,{"stream_name":"stdout","time":7159.62957377,"data":"[   7144s] [gpu1] fold 3 ep 3 loss 0.4379 val macroAUC(vs labels) 0.8804 | data-wait 13s of 583s\n"}
+,{"stream_name":"stdout","time":7184.46805553,"data":"[   7169s] [gpu0] fold 2 ep 2 loss 0.4507 val macroAUC(vs labels) 0.8869 | data-wait 13s of 634s\n"}
+,{"stream_name":"stdout","time":7742.285912941,"data":"[   7727s] [gpu1] fold 3 ep 4 loss 0.4328 val macroAUC(vs labels) 0.8814 | data-wait 13s of 583s\n"}
+,{"stream_name":"stdout","time":7813.559163045,"data":"[   7798s] [gpu0] fold 2 ep 3 loss 0.4433 val macroAUC(vs labels) 0.8916 | data-wait 12s of 629s\n"}
+,{"stream_name":"stdout","time":8323.647170208,"data":"[   8308s] [gpu1] fold 3 ep 5 loss 0.4288 val macroAUC(vs labels) 0.8838 | data-wait 13s of 581s\n"}
+,{"stream_name":"stdout","time":8444.261474547,"data":"[   8429s] [gpu0] fold 2 ep 4 loss 0.4371 val macroAUC(vs labels) 0.8923 | data-wait 12s of 631s\n"}
+,{"stream_name":"stdout","time":8906.42761216,"data":"[   8891s] [gpu1] fold 3 ep 6 loss 0.4263 val macroAUC(vs labels) 0.8837 | data-wait 12s of 583s\n"}
+,{"stream_name":"stdout","time":9074.36418585,"data":"[   9059s] [gpu0] fold 2 ep 5 loss 0.4328 val macroAUC(vs labels) 0.8936 | data-wait 12s of 630s\n"}
+,{"stream_name":"stdout","time":9487.062527555,"data":"[   9472s] [gpu1] fold 3 ep 7 loss 0.4263 val macroAUC(vs labels) 0.8837 | data-wait 13s of 581s\n"}
+,{"stream_name":"stdout","time":9487.586300844,"data":"[   9472s] [gpu1] fold 3 saved in 78 min\n"}
+,{"stream_name":"stdout","time":9722.860726512,"data":"[   9708s] [gpu0] fold 2 ep 6 loss 0.4310 val macroAUC(vs labels) 0.8941 | data-wait 12s of 648s\n"}
+,{"stream_name":"stdout","time":10406.630044656,"data":"[  10392s] [gpu0] fold 2 ep 7 loss 0.4295 val macroAUC(vs labels) 0.8942 | data-wait 10s of 684s\n"}
+,{"stream_name":"stdout","time":10407.045480674,"data":"[  10392s] [gpu0] fold 2 saved in 85 min\n"}
+,{"stream_name":"stdout","time":11094.399460237,"data":"[  11079s] [gpu0] fold 4 ep 0 loss 0.5295 val macroAUC(vs labels) 0.8416 | data-wait 11s of 686s\n"}
+,{"stream_name":"stdout","time":11778.199686991,"data":"[  11763s] [gpu0] fold 4 ep 1 loss 0.4590 val macroAUC(vs labels) 0.8678 | data-wait 11s of 684s\n"}
+,{"stream_name":"stdout","time":12460.902715952,"data":"[  12446s] [gpu0] fold 4 ep 2 loss 0.4451 val macroAUC(vs labels) 0.8745 | data-wait 10s of 683s\n"}
+,{"stream_name":"stdout","time":13147.680602469,"data":"[  13133s] [gpu0] fold 4 ep 3 loss 0.4375 val macroAUC(vs labels) 0.8773 | data-wait 10s of 687s\n"}
+,{"stream_name":"stdout","time":13836.304642553,"data":"[  13821s] [gpu0] fold 4 ep 4 loss 0.4336 val macroAUC(vs labels) 0.8797 | data-wait 11s of 689s\n"}
+,{"stream_name":"stdout","time":14525.643031929,"data":"[  14511s] [gpu0] fold 4 ep 5 loss 0.4294 val macroAUC(vs labels) 0.8809 | data-wait 10s of 689s\n"}
+,{"stream_name":"stdout","time":15214.313260004,"data":"[  15199s] [gpu0] fold 4 ep 6 loss 0.4268 val macroAUC(vs labels) 0.8818 | data-wait 10s of 689s\n"}
+,{"stream_name":"stdout","time":15903.597075694,"data":"[  15888s] [gpu0] fold 4 ep 7 loss 0.4267 val macroAUC(vs labels) 0.8822 | data-wait 10s of 689s\n"}
+,{"stream_name":"stdout","time":15903.686856536,"data":"[  15889s] [gpu0] fold 4 saved in 92 min\n"}
+,{"stream_name":"stdout","time":15912.639683426,"data":"[  15910s] trained folds [0, 1, 2, 3, 4]; OOF macroAUC vs labels: 0.8853\n"}
+,{"stream_name":"stdout","time":15912.669613075,"data":"[  15910s] OOF macroAUC vs gold (58 studies): 0.9147\n"}
+,{"stream_name":"stderr","time":15915.892066933,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":15915.892107115,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":15916.252517952,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":15916.252599864,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":15917.530681734,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":15918.740998984,"data":"[NbConvertApp] Writing 463100 bytes to __results__.html\n"}
+]

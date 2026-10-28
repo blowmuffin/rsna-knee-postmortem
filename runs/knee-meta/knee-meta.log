@@ -1,0 +1,31 @@
+[{"stream_name":"stdout","time":576.982197959,"data":"StudyInstanceUID         1.000\n"}
+,{"stream_name":"stdout","time":576.98228215,"data":"split                    1.000\n"}
+,{"stream_name":"stdout","time":576.982287948,"data":"PatientSex               0.946\n"}
+,{"stream_name":"stdout","time":576.982291216,"data":"PatientAge               0.000\n"}
+,{"stream_name":"stdout","time":576.982294207,"data":"PatientSize              0.000\n"}
+,{"stream_name":"stdout","time":576.982297177,"data":"PatientWeight            0.000\n"}
+,{"stream_name":"stdout","time":576.98230017,"data":"PatientBirthDate         0.000\n"}
+,{"stream_name":"stdout","time":576.982303305,"data":"StudyDate                0.000\n"}
+,{"stream_name":"stdout","time":576.982306171,"data":"Manufacturer             1.000\n"}
+,{"stream_name":"stdout","time":576.982309071,"data":"ManufacturerModelName    1.000\n"}
+,{"stream_name":"stdout","time":576.982311938,"data":"MagneticFieldStrength    0.946\n"}
+,{"stream_name":"stdout","time":576.982314805,"data":"InstitutionName          0.000\n"}
+,{"stream_name":"stdout","time":576.982317698,"data":"BodyPartExamined         0.924\n"}
+,{"stream_name":"stdout","time":576.995869109,"data":"PatientSex {'M': 2077, 'F': 1895, None: 239, 'O': 199}\n"}
+,{"stream_name":"stdout","time":576.996594639,"data":"PatientAge {None: 4410}\n"}
+,{"stream_name":"stdout","time":576.997147024,"data":"PatientSize {None: 4410}\n"}
+,{"stream_name":"stdout","time":576.997647752,"data":"PatientWeight {None: 4410}\n"}
+,{"stream_name":"stdout","time":576.998131844,"data":"PatientBirthDate {None: 4410}\n"}
+,{"stream_name":"stdout","time":576.998636976,"data":"StudyDate {None: 4410}\n"}
+,{"stream_name":"stdout","time":576.999640399,"data":"Manufacturer {'Siemens Healthineers': 1054, 'GE MEDICAL SYSTEMS': 869, 'SIEMENS': 804, 'Philips Medical Systems': 718, 'Philips': 492, 'TOSHIBA': 182, 'Siemens': 94, 'Philips Healthcare': 91}\n"}
+,{"stream_name":"stdout","time":577.000580533,"data":"ManufacturerModelName {'Ingenia': 741, 'MAGNETOM Vida': 447, 'Aera': 400, 'Achieva dStream': 327, 'MAGNETOM Avanto fit': 263, 'SonataVision': 214, 'SIGNA Explorer': 213, 'SIGNA Artist': 209}\n"}
+,{"stream_name":"stdout","time":577.001314716,"data":"MagneticFieldStrength {'1.5': 2508, '3': 1593, None: 239, '1.500000': 37, '1.16': 24, '3.0': 8, '1': 1}\n"}
+,{"stream_name":"stdout","time":577.001887035,"data":"InstitutionName {None: 4410}\n"}
+,{"stream_name":"stdout","time":577.002654041,"data":"BodyPartExamined {'KNEE': 3478, 'EXTREMITY': 444, None: 333, '': 82, 'ANKLE': 16, 'WRIST': 14, 'HEAD': 10, 'BRAIN': 6}\n"}
+,{"stream_name":"stderr","time":580.32700669,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":580.327038446,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":580.795738713,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":580.795771057,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":583.226378075,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":584.667957293,"data":"[NbConvertApp] Writing 282134 bytes to __results__.html\n"}
+]

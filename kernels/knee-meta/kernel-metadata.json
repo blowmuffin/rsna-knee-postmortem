@@ -1,0 +1,13 @@
+{
+  "id": "ayushkasare/knee-meta",
+  "title": "knee-meta",
+  "code_file": "knee-meta.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "competition_sources": ["rsna-knee-abnormality-detection"],
+  "kernel_sources": [],
+  "dataset_sources": []
+}

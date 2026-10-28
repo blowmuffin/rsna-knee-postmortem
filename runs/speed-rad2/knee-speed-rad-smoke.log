@@ -1,0 +1,12 @@
+[{"stream_name":"stdout","time":25.376335535,"data":"[     21s] radimagenet_resnet50: 400 studies, folds [0], 2 epochs, 2 GPUs\n"}
+,{"stream_name":"stdout","time":189.72688298,"data":"[    185s] fold 0 ep 0 loss 0.5485 val macroAUC(vs labels) 0.5000 | data-wait 1s of 148s\n"}
+,{"stream_name":"stdout","time":321.670826142,"data":"[    317s] fold 0 ep 1 loss 0.4954 val macroAUC(vs labels) 0.5000 | data-wait 1s of 132s\n"}
+,{"stream_name":"stdout","time":321.777809549,"data":"[    317s] fold 0 saved in 5 min\n"}
+,{"stream_name":"stdout","time":321.788986988,"data":"[    317s] OOF macroAUC vs labels: 0.5000\n"}
+,{"stream_name":"stderr","time":334.441467019,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":334.441500924,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":334.844020598,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":334.844043012,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":335.640861323,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":337.396240784,"data":"[NbConvertApp] Writing 418511 bytes to __results__.html\n"}
+]

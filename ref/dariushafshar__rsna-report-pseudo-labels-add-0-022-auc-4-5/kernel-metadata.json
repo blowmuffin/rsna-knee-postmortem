@@ -1,0 +1,28 @@
+{
+  "id": "dariushafshar/rsna-report-pseudo-labels-add-0-022-auc-4-5",
+  "id_no": 131508169,
+  "title": "RSNA: Report Pseudo-Labels Add +0.022 AUC (4/5)",
+  "code_file": "rsna-report-pseudo-labels-add-0-022-auc-4-5.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "marwanmath/resnet-50-radimagenet-marwan",
+    "stevenleehans/rsna-knee-llm-report-labels",
+    "lixin73/rsna-knee-llm-report-labels-sol56",
+    "pilkwang/rsna-knee-llm-labels"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machine_shape": "NvidiaTeslaT4"
+}

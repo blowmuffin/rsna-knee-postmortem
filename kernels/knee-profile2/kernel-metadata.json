@@ -1,0 +1,3 @@
+{"id": "ayushkasare/knee-profile2", "title": "knee-profile2", "code_file": "knee-profile2.py", "language": "python",
+ "kernel_type": "script", "is_private": true, "enable_gpu": true, "enable_internet": false,
+ "competition_sources": [], "dataset_sources": [], "kernel_sources": [], "machine_shape": "NvidiaTeslaT4"}

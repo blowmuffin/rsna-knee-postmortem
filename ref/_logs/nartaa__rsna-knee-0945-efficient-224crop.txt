@@ -1,0 +1,19 @@
+      27 device cuda | gpus 2 | torch 2.10.0+cu128
+      27 test root: /kaggle/input/competitions/rsna-knee-abnormality-detection | series dir: /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series
+      27 test studies 3 | test series 15
+      27 XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda
+      29 [gpu cuda:0] loaded 1 arm(s) | 2s
+      31 [gpu cuda:1] loaded 1 arm(s) | 4s
+      34   [pre] 3/3 | 7s
+      34 [pre] done: 3 studies in 3s (procs 4 x fastread study_lut 32/16 threads)
+      43   [gpu] 3/3 | 16s
+      43 [gpu] done: 3/3 studies on 2 device(s) | 16s
+      43 [blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_c08_r224_swa.pt': np.float64(1.0)}
+      43 wrote /kaggle/working/submission.csv | 3 rows x 13 cols
+      43                                                 StudyInstanceUID  ACL  MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture
+      43 1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191  0.0  1.0              1.0               0.0        1.0         0.0    0.0       0.5        0.0      1.0        0.0       0.5
+      43 1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776  0.5  0.5              0.5               0.5        0.0         0.5    1.0       1.0        1.0      0.5        1.0       1.0
+      43 1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402  1.0  0.0              0.0               1.0        0.5         1.0    0.5       0.0        0.5      0.0        0.5       0.0
+      43 DONE 16s
+      49   cells[i][c] = re.sub('\\\\\|', '|', cell)
+      49   text = re.sub(r'_', '\_', text) # Escape underscores in display text

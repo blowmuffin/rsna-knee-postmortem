@@ -1,0 +1,16 @@
+[{"stream_name":"stdout","time":12.319167014,"data":"[     10s] efficientnet_b0.ra_in1k: 400 studies, folds [0, 1], 2 epochs, 2 GPUs, pseudo 0.0 []\n"}
+,{"stream_name":"stderr","time":27.19018254,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":113.395018422,"data":"[    101s] [gpu0] fold 0 ep 0 loss 0.3902 val macroAUC(vs labels) 0.3333 | data-wait 1s of 85s\n"}
+,{"stream_name":"stdout","time":115.390234873,"data":"[    103s] [gpu1] fold 1 ep 0 loss 0.3847 val macroAUC(vs labels) 0.0000 | data-wait 1s of 85s\n"}
+,{"stream_name":"stdout","time":153.488272279,"data":"[    141s] [gpu0] fold 0 ep 1 loss 0.2381 val macroAUC(vs labels) 0.3750 | data-wait 1s of 40s\n"}
+,{"stream_name":"stdout","time":153.565738052,"data":"[    141s] [gpu0] fold 0 saved in 2 min\n"}
+,{"stream_name":"stdout","time":157.462738239,"data":"[    145s] [gpu1] fold 1 ep 1 loss 0.2343 val macroAUC(vs labels) 0.0000 | data-wait 1s of 42s\n"}
+,{"stream_name":"stdout","time":157.524735985,"data":"[    145s] [gpu1] fold 1 saved in 2 min\n"}
+,{"stream_name":"stdout","time":159.739899587,"data":"[    157s] trained folds [0, 1]; OOF macroAUC vs labels: 0.2531\n"}
+,{"stream_name":"stderr","time":162.299206546,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":162.299234313,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":162.566373444,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":162.566406841,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":163.262039101,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":164.626644406,"data":"[NbConvertApp] Writing 426804 bytes to __results__.html\n"}
+]

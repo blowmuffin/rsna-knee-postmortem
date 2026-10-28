@@ -1,0 +1,15 @@
+[{"stream_name":"stdout","time":12.580031412,"data":"[     10s] radimagenet_resnet50: 400 studies, folds [0, 1], 2 epochs, 2 GPUs, pseudo 0.0 []\n"}
+,{"stream_name":"stdout","time":101.66701254,"data":"[     89s] [gpu0] fold 0 ep 0 loss 0.5438 val macroAUC(vs labels) 0.5000 | data-wait 1s of 73s\n"}
+,{"stream_name":"stdout","time":108.410663654,"data":"[     95s] [gpu1] fold 1 ep 0 loss 0.5435 val macroAUC(vs labels) 0.0000 | data-wait 1s of 80s\n"}
+,{"stream_name":"stdout","time":157.265581533,"data":"[    144s] [gpu0] fold 0 ep 1 loss 0.4724 val macroAUC(vs labels) 0.5000 | data-wait 1s of 56s\n"}
+,{"stream_name":"stdout","time":157.370560945,"data":"[    144s] [gpu0] fold 0 saved in 2 min\n"}
+,{"stream_name":"stdout","time":179.838899545,"data":"[    167s] [gpu1] fold 1 ep 1 loss 0.4697 val macroAUC(vs labels) 0.0000 | data-wait 1s of 71s\n"}
+,{"stream_name":"stdout","time":179.928990837,"data":"[    167s] [gpu1] fold 1 saved in 3 min\n"}
+,{"stream_name":"stdout","time":182.156257206,"data":"[    179s] trained folds [0, 1]; OOF macroAUC vs labels: 0.3125\n"}
+,{"stream_name":"stderr","time":184.709693111,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":184.709735426,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":184.978065082,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":184.978103522,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":185.694208613,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":187.047548015,"data":"[NbConvertApp] Writing 426801 bytes to __results__.html\n"}
+]

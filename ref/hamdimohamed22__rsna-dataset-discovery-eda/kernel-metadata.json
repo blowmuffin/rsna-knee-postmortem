@@ -1,0 +1,23 @@
+{
+  "id": "hamdimohamed22/rsna-dataset-discovery-eda",
+  "id_no": 130397856,
+  "title": "RSNA Dataset Discovery + EDA",
+  "code_file": "rsna-dataset-discovery-eda.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "packagemanager/pm-130397856-at-08-11-2026-05-56-33"
+  ],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machine_shape": "None"
+}

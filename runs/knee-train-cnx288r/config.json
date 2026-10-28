@@ -1,0 +1,1 @@
+{"BACKBONE": "convnext_tiny.fb_in22k_ft_in1k", "IMG": 288, "SMOKE": 0, "FOLDS": [0, 1], "EPOCHS": 6, "PSEUDO": [0.5, ["knee-train-rad"]], "N_SLICE": 31, "SIZE": 320, "HEAD": "mil", "PREP": 1, "LABEL_SRC": "rubric", "SLOT_DROP": 0.0, "HEAD_LR": 0.0, "POS_W": 0, "ROT_DEG": 10, "AUX_W": 0.0}

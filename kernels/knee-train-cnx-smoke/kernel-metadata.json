@@ -1,0 +1,24 @@
+{
+  "id": "ayushkasare/knee-train-cnx-smoke",
+  "title": "knee-train-cnx-smoke",
+  "code_file": "knee-train-cnx-smoke.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": true,
+  "enable_internet": true,
+  "kernel_sources": [
+    "ayushkasare/knee-prep320a",
+    "ayushkasare/knee-prep320b",
+    "ayushkasare/knee-prep320c",
+    "ayushkasare/knee-prep320d"
+  ],
+  "dataset_sources": [
+    "stevenleehans/rsna-knee-llm-report-labels",
+    "marwanmath/resnet-50-radimagenet-marwan"
+  ],
+  "machine_shape": "NvidiaTeslaT4"
+}

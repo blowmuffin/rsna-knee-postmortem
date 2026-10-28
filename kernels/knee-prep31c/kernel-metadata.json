@@ -1,0 +1,15 @@
+{
+  "id": "ayushkasare/knee-prep31c",
+  "title": "knee-prep31c",
+  "code_file": "knee-prep31c.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": false,
+  "enable_internet": false,
+  "kernel_sources": [],
+  "dataset_sources": []
+}

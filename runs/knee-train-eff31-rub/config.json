@@ -1,0 +1,1 @@
+{"BACKBONE": "efficientnet_b0.ra_in1k", "IMG": 224, "SMOKE": 0, "FOLDS": [0, 1, 2, 3, 4], "EPOCHS": 6, "PSEUDO": [0.5, ["knee-train-rad"]], "N_SLICE": 31, "HEAD": "mil", "PREP": 1, "LABEL_SRC": "rubric"}

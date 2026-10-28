@@ -1,0 +1,17 @@
+[{"stream_name":"stdout","time":16.415921265,"data":"[     14s] 300 studies, 1 folds, 2 epochs, 2 GPUs\n"}
+,{"stream_name":"stderr","time":27.68119071,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":191.824403541,"data":"[    189s] fold 0 ep 0 loss 0.5753 val macroAUC(vs labels) 0.7037\n"}
+,{"stream_name":"stdout","time":342.242109489,"data":"[    339s] fold 0 ep 1 loss 0.5190 val macroAUC(vs labels) 0.7325\n"}
+,{"stream_name":"stdout","time":342.314446608,"data":"[    340s] OOF macroAUC vs labels: 0.7325\n"}
+,{"stream_name":"stderr","time":342.319811823,"data":"/usr/local/lib/python3.12/dist-packages/numpy/_core/fromnumeric.py:3596: RuntimeWarning: Mean of empty slice.\n"}
+,{"stream_name":"stderr","time":342.319827368,"data":"  return _methods._mean(a, axis=axis, dtype=dtype,\n"}
+,{"stream_name":"stderr","time":342.321003748,"data":"/usr/local/lib/python3.12/dist-packages/numpy/_core/_methods.py:138: RuntimeWarning: invalid value encountered in scalar divide\n"}
+,{"stream_name":"stderr","time":342.32101662,"data":"  ret = ret.dtype.type(ret / rcount)\n"}
+,{"stream_name":"stdout","time":342.321105555,"data":"[    340s] OOF macroAUC vs gold (1 studies): nan\n"}
+,{"stream_name":"stderr","time":349.613832501,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":349.61385892,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":349.878584719,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":349.878610168,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":350.586641268,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":352.005010556,"data":"[NbConvertApp] Writing 389031 bytes to __results__.html\n"}
+]

@@ -1,0 +1,21 @@
+Finish the RSNA Knee competition (team ayushkasare, deadline 2026-10-22 23:59 UTC) with the strongest rule-safe final pair of submissions.
+
+DONE only when the transcript shows all of: (1) `date -u` at or after 2026-10-22 16:00 UTC; (2) `tail -40 HANDOFF.md` printed, ending in a "FINAL PICKS" section that names pick A and pick B by submission ref, public score and rank, with one line of evidence each; (3) `python -m kaggle competitions submissions -c rsna-knee-abnormality-detection` printed, with no pick still PENDING and every scored submission logged in EXPERIMENTS.md. Then tell me to select A and B on Kaggle (you can't).
+
+Until then keep improving, in this order:
+1. Log the knee-base958 score (ref 57269563) and our rank. Base = base958 unless it scores below 0.957. Never use a base with R7/fastMRI (rule risk).
+2. Build and push knee-blend958-ec: `python build.py blend name=knee-blend958-ec blend=0.95 base=helios958 trains=knee-train-eff320,knee-train-eff320b,knee-train-cnx288r,knee-train-cnx288r-b`. Submit only if its visible log shows KNEE_OURS_DONE, KNEE_MIX_DONE and a 3x13 submission.csv. Keep the add-on only if it ranks above base958 inside the same score block.
+3. Score the eff31-pt / eff31-ptl screens with oof_report.py against eff31-mil (OOF first; gold-58 is +-0.02 noise). The winning recipe trains the next members.
+4. Use all GPU before each quota reset (the current week ends 2026-10-17 00:00 UTC; the next 30 h last to the deadline) on members that can lift the own rank-avg OOF above 0.899 (eff320+cnx): the winning recipe at 288 on the 320 cache, then mirror aug + medial/lateral label swap + flip TTA, then a compartment-view member if the zoom-cache centring check passes. A member joins the blend only if it raises rank-avg OOF by >= 0.001.
+5. Once a day, read forum topics and public notebooks newer than 2026-10-16 06:00 UTC (scripts in research_notes/public_code_2026-10-16/). Switch base only for a public notebook that scores above base958 and passes the same rule checks.
+6. Try add-on weight 0.90 only after 0.95 helped.
+
+Rules:
+- Heavy work runs only as Kaggle kernels; fp16 on T4; at most 2 GPU sessions; check quota with get_accelerator_quota.
+- At most 4 submissions per UTC day (keep 1 spare), one change each, each with a hypothesis message. Last submission by 2026-10-22 12:00 UTC so it scores in time.
+- Public differences under 0.003 are noise; judge blends by rank inside a score block.
+- Only public or our own data and weights; all kernels private; never weaken the blend cells' try/except fallback. Before a blend with more than one test-prep group, raise ours_min and check the base's time budget.
+- Log every result in EXPERIMENTS.md the moment it lands; update HANDOFF.md after every milestone so a fresh session can resume.
+- While waiting on Kaggle, keep a background `bash wait_kernels.sh ...` (or a submission-status loop) running instead of ending idle turns, and do useful CPU work meanwhile.
+- Ask me before selecting final submissions, deleting anything, publishing or posting anything, or using a dataset with unclear licence or access.
+- If blocked on something only I can do, say so plainly.

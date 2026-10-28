@@ -1,0 +1,23 @@
+{
+  "id": "utkarshtomar736/rsna-baseline-fastai",
+  "id_no": 130834654,
+  "title": "RSNA_Baseline_FastAI",
+  "code_file": "rsna-baseline-fastai.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machine_shape": "NvidiaTeslaT4"
+}

@@ -1,0 +1,14 @@
+[{"stream_name":"stdout","time":8.807335869,"data":"[      6s] train 0/1101 studies, failed slots so far 0, sides {'L': 1, 'R': 0}\n"}
+,{"stream_name":"stdout","time":166.149377115,"data":"[    164s] train 200/1101 studies, failed slots so far 0, sides {'L': 93, 'R': 108}\n"}
+,{"stream_name":"stdout","time":323.773237824,"data":"[    321s] train 400/1101 studies, failed slots so far 0, sides {'L': 179, 'R': 222}\n"}
+,{"stream_name":"stdout","time":493.848212332,"data":"[    492s] train 600/1101 studies, failed slots so far 0, sides {'L': 276, 'R': 325}\n"}
+,{"stream_name":"stdout","time":649.391254836,"data":"[    647s] train 800/1101 studies, failed slots so far 0, sides {'L': 368, 'R': 433}\n"}
+,{"stream_name":"stdout","time":818.411617809,"data":"[    816s] train 1000/1101 studies, failed slots so far 0, sides {'L': 455, 'R': 546}\n"}
+,{"stream_name":"stdout","time":894.432881075,"data":"[    892s] train done: 1101 studies, failed slots 0, sides {'L': 506, 'R': 595}, missing 0\n"}
+,{"stream_name":"stderr","time":897.779864528,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":897.779911978,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":898.217877495,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":898.217920855,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":900.207334452,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":901.526417734,"data":"[NbConvertApp] Writing 474585 bytes to __results__.html\n"}
+]

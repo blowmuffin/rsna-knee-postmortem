@@ -1,0 +1,18 @@
+{
+  "id": "ayushkasare/knee-infer-eff31",
+  "title": "knee-infer-eff31",
+  "code_file": "knee-infer-eff31.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "enable_gpu": true,
+  "enable_internet": false,
+  "kernel_sources": [
+    "ayushkasare/knee-train-eff31-ps"
+  ],
+  "dataset_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

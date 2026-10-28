@@ -1,0 +1,62 @@
+[{"stream_name":"stdout","time":9.01435531,"data":"[      7s] efficientnet_b0.ra_in1k: 400 studies, folds [0, 1], 2 epochs, 2 GPUs, pseudo 0.0 []\n"}
+,{"stream_name":"stderr","time":25.164219193,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:433: UserWarning: Got pickle error when attempting to start a worker Process. This might be because the worker Process arguments are not picklable. Python 3.14+ changed the multiprocessing start method in non-Mac POSIX platforms to 'forkserver', which requires the worker Process arguments to be picklable. You can also try multiprocessing.set_start_method('fork').\n"}
+,{"stream_name":"stderr","time":25.164255725,"data":"  return _MultiProcessingDataLoaderIter(self)\n"}
+,{"stream_name":"stderr","time":25.168802556,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:433: UserWarning: Got pickle error when attempting to start a worker Process. This might be because the worker Process arguments are not picklable. Python 3.14+ changed the multiprocessing start method in non-Mac POSIX platforms to 'forkserver', which requires the worker Process arguments to be picklable. You can also try multiprocessing.set_start_method('fork').\n"}
+,{"stream_name":"stderr","time":25.168823211,"data":"  return _MultiProcessingDataLoaderIter(self)\n"}
+,{"stream_name":"stderr","time":28.481074143,"data":"W1002 08:56:15.687000 7 torch/multiprocessing/spawn.py:165] Terminating process 27 via signal SIGTERM\n"}
+,{"stream_name":"stderr","time":28.5981152,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":28.598149509,"data":"  File \"/kaggle/src/script.py\", line 506, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":28.598452457,"data":"    {'prep': run_prep, 'train': run_train, 'infer': run_infer}[MODE]()\n"}
+,{"stream_name":"stderr","time":28.59852288,"data":"  File \"/kaggle/src/script.py\", line 440, in run_train\n"}
+,{"stream_name":"stderr","time":28.598739768,"data":"    mp.spawn(train_worker, args=(ngpu, t_start), nprocs=min(ngpu, len(S['folds'])), join=True)\n"}
+,{"stream_name":"stderr","time":28.598890141,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/multiprocessing/spawn.py\", line 340, in spawn\n"}
+,{"stream_name":"stderr","time":28.599095241,"data":"    return start_processes(fn, args, nprocs, join, daemon, start_method=\"spawn\")\n"}
+,{"stream_name":"stderr","time":28.599293815,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":28.599313556,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/multiprocessing/spawn.py\", line 296, in start_processes\n"}
+,{"stream_name":"stderr","time":28.599558816,"data":"    while not context.join():\n"}
+,{"stream_name":"stderr","time":28.599591999,"data":"              ^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":28.599638251000002,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/multiprocessing/spawn.py\", line 211, in join\n"}
+,{"stream_name":"stderr","time":28.599830924,"data":"    raise ProcessRaisedException(msg, error_index, failed_process.pid)\n"}
+,{"stream_name":"stderr","time":28.599888598,"data":"torch.multiprocessing.spawn.ProcessRaisedException: \n"}
+,{"stream_name":"stderr","time":28.599894223,"data":"\n"}
+,{"stream_name":"stderr","time":28.599897987,"data":"-- Process 0 terminated with the following error:\n"}
+,{"stream_name":"stderr","time":28.599901957,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":28.59990609,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/multiprocessing/spawn.py\", line 87, in _wrap\n"}
+,{"stream_name":"stderr","time":28.599910793,"data":"    fn(i, *args)\n"}
+,{"stream_name":"stderr","time":28.59994841,"data":"  File \"/kaggle/src/script.py\", line 403, in train_worker\n"}
+,{"stream_name":"stderr","time":28.599952823,"data":"    for x, m, t in dl:\n"}
+,{"stream_name":"stderr","time":28.599956631,"data":"                   ^^\n"}
+,{"stream_name":"stderr","time":28.599960322,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 495, in __iter__\n"}
+,{"stream_name":"stderr","time":28.599964484,"data":"    self._iterator = self._get_iterator()\n"}
+,{"stream_name":"stderr","time":28.599968248,"data":"                     ^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":28.599972006,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 433, in _get_iterator\n"}
+,{"stream_name":"stderr","time":28.599976103,"data":"    return _MultiProcessingDataLoaderIter(self)\n"}
+,{"stream_name":"stderr","time":28.599980031,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":28.599985936,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1192, in __init__\n"}
+,{"stream_name":"stderr","time":28.599993945,"data":"    w.start()\n"}
+,{"stream_name":"stderr","time":28.599996721,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 121, in start\n"}
+,{"stream_name":"stderr","time":28.599999515,"data":"    self._popen = self._Popen(self)\n"}
+,{"stream_name":"stderr","time":28.600001968,"data":"                  ^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":28.600004437,"data":"  File \"/usr/lib/python3.12/multiprocessing/context.py\", line 224, in _Popen\n"}
+,{"stream_name":"stderr","time":28.600007051,"data":"    return _default_context.get_context().Process._Popen(process_obj)\n"}
+,{"stream_name":"stderr","time":28.600009733,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":28.600012226,"data":"  File \"/usr/lib/python3.12/multiprocessing/context.py\", line 289, in _Popen\n"}
+,{"stream_name":"stderr","time":28.600014826,"data":"    return Popen(process_obj)\n"}
+,{"stream_name":"stderr","time":28.600017279,"data":"           ^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":28.600019774,"data":"  File \"/usr/lib/python3.12/multiprocessing/popen_spawn_posix.py\", line 32, in __init__\n"}
+,{"stream_name":"stderr","time":28.600022555,"data":"    super().__init__(process_obj)\n"}
+,{"stream_name":"stderr","time":28.600025152,"data":"  File \"/usr/lib/python3.12/multiprocessing/popen_fork.py\", line 19, in __init__\n"}
+,{"stream_name":"stderr","time":28.600027785,"data":"    self._launch(process_obj)\n"}
+,{"stream_name":"stderr","time":28.600030221,"data":"  File \"/usr/lib/python3.12/multiprocessing/popen_spawn_posix.py\", line 47, in _launch\n"}
+,{"stream_name":"stderr","time":28.600032836,"data":"    reduction.dump(process_obj, fp)\n"}
+,{"stream_name":"stderr","time":28.600035368,"data":"  File \"/usr/lib/python3.12/multiprocessing/reduction.py\", line 60, in dump\n"}
+,{"stream_name":"stderr","time":28.600037999,"data":"    ForkingPickler(file, protocol).dump(obj)\n"}
+,{"stream_name":"stderr","time":28.600040489,"data":"AttributeError: Can't get local object 'train_worker.\u003clocals\u003e.DS'\n"}
+,{"stream_name":"stderr","time":28.600043389,"data":"\n"}
+,{"stream_name":"stderr","time":31.291624713,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":31.291659177,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":31.526915433,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":31.52696689,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":32.264035927,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":33.674099503,"data":"[NbConvertApp] Writing 426486 bytes to __results__.html\n"}
+]

@@ -1,0 +1,28 @@
+{
+  "id": "parthsarnobat/eda-notebook-knee-abnormality-detection",
+  "id_no": 136077791,
+  "title": "EDA Notebook:Knee Abnormality Detection",
+  "code_file": "eda-notebook-knee-abnormality-detection.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "diseases",
+    "healthcare",
+    "intermediate",
+    "multimodal"
+  ],
+  "dataset_sources": [
+    "gperdrizet/rsna-knee-abnormality-pseudolabeled-training-data"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machine_shape": "NvidiaTeslaT4"
+}

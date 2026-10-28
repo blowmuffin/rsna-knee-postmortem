@@ -1,0 +1,28 @@
+{
+  "id": "crystalwong01/rsna-knee-helios-r6-frozen-blend-public-run",
+  "id_no": 138778008,
+  "title": "RSNA Knee Helios R6 Frozen Blend Public Run",
+  "code_file": "rsna-knee-helios-r6-frozen-blend-public-run.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "nartaa/rsna-knee-publication-swa-weights-20261007",
+    "heliosli/rsna-orthofoundation-fold0-epoch7-20261004"
+  ],
+  "kernel_sources": [
+    "crystalwong01/rsna-knee-r6-frozen-fe055406"
+  ],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
+  "machine_shape": "NvidiaTeslaT4"
+}

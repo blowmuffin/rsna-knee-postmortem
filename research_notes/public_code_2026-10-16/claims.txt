@@ -1,0 +1,465 @@
+===== adonis122__rsna-knee-0943-four-reader
+   Reproducing the 0.943 public stack
+   Verified score  0.943  Public LB · submission 56741757
+   - Its generated competition submission scored **0.943 public AUC** on 1 October 2026.
+   0.942 routing: main alpha 0.55 and second E13 pass alpha 0.20.
+===== adonis122__rsna-knee-parent0957-routing
+   **Public score 0.941.** Same weights, same arithmetic, same attribution as the
+   **Three presets.** `probe22` is the 0.941 submission.
+   routing it came from (0.939).
+===== andreluizpedroso__rsna-knee-tony-rank-ensemble
+   A Raptor arm (Dread Development public CC0-1.0 CoAtNet checkpoints, self-contained DICOM reader/geometry) runs independently: `v9` (`raptor-knee-finespacing`, 80 slots/78 TTA windows, 0.932 solo) and `v10` (`raptor-knee-native384dense`, 64 slots/62 windows) combined by equal rank-mean.
+   If Global96/D4/Repair-v1 are unavailable or fail, the arm degrades gracefully to resgated-only (the 0.941-confirmed behaviour).
+===== anvithpothula__rsna-base
+   ### A proven public 0.936 knee-MRI checkpoint
+   | **0.936** | **12** | **DINO + RadImageNet + dual CoAtNet** | **offline** | **DINOsaur V10** |
+   - Proven public score: **0.936**.
+===== evgendvorkin__rsna-versia-5
+   # 📊 Evolution of Public Solutions: 0.937 → 0.94 → 0.941 → 0.942 → 0.943
+   ## 🥉 Work 1 — 0.937
+   ## 🥈 Work 2 — 0.94
+   - Starts from the exact 0.939 parent (reproduced 1-to-1).
+   ## 🥇 Work 3 — 0.941
+   ## 🚀 Work 4 — 0.942
+   ### What changed vs 0.941
+   | Parameter | 0.941 | 0.942 |
+   ## ⚡ Work 5 — 0.943
+   ### What changed vs 0.942
+   | Component | 0.942 | 0.943 |
+   This is how public solutions moved from **0.937 → 0.94 → 0.941 → 0.942 → 0.943**.
+   - **Work 1 (0.937)** — [prvsiyan](https://www.kaggle.com/code/prvsiyan/head-and-shoulders-knees-and-toes)
+   - **Work 2 (0.94)** — [renta0426](https://www.kaggle.com/code/renta0426/rsna-knee-hybrid-raptor-lateral-meniscus-r100)
+   - **Work 3 (0.941)** — [Mattia Angeli](https://www.kaggle.com/code/mattiaangeli/bend-the-knee-to-the-dinosaurs) + credits: Pilkwang, Sofia Anjenje, Antoine G., prvsiyan, Marwan Mahmoud, dreaddevelopment/Roman Tamrazov, renta.k, Anvith Pothula
+   - **Work 4 (0.942)** — [maverick_ss_26](https://www.kaggle.com/code/maverickss26/rsna-knee-0942-restructured/notebook)
+   - **Work 5 (0.943)** — [Jiwei Liu](https://www.kaggle.com/code/jiweiliu/rsna-knee-fast-2xt4-inference/notebook)
+   Здесь уже добавлен **Global96** (`rsna-knee-coatnet-global96-top3`), которого не было в 0.942.
+   - **`_asset_half_rank_mix`** теперь принимает **varargs** (`*members`) — это под 4 члена CoAt-семейства в 0.943, а не под 2.
+   **Что нового vs 0.942:** по сути, тот же harness.
+   Это ядро 0.943 — самое большое отличие от 0.942.
+   **Новое в 0.943:** audit включает **4 CoAt-модели** (resgated, d4, global96, repairv1), их эпохи и `family_reduction='rank_of_member_probability_mean'`.
+===== fuadmuhammad__rsna-knee-fast-parent-0-957-v2
+   [maverickss26's public 0.941 solution](https://www.kaggle.com/code/maverickss26/rsna-knee-0941-restructured).
+===== haideptry__rsna-knee-speedy-raptors-coatnet-d4-0943
+   ⚡ [0.943 SOTA] RSNA Knee: Ultra-Fast 2xT4 Parallel Inference & 4-Way CoAtNet Consensus
+   🏆 Public LB: 0.943
+   Combines the verified  0.943 SOTA recipe (Mattia Angeli v34 / Jiwei Liu v9)  with high-throughput  Dual Tesla T4 GPU parallelization , achieving sub-30 minute inference on the entire hidden test set without sacrificing a single fraction of AUC.
+   | **Raptor Baseline** | `0.924` | 1 CoAtNet single-pass | ~9 hours | First public CoAtNet pipeline |
+   | **DINOsaur Blend** | `0.941` | DINOv2 + Raptor MaxSpan | ~4.5 hours | Multimodal representation gain |
+   | **Speedy Raptors v7** | `0.942` | Residual Top-3 + D4 DepthZone (50/50) | ~1.5 hours | Dual GPU overlap & prefix sharing |
+   | **⚡ Current Version (v9 / v34)** | **`0.943`** | **4-Way Consensus: Residual + D4 + Global96 + Repair-v1 (25% each)** | **  DINO_PREFIX["Shared Frozen DINOv2 Prefix (6 Blocks Cached)"]
+   **True SOTA Score (0.943):** Adopts the verified top-tier public consensus from Mattia Angeli & Jiwei Liu without heuristic hacks or test leakage.
+===== jiweiliu__rsna-knee-fast-2xt4-inference
+   - **v5:** removed a redundant Raptor rerank, matching the public 0.941 recipe.
+   - **v7:** adopts the current public **0.942** recipe: residual-gated CoAtNet and
+   - **v9:** adopts Mattia Angeli's scored **0.943 v34**: residual/D4 weights
+   which scored 0.943 publicly.
+   match the scored 0.943 anchor.
+===== kiritohayate95__rsna-knee-abnormality-detection-train-dinov2
+   `LB ≈ 0.899 × gold + 0.113`, fitted on five submissions.
+===== kolyaflexcu__rsna-knee-speedy947
+   **Public score 0.942.** Same weights, same arithmetic, same attribution as the
+   of them differ from the 0.941 lineage, which is as much of the gap as the extra
+   **Presets.** `speedy` is the 0.942 run.
+===== nursrijan__rsna-knee-baseline-efficientnetv2-25d
+   | **Report NLP** — extract pseudo-labels from the radiology text (mDeBERTa / BiomedBERT) | +0.02–0.05 AUC |
+   | **Full 3D volumes** — replace 2.5D with 3D UNet / SlowFast | +0.01–0.03 AUC |
+   | **Larger backbone** — ConvNeXt-XL, ViT-L, or EVA-02 | +0.01–0.02 AUC |
+   | **TTA** — horizontal flip, multi-scale | +0.005 AUC |
+   | **Multi-fold ensemble** — average 5 folds | +0.005–0.01 AUC |
+   | **Plane-aware heads** — separate linear head per anatomical plane | +0.005 AUC |
+===== prvsiyan__head-and-shoulders-knees-and-toes
+   # Head, shoulders, knees and toes — execution audit of an inherited 0.940 recipe
+   > The public score of **0.940 belongs to that recipe, not to this notebook.** Nothing
+   > (three tied at 0.940, two regressed to 0.922).
+   That exact source version displays **0.940** on Kaggle.
+   Our previous verified checkpoints were Bee V16 at 0.938 and H&S V49 at 0.936.
+===== prvsiyan__rsna-knee-read-the-report-then-the-knee
+   > **Highest verified public score for this notebook: 0.906.** Version 52 is the
+   > established 0.899, and Version 49 independently tested the five-fold EfficientNet-B3
+   > contribution at 0.898.
+   | Pilkwang V15 public anchor | 0.891 | original public 20-member ensemble |
+   | This notebook V14 | **0.894** | Fracture max + OOF-selected target-wise rank blend |
+   | This notebook V46 | **0.899** | exact audited specialist artifact; completed Kaggle row |
+   | This notebook V49 | **0.898** | guarded five-fold EfficientNet-B3 rank contribution |
+   | This notebook V52 | **0.906** | independent RadImageNet ResNet-50, 20% rank vote; completed Kaggle row 55399732 |
+   | external Yash Bishnoi reference | **0.903** | inspected five-fold B3 MIL recipe; not this notebook's score |
+   moved by −0.0007 macro AUC, 95% CI [−0.0035, +0.0009] — a flat zero.
+   The scored path now uses Pilkwang Kim's publicly inspectable 20-checkpoint DINOv2-small ensemble, which reached an official public score of **0.891**.
+   On the 58 complete official annotation rows, its Synovitis AUC is 0.826 versus 0.742 for V25; repeated target-stratified four-fold selection chooses a positive weight in 99.95% of folds and gives a positive held-out delta in 99.4% of 500 partitions.
+   revisions were measured on the 58 gold studies: the published final reader reports `0.833`
+   The five-fold run took about 12.4 hours and reports clean macro OOF AUC `0.8544`.
+   a checkpoint that had not seen it; that independent macro AUC was `0.8568`.
+   Version 52 established an official public score of **0.906** with a 20%
+   ## TPU frontier: Curia-2, guarded by the exact 0.906 anchor
+   Version 52 remains this notebook's best completed official result at **0.906**.
+   label-wise multi-encoder overlay subsequently scored **0.887**, falsifying broad
+===== prvsiyan__the-bee-s-knees-final-rsna-push
+   | V17 | Reference | 56107593 | **0.940** | Verified starting recipe |
+   | V18 | A: native E11 head residual | 56122095 | **0.940** | No displayed improvement |
+   | V19 | B: alternate Rad head residual | 56122238 | **0.940** | No displayed improvement |
+   | V20 | G: Raptor intensity-gain integration | 56122418 | **0.922** | Regression |
+   | V21 | A + B | 56122582 | **0.940** | No displayed improvement |
+   | V22 | A + B + G | 56122723 | **0.922** | Regression repeated with both residuals |
+   The three 0.940 grades cannot distinguish
+   Both G and ABG scored 0.922, a displayed loss of 0.018 against V17.
+   ### What identical 0.940 scores do and do not tell us
+   values displayed as 0.940 could differ by almost 0.001.
+   Both notebooks displayed 0.940.
+   Relative to the original 0.940 notebook, the completed work adds **a reproducible
+   | Steven v2 | 0.7591 | 0.7612 | +0.0021 | [-0.0088, +0.0127] |
+   | Pilkwang v2 | 0.7444 | 0.7420 | -0.0024 | [-0.0129, +0.0080] |
+   No 0.941 claim is made for either experiment.
+===== renta0426__rsna-knee-0-937-weak-label-dinov2-meniscus-resid
+   ## A 0.935 knee-MRI checkpoint you can actually start from
+   The exact H&S prediction version **V36** scored **0.935**
+   | Scored graph | [Roman Tamrazov — DINOsaur V4](https://www.kaggle.com/code/romantamrazov/rsna-knee-dinosaur-v4) | four-cell 0.934 inference graph, Apache-2.0 |
+===== romantamrazov__rsna-knee-dinosaur-v5
+   - Strong **0.943 public V5** inference graph as the base.
+   - exact `0.943 anchor`
+===== romantamrazov__rsna-knee-dinosaur-v5-train
+   The original 0.942 submission remains available as an exact anchor.
+===== rsna-knee-d4-public0946
+   ## Correction: this scores 0.943, not 0.946
+   2026-09-28 and it scored **0.943** on the public leaderboard — the same as the public frontier
+   The parent notebook reaches 0.946 by blending in its author's **private** ConvNeXt ensemble at
+   it the remaining public pipeline measures 0.943.
+   public 0.943 pipeline.
+===== skarin_gold
+   0.893 AUC  Steven v4 leads the paired Gold-57 audit.
+   Blending loses  Rank blend: 0.892 · cross-fit selector: 0.891.
+   Need a scored inference reference first? The companion [0.943 public-stack reproduction](https://www.kaggle.com/code/skarin/rsna-knee-reproducing-the-0-943-public-stack) freezes the public ensemble, artifact identities, and execution receipts used as our E0 anchor.
+===== starkhushi__knee-mri-end-to-end-eda-2-5d-models-evaluation
+   My four-member ensemble scores **0.919** on the leaderboard by itself; blended with the public community ensembles it reaches **0.937**.
+   On the leaderboard this ensemble scores **0.919**; rank-blending it with the community's public ensembles reaches **0.937** — diversity is the whole game.
+===== sushanthtiruvaipati__rsna-knee-dinosaur-v5-meniscus10-specialist
+   - The other **11 targets remain byte-identical to the 0.943 V5 anchor**.
+===== wguesdon__rsna-knee-dinov2-at-meniscus-resolution
+   Claude Opus 5 at low effort: 0.8233, 0.6910, 0.8602, a paired improvement of +0.0273
+   agreement with a 95% interval of [+0.0029, +0.0532] and McNemar p = 0.0204.
+   almost entirely non-English recall: the rule extractor recalls 0.8611 on English reports
+   and 0.6742 on the rest, while the LLM holds 0.8796 and 0.8333.
+===== beraterolelk__0-957-sota-rsna-knee-multi-scale-foundation
+   - **nartaa** (Danial Zakaria): Trained and published the multi-scale Stochastic Weight Averaging (SWA) checkpoints ([`rsna-knee-publication-swa-weights-20261007`](https://www.kaggle.com/datasets/nartaa/rsna-knee-publication-swa-weights-20261007)), providing the 384px anatomical mirror model (0.949 s
+   - **varshithakolupuri**: Discovered that blending the 224px CoAtNet checkpoint alongside 384px CoAtNet introduces critical multi-scale spatial diversity, and proved that adding anatomical left/right mirror TTA to the 224px model gains 68 ranks within the 0.956 tier.
+   # 🩺 RSNA Knee Abnormality Detection: SOTA Quad-Hybrid Research & Optimization (>0.960 Target)
+   **Primary Optimization Objective**: Target **Macro ROC-AUC > 0.960** through 5 rigorous, clinically motivated upgrades
+   **Verified Baseline**: Macro ROC-AUC **0.956 / 0.957+**
+   L --> M["Final submission.csv (Target >0.960)"]
+   ## Stage 3: Anatomical Per-Label Routing, Hybrid Z-Logit + Rank Blend & Clinical Smoothing (>0.960 Target)
+   **Clinical Co-Occurrence Smoothing**: Applies pathophysiologically grounded logit coupling (`Effusion   Synovitis` +0.04, `ACL -> Contusion` +0.03, `Meniscus -> Compartment OA` +0.025) before final rank normalization.
+   | **EXP-01** | Single Baseline | CoAtNet-384 SWA (Single Model) | ImageNet + Distilled Reports | 0.9167 | 0.949 | Foundational wide-field baseline |
+   | **EXP-02** | Single Baseline | CoAtNet-224 SWA (0.8 Centre Crop) | ImageNet + Distilled Reports | 0.9124 | 0.945 | Focal zoom; loses peripheral edges |
+   | **EXP-03** | Single Baseline | R7 ConvNeXt-Small (4 Folds) | FastMRI + Anatomy Anchors v4 | 0.9231 | 0.944 | Modern CNN; sharp cortical detail |
+   | **EXP-04** | Dual Ensemble | CoAtNet-384 + ConvNeXt S6 (Bundle `209a`) | Older stackers, 6-dec precision | 0.9385 | 0.954 | Ties in low decimals degraded rank |
+   | **EXP-05** | Dual SOTA Blend | CoAtNet-384 + R7 ConvNeXt (Bundle `8c7b`) | FastMRI aux, 64-bit precision | 0.9468 | 0.957 | State of the Art (+0.003 LB jump) |
+   | **EXP-06** | Tri-Hybrid Multi-Scale | CoAtNet-384 + CoAtNet-224 + R7 ConvNeXt | Multi-Scale Spatial + FastMRI | 0.9512 | 0.956 (R156) | Spatial regularization on focal tears |
+   | **EXP-07** | Tri-Hybrid + 224 Mirror | CoAtNet-384(M) + CoAtNet-224(M) + R7 ConvNeXt | Anatomical Mirror TTA on both CoAtNets | 0.9538 | 0.956+ (R289) | Verified +68 ranks within 0.956 block |
+   | **EXP-10** | SWA vs Non-SWA Control | CoAtNet-384 (Single Best Epoch 14) | Distilled Reports (No SWA) | 0.9102 | 0.945 | **Ablation**: SWA adds +0.004 LB smoothing |
+   | **EXP-11** | Mirror TTA Control | CoAtNet-384 (Plain view only, no mirror) | Distilled Reports + SWA | 0.9145 | 0.948 | **Ablation**: Anatomical mirror adds +0.001 LB |
+   | **EXP-12** | Generic DINO Audit | ViT-Base DINOv2 / DINOv3 | Natural Images (No Medical Pretraining) | 0.8872 | 0.912 | **Rejected**: Fails OOF improvement rule |
+   | **EXP-13** | Quad-Hybrid Foundation | Multi-Scale + Knee-Centred Reader | FastMRI + SWA + Fine Spacing | 0.9554 | 0.958 | Orthogonal 80-slice physical crop geometry |
+   | **EXP-14** | **Quad-Hybrid SOTA Upgraded** | **Multi-Scale Foundation + KC 2-Scale TTA + Anatomical Routing + Co-Occurrence** | **5 Core Upgrades Integrated** | **0.9585** | **Target >0.960** | **Champion: Deployed with fail-safe** |
+   - Without domain-specific musculoskeletal pretraining, DINO backbones achieved only **0.8872 Gold-58 AUC** (compared to 0.9231 for ConvNeXt R7 and 0.9167 for CoAtNet-384).
+   - Comparing a single-epoch CoAtNet-384 checkpoint against Stochastic Weight Averaging (SWA across epochs 14, 11, and 12) revealed a **+0.004 LB gain** (0.945 vs 0.949), proving that multi-epoch parameter smoothing suppresses loss landscape roughness.
+   - Evaluating plain view alone vs averaging plain and anatomical mirror views (`_mirror_tri`) yielded a **+0.001 LB gain** on 384px and advanced **68 ranks** within the 0.956 tier on 224px.
+===== bliverrigpdoge__r7-raptor-knee-centred-convnext
+   # R7 + Raptor + knee-centred ConvNeXt (0.957)
+   This runs heliosli's R7 + Raptor notebook (0.956) as it is, and adds one model of mine on top.
+   That took the public score from 0.956 to 0.957.
+   My weights are in a private dataset, so a fork skips that step and gives you the base 0.956.
+===== bliverrigpdoge__velci-kcd25-20
+   # velci-kcd25-20: the public 0.954 recipe (unchanged) plus KCD25
+   Every code cell between the first and the last three is the public 0.954 notebook (Raptor mirror 0.7 + heliosli's compact convnext_small 0.3), unchanged.
+   Credits: heliosli (compact model, 0.954 recipe), nartaa (Raptor mirror weights), matterhorn3838 (V2 Velciraptor notebook).
+===== degnonguidi__rsna-knee-abnormality-detection
+   # 🏆 RSNA Knee Abnormality Detection: Dual-Engine SOTA Ensemble (LB 0.956)
+   This notebook delivers a reproducible **0.956 Public Leaderboard solution** for the RSNA 2026 Knee Abnormality Detection challenge.
+===== eeshanvaghjiani2004__knee-oct15-224m
+   # RSNA Knee 0.956+ : second CoAtNet checkpoint + mirror TTA (+ per-finding probe)
+   blend; the 224-pixel 0.8-crop one (`..._c08_r224_swa.pt`, 0.945 on its own) is not.
+   displayed score is 0.956, which is where our team sits.
+   are the work of nartaa ([0.949](https://www.kaggle.com/code/nartaa/rsna-knee-0949-anatomical-mirror),
+   [0.945](https://www.kaggle.com/code/nartaa/rsna-knee-0945-efficient-224crop)), heliosli
+   nartaa's published 0.945 script; changes are marked `[s9]` (mirror) and `[s5]` (output file name).
+===== evgendvorkin__rsna-versia-7
+   # 🦖 RSNA Knee Abnormality Detection — Evolution of Public Solutions (0.937 → 0.956)
+   **Current pipeline:** Reproduction of the publicly released **R7 ConvNeXt-small + Raptor CoAtNet ensemble**, associated with a reported public AUC of approximately **0.956**.
+   ## Work 1 — 0.937 | Head and Shoulders, Knees and Toes
+   ## Work 2 — 0.940 | RSNA Knee Hybrid Raptor — Lateral Meniscus R100
+   ## Work 3 — 0.941 | Bend the Knee to the Dinosaurs
+   ## Work 4 — 0.942 | rsna-knee-0942-restructured
+   ## Work 5 — 0.943 | rsna-knee-fast-2xt4-inference
+   ## Work 6 — 0.950 | RSNA Knee V2 — Velciraptor Dinosaur Speed
+   ## Work 7 — 0.951 | RSNA Knee Blend Gold — Compact S5
+   ## Work 8 — 0.954 | RSNA Knee Blend Gold — Compact S6
+   ## Work 9 — 0.956 | R7 + Raptor — Latest Public Dataset
+   **Source notebook:** [≈0.957 | Latest dataset | score in one click!](https://www.kaggle.com/code/heliosli/0-957-latest-dataset-score-in-one-click/notebook)
+   The public notebook reports approximately **0.956 AUC**.
+   The title suggests potential for approximately 0.957, but this is not treated as a separately verified score.
+   | S5 | 0.951 | Independent compact MRI models | 70 / 30 |
+   | S6 | 0.954 | Four-fold ConvNeXt-small | 70 / 30 |
+   | R7 | 0.956 | Four-fold ConvNeXt-small, fastMRI auxiliary training, refitted state stackers | 50 / 50 |
+   | 0.937 | Multi-arm CoAtNet ensemble |
+   | 0.940 | Lateral Meniscus-specific routing |
+   | 0.941 | Residual-gated CoAtNet and complementary MRI representations |
+   | 0.942 | Denser sampling and blend refinement |
+   | 0.943 | Expanded checkpoints and faster inference |
+   | 0.950 | Streamlined CoAtNet + ConvNeXt MIL ensemble |
+   | 0.951 | Independent Compact S5 MRI branch |
+   | 0.954 | Updated Compact S6 fold ensemble |
+   | **0.956** | **R7 Compact models, auxiliary training and updated state stackers** |
+   - **Work 7 — 0.951:** [RSNA Knee Blend Gold](https://www.kaggle.com/code/heliosli/rsna-knee-blend-gold/notebook) — Compact S5.
+   - **Work 8 — 0.954:** [RSNA Knee Blend Gold — Dataset Restored](https://www.kaggle.com/code/heliosli/rsna-knee-blend-gold-dataset-restored?scriptVersionId=356507041) — Compact S6.
+   - **Work 9 — 0.956:** [≈0.957 | Latest dataset | score in one click!](https://www.kaggle.com/code/heliosli/0-957-latest-dataset-score-in-one-click/notebook) — Compact R7 and latest released model assets.
+===== goodpjw2008__rsna-knee-coatnet-r6-2-5d-mil-lb-0-957
+   > - **Versions 21, 22 and 24 scored 0.957** (the badge): heliosli's compact model **R6 scored with flip test-time augmentation**
+   >   ([their notebook](https://www.kaggle.com/code/heliosli/this-is-new-version-0-9576-in-one-click), public LB 0.957, reported 0.9576) in place of R7 without it, with nartaa's 384 + 224 (mirror)
+   > - **This version adds heliosli's per-finding weights from their newest notebook** ([0.958](https://www.kaggle.com/code/heliosli/blend-mine-in-private-lb-luck-to-all-upvoters)): the Raptor half gets
+   > - **Version 11 moves to the best public recipe as of today:** [heliosli's R7 compact model](https://www.kaggle.com/code/heliosli/0-957-latest-dataset-score-in-one-click) (public LB 0.956
+   >   weights: on the current bases our own submissions showed that the reader at full weight no longer adds (0.956 base
+   >   + reader -> 0.954), while a small vote keeps our model in the picture at no cost.
+   > - **Versions 8 to 10** used heliosli's S6 model (0.954 with nartaa, whatever the ratio or precision: we measured 0.954
+   | nartaa's CoAtNet alone (Part A1) | 0.949 |
+   | this notebook's reader alone, 3 folds | 0.929 |
+   | versions 1 to 5: community stack + reader at 30% | 0.944 |
+   | version 6: nartaa's CoAtNet + reader, per-finding weights | 0.950 |
+   | versions 8 to 10: nartaa + heliosli's S6 (+ reader) | 0.954 |
+   | nartaa + heliosli's R7, 50 / 50 ([heliosli's notebook](https://www.kaggle.com/code/heliosli/0-957-latest-dataset-score-in-one-click)) | 0.956 |
+   | the same + nartaa's 224 checkpoint at 35% of the Raptor slot ([varshithakolupuri's notebook](https://www.kaggle.com/code/varshithakolupuri/rsna-knee-one-unused-checkpoint-lifts-the-0-956)) | 0.956, ranked higher |
+   | versions 11 to 20: the R7 recipe + the 224 mirror + S6 as a second compact model + this reader at 1/10 | 0.956, top 10% of the block |
+   | nartaa + heliosli's R6 with flip TTA, 50 / 50 ([heliosli's notebook](https://www.kaggle.com/code/heliosli/this-is-new-version-0-9576-in-one-click)) | 0.957 |
+   | **versions 21, 22, 24: 384 + 224 (mirror), R6 (flip TTA) alone or with R7 (0.4 / 0.5), this reader at 1/10** | **0.957** |
+   | the same R6 recipe with per-finding Raptor weights ([heliosli's newest notebook](https://www.kaggle.com/code/heliosli/blend-mine-in-private-lb-luck-to-all-upvoters)) | 0.958 |
+   weights gave 0.954 = the base; at 1/4 weight 0.954; our S6-distilled reader (gold-58 0.931 alone) 0.953.
+   On top of a ~0.949 single model, 0.03 to 0.35 worked for us; on top
+   - **Part A1** is [nartaa's 0.949 single CoAtNet](https://www.kaggle.com/code/nartaa/rsna-knee-0949-anatomical-mirror) with its weights from
+   - **Part A1b** is nartaa's [0.945 notebook](https://www.kaggle.com/code/nartaa/rsna-knee-0945-efficient-224crop) with the second checkpoint of the same dataset (224 px, 0.8 centre
+   **Part A3** is their blend cell with [varshithakolupuri's](https://www.kaggle.com/code/varshithakolupuri/rsna-knee-one-unused-checkpoint-lifts-the-0-956) 224 lines and the per-finding Raptor weights of [their 0.958 notebook](https://www.kaggle.com/code/heliosli/blend-mine-in-private-lb-luck-to-all-u
+   Our newest work with two reader families is in [our 0.954 notebook](https://www.kaggle.com/code/goodpjw2008/rsna-knee-coatnet-s6-2-5d-mil-lb-0-954).
+   nartaa's [0.945 notebook](https://www.kaggle.com/code/nartaa/rsna-knee-0945-efficient-224crop) with the second checkpoint of the same public dataset, scoring the plain and the mirrored knee like the 384-px model ([varshithakolupuri's](https://www.kaggle.com/code/varshithakolupuri/rsna-knee-one-unuse
+===== goodpjw2008__rsna-knee-coatnet-s6-2-5d-mil-lb-0-954
+   # RSNA Knee | CoAtNet + S6 + 2.5D MIL | LB 0.954
+   **Public LB 0.954.** Three independently trained knee-MRI readers, rank-blended with one weight set per finding.
+   At three decimals this is the same 0.954 as the plain nartaa + S6 blend, but it is ranked above it on the leaderboard
+   | 1 | [nartaa's CoAtNet](https://www.kaggle.com/code/nartaa/rsna-knee-0949-anatomical-mirror), unchanged | 0.949 alone |
+   | 2 | [heliosli's compact model S6](https://www.kaggle.com/datasets/heliosli/rsna-knee-compact-v1), unchanged | 0.954 with stage 1 (70 / 30) |
+   | 3 | heliosli's 70 / 30 rank blend, unchanged, kept as the fallback submission | 0.954 |
+   | 4 | **ours:** our 2.5D readers + the final per-finding blend of all three | **0.954, ranked higher** |
+   public: [our original notebook](https://www.kaggle.com/code/goodpjw2008/rsna-knee-coatnet-2-5d-convnext-mil-lb-0-954) (2.5D ConvNeXt MIL, fully open, LB 0.954 with the public S6) and its checkpoints in
+   limit, the notebook keeps stage 3's submission, so a copy of this notebook still scores the public 0.954 recipe.
+   - **Stage 1** is [nartaa's 0.949 single CoAtNet](https://www.kaggle.com/code/nartaa/rsna-knee-0949-anatomical-mirror) with its weights from [nartaa/rsna-knee-publication-swa-weights-20261007](https://www.kaggle.com/datasets/nartaa/rsna-knee-publication-swa-weights-20261007),
+   - **The evidence that it helps.** A third, weaker but independent reader still lifts a 0.954 two-model blend; on our
+   58-study check the gain held up in resampling, and on the public LB the blend ranks above the plain 0.954.
+   - **[nartaa (Danial Zakaria)](https://www.kaggle.com/nartaa)** for the 0.949 CoAtNet that stage 1 is.
+   This writes the public 0.954 submission.
+===== jaxa623__nakayoshinoyatsu-r7-n01x3
+   The credits cell and the five code cells after it are heliosli's public notebook [≈0.957 | Latest dataset | score in one click!](https://www.kaggle.com/code/heliosli/0-957-latest-dataset-score-in-one-click) byte for byte: stage 1 nartaa's public Raptor model, stage 2 heliosli's compact convnext_smal
+===== jenillangaliya__rsna-knee-lb-0-954-dual-sota-ensemble
+   # 🦴 RSNA Knee 2026: SOTA 0.954 Dual-Stage Solution
+   This notebook implements the official **0.954 Macro ROC-AUC** solution for the RSNA 2026 Knee Abnormality Detection competition.
+===== jingshuifu__rsna-knee-a224-blend
+   # RSNA Knee: one public checkpoint nobody blends lifts the 0.956 recipe
+   blend uses the 384-pixel one (`..._r384_swa.pt`, the "0.949 anatomical mirror").
+   `..._c08_r224_swa.pt` (224 pixels from an 0.8 centre crop, 0.945 on its own), sits unused in the same
+   | Raptor + S6, 0.954 recipe | rank 437 | **rank 320** |
+   | Raptor + R7, 0.956 recipe (this notebook) | rank 233 | **rank 156** |
+   The displayed score stayed 0.954 and 0.956 because Kaggle truncates to three decimals, but **inside a
+   0.956, so a small real gain moves you past a large part of the block.
+   *Stage 2b* writes nartaa's own 0.945 inference script with the 224 checkpoint, changing only the output
+   leaves the submission exactly equal to the 0.956 recipe.
+   [nartaa's 0.949](https://www.kaggle.com/code/nartaa/rsna-knee-0949-anatomical-mirror) and
+   [0.945](https://www.kaggle.com/code/nartaa/rsna-knee-0945-efficient-224crop) notebooks,
+   nartaa's published 0.945 inference script, with `raptor_ft_alldata_t16_blendjev_oai_d96_c08_r224_swa.pt`.
+===== karttikjangid05__rsna-0-956-extra-checkpoint-explained
+   # RSNA 0.956: Extra Checkpoint Explained
+   | Our prior Raptor/R7 ratios: 40/60, 50/50, 60/40 | 0.956 each | Three completed submissions |
+   | Varshithakolupuri v1, submission 57141154 | 0.956 | Completed author submission |
+   We have verified the **displayed 0.956 score**, not that rank comparison or the unrounded gain.
+   Our earlier 40/60, 50/50 and 60/40 Raptor/R7 submissions completed at 0.956 (IDs 57119321, 57116807 and 57119457).
+===== laimerbotrolenk__rsna-four-model-ensemble
+   **The reported baseline is 0.957; V33 has no measured leaderboard score.**
+   those studies, not hidden-test AUC or evidence of an extra +0.001.
+===== lavinwins__rsna-gold-medal
+   # 🩺 RSNA Knee Abnormality Detection: Apex Dual-Reader Fusion (LB 0.950)
+   This notebook demonstrates how we broke the **0.950 Public Leaderboard Barrier** by fusing two structurally orthogonal representations: a high-resolution **CoAtNet 384px SWA reader (0.949 standalone)** and a complementary **ConvNeXt 2.5D MIL reader**, blended using finding-specific calibrated percen
+   # 📊 Evolution of Public Solutions: 0.937 → 0.94 → 0.941 → 0.942 → 0.943 → 0.950
+   ## 🦖 Work 6 — 0.950
+   ### What changed vs 0.943
+   | Component | 0.943 | 0.950 |
+   From **0.937 to 0.943**, improvements largely came from adding models, increasing sampling density and optimizing ensemble weights.
+   The jump from **0.943 to 0.950** follows a different direction: **fewer models, higher diversity, and complementary inductive biases** rather than blindly stacking correlated checkpoints.
+   ## ⚠️ Post-Mortem: Mistakes, Pitfalls & Deadlocks in Earlier Public Solutions (0.937 – 0.943)
+   Why did earlier solutions stall at 0.941–0.943, and why did many notebooks freeze or crash during scoring? Here are the critical lessons learned:
+   - **The 0.950 Fix:** Replaced the entire 75-model bloat with **just two complementary readers** and two weight datasets.
+   - **The 0.950 Fix:** Multi-label ROC-AUC is purely rank-based.
+   Converting predictions to **percentile ranks** (`df.rank(pct=True)`) before blending eliminates calibration discrepancies and adds **+0.002 AUC** purely from mathematical alignment.
+   - **The 0.950 Fix:** Strict anatomical constraint: zero horizontal flipping on Sagittal slices.
+   - **The 0.950 Fix:** Soft probability targets (e.g.
+   - **The 0.950 Fix:** Automated fallback: if ConvNeXt fusion encounters any error, the standalone SOTA 0.949 CoAtNet `submission.csv` is instantly restored, guaranteeing 100% submission safety.
+   - **Work 6 (0.950)** — [Matterhorn3838](https://www.kaggle.com/code/matterhorn3838/rsna-knee-v2-velciraptor-dinosaur-speed/notebook)
+===== lavinwins__top-1-gold
+   # v6 — combination layer on top of the 0.943 public pipeline
+   This is the 0.943 notebook with **no new checkpoints**.
+   | 97% | 1.053 | 0.233 | 0.989 / 0.167 |
+   **`parent`** — reproduces 0.943 bit-for-bit (every patched site falls back to the
+   Expect the same 0.943 if you do.
+   agreement above ~0.99 across the board, then changes 2–6 have almost nothing to work on
+   **This is not a major change, and it is unlikely on its own to take 0.943 to 0.945.**
+   | Probit/logit reductions (3–5) | a few ten-thousandths each; `v6a` agrees with the parent at ~0.998, which is the honest magnitude |
+   with real variance — enough to move within the 0.943 pack, not enough to clear it
+   **Per-label blend weights fitted against real labels.** This is what the 0.941 →
+   0.942 → 0.943 authors were doing by hand through leaderboard probing, and it is the
+   0.943 pack is a pack.
+   branches already agree at ~0.99 cannot be improved by reweighting, and the low-agreement
+   *Everything below is the original 0.943 notebook by its authors, with the patches noted
+   A label where the branches agree at ~0.99 is
+===== leoprovorov__rsna-knee-0-957-explained-why-the-open-ensembl
+   🦵  RSNA Knee 0.957 Explained: Why the Open Ensemble Works and Where It Stops
+   An analysis of the leading open solutions: the data, where the labels come from, what the score measures, how each model reads a study, how their opinions are combined, what each change to the base recipe adds, and the submitted notebook that scores 0.957 on the public leaderboard.
+   **The question.** The best public notebooks of this challenge all score between 0.956 and 0.957, and 940 teams print exactly 0.956.
+   It is the notebook version that printed 0.957.
+   **Where this version stands.** On the public leaderboard of 15 October 2026 (6,035 teams) the base recipe copied unchanged prints 0.956, and this notebook prints 0.957, place 206.
+   Where the recipes stand on the leaderboard | The table, the spike at 0.956, the place inside a block of equal scores.
+   Rare findings (few positives) are measured much less precisely than common ones; the three curves are for true AUC 0.90 (dotted), 0.95 (solid) and 0.97 (dashed).
+   Solving for $\rho$ from published scores (single models about 0.950, a blend of two at 0.956, a blend of four at 0.957) gives the shared-error level of the open models and the ceiling of the family.
+   Each curve is one value of the shared-error correlation $\rho$ (solid 0.7, dashed 0.8, dash-dotted 0.86, dotted 0.92; the markers differ too).
+   The published blends sit at $\rho\approx0.86$ to $0.89$, where eight models would reach about 0.960.
+   **Report labels are an imperfect teacher.** Labels read out of the radiology reports by a language model reproduce the 58 expert labels with a macro AUC of 0.89 (95% interval 0.86 to 0.92), yet the models trained on them score about 0.957 on the hidden test.
+   The dashed red line marks 0.957, the score of the best public ensembles on the hidden test set.
+   **How to read the figure.** *Left:* teams per printed score on a logarithmic axis; blue below 0.950, orange 0.950 to 0.956, red hatched from 0.957.
+   *Right:* teams at or above each printed score; counts are printed for 0.956 to 0.967.
+   - Stage 1 - nartaa's Raptor CoAtNet-384 (0.949, plain + anatomical-mirror view), unchanged.
+   - Stage 1b - nartaa's Raptor CoAtNet-224 crop (0.945) with the anatomical-mirror view added (the `[s9]` change from varshithakolupuri's notebook).
+   - Stage 2b - nartaa's S6 ConvNeXt-small trained on all data (0.950 alone), nartaa's published script with the Raptor-384 recomputation replaced by the stage-1 output; optional: if it fails or time is short the blend uses the other members.
+   **Is the ceiling of about 0.96 real?** It is derived from two blends and an equal-correlation model.
+===== mayankraaz__rsna-knee-abnormality-pipeline
+   * Notebook: [RSNA Knee: One Unused Checkpoint Lifts the 0.956](https://www.kaggle.com/code/varshithakolupuri/rsna-knee-one-unused-checkpoint-lifts-the-0-956)
+   * Key Innovation: Orchestrated multi-resolution integration blending the unused 224-pixel center-crop CoAtNet checkpoint with the 384-pixel mirror checkpoint within the Raptor slot, achieving higher discrimination power and beating the dense 0.956 tie block.
+   * Notebooks: [≈0.957 | Latest dataset| score in one click!](https://www.kaggle.com/code/heliosli/0-957-latest-dataset-score-in-one-click) & [rsna-knee-blend-gold](https://www.kaggle.com/code/heliosli/rsna-knee-blend-gold)
+   * Reference Notebooks: [0.949 Anatomical Mirror](https://www.kaggle.com/code/nartaa/rsna-knee-0949-anatomical-mirror) & [0.945 Efficient 224 Crop](https://www.kaggle.com/code/nartaa/rsna-knee-0945-efficient-224crop).
+===== mayankraaz__rsna-knee-r7-convnext-raptor-dual-stream
+   The scoring cells below are **heliosli's published 0.9573 pipeline, run unchanged**.
+   an earlier experiment that mixed in goodpjw2008's 2.5D reader — that reduced the score (0.956 → 0.954) and
+   [=0.9573 Latest public dataset score in one click!](https://www.kaggle.com/code/heliosli/0-9573-latest-public-dataset-score-in-one-click)
+   and [≈0.957](https://www.kaggle.com/code/heliosli/0-957-latest-dataset-score-in-one-click); datasets
+   [0.949 Anatomical Mirror](https://www.kaggle.com/code/nartaa/rsna-knee-0949-anatomical-mirror) and
+   [0.945 Efficient 224-crop](https://www.kaggle.com/code/nartaa/rsna-knee-0945-efficient-224crop).
+===== medvax__rsna-knee-public-mirror-and-compact-trial
+   MedvAx reproduced this public recipe at **0.954 public macro AUC**, submission **57070686**, version 1, confirmed October 11, 2026.
+   The current target is 0.958; that target has not been achieved.
+===== medvax__rsna-knee-r7-source-trial
+   # MedvAx: verified 0.956 R7 MRI ensemble
+   MedvAx's genuine competition submission **57136151**, scored **version 1**, completed at **0.956 public macro AUC** on October 13, 2026.
+   The previous confirmed best was **0.954**.
+   The current objective is **0.958**, which has not been achieved.
+   | Published R7 recipe, 50/50 | 57136151 | **0.956** |
+   | R7 recipe, prior 70/30 balance | 57136152 | 0.955 |
+   | Native Effusion; retain Baker calibration | 57136154 | 0.956 |
+   | Native Baker; retain Effusion calibration | 57136155 | 0.956 |
+   | Native Effusion and Baker | 57136158 | 0.956 |
+===== picond__rsna-knee-9576-r6-v1-fixed-readable
+   > The public source that motivated this implementation reports a displayed leaderboard score of 0.9576.
+===== picond__rsna-knee-r7-pinned-exact50-control
+   # RSNA Knee: Verified 0.956 SWA / R7 Ensemble
+   Competition submission **57143234**, generated by the original **v1**, achieved a **public leaderboard score of 0.956**.
+   | SWA 50% + S6 50% | 0.954 |
+   | **This pipeline: SWA 50% + R7 50%** | **0.956** |
+   The **0.956** score belongs to the official submission from **v1**.
+   Save the run receipt, elapsed time, and file hash for comparison with the original 0.956 version.
+   **v1:** Official competition submission **57143234** achieved **Public LB 0.956**.
+   The historical 0.956 score is attributed to its original official submission.
+===== prvsiyan__the-bee-s-knees-final-rsna-push
+   **The upstream notebook displayed 0.949.
+   | nartaa V2: upstream recipe and checkpoint | 0.949 | Their score on their notebook.
+   | This public notebook (card) | 0.941 | Official rows 56759401 (V31), 56779708 and 56779710 (V32), all 0.941 |
+   | Account's verified best | 0.943 | Private notebook, row 56859861 (V8) |
+   | Public frontier, observed 2026-10-08 | Six notebooks at 0.950 (blends) | Public leaderboard.
+   | Private validation bench, V14 (mirror arm) | 0.949 | Reported by the maintainer; not part of this public notebook |
+   | This notebook, version 34 (mirror arm) | 0.949 | Official row 56949940, complete |
+   | Private bench, V18 (mirror plus ConvNeXt blend, 0.70 / 0.30) | 0.948 | Official row 56955785.
+   | Public version 35 (same blend) | 0.948 | Official row 56957785, complete.
+   The private bench run of that blend (bench version 18) scored 0.948 in official row 56955785.
+   The mirror arm alone scored 0.949.
+   Public version 35 with the same blend scored 0.948 in official row 56957785, the same as its bench twin, which settles the question for this blend.
+   Our reading of the six public 0.950 notebooks is that they use per-label hand-set weights or weights tuned on a gold set of 58 studies.
+   The displayed 0.949 score belongs to that upstream notebook.
+   | nartaa V2: upstream recipe and checkpoint | 0.949 | Their score on their notebook.
+   | This public notebook (card) | 0.941 | Official rows 56759401 (V31), 56779708 and 56779710 (V32), all 0.941 |
+   | Account's verified best | 0.943 | Private notebook, row 56859861 (V8) |
+   | Public frontier, observed 2026-10-08 | Six notebooks at 0.950 (blends) | Public leaderboard.
+   | Private validation bench, V14 (mirror arm) | 0.949 | Reported by the maintainer; not part of this public notebook |
+   | Private validation bench, V17 (E3 r224 blend) | 0.949 | Reported by the maintainer; ties V14 |
+   | This notebook, version 34 | 0.949 | Official row 56949940, complete |
+   We have not reproduced the public 0.950 notebooks and make no claim about their internals.
+   The displayed 0.949 score belongs to that upstream notebook.
+   **The upstream notebook displayed 0.949.
+   | nartaa V2: upstream recipe and checkpoint | 0.949 | Their score on their notebook.
+   | This public notebook (card) | 0.941 | Official rows 56759401 (V31), 56779708 and 56779710 (V32), all 0.941 |
+   | Account's verified best | 0.943 | Private notebook, row 56859861 (V8) |
+   | Public frontier, observed 2026-10-08 | Six notebooks at 0.950 (blends) | Public leaderboard.
+   The displayed 0.949 score belongs to that upstream notebook.
+   ## Reproducing the public 0.957 recipe
+   [Heliosli Version 1](https://www.kaggle.com/code/heliosli/this-is-new-version-0-9576-in-one-click?scriptVersionId=358332966), native **358332966**, has a verified **0.957** badge.
+===== rabari9999__rsna-knee-sota-apex-grandmaster-ensemble-lb-0-954
+   # 🦴 RSNA Knee 2026: SOTA Apex Grandmaster Dual-Stage Ensemble | LB 0.954+ 🚀
+===== rjings__rsna-knee-four-public-models-rank-blend-20261014
+   # RSNA Knee | Four public models, one rank blend (LB 0.956)
+   Public LB  0.956 .
+   nartaa's published 0.949 single model, run unchanged in its own process (so its GPU memory is fully released before the
+   The same dataset ships a **second** checkpoint: 224 px from a 0.8 centre crop (0.945 alone).
+   - **nartaa**: [0.949 anatomical-mirror notebook](https://www.kaggle.com/code/nartaa/rsna-knee-0949-anatomical-mirror),
+   [0.945 224-crop notebook](https://www.kaggle.com/code/nartaa/rsna-knee-0945-efficient-224crop), and the
+   [0.956 R7 + Raptor notebook](https://www.kaggle.com/code/heliosli/0-957-latest-dataset-score-in-one-click) this builds on.
+===== rjings__rsna-r224-anatomical-mirror-20261014
+   # RSNA 0.956: one free flip, 68 ranks up
+   The 224-pixel checkpoint from the same dataset, the one that lifts the 0.956
+   **What it did on the leaderboard:** displayed score unchanged at 0.956 (Kaggle truncates to three decimals),
+   | + nartaa's 224 checkpoint | a second, unused CoAtNet | 156 on Oct 13, 357 on Oct 14 as the 0.956 block filled up |
+   exactly equal to the public 0.956 recipe.
+===== ryugohanai__rsna-tta224-reader-20261015
+   Frozen B: R7 flipTTA plus plain22417.5% and public3foldReader inherited0.003-0.035
+   Parent: team verified Public0.956 /57140060.
+   The next cells write the reader's source to `/kaggle/working/own_src/` and the last cell runs its three public folds and rank-blends them into the 0.956 submission above with one weight per finding.
+   If it fails or would run late, the 0.956 submission is kept.
+===== sanketnandkumarpatil__kaggle-rsna-knee
+   ### Isolated Public Leaderboard Evaluation of the Radiologist Gold Specialist (0.8850 OOF)
+   * **Validation Scorecard:** Macro-AUC **0.8850** (Medial OA: **0.9829**, Medial Meniscus: **0.9651**, Contusion: **0.9420**, ACL: **0.9400**)
+===== sujanmajhisuzan__rsna-knee-apex-grandmaster-v13-r7-superstack
+   Targeting LB 0.957 - 0.960+.
+===== wocenmma__rsna-e030-compact35-native
+   This notebook shares the E030 baseline for **RSNA Knee Abnormality Detection**, with a confirmed **Public Score of 0.954** (official submission **57067771**, inference version **V1**).
+   Scores displayed as **0.954** are rounded; the ranking snapshot below records the observed order and does not quantify any additional decimal places or a private-test advantage.
+   - Confirmed E030 Public Score: **0.954**, submission **57067771**, inference **V1**.
+   - Competition public team leaderboard position: **#176**, team **我是AI的豆包**, displayed score **0.954** (observed official list order).
+   | 6 | [RSNA Knee \[LB 0.954\]: Dual SOTA Ensemble](https://www.kaggle.com/code/jenillangaliya/rsna-knee-lb-0-954-dual-sota-ensemble) |
+   | 11 | [RSNA Knee 0.952: Tri-Hybrid Multi-Scale MIL](https://www.kaggle.com/code/jenillangaliya/rsna-knee-0-952-tri-hybrid-multi-scale-mil) |
+===== yuvrajlamba01__rsna-knee-lupi-multi-plane-mil-sota-blend-0-957
+   | Single-Model Raptor CoAtNet | 384 × 384 | Standard Dual-Pass | SWA checkpoint, wide-dense coordinate parsing | 0.949 |
+   | Single-Model Efficient Raptor | 224 × 224 | 0.8 Focal Center Crop | Zoomed articular surface view, fast inference | 0.945 |
+   | Multi-Scale Raptor Blend | 384 + 224 | Multi-Scale SWA | Fixed 0.65 / 0.35 rank weighting | 0.954 |
+   | Compact R6 ConvNeXt (Plain) | 384 × 384 | No Flip TTA | 4 folds, FastMRI aux supervision, D2 fluid stacker | 0.956 |
+   | **Quad-Hybrid Blend + Flip TTA (This Work)** | **384 + 224 + ConvNeXt** | **Anatomical Mirror TTA** | **Bilateral mirror equivariance, continuous 64-bit ranking** | **0.9576** |
+   - The compact ConvNeXt model bundles (`fe055406fad6a12f`), OrthoFoundation anchor features, D2 fluid stacker, state stacker, and the bilateral mirror test-time augmentation discovery (`FLIP_TTA = True`) are the research of **heliosli** ([This is new version =0.9576 in one click!](https://www.kaggle.
+   - The integration of the 224-pixel focal crop checkpoint and the optimal 0.35 share weighting follow the empirical work of **varshithakolupuri** ([RSNA Knee: One Unused Checkpoint Lifts the 0.956](https://www.kaggle.com/code/varshithakolupuri/rsna-knee-one-unused-checkpoint-lifts-the-0-956)).
+   - The theoretical validation of rank ensembling, non-failed row isolation, and clinical correlation auditing follow the analysis by **leoprovorov** ([RSNA Knee 0.957 Explained: Why the Open Ensemble Works](https://www.kaggle.com/code/leoprovorov/rsna-knee-0-957-explained-why-the-open-ensembl)).
+===== yuvrajlamba01__rsna-knee-multiscale-orthofoundation-sota-0-956
+   # 🩺 RSNA Knee Abnormality Detection: Multi-Scale OrthoFoundation Ensemble (>0.956)
+   K --> L["Final Validated submission.csv (>0.956)"]
+   | Single Baseline | CoAtNet-384 SWA (Single Model) | ImageNet + Distilled Reports | 0.9167 | 0.949 | Published |
+   | Single Baseline | CoAtNet-224 SWA (0.8 Crop) | ImageNet + Distilled Reports | 0.9124 | 0.945 | Published |
+   | Single Baseline | R7 ConvNeXt-Small (4 Folds) | FastMRI + Anatomy Anchors v4 | 0.9231 | 0.944 | Published |
+   | Previous Generation | CoAtNet-384 + ConvNeXt S6 (Bundle `209a`) | Older stackers, 6-dec precision | 0.9385 | 0.954 | User Prior |
+   | Dual SOTA Blend | CoAtNet-384 + R7 ConvNeXt (Bundle `8c7b`) | FastMRI aux, full 64-bit precision | 0.9468 | 0.957 | State of the Art |
+   | **Tri-Hybrid Multi-Scale** | **CoAtNet-384 + CoAtNet-224 + R7 ConvNeXt** | **Multi-Scale Spatial + FastMRI** | **0.9512** | **>0.956 (Rank 156)** | **This Solution** |
+===== yuvrajlamba01__rsna-knee-research-optimized
+   - The compact ConvNeXt model bundles (`8c7b666e27dc0e8f`), OrthoFoundation anchor features, D2 fluid stacker, state stacker, and dual worker execution are the research of **heliosli** ([RSNA Knee 0.957](https://www.kaggle.com/code/heliosli/this-one-is-old-version-0-957-new-one-you-can-use)).
+===== yuvrajlamba01__rsna-knee-v15-tri-hybrid-ensemble-0-954
+   │     Verified LB Score: 0.956         │
+   An equal weight $w = 0.50$ significantly suppresses individual model noise across all 12 classes, yielding a measurable gain over asymmetric $0.70 / 0.30$ weighting (+0.002 on public evaluation).
+   | **M1** | Baseline CoAtNet Multi-Slice | 0.937 |prvsiyan 4-arm baseline with reverse augmentation |
+   | **M2** | Target-Specific Head Routing | 0.941 | Mattia Angeli / renta0426 residual-gated CoAtNet |
+   | **M3** | Denser Multi-Plane Sampling | 0.943 | Jiwei Liu / maverick_ss_26 fast 2xT4 window coverage |
+   | **M4** | CoAtNet SWA Publication Mirror | 0.949 | nartaa OAI pretraining + multi-slot attention |
+   | **M5** | OrthoFoundation S5 Dual MIL | 0.950 | Matterhorn3838 / Dread Development dual model |
+   | **M6** | ConvNeXt S6 4-Fold (70/30 Blend) | 0.954 | Heliosli SKM-TEA joint anchors + 70/30 rank blend |
+   | **M7** | **Balanced Orthogonal Vision Ensemble** | **0.956** | **Heliosli 50/50 balanced rank blend with failure gating (This Solution)** |

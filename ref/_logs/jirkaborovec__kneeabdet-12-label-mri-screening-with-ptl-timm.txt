@@ -1,0 +1,273 @@
+      12 [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/40.8 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m40.8/40.8 kB[0m [31m3.2 MB/s[0m eta [36m0:00:00[0m
+      14 [?25h[?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/57.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m57.3/57.3 kB[0m [31m3.9 MB/s[0m eta [36m0:00:00[0m
+      14 [?25h[?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/62.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m62.3/62.3 kB[0m [31m4.7 MB/s[0m eta [36m0:00:00[0m
+      15 [?25h[?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/79.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m79.5/79.5 kB[0m [31m5.4 MB/s[0m eta [36m0:00:00[0m
+      15 [?25h[?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/80.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m80.3/80.3 kB[0m [31m5.9 MB/s[0m eta [36m0:00:00[0m
+      17 [?25h[?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/118.7 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m118.7/118.7 kB[0m [31m7.7 MB/s[0m eta [36m0:00:00[0m
+      22 [?25h[?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/104.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m104.0/104.0 kB[0m [31m4.3 MB/s[0m eta [36m0:00:00[0m
+      23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.4 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━[0m [32m1.9/2.4 MB[0m [31m58.9 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.4/2.4 MB[0m [31m38.5 MB/s[0m eta [36m0:00:00[0m
+      23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.4 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m3.4/3.4 MB[0m [31m209.7 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.4/3.4 MB[0m [31m87.3 MB/s[0m eta [36m0:00:00[0m
+      23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.0 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m2.0/2.0 MB[0m [31m168.0 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.0/2.0 MB[0m [31m53.4 MB/s[0m eta [36m0:00:00[0m
+      23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.6 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.6/2.6 MB[0m [31m82.2 MB/s[0m eta [36m0:00:00[0m
+      23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/852.4 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m852.4/852.4 kB[0m [31m45.5 MB/s[0m eta [36m0:00:00[0m
+      23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/983.4 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m983.4/983.4 kB[0m [31m51.0 MB/s[0m eta [36m0:00:00[0m
+      23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/294.9 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m294.9/294.9 kB[0m [31m22.2 MB/s[0m eta [36m0:00:00[0m
+      23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/206.6 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m206.6/206.6 kB[0m [31m15.3 MB/s[0m eta [36m0:00:00[0m
+      23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/10.0 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━[0m [32m6.4/10.0 MB[0m [31m191.7 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m10.0/10.0 MB[0m [31m210.8 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━
+      24 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/16.7 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━[0m [32m6.7/16.7 MB[0m [31m202.7 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━[0m [32m14.4/16.7 MB[0m [31m219.7 MB/s[0m eta [36m0:00:01[0m[2K   
+      24 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/130.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m130.0/130.0 kB[0m [31m9.7 MB/s[0m eta [36m0:00:00[0m
+      24 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/11.0 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━[0m [32m8.5/11.0 MB[0m [31m254.2 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m11.0/11.0 MB[0m [31m253.6 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━
+      24 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/807.9 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m807.9/807.9 kB[0m [31m40.3 MB/s[0m eta [36m0:00:00[0m
+      30 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/526.6 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m9.1/526.6 MB[0m [31m272.4 MB/s[0m eta [36m0:00:02[0m[2K   [91m━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m15.8/526.6 MB[0m [31m214.4 MB/s[0m eta [36m0:00:03[0m[2K   [91m━
+      34 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/366.2 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m5.6/366.2 MB[0m [31m168.8 MB/s[0m eta [36m0:00:03[0m[2K   [91m━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m11.5/366.2 MB[0m [31m164.4 MB/s[0m eta [36m0:00:03[0m[2K   [91m━
+      36 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/170.1 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m5.1/170.1 MB[0m [31m156.6 MB/s[0m eta [36m0:00:02[0m[2K   [91m━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m10.5/170.1 MB[0m [31m151.6 MB/s[0m eta [36m0:00:02[0m[2K
+      39 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/206.0 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m5.9/206.0 MB[0m [31m177.0 MB/s[0m eta [36m0:00:02[0m[2K   [91m━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m11.8/206.0 MB[0m [31m172.6 MB/s[0m eta [36m0:00:02[0m[2K
+      39 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/60.4 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m6.2/60.4 MB[0m [31m187.4 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m12.7/60.4 MB[0m [31m184.6 MB/s[0m eta [36m0:00:01[0m[2K   
+      42 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/197.7 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m5.6/197.7 MB[0m [31m169.0 MB/s[0m eta [36m0:00:02[0m[2K   [91m━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m10.8/197.7 MB[0m [31m157.0 MB/s[0m eta [36m0:00:02[0m[2K
+      47 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/423.1 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m7.0/423.1 MB[0m [31m210.7 MB/s[0m eta [36m0:00:02[0m[2K   [91m━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m14.1/423.1 MB[0m [31m203.8 MB/s[0m eta [36m0:00:03[0m[2K   [91m━
+      47 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/10.7 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━[0m [32m7.9/10.7 MB[0m [31m237.9 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m10.7/10.7 MB[0m [31m226.8 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━
+      48 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/90.2 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m7.0/90.2 MB[0m [31m210.2 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m13.6/90.2 MB[0m [31m193.5 MB/s[0m eta [36m0:00:01[0m[2K   
+      48 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.2 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.2/2.2 MB[0m [31m70.7 MB/s[0m eta [36m0:00:00[0m
+      53 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/214.1 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m7.6/214.1 MB[0m [31m227.2 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m15.3/214.1 MB[0m [31m217.5 MB/s[0m eta [36m0:00:01[0m[2K
+      53 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.2 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.2/1.2 MB[0m [31m56.2 MB/s[0m eta [36m0:00:00[0m
+      53 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/59.5 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m8.3/59.5 MB[0m [31m248.8 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m16.6/59.5 MB[0m [31m242.5 MB/s[0m eta [36m0:00:01[0m[2K   
+      57 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/200.9 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m8.3/200.9 MB[0m [31m250.8 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m16.5/200.9 MB[0m [31m237.6 MB/s[0m eta [36m0:00:01[0m[2K
+      59 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/145.9 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m8.5/145.9 MB[0m [31m256.3 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m16.8/145.9 MB[0m [31m240.9 MB/s[0m eta [36m0:00:01[0m[2K
+      59 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/148.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m148.0/148.0 kB[0m [31m10.2 MB/s[0m eta [36m0:00:00[0m
+      59 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/80.2 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m80.2/80.2 kB[0m [31m5.5 MB/s[0m eta [36m0:00:00[0m
+      59 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/45.6 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m45.6/45.6 kB[0m [31m3.7 MB/s[0m eta [36m0:00:00[0m
+      59 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/784.9 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m784.9/784.9 kB[0m [31m37.8 MB/s[0m eta [36m0:00:00[0m
+      59 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/516.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m516.0/516.0 kB[0m [31m34.9 MB/s[0m eta [36m0:00:00[0m
+      59 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/9.1 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━[0m [32m8.6/9.1 MB[0m [31m259.0 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m9.1/9.1 MB[0m [31m247.8 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/35.3 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m6.8/35.3 MB[0m [31m206.0 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━[0m [32m14.3/35.3 MB[0m [31m194.6 MB/s[0m eta [36m0:00:01[0m[2K   
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/7.7 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━[0m [32m4.4/7.7 MB[0m [31m131.3 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m7.7/7.7 MB[0m [31m128.8 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.8/1.8 MB[0m [31m59.3 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/119.2 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m119.2/119.2 kB[0m [31m9.7 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/362.6 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m362.6/362.6 kB[0m [31m22.7 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/6.7 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━[0m [32m4.5/6.7 MB[0m [31m137.0 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m6.7/6.7 MB[0m [31m132.1 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/98.9 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m98.9/98.9 kB[0m [31m6.8 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/5.0 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━[0m [32m4.5/5.0 MB[0m [31m135.1 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m5.0/5.0 MB[0m [31m77.0 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/4.5 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m4.5/4.5 MB[0m [31m134.1 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m4.5/4.5 MB[0m [31m72.2 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/73.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m73.5/73.5 kB[0m [31m5.6 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/78.8 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m78.8/78.8 kB[0m [31m5.7 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/309.1 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m309.1/309.1 kB[0m [31m20.4 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.5 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.5/1.5 MB[0m [31m55.4 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/461.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m461.0/461.0 kB[0m [31m31.3 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.1 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.1/2.1 MB[0m [31m64.6 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/6.9 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━[0m [32m4.7/6.9 MB[0m [31m141.6 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m6.9/6.9 MB[0m [31m137.5 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/122.8 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m122.8/122.8 kB[0m [31m8.3 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/229.9 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m229.9/229.9 kB[0m [31m14.7 MB/s[0m eta [36m0:00:00[0m
+      60 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/818.2 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m818.2/818.2 kB[0m [31m45.4 MB/s[0m eta [36m0:00:00[0m
+      61 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/6.3 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━[0m [32m4.7/6.3 MB[0m [31m141.6 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m6.3/6.3 MB[0m [31m139.5 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━
+      61 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/134.9 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m134.9/134.9 kB[0m [31m11.1 MB/s[0m eta [36m0:00:00[0m
+      61 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/67.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m67.5/67.5 kB[0m [31m4.9 MB/s[0m eta [36m0:00:00[0m
+      61 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/54.6 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m54.6/54.6 kB[0m [31m3.4 MB/s[0m eta [36m0:00:00[0m
+      61 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/242.4 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m242.4/242.4 kB[0m [31m18.9 MB/s[0m eta [36m0:00:00[0m
+      61 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/536.2 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m536.2/536.2 kB[0m [31m16.4 MB/s[0m eta [36m0:00:00[0m
+      61 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/256.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m256.3/256.3 kB[0m [31m16.0 MB/s[0m eta [36m0:00:00[0m
+      62 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/40.7 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m4.6/40.7 MB[0m [31m139.2 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m9.5/40.7 MB[0m [31m138.4 MB/s[0m eta [36m0:00:01[0m[2K   
+      62 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/61.6 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m61.4/61.6 kB[0m [31m219.8 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m61.4/61.6 kB[0m [31m219.8 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━
+      63 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/109.8 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━[0m [32m102.4/109.8 kB[0m [31m217.7 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━[0m [32m102.4/109.8 kB[0m [31m217.7 MB/s[0m eta [36m0:00:01[0m[2
+      63 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/65.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m65.5/65.5 kB[0m [31m5.1 MB/s[0m eta [36m0:00:00[0m
+      63 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/125.8 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m125.8/125.8 kB[0m [31m8.3 MB/s[0m eta [36m0:00:00[0m
+      63 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/137.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m137.0/137.0 kB[0m [31m9.6 MB/s[0m eta [36m0:00:00[0m
+     121 Seed set to 42
+     121 Seed set to 42
+     121 [?25hpython       : 3.12.13
+     121 numpy        : 2.0.2
+     121 pandas       : 2.3.3
+     121 scikit-learn : 1.6.1
+     121 pydicom      : 3.0.2
+     121 torch        : 2.10.0+cu128
+     121 lightning    : 2.6.5
+     121 torchmetrics : 1.9.0
+     121 timm         : 1.0.26
+     121 device       : cuda
+     121 PATH_DATASET   : /kaggle/input/competitions/rsna-knee-abnormality-detection
+     121 PATH_OUTPUT    : /kaggle/working
+     121   found : /kaggle/input/competitions/rsna-knee-abnormality-detection/train.csv
+     121   found : /kaggle/input/competitions/rsna-knee-abnormality-detection/train_series.csv
+     121   found : /kaggle/input/competitions/rsna-knee-abnormality-detection/test.csv
+     121   found : /kaggle/input/competitions/rsna-knee-abnormality-detection/test_series.csv
+     121   found : /kaggle/input/competitions/rsna-knee-abnormality-detection/sample_submission.csv
+     121 targets: 12 -> ['ACL', 'MCL', 'Medial Meniscus', 'Lateral Meniscus', 'Medial OA', 'Lateral OA', 'PF OA', 'Effusion', 'Synovitis', "Baker's", 'Contusion', 'Fracture']
+     121 train.csv shape: (4407, 14)
+     121 train_series.csv shape: (24371, 5)
+     122 duplicated StudyInstanceUID  : 0
+     122 duplicated SeriesInstanceUID : 0
+     122 FINDING: identifiers are unique -> IMPLICATION: a study-level split needs no de-duplication step.
+     122     21 slices : 1.2.826.0.1.3680043.8.49...
+     122     30 slices : 1.2.826.0.1.3680043.8.49...
+     122     29 slices : 1.2.826.0.1.3680043.8.49...
+     122     29 slices : 1.2.826.0.1.3680043.8.49...
+     122     30 slices : 1.2.826.0.1.3680043.8.49...
+     122     16 slices : 1.2.826.0.1.3680043.8.49...
+     122     23 slices : 1.2.826.0.1.3680043.8.49...
+     122     18 slices : 1.2.826.0.1.3680043.8.49...
+     122     33 slices : 1.2.826.0.1.3680043.8.49...
+     122 FINDING: 9/9 sampled series resolved to non-empty directories.
+     122 IMPLICATION: the index is trustworthy here; the Dataset still guards empty directories for the full corpus.
+     124 FINDING: 12/12 labels project to <10 val positives: ['ACL', 'MCL', 'Medial Meniscus', 'Lateral Meniscus', 'Medial OA', 'Lateral OA', 'PF OA', 'Effusion', 'Synovitis', "Baker's", 'Contusion', 'Fracture']
+     124 IMPLICATION: multilabel-stratified splitting is mandatory, and the macro AUC leans on 12 fragile columns — read per-run scores with caution.
+     124 studies total                        : 4407
+     124 fully labelled (all 12 present)      : 58
+     124 partially labelled (some present)    : 0
+     124 unlabelled but carrying a report     : 4349
+     124 labelled share                       : 1.3%
+     124 FINDING: only 1.3% of studies carry labels — most are described by free text alone.
+     124 IMPLICATION: the baseline trains on fully labelled rows ONLY (never on NaN targets); report-derived
+     124              weak labels are a gated extension, evaluated against the same clean validation fold.
+     124 FINDING: median 5 series per study -> IMPLICATION: selecting ONE series per study cuts imaging
+     124          I/O roughly 5x; the unused series remain available for a later multi-series ensemble.
+     125 FINDING: median 29 slices per series, max 144 in this sample.
+     125 IMPLICATION: a FIXED, evenly spread sample of 24 slices covers 83% of the median series while
+     125              bounding the 144-slice tail, and keeps a constant tensor shape for batching.
+     125 studies with a sagittal fluid-sensitive series : 4150 / 4407
+     125 studies with any sagittal series               : 4407 / 4407
+     125 FINDING: sagittal fluid-sensitive covers 94.2%; any sagittal covers 100.0%.
+     125 IMPLICATION: the fallback rungs are exercised in training data — the chain sagittal+fluid-sensitive ->
+     125              any sagittal -> any series keeps every study predicted.
+     126 reports scanned                : 4407
+     126 share containing non-ASCII text: 59.3%
+     126 FINDING: marker words fire for 5 languages (english, german, spanish, french, dutch) — not English-only.
+     126 IMPLICATION: report-derived labels are WEAK and noisy — they stay behind a feature flag, are never used
+     126              for validation, and the reader is told exactly which languages the keyword map misses.
+     127 study  : 1.2.826.0.1.3680043.8.498.10004873229099053869093324292195817260
+     127 plane  : Sagittal | fluid: 1 | fat: 1
+     127 volume : shape=(24, 1, 224, 224) dtype=torch.float32
+     128 min=0.000 max=1.000 mean=0.328 std=0.281
+     128 zero-valued fraction (background): 4.2%
+     128 FINDING: 63% of voxels sit in the interior of [0, 1] rather than at the clipped extremes.
+     128 IMPLICATION: per-volume percentile scaling handles cross-scanner drift on its own; it does not remove the
+     128 need for ImageNet mean/std standardisation before the pretrained backbone sees the tensor (Dataset, below).
+     128 USE_PSEUDO_LABELS = True (weak supervision is opt-in and never used for validation)
+     129 human-labelled studies used for training/validation: 58
+     129 weak-labelled studies appended: 4349 (training fold only — see the note above)
+     130 labelled studies for modelling : 4407
+     130 targets                        : 12
+     130 weak supervision enabled       : True
+     130 weak rows in table             : 4349
+     130 batch=16 studies | slices=24 | px=224 | images/batch=384
+     131 split strategy : MultilabelStratifiedKFold(n_splits=5)
+     131 folds          : 5 over 4407 studies (58 human-labelled)
+     131 train studies  : 3526
+     131 val studies    : 13
+     131 test studies   : 3
+     148 volume : (16, 24, 1, 224, 224) torch.float32
+     148 labels : (16, 12) torch.float32
+     148 ids    : 16 e.g. 1.2.826.0.1.3680043.8.498.70984418257970716669463829979819981861
+     148 range  : [-1.987, 2.438]
+     149 backbone=efficientnet_b0 | epochs=30 | lr=0.001 | frozen=True | pretrained=True
+     150 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+     150 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+     159 input   : (2, 24, 1, 224, 224)
+     159 logits  : (2, 12) (expected (2, 12))
+     159 attention sums to 1 per study: True
+     159 trainable parameters: 343,437
+     159 monitor=val/loss (min) | precision=16-mixed | fast_dev_run=False
+     160 Trainer will use only 1 of 2 GPUs because it is running inside an interactive / notebook environment. You may try to set `Trainer(devices=2)` but please note that multi-GPU inside interactive / notebook environments is considered experimental and unstable. Your mileage may vary.
+     160 Trainer will use only 1 of 2 GPUs because it is running inside an interactive / notebook environment. You may try to set `Trainer(devices=2)` but please note that multi-GPU inside interactive / notebook environments is considered experimental and unstable. Your mileage may vary.
+     160 Using 16bit Automatic Mixed Precision (AMP)
+     160 Using 16bit Automatic Mixed Precision (AMP)
+     160 GPU available: True (cuda), used: True
+     160 GPU available: True (cuda), used: True
+     160 TPU available: False, using: 0 TPU cores
+     160 TPU available: False, using: 0 TPU cores
+     160 💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+     160 💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+     160 LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+     160 LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+     160 /usr/local/lib/python3.12/dist-packages/pytorch_lightning/utilities/model_summary/model_summary.py:242: Precision 16-mixed is not supported by the model summary.  Estimated model size in MB will not be accurate. Using 32 bits instead.
+     160 /usr/local/lib/python3.12/dist-packages/pytorch_lightning/utilities/model_summary/model_summary.py:242: Precision 16-mixed is not supported by the model summary.  Estimated model size in MB will not be accurate. Using 32 bits instead.
+     160 /usr/local/lib/python3.12/dist-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+     160 /usr/local/lib/python3.12/dist-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+    3341 fold 0: 13 val studies | best val/loss = 0.7405
+    3342 Trainer will use only 1 of 2 GPUs because it is running inside an interactive / notebook environment. You may try to set `Trainer(devices=2)` but please note that multi-GPU inside interactive / notebook environments is considered experimental and unstable. Your mileage may vary.
+    3342 Trainer will use only 1 of 2 GPUs because it is running inside an interactive / notebook environment. You may try to set `Trainer(devices=2)` but please note that multi-GPU inside interactive / notebook environments is considered experimental and unstable. Your mileage may vary.
+    3342 Using 16bit Automatic Mixed Precision (AMP)
+    3342 Using 16bit Automatic Mixed Precision (AMP)
+    3343 GPU available: True (cuda), used: True
+    3343 GPU available: True (cuda), used: True
+    3343 TPU available: False, using: 0 TPU cores
+    3343 TPU available: False, using: 0 TPU cores
+    3343 💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+    3343 💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+    3343 LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+    3343 LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+    3343 /usr/local/lib/python3.12/dist-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+    3343 /usr/local/lib/python3.12/dist-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+    6193 fold 1: 9 val studies | best val/loss = 0.9942
+    6193 Trainer will use only 1 of 2 GPUs because it is running inside an interactive / notebook environment. You may try to set `Trainer(devices=2)` but please note that multi-GPU inside interactive / notebook environments is considered experimental and unstable. Your mileage may vary.
+    6193 Trainer will use only 1 of 2 GPUs because it is running inside an interactive / notebook environment. You may try to set `Trainer(devices=2)` but please note that multi-GPU inside interactive / notebook environments is considered experimental and unstable. Your mileage may vary.
+    6193 Using 16bit Automatic Mixed Precision (AMP)
+    6193 Using 16bit Automatic Mixed Precision (AMP)
+    6194 GPU available: True (cuda), used: True
+    6194 GPU available: True (cuda), used: True
+    6194 TPU available: False, using: 0 TPU cores
+    6194 TPU available: False, using: 0 TPU cores
+    6194 💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+    6194 💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+    6194 LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+    6194 LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+    6194 /usr/local/lib/python3.12/dist-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+    6194 /usr/local/lib/python3.12/dist-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+    9219 fold 2: 14 val studies | best val/loss = 0.8943
+    9219 Trainer will use only 1 of 2 GPUs because it is running inside an interactive / notebook environment. You may try to set `Trainer(devices=2)` but please note that multi-GPU inside interactive / notebook environments is considered experimental and unstable. Your mileage may vary.
+    9219 Trainer will use only 1 of 2 GPUs because it is running inside an interactive / notebook environment. You may try to set `Trainer(devices=2)` but please note that multi-GPU inside interactive / notebook environments is considered experimental and unstable. Your mileage may vary.
+    9219 Using 16bit Automatic Mixed Precision (AMP)
+    9219 Using 16bit Automatic Mixed Precision (AMP)
+    9219 GPU available: True (cuda), used: True
+    9219 GPU available: True (cuda), used: True
+    9219 TPU available: False, using: 0 TPU cores
+    9219 TPU available: False, using: 0 TPU cores
+    9219 💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+    9219 💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+    9219 LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+    9219 LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+    9220 /usr/local/lib/python3.12/dist-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+    9220 /usr/local/lib/python3.12/dist-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+   12211 fold 3: 10 val studies | best val/loss = 0.8054
+   12211 Trainer will use only 1 of 2 GPUs because it is running inside an interactive / notebook environment. You may try to set `Trainer(devices=2)` but please note that multi-GPU inside interactive / notebook environments is considered experimental and unstable. Your mileage may vary.
+   12211 Trainer will use only 1 of 2 GPUs because it is running inside an interactive / notebook environment. You may try to set `Trainer(devices=2)` but please note that multi-GPU inside interactive / notebook environments is considered experimental and unstable. Your mileage may vary.
+   12211 Using 16bit Automatic Mixed Precision (AMP)
+   12211 Using 16bit Automatic Mixed Precision (AMP)
+   12212 GPU available: True (cuda), used: True
+   12212 GPU available: True (cuda), used: True
+   12212 TPU available: False, using: 0 TPU cores
+   12212 TPU available: False, using: 0 TPU cores
+   12212 💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+   12212 💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+   12212 LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+   12212 LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+   12212 /usr/local/lib/python3.12/dist-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+   12212 /usr/local/lib/python3.12/dist-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+   15240 fold 4: 12 val studies | best val/loss = 0.9120
+   15240 pooled out-of-fold macro AUROC over 58 studies (5 folds): 0.5359
+   15240 logged columns: ['epoch', 'lr-AdamW', 'step', 'train/auroc', 'train/loss', 'val/auroc', 'val/loss']
+   15240 best val/loss epoch : 0 (fold 0 training ran to epoch 5)
+   15241 submission checkpoint : /kaggle/working/checkpoints/fold0/knee-mil-best.ckpt
+   15245 in-memory predictions: (3, 12) over 3 studies
+   15245 reloaded KneeMILClassifier | params: 4,350,409
+   15246 reloaded predictions: (3, 12)
+   15262 predictions : (3, 12) | ids: 3 | unique ids: 3
+   15262 finite      : True
+   15262 range       : [0.0015, 0.8067] within [0,1]: True
+   15262 max |in-memory - reloaded| : 3.39e-01
+   15262 -> differs: early stopping ran past the best epoch (EarlyStopping does not restore best weights);
+   15262    the reloaded best-epoch predictions are the ones submitted.
+   15262 sample_submission shape: (3, 13)
+   15262 joined rows: 3 | rows falling back to 0.5: 0
+   15262 written: submission.csv (3 rows)
+   15263 rows            : 3 (sample: 3) -> OK
+   15263 columns exact   : True
+   15263 ids unique      : True
+   15263 ids cover sample: True
+   15263 no NaN          : True
+   15263 all finite      : True
+   15263 within [0,1]    : True
+   15263 StudyInstanceUID,ACL,MCL,Medial Meniscus,Lateral Meniscus,Medial OA,Lateral OA,PF OA,Effusion,Synovitis,Baker's,Contusion,Fracture
+   15263 1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191,0.20777315,0.6108836,0.8066711,0.1652091,0.006894817,0.0043402035,0.2489138,0.5985731,0.16188285,0.18269318,0.07237867,0.0794214
+   15263 1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776,0.671477,0.54451144,0.7297337,0.6513622,0.008646977,0.0041109934,0.106503114,0.62276727,0.5165026,0.3114053,0.26342958,0.10452121
+   15263 1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402,0.12638283,0.19614443,0.20220603,0.18013796,0.003237074,0.0014720943,0.07361134,0.2984102,0.06325551,0.19999987,0.022805845,0.047467746
+   15270   cells[i][c] = re.sub('\\\\\|', '|', cell)
+   15271   text = re.sub(r'_', '\_', text) # Escape underscores in display text
